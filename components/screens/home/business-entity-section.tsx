@@ -128,7 +128,7 @@ export default async function BusinessEntitySection() {
       )}
     >
       <Image
-        src="/images/hero.png"
+        src="/images/10.webp"
         alt="منظومة متكاملة تدير حركة التجارة"
         width={900}
         height={600}

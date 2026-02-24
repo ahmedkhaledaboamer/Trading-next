@@ -19,7 +19,7 @@ const pillars: Pillar[] = [
     icon: Cog,
     description:
       "تحكم كامل في مسارات التوريد من المصدر إلى العميل، مع بنية تشغيلية مرنة وسريعة الاستجابة.",
-    imageSrc: "/images/1.webp",
+    imageSrc: "/images/23.webp",
     imageAlt: "فريق يعمل على إدارة العمليات التشغيلية في بيئة مكتبية",
   },
   {
@@ -28,7 +28,7 @@ const pillars: Pillar[] = [
     icon: Globe2,
     description:
       "وجود قوي في أسواق متعددة يمنح الشركة قدرة تفاوضية عالية وتأثيراً في حركة الطلب.",
-      imageSrc: "/images/2.webp",
+      imageSrc: "/images/24.webp",
       imageAlt: "أفق مدينة وأسواق تعبر عن النفوذ السوقي",
   },
   {
@@ -37,7 +37,7 @@ const pillars: Pillar[] = [
     icon: Target,
     description:
       "قرارات مبنية على تحليل عميق للبيانات واتجاهات السوق، وتبنّي نماذج عمل تخلق ميزة مستدامة.",
-      imageSrc: "/images/3.webp",
+      imageSrc: "/images/25.webp",
       imageAlt: "اجتماع عمل يخطط للاستراتيجيات التجارية",
   },
   

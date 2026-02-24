@@ -19,56 +19,56 @@ const domains: Domain[] = [
     title: "منظومة الاستيراد الدولي",
     description:
       "ارتباط مباشر بالأسواق العالمية يضمن منتجات عالية الجودة ووصولاً ثابتاً بإجراءات دولية موثوقة.",
-    image: "/images/5.webp",
+    image: "/images/15.webp",
   },
   {
     id: "export",
     title: "منظومة التصدير والتوسع الخارجي",
     description:
       "مسارات تجارية تفتح أبواب التسويق الإقليمي والدولي أمام شركائنا في أسواق مختارة بعناية.",
-    image: "/images/6.webp",
+    image: "/images/16.webp",
   },
   {
     id: "home-appliances",
     title: "مركز الأجهزة المنزلية والكهربية",
     description:
       "حلول متكاملة للأجهزة المنزلية والابتكارات من الأجهزة الكبرى إلى المستلزمات الدقيقة.",
-    image: "/images/7.webp",
+    image: "/images/17.webp",
   },
   {
     id: "electronics",
     title: "مركز الأجهزة الإلكترونية والتقنية",
     description:
       "أجهزة إلكترونية متقدمة، شاشات، وحلول تقنية مصممة لتخدم مختلف القطاعات التجارية.",
-      image: "/images/7.webp",
+      image: "/images/18.webp",
     },
   {
     id: "mobiles",
     title: "مركز الهواتف الذكية والإكسسوارات",
     description:
       "أحدث الإصدارات العالمية من الهواتف الذكية مع منظومة توزيع مرنة تغطي قنوات متعددة.",
-      image: "/images/7.webp",
+      image: "/images/19.webp",
     },
   {
     id: "gaming",
     title: "مركز الألعاب والترفيه الرقمي",
     description:
       "منتجات ألعاب، كونسولات، وإكسسوارات موجهة لقطاع الترفيه الرقمي المتنامي.",
-      image: "/images/7.webp",
+      image: "/images/20.webp",
     },
   {
     id: "photo-video",
     title: "مركز التصوير الفوتوغرافي والسينمائي",
     description:
       "معدات تصوير احترافية، عدسات، وإكسسوارات تدعم صناعة المحتوى بجودة عالية.",
-      image: "/images/7.webp",
+      image: "/images/21.webp",
     },
   {
     id: "networks",
     title: "مركز الشبكات والاتصالات",
     description:
       "حلول شبكات متكاملة، أجهزة اتصال، وبنى تحتية تدعم استمرارية الأعمال بكفاءة.",
-      image: "/images/7.webp",
+      image: "/images/22.webp",
     },
 ];
 
