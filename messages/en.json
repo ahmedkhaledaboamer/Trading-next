@@ -1,0 +1,174 @@
+{
+    "page": {
+        "title": "Home Page"
+    },
+    "navbar": {
+        "cta": "Book Your Consultation",
+        "routes": [
+            {
+                "label": "Home",
+                "href": "/"
+            },
+            {
+                "label": "Execution",
+                "href": "/execution"
+            },
+            {
+                "label": "Services",
+                "href": "/services"
+            },
+            {
+                "label": "Your Business Path",
+                "href": "/business-path"
+            },
+            {
+                "label": "Business Identity",
+                "href": "/business-identity"
+            },
+            {
+                "label": "About Us",
+                "href": "/about"
+            },
+            {
+                "label": "Privacy",
+                "href": "/privacy"
+            },
+            {
+                "label": "Contact",
+                "href": "/contact"
+            }
+        ]
+    },
+    "pages": {
+        "execution": {
+            "title": "Execution",
+            "description": "Execution page - We provide comprehensive legal execution services."
+        },
+        "services": {
+            "title": "Services",
+            "description": "Services page - Explore our premium legal services."
+        },
+        "businessPath": {
+            "title": "Your Business Path",
+            "description": "Your Business Path page - Your guide to building a successful business path."
+        },
+        "businessIdentity": {
+            "title": "Business Identity",
+            "description": "Business Identity page - We help you build your business identity."
+        },
+        "about": {
+            "title": "About Us",
+            "description": "Learn about our team, vision and mission."
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "description": "Privacy policy and protection of your data."
+        }
+    },
+    "content": {
+        "title": "My Component",
+        "description": "My Component Description"
+    },
+    "header": {
+        "title": "Premium Legal Counsel",
+        "subtitle": "Trusted Legal Expertise with a Gold‑Standard",
+        "cta": {
+            "bookConsultation": "Book Your Consultation",
+            "exploreServices": "Explore Our Services"
+        }
+    },
+    "footer": {
+        "contact": {
+            "title": "Contact Us",
+            "phone": "+971 521068882",
+            "email": "info@shazmlc.com",
+            "location": "United Arab Emirates"
+        },
+        "quickLinks": {
+            "title": "Quick Links",
+            "links": [
+                {
+                    "label": "Home",
+                    "href": "/"
+                },
+                {
+                    "label": "Execution",
+                    "href": "/execution"
+                },
+                {
+                    "label": "Our Services",
+                    "href": "/services"
+                },
+                {
+                    "label": "Your Business Path",
+                    "href": "/business-path"
+                },
+                {
+                    "label": "Business Identity",
+                    "href": "/business-identity"
+                },
+                {
+                    "label": "About Us",
+                    "href": "/about"
+                },
+                {
+                    "label": "Privacy Policy",
+                    "href": "/privacy"
+                },
+                {
+                    "label": "Contact Us",
+                    "href": "/contact"
+                }
+            ]
+        },
+        "ourGroup": {
+            "title": "Our Group",
+            "entities": [
+                {
+                    "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla for Legal Consultations",
+                    "href": "#"
+                },
+                {
+                    "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla for General Consultations",
+                    "href": "#"
+                },
+                {
+                    "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla for Artificial Intelligence and Research",
+                    "href": "#"
+                },
+                {
+                    "name": "Al Sarh Al Shamekh for Maritime Shipping Lines Agency",
+                    "href": "#"
+                },
+                {
+                    "name": "84 Star Capital for Real Estate Investment",
+                    "href": "#"
+                },
+                {
+                    "name": "KIB for Claims Settlement Services",
+                    "href": "#"
+                },
+                {
+                    "name": "KIB for Businessmen Services",
+                    "href": "#"
+                },
+                {
+                    "name": "KIB for Finance",
+                    "href": "#"
+                },
+                {
+                    "name": "KIB for Trade",
+                    "href": "#"
+                }
+            ]
+        },
+        "description": "Delivering legal excellence with gold standards throughout the United Arab Emirates with an unwavering commitment to the success of our clients.",
+        "copyright": "© 2024 Sheikh Abdul Aziz Bin Abdullah Al Mualla Legal Consultancy. All rights reserved.",
+        "socialMedia": {
+            "linkedin": "LinkedIn",
+            "twitter": "Twitter",
+            "instagram": "Instagram",
+            "facebook": "Facebook"
+        }
+    }
+}
