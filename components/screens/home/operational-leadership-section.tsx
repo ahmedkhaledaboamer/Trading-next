@@ -30,7 +30,7 @@ const rooms: Room[] = [
       "متابعة اتجاهات الطلب",
       "تقييم المخاطر التجارية",
     ],
-    imageSrc: "/images/rooms/market-room.jpg",
+    imageSrc: "/images/2.webp",
     imageAlt: "شاشة تعرض حركة الأسعار في الأسواق المالية",
   },
   {
@@ -43,7 +43,7 @@ const rooms: Room[] = [
       "تتبع الشحنات في الوقت الفعلي",
       "ضمان ثبات الإمداد",
     ],
-    imageSrc: "/images/rooms/supply-room.jpg",
+    imageSrc: "/images/9.webp",
     imageAlt: "ممرات شحن وموانئ لوجستية",
   },
   {
@@ -56,7 +56,7 @@ const rooms: Room[] = [
       "مراجعة شهادات الجودة",
       "ضمان مطابقة المواصفات الدولية",
     ],
-    imageSrc: "/images/rooms/quality-room.jpg",
+    imageSrc: "/images/1.webp",
     imageAlt: "مكونات إلكترونية تخضع للفحص والجودة",
   },
   {
@@ -69,7 +69,7 @@ const rooms: Room[] = [
       "تنسيق عمليات التسليم",
       "رفع كفاءة الحركة اللوجستية",
     ],
-    imageSrc: "/images/rooms/operations-room.jpg",
+    imageSrc: "/images/3.webp",
     imageAlt: "أوناش وساحات شحن في ميناء تجاري",
   },
 ];
@@ -80,11 +80,11 @@ export default async function OperationalLeadershipSection() {
 
   return (
     <section
-      className="relative w-full bg-[#faf5ee]"
+      className="relative w-full bg-[#ffffff]"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      <div className="py-16 md:py-20 lg:py-24 px-4 md:px-8 lg:px-16">
-        <div className="container flex flex-col gap-10 md:gap-14">
+      <div className="p-[5%]">
+        <div className="  flex flex-col gap-10 md:gap-14">
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2

@@ -29,7 +29,7 @@ export default function PowerIndicatorsSection() {
         }}
       />
 
-      <div className=" px-4 md:px-6 relative z-10">
+      <div className="p-[5%] relative z-10">
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4 mb-12 md:mb-16">
           <h2

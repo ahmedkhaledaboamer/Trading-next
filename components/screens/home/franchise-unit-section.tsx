@@ -27,8 +27,8 @@ export default async function FranchiseUnitSection() {
       className="relative w-full bg-[#f7f3eb]"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      <div className="py-16 md:py-20 lg:py-24 px-4 md:px-8 lg:px-16">
-        <div className="container flex flex-col gap-10 md:gap-12">
+      <div className="p-[5%]">
+        <div className="  flex flex-col gap-10 md:gap-12">
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
@@ -140,7 +140,7 @@ export default async function FranchiseUnitSection() {
                 )}
               >
                 <Image
-                  src="/images/franchise-unit.jpg"
+                  src="/images/10.webp"
                   alt="اجتماع عمل لوحدة الامتياز التجاري"
                   width={900}
                   height={600}

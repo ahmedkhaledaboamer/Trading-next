@@ -27,8 +27,8 @@ export default async function DigitalTransformationSection() {
       className="relative w-full bg-[#f7f3eb]"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      <div className="py-16 md:py-20 lg:py-24 px-4 md:px-8 lg:px-16">
-        <div className="container flex flex-col gap-10 md:gap-14">
+      <div className="p-[5%]">
+        <div className="flex flex-col gap-10 md:gap-14">
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
@@ -38,7 +38,7 @@ export default async function DigitalTransformationSection() {
               وحدة التحول الرقمي
             </h2>
             <p
-              className="text-secondary/80  "
+              className="text-secondary/80"
               style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
             >
               وحدة متخصصة في تطوير البنية الرقمية لضمان سرعة، دقة، وشفافية في كل
@@ -74,15 +74,12 @@ export default async function DigitalTransformationSection() {
                     />
                   </span>
                 </div>
-
                 <ul className="space-y-2.5">
                   {unitTasks.map((task) => (
                     <li
                       key={task}
                       className="flex items-start gap-2 text-secondary/85"
-                      style={{
-                        fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                      }}
+                      style={{ fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)" }}
                     >
                       <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{task}</span>
@@ -115,15 +112,12 @@ export default async function DigitalTransformationSection() {
                     />
                   </span>
                 </div>
-
                 <ul className="space-y-2.5">
                   {unitGoals.map((goal) => (
                     <li
                       key={goal}
                       className="flex items-start gap-2 text-secondary/85"
-                      style={{
-                        fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                      }}
+                      style={{ fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)" }}
                     >
                       <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{goal}</span>
@@ -133,21 +127,21 @@ export default async function DigitalTransformationSection() {
               </article>
             </div>
 
-            {/* Right column – image card */}
-            <div className="flex justify-center lg:justify-end">
+            {/* Right column – image card, stretches to match left column height */}
+            <div className="flex flex-col min-h-[280px]">
               <div
                 className={cn(
-                  "relative  w-full rounded-3xl overflow-hidden",
+                  "relative flex-1 w-full rounded-3xl overflow-hidden",
                   "bg-white border border-primary/40",
                   "shadow-[0_22px_60px_rgba(0,0,0,0.16)]"
                 )}
               >
                 <Image
-                  src="/images/digital-unit.jpg"
+                  src="/images/8.webp"
                   alt="وحدة التحول الرقمي في كي إي بي للتجارة"
-                  width={900}
-                  height={600}
-                  className="h-full w-full object-cover"
+                  fill
+                  className="object-cover"
+                  priority
                 />
               </div>
             </div>
@@ -157,4 +151,3 @@ export default async function DigitalTransformationSection() {
     </section>
   );
 }
-

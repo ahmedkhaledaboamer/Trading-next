@@ -19,7 +19,7 @@ const pillars: Pillar[] = [
     icon: Cog,
     description:
       "تحكم كامل في مسارات التوريد من المصدر إلى العميل، مع بنية تشغيلية مرنة وسريعة الاستجابة.",
-    imageSrc: "/images/influence/operational.jpg",
+    imageSrc: "/images/1.webp",
     imageAlt: "فريق يعمل على إدارة العمليات التشغيلية في بيئة مكتبية",
   },
   {
@@ -28,8 +28,8 @@ const pillars: Pillar[] = [
     icon: Globe2,
     description:
       "وجود قوي في أسواق متعددة يمنح الشركة قدرة تفاوضية عالية وتأثيراً في حركة الطلب.",
-    imageSrc: "/images/influence/market.jpg",
-    imageAlt: "أفق مدينة وأسواق تعبر عن النفوذ السوقي",
+      imageSrc: "/images/2.webp",
+      imageAlt: "أفق مدينة وأسواق تعبر عن النفوذ السوقي",
   },
   {
     id: "strategic",
@@ -37,9 +37,10 @@ const pillars: Pillar[] = [
     icon: Target,
     description:
       "قرارات مبنية على تحليل عميق للبيانات واتجاهات السوق، وتبنّي نماذج عمل تخلق ميزة مستدامة.",
-    imageSrc: "/images/influence/strategic.jpg",
-    imageAlt: "اجتماع عمل يخطط للاستراتيجيات التجارية",
+      imageSrc: "/images/3.webp",
+      imageAlt: "اجتماع عمل يخطط للاستراتيجيات التجارية",
   },
+  
 ];
 
 export default async function CommercialInfluenceSection() {
@@ -48,8 +49,8 @@ export default async function CommercialInfluenceSection() {
 
   return (
     <section className="relative w-full bg-white" dir={isRTL ? "rtl" : "ltr"}>
-      <div className="py-16 md:py-20 lg:py-24 px-4 md:px-8 lg:px-16">
-        <div className="container flex flex-col gap-10 md:gap-12">
+      <div className=" p-[5%] pt-[0]">
+        <div className=" flex flex-col gap-10 md:gap-12">
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
@@ -80,7 +81,7 @@ export default async function CommercialInfluenceSection() {
                   )}
                 >
                   {/* Image */}
-                  <div className="relative h-52 md:h-56 lg:h-60">
+                  <div className="relative h-52 md:h-56 xl:h-200">
                     <Image
                       src={pillar.imageSrc}
                       alt={pillar.imageAlt}

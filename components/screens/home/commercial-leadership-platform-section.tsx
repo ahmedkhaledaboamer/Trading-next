@@ -13,7 +13,7 @@ const benefits = [
 export default function CommercialLeadershipPlatformSection() {
   return (
     <section
-      className="py-20 md:py-28 relative overflow-hidden flex items-center justify-center min-h-[70vh] md:min-h-[80vh]"
+      className="p-[5%] relative overflow-hidden flex items-center justify-center min-h-[70vh] md:min-h-[80vh]"
       dir="rtl"
     >
       {/* Background image + overlay */}
@@ -27,7 +27,7 @@ export default function CommercialLeadershipPlatformSection() {
         <div className="absolute inset-0 bg-[#1A1A2E]/90" />
       </div>
 
-      <div className="    px-4 md:px-6 relative z-10 text-center">
+      <div className="     relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

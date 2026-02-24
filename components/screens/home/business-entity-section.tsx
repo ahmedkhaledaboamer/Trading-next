@@ -29,7 +29,7 @@ export default async function BusinessEntitySection() {
   return (
     <section className="relative w-full bg-white" dir={isRTL ? "rtl" : "ltr"}>
       <div className="py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16">
-        <div className="container">
+        <div className="p-[5%]">
           <div className="grid items-center gap-10 lg:gap-14 lg:grid-cols-2">
             {/* Text / left side */}
             <div className="flex flex-col gap-6">

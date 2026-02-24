@@ -15,8 +15,8 @@ const protections = [
 
 export default function CommercialProtectionSection() {
   return (
-    <section className="py-16 md:py-24 bg-white" dir="rtl">
-      <div className="container flex flex-col gap-10 md:gap-14">
+    <section className="p-[5%] bg-white" dir="rtl">
+      <div className="  flex flex-col gap-10 md:gap-14">
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4">
           <h2
@@ -40,12 +40,12 @@ export default function CommercialProtectionSection() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative h-[380px] md:h-[460px] w-full shadow-2xl"
+            className="relative h-[380px] md:h-[460px]  xl:h-[600px] w-full shadow-2xl"
           >
             <div className="absolute top-8 -right-8 w-full h-full border-4 border-[#C9A84C] z-0 rounded-3xl" />
             <div className="relative z-10 w-full h-full overflow-hidden rounded-3xl">
               <Image
-                src="/images/commercial-protection.jpg"
+                src="/images/4.webp"
                 alt="نظام الحماية التجارية"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700"

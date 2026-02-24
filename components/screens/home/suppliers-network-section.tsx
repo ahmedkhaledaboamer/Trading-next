@@ -24,13 +24,13 @@ export default async function SuppliersNetworkSection() {
 
   return (
     <section
-      className="relative w-full bg-[#050915]"
+      className="relative  w-full "
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/suppliers-network-bg.jpg"
+          src="/images/9.webp"
           alt="شبكة مورّدين عالمية في الموانئ البحرية"
           fill
           className="object-cover"
@@ -38,8 +38,8 @@ export default async function SuppliersNetworkSection() {
         <div className="absolute inset-0 bg-black/65" />
       </div>
 
-      <div className="py-16 md:py-20 lg:py-24 px-4 md:px-8 lg:px-16">
-        <div className="container flex flex-col gap-10 md:gap-12">
+      <div className="container py-[5%]">
+        <div className="  flex flex-col gap-10 md:gap-12">
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-3">
             <h2

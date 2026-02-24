@@ -1,5 +1,4 @@
-import { cn } from "@/utils/cn";
-import { CheckCircle, Globe } from "lucide-react";
+ import {  Globe } from "lucide-react";
 import Image from "next/image";
 import { getLocale } from "next-intl/server";
 
@@ -27,7 +26,7 @@ export default async function InternationalExpansionSection() {
       className="py-20 md:py-28 bg-white"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      <div className=" px-4 md:px-6 lg:px-8">
+      <div className=" p-[5%]">
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4 mb-12 md:mb-16">
           <h2
@@ -51,15 +50,13 @@ export default async function InternationalExpansionSection() {
           <div className="group relative overflow-hidden shadow-2xl rounded-3xl bg-transparent">
             <div className="h-80 relative overflow-hidden">
               <Image
-                src="/images/international-expansion-tasks.jpg"
+                src="/images/2.webp"
                 alt="مهام وحدة التوسع الدولي"
                 fill
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-[#1A1A2E]/60 group-hover:bg-[#1A1A2E]/40 transition-colors" />
-              <div className="absolute bottom-8 right-8">
-                <Globe className="w-16 h-16 text-[#C9A84C]" />
-              </div>
+              
             </div>
 
             <div className="bg-[#F8F6F1] p-8 md:p-10 relative z-10 -mt-10 mx-4 md:mx-6 shadow-lg rounded-3xl">
@@ -85,15 +82,13 @@ export default async function InternationalExpansionSection() {
           <div className="group relative overflow-hidden shadow-2xl rounded-3xl bg-transparent">
             <div className="h-80 relative overflow-hidden">
               <Image
-                src="/images/international-expansion-results.jpg"
+                src="/images/1.webp"
                 alt="نتائج وحدة التوسع الدولي"
                 fill
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-[#1A1A2E]/60 group-hover:bg-[#1A1A2E]/40 transition-colors" />
-              <div className="absolute bottom-8 right-8">
-                <CheckCircle className="w-16 h-16 text-[#C9A84C]" />
-              </div>
+               
             </div>
 
             <div className="bg-[#F8F6F1] p-8 md:p-10 relative z-10 -mt-10 mx-4 md:mx-6 shadow-lg rounded-3xl">

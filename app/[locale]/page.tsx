@@ -21,7 +21,7 @@ export default async function Page() {
       <BusinessEntitySection />
       <CommercialInfluenceSection />
       <PowerIndicatorsSection />
-      <CommercialLeadershipPlatformSection />
+      {/* <CommercialLeadershipPlatformSection /> */}
       <CommercialProtectionSection />
       <CommercialDomainsSection />
       <SuppliersNetworkSection />
