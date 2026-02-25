@@ -137,7 +137,7 @@ export default async function DigitalTransformationSection() {
                 )}
               >
                 <Image
-                  src="/images/8.webp"
+                  src="/images/27.webp"
                   alt="وحدة التحول الرقمي في كي إي بي للتجارة"
                   fill
                   className="object-cover"

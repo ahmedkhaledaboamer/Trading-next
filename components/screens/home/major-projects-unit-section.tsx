@@ -78,7 +78,7 @@ export default async function MajorProjectsUnitSection() {
                 )}
               >
                 <Image
-                  src="/images/11.webp"
+                  src="/images/32.webp"
                   alt="وحدة متخصصة لإدارة المشاريع الكبرى"
                   fill
                   className="object-cover"

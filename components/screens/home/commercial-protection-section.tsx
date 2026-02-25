@@ -45,7 +45,7 @@ export default function CommercialProtectionSection() {
             <div className="absolute top-8 -right-8 w-full h-full border-4 border-[#C9A84C] z-0 rounded-3xl" />
             <div className="relative z-10 w-full h-full overflow-hidden rounded-3xl">
               <Image
-                src="/images/4.webp"
+                src="/images/26.webp"
                 alt="نظام الحماية التجارية"
                 fill
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700"

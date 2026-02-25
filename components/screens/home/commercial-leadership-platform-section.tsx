@@ -19,7 +19,7 @@ export default function CommercialLeadershipPlatformSection() {
       {/* Background image + overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/images/leadership-skyline.jpg"
+          src="/images/10.webp"
           alt="منصة القيادة التجارية"
           fill
           className="w-full h-full object-cover"

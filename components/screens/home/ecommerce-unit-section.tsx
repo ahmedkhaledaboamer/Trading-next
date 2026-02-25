@@ -52,7 +52,7 @@ export default async function EcommerceUnitSection() {
           >
             <div className="relative h-56 md:h-64 lg:h-72">
               <Image
-                src="/images/ecommerce-unit-hero.jpg"
+                src="/images/28.webp"
                 alt="منصة رقمية متكاملة للبيع والتوزيع"
                 fill
                 className="object-cover"
