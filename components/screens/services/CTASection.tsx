@@ -11,8 +11,8 @@ export function CTASection() {
           alt="Team meeting"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/95 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent" />
+        <div className="absolute inset-0 bg-blue-500 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-blue via-primary/80 to-transparent" />
       </div>
 
       <div className=" text-center relative z-10">
