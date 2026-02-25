@@ -8,6 +8,7 @@ const franchiseBenefits = [
   "تقليل المخاطر التشغيلية على الشركة الأم",
   "زيادة الحصة السوقية عبر شركاء متعددين",
   "دعم الشركاء بنظام تشغيل وتجربة جاهزة",
+  "تحقيق تدفقات دخل مستمرة من رسوم الامتياز ونسبة الأرباح"
 ];
 
 const franchiseTasks = [
@@ -32,12 +33,12 @@ export default async function FranchiseUnitSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
+              className="inline-block font-bold text-[#4E342E] leading-tight text-2xl md:text-6xl bg-[#FFE0B2] border border-[#FFB74D] rounded-2xl px-6 py-4"
             >
               وحدة الامتياز التجاري
             </h2>
             <p
-              className="text-secondary/80 text-base md:text-2xl"
+              className="inline-block text-[#5D4037] text-base md:text-2xl bg-[#FFF8E1] border border-[#FFECB3] rounded-full px-5 py-2"
             >
               وحدة متخصصة لمنح الامتياز التجاري للعلامات التي تديرها كي إي بي
               للتجارة، وفق معايير تشغيلية واضحة.
@@ -45,7 +46,7 @@ export default async function FranchiseUnitSection() {
           </header>
 
           {/* Main layout: two info cards + image */}
-          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1.2fr)_minmax(0,1.4fr)] gap-6 md:gap-8 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.3fr)_minmax(0,0.3fr)_minmax(0,0.4fr)] gap-6 md:gap-8 items-start">
             {/* Benefits card */}
             <article
               className={cn(
@@ -55,15 +56,15 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-secondary text-xl md:text-3xl"
+                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
                 >
                   فوائد الامتياز
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <BadgePercent
                     style={{
-                      width: "clamp(1.4rem, 1.4vw, 1.4rem)",
-                      height: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                      width: "2rem",
+                      height: "2rem",
                     }}
                     strokeWidth={2}
                   />
@@ -74,7 +75,7 @@ export default async function FranchiseUnitSection() {
                 {franchiseBenefits.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
                   >
                     <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{item}</span>
@@ -92,15 +93,15 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-secondary text-xl md:text-3xl"
+                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
                 >
                   مهام الوحدة
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <Briefcase
                     style={{
-                      width: "clamp(1.4rem, 1.4vw, 1.4rem)",
-                      height: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                      width: "2rem",
+                      height: "2rem",
                     }}
                     strokeWidth={2}
                   />
@@ -111,7 +112,7 @@ export default async function FranchiseUnitSection() {
                 {franchiseTasks.map((task) => (
                   <li
                     key={task}
-                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
                   >
                     <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{task}</span>
@@ -124,7 +125,7 @@ export default async function FranchiseUnitSection() {
             <div className="flex justify-center lg:justify-end">
               <div
                 className={cn(
-                  "relative   w-full rounded-3xl overflow-hidden",
+                  "relative w-full h-[50vh] rounded-3xl overflow-hidden",
                   "bg-white border border-primary/40",
                   "shadow-[0_22px_60px_rgba(0,0,0,0.16)]"
                 )}

@@ -43,12 +43,12 @@ export default async function SuppliersNetworkSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-3">
             <h2
-              className="font-bold text-white leading-tight text-2xl md:text-6xl"
+              className="inline-block font-bold text-amber-200 leading-tight text-2xl md:text-6xl bg-amber-900 border border-amber-500 rounded-2xl px-6 py-4"
             >
               شبكة الموردين العالمية
             </h2>
             <p
-              className="text-white/80 text-base md:text-2xl"
+              className="inline-block text-sky-100 text-base md:text-2xl xl:text-3xl bg-sky-900/80 border border-sky-500 rounded-full px-5 py-2"
             >
               شبكة توريد تمتد عبر قارات متعددة تمنح الشركة قوة في الوصول،
               الاختيار، وإدارة المخاطر.
@@ -66,12 +66,12 @@ export default async function SuppliersNetworkSection() {
             >
               <div className="p-6 md:p-7 lg:p-8 flex flex-col gap-4">
                 <h3
-                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl"
+                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl xl:text-5xl"
                 >
                   <span>مزايا الشبكة</span>
                   <Check
                     className="text-primary"
-                    style={{ width: "1.3rem", height: "1.3rem" }}
+                    style={{ width: "2rem", height: "2rem" }}
                     strokeWidth={2.2}
                   />
                 </h3>
@@ -79,7 +79,7 @@ export default async function SuppliersNetworkSection() {
                   {networkBenefits.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2 text-white/90 text-base md:text-xl"
+                      className="flex items-start gap-2 text-white/90 text-base md:text-xl xl:text-3xl"
                     >
                       <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{item}</span>
@@ -98,12 +98,12 @@ export default async function SuppliersNetworkSection() {
             >
               <div className="p-6 md:p-7 lg:p-8 flex flex-col gap-4">
                 <h3
-                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl"
+                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl xl:text-5xl"
                 >
                   <span>مناطق التوريد الرئيسية</span>
                   <MapPin
                     className="text-primary"
-                    style={{ width: "1.3rem", height: "1.3rem" }}
+                    style={{ width: "2rem", height: "2rem" }}
                     strokeWidth={2.2}
                   />
                 </h3>
@@ -111,7 +111,7 @@ export default async function SuppliersNetworkSection() {
                   {supplyRegions.map((region) => (
                     <li
                       key={region}
-                      className="flex items-start gap-2 text-white/90 text-base md:text-xl"
+                      className="flex items-start gap-2 text-white/90 text-base md:text-xl xl:text-3xl"
                     >
                       <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{region}</span>

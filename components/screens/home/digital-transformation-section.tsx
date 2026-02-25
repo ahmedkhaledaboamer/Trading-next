@@ -32,12 +32,12 @@ export default async function DigitalTransformationSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
+              className="inline-block font-bold text-[#0D47A1] leading-tight text-2xl md:text-6xl bg-[#E3F2FD] border border-[#90CAF9] rounded-2xl px-6 py-4"
             >
               وحدة التحول الرقمي
             </h2>
             <p
-              className="text-secondary/80 text-base md:text-2xl"
+              className="inline-block text-[#4A2C0A] text-base md:text-2xl bg-[#FFF3E0] border border-[#FFB74D] rounded-full px-5 py-2"
             >
               وحدة متخصصة في تطوير البنية الرقمية لضمان سرعة، دقة، وشفافية في كل
               عملية تشغيلية.
@@ -57,15 +57,15 @@ export default async function DigitalTransformationSection() {
               >
                 <div className="flex items-center justify-between gap-3 mb-1">
                   <h3
-                    className="font-bold text-secondary text-xl md:text-3xl"
+                    className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
                   >
                     مهام الوحدة
                   </h3>
                   <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                     <Zap
                       style={{
-                        width: "clamp(1.4rem, 1.4vw, 1.4rem)",
-                        height: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                        width: "2rem",
+                        height: "2rem",
                       }}
                       strokeWidth={2}
                     />
@@ -75,9 +75,9 @@ export default async function DigitalTransformationSection() {
                   {unitTasks.map((task) => (
                     <li
                       key={task}
-                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
+                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
                     >
-                      <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="mt-5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{task}</span>
                     </li>
                   ))}
@@ -93,15 +93,15 @@ export default async function DigitalTransformationSection() {
               >
                 <div className="flex items-center justify-between gap-3 mb-1">
                   <h3
-                    className="font-bold text-secondary text-xl md:text-3xl"
+                    className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
                   >
                     أهداف الوحدة
                   </h3>
                   <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                     <ArrowRightLeft
                       style={{
-                        width: "clamp(1.4rem, 1.4vw, 1.4rem)",
-                        height: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                        width: "2rem",
+                        height: "2rem",
                       }}
                       strokeWidth={2}
                     />
@@ -111,9 +111,9 @@ export default async function DigitalTransformationSection() {
                   {unitGoals.map((goal) => (
                     <li
                       key={goal}
-                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
+                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
                     >
-                      <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="mt-5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{goal}</span>
                     </li>
                   ))}
@@ -131,10 +131,10 @@ export default async function DigitalTransformationSection() {
                 )}
               >
                 <Image
-                  src="/images/27.webp"
+                  src="/images/image_2686.webp"
                   alt="وحدة التحول الرقمي في كي إي بي للتجارة"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   priority
                 />
               </div>

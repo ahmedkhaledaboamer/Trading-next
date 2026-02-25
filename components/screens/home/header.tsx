@@ -53,7 +53,7 @@ export default async function Header() {
 
         </p>
         <p className="p-4 font-bold bg-black/50 border border-yellow-500 text-white rounded-2xl"style={{
-            fontSize: "clamp(1.25rem, 1.5vw, 3rem)",
+            fontSize: "clamp(1.25rem, 1.5vw, 2.5rem)",
             
           }}>نصنع النفوذ عبر شبكات توريد عالمية، علاقات راسخة، وخبرة تنفيذية تمنح عملاءنا قدرة الوصول إلى منتجات عالية الجودة، بأسعار تنافسية، وبآليات تشغيل دقيقة.</p>
         <div
