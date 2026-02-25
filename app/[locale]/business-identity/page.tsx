@@ -1,12 +1,23 @@
+import { BrandConclusion } from "@/components/screens/business-path/BrandConclusion";
+import { BrandIntro } from "@/components/screens/business-path/BrandIntro";
+import { BrandOperations } from "@/components/screens/business-path/BrandOperations";
+import { BrandPartner } from "@/components/screens/business-path/BrandPartner";
+import { BrandStatement } from "@/components/screens/business-path/BrandStatement";
+import { HeroSection } from "@/components/screens/business-path/HeroSection";
 import { getTranslations } from "next-intl/server";
 
 export default async function BusinessIdentityPage() {
   const t = await getTranslations("pages.businessIdentity");
 
   return (
-    <section className="container py-16">
-      <h1 className="text-primary font-bold text-4xl mb-8">{t("title")}</h1>
-      <p className="text-white/90 text-lg leading-relaxed">{t("description")}</p>
-    </section>
+    <>
+        
+    <HeroSection />
+    <BrandIntro />
+    <BrandStatement />
+    <BrandOperations />
+    <BrandPartner />
+    <BrandConclusion />
+     </>
   );
 }

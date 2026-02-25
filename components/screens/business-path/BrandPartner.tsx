@@ -1,0 +1,170 @@
+ 'use client'
+ import { motion } from 'framer-motion'
+import { Handshake, Users, HelpCircle, CheckSquare } from 'lucide-react'
+export function BrandPartner() {
+  const differences = [
+    {
+      text: 'نُظهر خطواتنا بوضوح.',
+      color: '#0D9488',
+    },
+    {
+      text: 'نشارك العميل كل معلومة تخص طلبه.',
+      color: '#D97706',
+    },
+    {
+      text: 'نعمل بمنهجية تشغيل لا تعتمد على الحظ.',
+      color: '#7C3AED',
+    },
+    {
+      text: 'نتابع الشحنات لحظة بلحظة.',
+      color: '#059669',
+    },
+    {
+      text: 'نُسلم مستندات بلا خطأ واحد.',
+      color: '#DC2626',
+    },
+    {
+      text: 'نعتبر العميل شريكًا في القرار، لا متلقي خدمة.',
+      color: '#2563EB',
+    },
+  ]
+  const targetAudience = [
+    {
+      text: 'يريد معلومة واضحة.',
+      color: '#0D9488',
+    },
+    {
+      text: 'يقدّر الاحتراف.',
+      color: '#7C3AED',
+    },
+    {
+      text: 'يبحث عن شركة تحترم وقته.',
+      color: '#D97706',
+    },
+    {
+      text: 'يريد تنفيذًا بلا أعذار.',
+      color: '#DC2626',
+    },
+    {
+      text: 'يرى أن الثقة أهم من السعر.',
+      color: '#2563EB',
+    },
+    {
+      text: 'يعرف قيمة التعامل مع كيان يفهم السوق.',
+      color: '#059669',
+    },
+  ]
+  return (
+    <>
+      {/* What Makes Us Different */}
+      <section className="py-24 bg-brand-cream relative">
+        {/* Background Overlay */}
+        <div className="absolute inset-0 z-0 opacity-5">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200"
+            alt="Office Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            viewport={{
+              once: true,
+            }}
+            className="text-center mb-16"
+          >
+            <h2
+              className="text-4xl md:text-5xl font-bold mb-4"
+              style={{
+                background: 'linear-gradient(135deg, #0A1628, #0D9488)',
+                color: 'white',
+                padding: '14px 32px',
+                borderRadius: '10px',
+                display: 'inline-block',
+              }}
+            >
+              ما الذي يجعلنا مختلفين؟
+            </h2>
+            <p className="text-xl text-brand-dark/70">
+              نحن لا نختلف بالكلام… بل بطريقة العمل
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {differences.map((diff, i) => (
+              <motion.div
+                key={i}
+                initial={{
+                  opacity: 0,
+                  scale: 0.9,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{
+                  delay: i * 0.1,
+                }}
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all"
+                style={{
+                  borderLeft: `4px solid ${diff.color}`,
+                }}
+              >
+                <div className="flex items-start gap-4">
+                  <div
+                    className="mt-1 w-2 h-2 rounded-full shrink-0"
+                    style={{
+                      background: diff.color,
+                    }}
+                  />
+                  <p className="text-lg text-brand-navy font-medium">
+                    {diff.text}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            viewport={{
+              once: true,
+            }}
+            className="text-center mt-12"
+          >
+            <span
+              className="inline-block py-2 px-6 rounded-full text-lg font-bold"
+              style={{
+                background: '#0A1628',
+                color: '#C8A45C',
+              }}
+            >
+              الاختلاف عندنا ليس أسلوبًا… بل نظام تشغيل.
+            </span>
+          </motion.div>
+        </div>
+      </section>
+
+    
+
+      
+    </>
+  )
+}
