@@ -54,14 +54,12 @@ export default async function CommercialInfluenceSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.4vw, 2.5rem)" }}
+              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
             >
               بنية النفوذ التجاري
             </h2>
             <p
-              className="text-secondary/80"
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-secondary/80 text-base md:text-2xl"
             >
               هيكل القوة داخل كي إي بي للتجارة يعتمد على ثلاث ركائز رئيسية
               تمنحنا عمقاً في السوق وقدرة عالية على التحكم.
@@ -97,8 +95,8 @@ export default async function CommercialInfluenceSection() {
                       <span className="inline-flex items-center justify-center rounded-2xl bg-primary text-white p-3 shadow-md">
                         <Icon
                           style={{
-                            width: "clamp(1.3rem, 1.5vw, 1.5rem)",
-                            height: "clamp(1.3rem, 1.5vw, 1.5rem)",
+                            width: "clamp(1.5rem, 1.5vw, 1.5rem)",
+                            height: "clamp(1.5rem, 1.5vw, 1.5rem)",
                           }}
                           strokeWidth={2}
                         />
@@ -107,16 +105,12 @@ export default async function CommercialInfluenceSection() {
 
                     <div className="mt-3 flex flex-col gap-2">
                       <h3
-                        className="font-bold text-secondary"
-                        style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                        className="font-bold text-secondary text-xl md:text-3xl"
                       >
                         {pillar.title}
                       </h3>
                       <p
-                        className="text-secondary/80 leading-relaxed"
-                        style={{
-                          fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                        }}
+                        className="text-secondary/80 leading-relaxed text-base md:text-xl"
                       >
                         {pillar.description}
                       </p>

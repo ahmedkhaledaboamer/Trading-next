@@ -53,14 +53,12 @@ export default async function MajorProjectsUnitSection() {
           {/* Header */}
           <header className="flex flex-col items-start gap-3 text-right">
             <h2
-              className="font-bold text-secondary leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.4vw, 2.5rem)" }}
+              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
             >
               وحدة المشاريع الكبرى
             </h2>
             <p
-              className="text-secondary/80"
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-secondary/80 text-base md:text-2xl"
             >
               وحدة مخصصة لإدارة المشاريع الضخمة، من التخطيط إلى التنفيذ عبر حلول
               توريد وتشغيل متكاملة.
@@ -101,16 +99,15 @@ export default async function MajorProjectsUnitSection() {
                     )}
                   >
                     <span
-                      className="text-secondary font-semibold"
-                      style={{ fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)" }}
+                      className="text-secondary font-semibold text-base md:text-xl"
                     >
                       {feature.title}
                     </span>
                     <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5 shrink-0">
                       <Icon
                         style={{
-                          width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                          height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                          width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                          height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                         }}
                         strokeWidth={2}
                       />

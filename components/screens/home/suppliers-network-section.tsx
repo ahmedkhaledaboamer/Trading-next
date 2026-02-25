@@ -43,14 +43,12 @@ export default async function SuppliersNetworkSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-3">
             <h2
-              className="font-bold text-white leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.4vw, 2.5rem)" }}
+              className="font-bold text-white leading-tight text-2xl md:text-6xl"
             >
               شبكة الموردين العالمية
             </h2>
             <p
-              className="text-white/80  "
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-white/80 text-base md:text-2xl"
             >
               شبكة توريد تمتد عبر قارات متعددة تمنح الشركة قوة في الوصول،
               الاختيار، وإدارة المخاطر.
@@ -68,13 +66,12 @@ export default async function SuppliersNetworkSection() {
             >
               <div className="p-6 md:p-7 lg:p-8 flex flex-col gap-4">
                 <h3
-                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3"
-                  style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl"
                 >
                   <span>مزايا الشبكة</span>
                   <Check
                     className="text-primary"
-                    style={{ width: "1.1rem", height: "1.1rem" }}
+                    style={{ width: "1.3rem", height: "1.3rem" }}
                     strokeWidth={2.2}
                   />
                 </h3>
@@ -82,12 +79,9 @@ export default async function SuppliersNetworkSection() {
                   {networkBenefits.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2 text-white/90"
-                      style={{
-                        fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                      }}
+                      className="flex items-start gap-2 text-white/90 text-base md:text-xl"
                     >
-                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -104,13 +98,12 @@ export default async function SuppliersNetworkSection() {
             >
               <div className="p-6 md:p-7 lg:p-8 flex flex-col gap-4">
                 <h3
-                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3"
-                  style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl"
                 >
                   <span>مناطق التوريد الرئيسية</span>
                   <MapPin
                     className="text-primary"
-                    style={{ width: "1.1rem", height: "1.1rem" }}
+                    style={{ width: "1.3rem", height: "1.3rem" }}
                     strokeWidth={2.2}
                   />
                 </h3>
@@ -118,12 +111,9 @@ export default async function SuppliersNetworkSection() {
                   {supplyRegions.map((region) => (
                     <li
                       key={region}
-                      className="flex items-start gap-2 text-white/90"
-                      style={{
-                        fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                      }}
+                      className="flex items-start gap-2 text-white/90 text-base md:text-xl"
                     >
-                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{region}</span>
                     </li>
                   ))}

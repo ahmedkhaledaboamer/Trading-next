@@ -32,14 +32,12 @@ export default async function FranchiseUnitSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.4vw, 2.5rem)" }}
+              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
             >
               وحدة الامتياز التجاري
             </h2>
             <p
-              className="text-secondary/80  "
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-secondary/80 text-base md:text-2xl"
             >
               وحدة متخصصة لمنح الامتياز التجاري للعلامات التي تديرها كي إي بي
               للتجارة، وفق معايير تشغيلية واضحة.
@@ -57,16 +55,15 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-secondary"
-                  style={{ fontSize: "clamp(1.05rem, 1.25vw, 1.25rem)" }}
+                  className="font-bold text-secondary text-xl md:text-3xl"
                 >
                   فوائد الامتياز
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <BadgePercent
                     style={{
-                      width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                      height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                      width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                      height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                     }}
                     strokeWidth={2}
                   />
@@ -77,12 +74,9 @@ export default async function FranchiseUnitSection() {
                 {franchiseBenefits.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-2 text-secondary/85"
-                    style={{
-                      fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                    }}
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
                   >
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                    <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -98,16 +92,15 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-secondary"
-                  style={{ fontSize: "clamp(1.05rem, 1.25vw, 1.25rem)" }}
+                  className="font-bold text-secondary text-xl md:text-3xl"
                 >
                   مهام الوحدة
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <Briefcase
                     style={{
-                      width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                      height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                      width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                      height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                     }}
                     strokeWidth={2}
                   />
@@ -118,12 +111,9 @@ export default async function FranchiseUnitSection() {
                 {franchiseTasks.map((task) => (
                   <li
                     key={task}
-                    className="flex items-start gap-2 text-secondary/85"
-                    style={{
-                      fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                    }}
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
                   >
-                    <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                    <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{task}</span>
                   </li>
                 ))}

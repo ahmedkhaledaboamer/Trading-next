@@ -51,14 +51,12 @@ export default async function WorkMethodologySection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.4vw, 2.5rem)" }}
+              className="font-bold text-secondary leading-tight text-2xl md:text-5xl"
             >
               منهجية العمل في كي إي بي للتجارة
             </h2>
             <p
-              className="text-secondary/80  "
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-secondary/80 text-base md:text-xl"
             >
               نموذج تشغيل يعتمد على خطوات مترابطة تضمن دقة القرار، جودة التنفيذ، واستمرارية التطوير.
             </p>
@@ -94,20 +92,14 @@ export default async function WorkMethodologySection() {
 
                     {/* Title */}
                     <h3
-                      className="font-bold text-secondary"
-                      style={{
-                        fontSize: "clamp(1rem, 1.15vw, 1.15rem)",
-                      }}
+                      className="font-bold text-secondary text-xl md:text-2xl"
                     >
                       {step.title}
                     </h3>
 
                     {/* Description */}
                     <p
-                      className="text-secondary/80 leading-relaxed"
-                      style={{
-                        fontSize: "clamp(0.9rem, 1.05vw, 1.05rem)",
-                      }}
+                      className="text-secondary/80 leading-relaxed text-base md:text-lg"
                     >
                       {step.description}
                     </p>

@@ -29,14 +29,12 @@ export default async function EcommerceUnitSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.4vw, 2.5rem)" }}
+              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
             >
               وحدة التجارة الإلكترونية
             </h2>
             <p
-              className="text-secondary/80  "
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-secondary/80 text-base md:text-2xl"
             >
               وحدة متخصصة في إدارة وتطوير عمليات البيع الرقمي عبر منصات متكاملة
               للتجارة الإلكترونية.
@@ -60,8 +58,7 @@ export default async function EcommerceUnitSection() {
               <div className="absolute inset-0 bg-gradient-to-l from-black/55 via-black/25 to-black/5" />
               <div className="absolute inset-0 flex items-center justify-center md:justify-start px-6 md:px-10">
                 <h3
-                  className="font-bold text-center text-white"
-                  style={{ fontSize: "clamp(1.4rem, 2vw, 2rem)" }}
+                  className="font-bold text-center text-white text-2xl md:text-4xl"
                 >
                   منصة رقمية متكاملة للبيع والتوزيع
                 </h3>
@@ -80,16 +77,15 @@ export default async function EcommerceUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1">
                 <h3
-                  className="font-bold text-secondary"
-                  style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                  className="font-bold text-secondary text-xl md:text-3xl"
                 >
                   أهداف الوحدة
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <Target
                     style={{
-                      width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                      height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                      width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                      height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                     }}
                     strokeWidth={2}
                   />
@@ -100,12 +96,9 @@ export default async function EcommerceUnitSection() {
                   <li
                     key={item}
                     className={cn(
-                      "text-secondary/85 pb-2",
+                      "text-secondary/85 pb-2 text-base md:text-xl",
                       idx !== unitObjectives.length - 1 && "border-b border-secondary/10"
                     )}
-                    style={{
-                      fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                    }}
                   >
                     {item}
                   </li>
@@ -122,16 +115,15 @@ export default async function EcommerceUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1">
                 <h3
-                  className="font-bold text-secondary"
-                  style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                  className="font-bold text-secondary text-xl md:text-3xl"
                 >
                   مهام الوحدة
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <ShoppingBag
                     style={{
-                      width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                      height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                      width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                      height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                     }}
                     strokeWidth={2}
                   />
@@ -142,12 +134,9 @@ export default async function EcommerceUnitSection() {
                   <li
                     key={task}
                     className={cn(
-                      "text-secondary/85 pb-2",
+                      "text-secondary/85 pb-2 text-base md:text-xl",
                       idx !== unitTasks.length - 1 && "border-b border-secondary/10"
                     )}
-                    style={{
-                      fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)",
-                    }}
                   >
                     {task}
                   </li>
