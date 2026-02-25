@@ -36,7 +36,7 @@ export function CTASection() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white tracking-tight drop-shadow-xl">
             هل تحتاج إلى خدمة مخصصة؟
           </h2>
-          <p className="text-xl md:text-2xl text-blue-100 mb-12 leading-relaxed font-medium max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-blue-100 mb-12 leading-relaxed font-medium  mx-auto">
             فريقنا من الخبراء جاهز لمساعدتك في العثور على الحل الأمثل لأعمالك.
             تواصل معنا اليوم للحصول على استشارة مجانية وحلول مصممة خصيصاً
             لاحتياجاتكم.
