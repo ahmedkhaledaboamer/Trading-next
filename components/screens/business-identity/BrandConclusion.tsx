@@ -93,7 +93,16 @@ export function BrandConclusion() {
               duration: 1,
             }}
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-brand-navy mb-8 leading-tight">
+            <h2
+              className="text-5xl md:text-7xl font-bold text-brand-navy mb-8 leading-tight inline-block"
+              style={{
+                background:
+                  'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.85))',
+                padding: '12px 26px',
+                borderRadius: '9999px',
+                border: '1px solid rgba(200, 164, 92, 0.5)',
+              }}
+            >
               كي إي بي{' '}
               <span
                 style={{
@@ -107,7 +116,17 @@ export function BrandConclusion() {
               </span>
             </h2>
 
-            <p className="text-2xl md:text-3xl text-brand-dark/80 font-light mb-12 leading-relaxed">
+            <p
+              className="text-2xl md:text-3xl text-brand-dark/80 font-light mb-12 leading-relaxed inline-block"
+              style={{
+                background:
+                  'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(15, 23, 42, 0.08))',
+                color: '#0F172A',
+                padding: '10px 24px',
+                borderRadius: '9999px',
+                border: '1px solid rgba(148, 163, 184, 0.6)',
+              }}
+            >
               ليست مجرد شركة… هي أسلوب تعامل، طريقة تفكير، ومعيار جودة.
             </p>
 
@@ -118,7 +137,17 @@ export function BrandConclusion() {
               }}
             ></div>
 
-            <p className="text-xl text-brand-dark/70  mb-8">
+            <p
+              className="text-xl text-brand-dark/70  mb-8 inline-block"
+              style={{
+                background:
+                  'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(200, 164, 92, 0.12))',
+                color: '#0F172A',
+                padding: '8px 22px',
+                borderRadius: '9999px',
+                border: '1px solid rgba(200, 164, 92, 0.6)',
+              }}
+            >
               هذه هوية مكتوبة بوضوح، وقوة، وثقة… لتقول للعميل:
             </p>
 

@@ -90,11 +90,22 @@ export function BrandPartner() {
                 padding: '14px 32px',
                 borderRadius: '10px',
                 display: 'inline-block',
+                border: '1px solid rgba(13, 148, 136, 0.55)',
               }}
             >
               ما الذي يجعلنا مختلفين؟
             </h2>
-            <p className="text-xl text-brand-dark/70">
+            <p
+              className="text-xl text-brand-dark/70 w-fit mx-auto"
+              style={{
+                background:
+                  'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(13, 148, 136, 0.12))',
+                color: '#0F172A',
+                padding: '10px 22px',
+                borderRadius: '9999px',
+                border: '1px solid rgba(13, 148, 136, 0.45)',
+              }}
+            >
               نحن لا نختلف بالكلام… بل بطريقة العمل
             </p>
           </motion.div>

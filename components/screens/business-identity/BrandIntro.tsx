@@ -1,7 +1,9 @@
 'use client'
  import { motion } from 'framer-motion'
 import { Target, Eye, Zap, Shield, Award, HeartHandshake } from 'lucide-react'
-export function BrandIntro() {
+import Image from 'next/image'
+export function BrandIntro( {locale}: {locale: string} ) {
+    const isRTL = locale === "ar";
     const personalityTraits = [
         {
           icon: <Target className="w-6 h-6" />,
@@ -43,7 +45,7 @@ export function BrandIntro() {
   return (
     <>
       {/* Introduction Section */}
-      <section className="p-[5%] bg-brand-cream relative overflow-hidden">
+      <section className="p-[5%] bg-brand-cream relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
         <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
         <div className=" px-4 sm:px-6 lg:px-8">
@@ -78,10 +80,12 @@ export function BrandIntro() {
                     borderColor: '#0D9488',
                   }}
                 />
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
                   alt="Business Meeting"
-                  className="rounded-lg shadow-2xl w-full object-cover h-[500px] grayscale hover:grayscale-0 transition-all duration-700"
+                  className="rounded-lg shadow-2xl w-full object-cover h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] grayscale-0 hover:grayscale transition-all duration-700"
+                  width={800}
+                  height={500}
                 />
               </div>
             </motion.div>
@@ -111,18 +115,15 @@ export function BrandIntro() {
                   color: '#C8A45C',
                   padding: '12px 24px',
                   borderRadius: '8px',
+                  border: '1px solid rgba(200, 164, 92, 0.6)',
                 }}
               >
                 مقدمة
               </h2>
 
-              <div className="space-y-6 text-lg text-brand-dark/80 leading-relaxed">
+              <div className="space-y-6 text-lg md:text-xl lg:text-2xl xl:text-3xl text-white leading-relaxed bg-gradient-to-r from-[#74dddb8f] to-[#354ad1] p-6 rounded-lg shadow-lg border border-amber-400/30">
                 <div className="flex items-start gap-4 mb-6">
-                  <img
-                    src="https://images.unsplash.com/photo-1494412574643-ff11b0a5eb95?w=200"
-                    alt="Globe"
-                    className="w-24 h-24 rounded-lg object-cover shadow-md border-2 border-brand-gold/30"
-                  />
+
                   <p className="flex-1">
                     في كي إي بي للتجارة، اخترنا أن نكتب تعريفنا بطريقة لا تشبه
                     أحدًا، لأننا ببساطة لا نعمل مثل أحد.
@@ -135,9 +136,9 @@ export function BrandIntro() {
                   حقيقة تُقال كما هي.
                 </p>
                 <p
-                  className="font-bold text-xl pr-4"
+                  className="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl pr-4"
                   style={{
-                    color: '#0A1628',
+                    color: '#ffff00',
                     borderRight: '4px solid #C8A45C',
                   }}
                 >
@@ -155,7 +156,7 @@ export function BrandIntro() {
                 <p
                   className="italic"
                   style={{
-                    color: '#0D9488',
+                    color: '#eeeee0',
                   }}
                 >
                   هذه الصفحة ليست مقدمة… هذه هوية مكتوبة بصدق، وبأسلوب يعكس
@@ -168,7 +169,7 @@ export function BrandIntro() {
       </section>
 
       {/* Brand Personality Section - Converted to Light */}
-      <section className="px-[5%] bg-white relative">
+      <section className="px-[5%] bg-white relative" dir={isRTL ? "rtl" : "ltr"}>
         <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
         <div className=" px-4 sm:px-6 lg:px-8 relative z-10">
@@ -188,25 +189,14 @@ export function BrandIntro() {
               }}
               className="lg:col-span-1 h-full min-h-[400px] relative rounded-2xl overflow-hidden shadow-2xl"
             >
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800"
+              <Image
+                src="/images/1.webp"
                 alt="Professional Portrait"
                 className="absolute inset-0 w-full h-full object-cover"
+                width={800}
+                height={500}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-80" />
-              <div className="absolute bottom-8 right-8 left-8">
-                <h3 className="text-3xl font-bold text-brand-navy mb-2">
-                  شخصية فريدة
-                </h3>
-                <p
-                  className="font-medium"
-                  style={{
-                    color: '#D97706',
-                  }}
-                >
-                  تعكس قيمنا في كل تفصيل
-                </p>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#b23d03d7] via-transparent to-transparent opacity-80" />
             </motion.div>
 
             {/* Content */}
@@ -228,15 +218,28 @@ export function BrandIntro() {
                 }}
                 className="mb-12"
               >
-                <h2 className="text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+                <h2
+                  className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 inline-block"
+                  style={{
+                    background:
+                      "linear-gradient(120deg, #0A1628 0%, #0D9488 60%, #1E293B 100%)",
+                    color: "#E8D5A3",
+                    padding: "10px 22px",
+                    borderRadius: "9999px",
+                    border: "1px solid rgba(200, 164, 92, 0.6)",
+                  }}
+                >
                   شخصية العلامة التجارية
                 </h2>
                 <p
-                  className="text-xl font-bold"
+                  className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-2 w-fit"
                   style={{
-                    background: 'linear-gradient(90deg, #C8A45C, #D97706)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
+                    background:
+                      "linear-gradient(90deg, rgba(15, 23, 42, 0.04), rgba(15, 118, 110, 0.08))",
+                    color: "#0F172A",
+                    padding: "10px 18px",
+                    borderRadius: "9999px",
+                    border: "1px solid rgba(148, 163, 184, 0.6)",
                   }}
                 >
                   شخصيتنا ليست صوتًا مكتوبًا… بل أسلوب تعامل
@@ -269,7 +272,7 @@ export function BrandIntro() {
                   >
                     <div className="flex items-center gap-4 mb-4">
                       <div
-                        className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                        className="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 rounded-full flex items-center justify-center transition-all duration-300"
                         style={{
                           background: `${trait.color}20`,
                           color: trait.color,
@@ -277,11 +280,11 @@ export function BrandIntro() {
                       >
                         {trait.icon}
                       </div>
-                      <h3 className="text-xl font-bold text-brand-navy">
+                      <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-brand-navy">
                         {trait.title}
                       </h3>
                     </div>
-                    <p className="text-brand-dark/70">{trait.desc}</p>
+                    <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-brand-dark/70">{trait.desc}</p>
                   </motion.div>
                 ))}
               </div>

@@ -80,6 +80,7 @@ export function BrandOperations() {
                   padding: '10px 24px',
                   borderRadius: '8px',
                   display: 'inline-flex',
+                  border: '1px solid rgba(200, 164, 92, 0.6)',
                 }}
               >
                 <MessageCircle className="w-10 h-10" />
@@ -95,7 +96,17 @@ export function BrandOperations() {
                 />
               </div>
 
-              <p className="text-xl text-brand-dark/80 mb-8">
+              <p
+                className="text-xl text-brand-dark/80 mb-8 inline-block"
+                style={{
+                  background:
+                    'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(15, 23, 42, 0.08))',
+                  color: '#0F172A',
+                  padding: '10px 22px',
+                  borderRadius: '9999px',
+                  border: '1px solid rgba(148, 163, 184, 0.6)',
+                }}
+              >
                 نحن نتواصل مع العميل بطريقة واحدة فقط:
               </p>
 
@@ -233,9 +244,14 @@ export function BrandOperations() {
                 viewport={{
                   once: true,
                 }}
-                className="text-3xl md:text-4xl font-bold mb-8"
+                className="text-3xl md:text-4xl font-bold mb-8 inline-block"
                 style={{
-                  color: '#C8A45C',
+                  background:
+                    'linear-gradient(135deg, #0F172A 0%, #334155 45%, #0D9488 100%)',
+                  color: '#E8E7DC',
+                  padding: '10px 22px',
+                  borderRadius: '9999px',
+                  border: '1px solid rgba(15, 118, 110, 0.5)',
                 }}
               >
                 كيف نثبت قيمتنا؟
@@ -250,7 +266,17 @@ export function BrandOperations() {
                 />
               </div>
 
-              <p className="text-lg mb-8 text-brand-dark/80">
+              <p
+                className="text-lg mb-8 text-brand-dark/80 inline-block"
+                style={{
+                  background:
+                    'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(22, 163, 74, 0.08))',
+                  color: '#064E3B',
+                  padding: '8px 20px',
+                  borderRadius: '9999px',
+                  border: '1px solid rgba(34, 197, 94, 0.35)',
+                }}
+              >
                 نثبت قيمتنا بالفعل لا بالكلام، وبالنتيجة لا بالوعود:
               </p>
 
@@ -311,12 +337,14 @@ export function BrandOperations() {
                 viewport={{
                   once: true,
                 }}
-                className="text-3xl md:text-4xl font-bold mb-8 text-brand-navy"
+                className="text-3xl md:text-4xl font-bold mb-8 text-brand-navy inline-block"
                 style={{
-                  background: 'linear-gradient(90deg, #C8A45C, transparent)',
-                  padding: '8px 20px',
-                  borderRadius: '4px',
+                  background:
+                    'linear-gradient(90deg, #C8A45C 0%, #0A1628 70%, transparent 100%)',
+                  padding: '10px 22px',
+                  borderRadius: '9999px',
                   color: 'white',
+                  border: '1px solid rgba(15, 23, 42, 0.45)',
                 }}
               >
                 كيف نُظهر مصداقيتنا؟
@@ -332,9 +360,14 @@ export function BrandOperations() {
               </div>
 
               <p
-                className="text-lg mb-8 font-medium"
+                className="text-lg mb-8 font-medium inline-block"
                 style={{
-                  color: '#D97706',
+                  background:
+                    'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.9))',
+                  color: '#92400E',
+                  padding: '8px 20px',
+                  borderRadius: '9999px',
+                  border: '1px solid rgba(234, 179, 8, 0.4)',
                 }}
               >
                 المصداقية ليست خيارًا… هي جزء من نظام التشغيل:

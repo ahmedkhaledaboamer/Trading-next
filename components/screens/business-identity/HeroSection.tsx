@@ -1,45 +1,58 @@
 'use client'
- import { motion } from 'framer-motion'
-import { ArrowLeft } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
+
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1628] text-white">
+    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-black/60" />
         <Image
-          src="/images/image_2710.webp"
-          alt="Global Trade Background"
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+          alt="Modern Skyscraper"
+          className="w-full h-full object-cover"
           width={1920}
           height={1080}
-          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#0A1628]/80 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-transparent to-[#0A1628]/50" />
+        <div className="absolute inset-0 bg-black-to-b from-brand-navy/90 via-brand-navy/70 to-brand-navy/90" />
       </div>
 
-      {/* Background Gradients & Shapes */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-[#0E7490] opacity-20 blur-[100px]" />
-        <div className="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#D4A853] opacity-10 blur-[100px]" />
+      {/* Floating Decorative Elements */}
+      <motion.div
+        animate={{
+          y: [0, -20, 0],
+          opacity: [0.5, 0.8, 0.5],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+        }}
+        className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full blur-3xl"
+        style={{
+          background: '#0D9488',
+          opacity: 0.2,
+        }}
+      />
+      <motion.div
+        animate={{
+          y: [0, 20, 0],
+          opacity: [0.5, 0.8, 0.5],
+        }}
+        transition={{
+          duration: 7,
+          repeat: Infinity,
+        }}
+        className="absolute bottom-1/3 right-1/4 w-40 h-40 rounded-full blur-3xl"
+        style={{
+          background: '#D97706',
+          opacity: 0.2,
+        }}
+      />
 
-        {/* Geometric Patterns (SVG) */}
-        <svg
-          className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-        >
-          <path d="M0 0 L100 0 L100 100 Z" fill="url(#grad1)" />
-          <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#D4A853" />
-              <stop offset="100%" stopColor="#0E7490" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10 text-center">
+      {/* Content */}
+      <div className="relative z-10 text-center px-4  ">
         <motion.div
           initial={{
             opacity: 0,
@@ -50,63 +63,124 @@ export function HeroSection() {
             y: 0,
           }}
           transition={{
-            duration: 0.8,
+            duration: 1,
+            ease: 'easeOut',
           }}
+          className="mb-8"
         >
-          <div className="inline-block mb-4 px-4 py-1 rounded-full border border-[#D4A853]/30 bg-[#D4A853]/10 text-[#D4A853] font-medium text-base md:text-lg lg:text-xl xl:text-3xl backdrop-blur-sm">
-            مسارك التجاري الموثوق
-          </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold mb-6 leading-tight drop-shadow-lg">
-            <span className="text-white">كي إي بي</span>
-            <span className="text-[#D4A853]"> للتجارة</span>
-            <span className="block text-xl md:text-2xl lg:text-3xl xl:text-5xl mt-4 font-normal text-gray-300">
-              ذ.م.م
-            </span>
-          </h1>
-
-          <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-200 mb-10  leading-relaxed drop-shadow-md">
-            شريكك التجاري الذي يفتح لك أبواب الأسواق بثقة وجودة وثبات.
-            <br />
-            في عالم تتسارع فيه حركة التجارة، نحن بوصلتك نحو النجاح.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="cursor-pointer text-base md:text-lg lg:text-xl xl:text-3xl px-8 py-4 bg-[#D4A853] text-[#0A1628] font-bold rounded-lg hover:bg-[#b68d40] transition-colors flex items-center gap-2 shadow-lg shadow-[#D4A853]/20">
-              اكتشف خدماتنا
-              <ArrowLeft className="w-5 h-5" />
-            </button>
-            <button className="cursor-pointer text-base md:text-lg lg:text-xl xl:text-3xl px-8 py-4 bg-white/10 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm">
-              تواصل معنا
-            </button>
-          </div>
+          <span
+            className="inline-block py-2 px-8 rounded-full text-lg md:text-xl lg:text-2xl xl:text-3xl tracking-wider mb-2 backdrop-blur-sm border border-white/10"
+            style={{
+              background: 'rgba(13, 148, 136, 0.15)',
+              color: '#E8D5A3',
+              border: '1px solid rgba(200, 164, 92, 0.3)',
+            }}
+          >
+            كي إي بي للتجارة
+          </span>
         </motion.div>
 
-        {/* Floating Elements */}
-        <motion.div
+        <motion.h1
+          initial={{
+            opacity: 0,
+            scale: 0.9,
+          }}
           animate={{
-            y: [0, -20, 0],
+            opacity: 1,
+            scale: 1,
           }}
           transition={{
-            repeat: Infinity,
-            duration: 6,
-            ease: 'easeInOut',
+            duration: 1.2,
+            delay: 0.2,
+            ease: 'easeOut',
           }}
-          className="absolute top-1/4 right-[10%] w-16 h-16 border-4 border-[#D4A853]/20 rounded-full hidden md:block backdrop-blur-sm"
+          className="text-4xl md:text-4xl lg:text-4xl xl:text-8xl font-bold text-white mb-8 leading-tight flex flex-col items-center gap-4"
+        >
+          <span
+            className="px-8 py-2 rounded-xl"
+            style={{
+              background: 'linear-gradient(135deg, #C8A45C, #E8D5A3)',
+              color: '#0A1628',
+              textShadow: 'none',
+            }}
+          >
+            الهوية التجارية
+          </span>
+         </motion.h1>
+
+        <motion.div
+          initial={{
+            width: 0,
+          }}
+          animate={{
+            width: '150px',
+          }}
+          transition={{
+            duration: 1.5,
+            delay: 0.8,
+          }}
+          className="h-1 mx-auto mb-8"
+          style={{
+            background: 'linear-gradient(90deg, #0D9488, #C8A45C, #D97706)',
+          }}
         />
-        <motion.div
+
+        <motion.p
+          initial={{
+            opacity: 0,
+          }}
           animate={{
-            y: [0, 20, 0],
+            opacity: 1,
           }}
           transition={{
-            repeat: Infinity,
-            duration: 5,
-            ease: 'easeInOut',
+            duration: 1,
             delay: 1,
           }}
-          className="absolute bottom-1/4 left-[10%] w-24 h-24 border-4 border-[#0E7490]/30 rounded-lg rotate-45 hidden md:block backdrop-blur-sm"
-        />
+          className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white  font-bold leading-relaxed"
+        >
+          أسلوب تعامل، طريقة تفكير، ومعيار جودة ينعكس في كل خطوة
+        </motion.p>
       </div>
+
+     
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          delay: 2,
+          duration: 1,
+        }}
+        className="absolute bottom-8 xl:bottom-28 left-1/2 transform -translate-x-1/2 z-10"
+      >
+        <motion.div
+          animate={{
+            y: [0, 10, 0],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 2,
+          }}
+          className="flex flex-col items-center cursor-pointer"
+          style={{
+            color: '#E8D5A3',
+          }}
+          onClick={() => {
+            window.scrollTo({
+              top: window.innerHeight,
+              behavior: 'smooth',
+            });
+          }}
+        >
+          <span className="text-sm md:text-base lg:text-lg xl:text-2xl mb-2">اكتشف المزيد</span>
+          <ChevronDown size={32} />
+        </motion.div>
+      </motion.div>
     </section>
   )
 }

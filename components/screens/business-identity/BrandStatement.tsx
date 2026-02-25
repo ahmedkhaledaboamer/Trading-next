@@ -8,7 +8,8 @@ import {
   Briefcase,
   Globe,
 } from 'lucide-react'
-export function BrandStatement() {
+export function BrandStatement( {locale}: {locale: string} ) {
+  const isRTL = locale === "ar";
   const dictionaryTerms = [
     {
       term: 'التوريد',
@@ -92,7 +93,7 @@ export function BrandStatement() {
   return (
     <>
       {/* Statement Section */}
-      <section className="p-[5%] bg-brand-cream relative">
+      <section className="p-[5%] bg-brand-cream relative" dir={isRTL ? "rtl" : "ltr"}>
         <div className="  sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -111,23 +112,29 @@ export function BrandStatement() {
                 duration: 0.8,
               }}
             >
-              <h2
-                className="text-4xl md:text-5xl font-bold mb-6"
-                style={{
-                  background:
-                    'linear-gradient(135deg, #0A1628 0%, #1a3a5c 100%)',
-                  color: 'white',
-                  padding: '16px 32px',
-                  borderRadius: '12px',
-                  display: 'inline-block',
-                }}
-              >
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6"
+              style={{
+                background:
+                  'linear-gradient(135deg, #0A1628 0%, #1a3a5c 100%)',
+                color: 'white',
+                padding: '16px 32px',
+                borderRadius: '12px',
+                border: '1px solid rgba(15, 23, 42, 0.5)',
+                width: 'fit-content',
+              }}
+            >
                 بيان كي إي بي للتجارة
               </h2>
               <p
-                className="font-semibold text-xl mb-8"
+                className="font-semibold text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-8 w-fit"
                 style={{
-                  color: '#D97706',
+                  background:
+                    'linear-gradient(120deg, rgba(248, 250, 252, 0.95), rgba(251, 191, 36, 0.22))',
+                  color: '#7C2D12',
+                  padding: '10px 22px',
+                  borderRadius: '9999px',
+                  border: '1px solid rgba(217, 119, 6, 0.45)',
                 }}
               >
                 هذا البيان ليس صياغة رسمية… بل إعلان صريح لطريقة عملنا
@@ -140,7 +147,7 @@ export function BrandStatement() {
                     borderColor: '#C8A45C',
                   }}
                 >
-                  <ul className="space-y-4 text-xl font-medium text-brand-dark">
+                  <ul className="space-y-4 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-brand-dark">
                     <li className="flex items-center gap-3">
                       <span
                         className="w-2 h-2 rounded-full"
@@ -180,7 +187,7 @@ export function BrandStatement() {
                   </ul>
                 </div>
 
-                <p className="text-lg text-brand-dark/80 leading-relaxed">
+                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-brand-dark/80 leading-relaxed">
                   نحن لا نبيع منتجات فقط… نحن نبني ثقة، ونصنع علاقة، ونقدّم
                   تجربة تعامل تُثبت نفسها مع الوقت، وتترك أثرًا يجعل العميل يعود
                   لأنه يريد، لا لأنه مضطر.
@@ -222,7 +229,7 @@ export function BrandStatement() {
       </section>
 
       {/* Dictionary Section - Converted to Light */}
-      <section className="p-[5%] bg-white relative overflow-hidden">
+      <section className="p-[5%] bg-white relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200"
@@ -249,13 +256,28 @@ export function BrandStatement() {
             }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brand-navy">
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 w-fit mx-auto"
+              style={{
+                background:
+                  'linear-gradient(135deg, #0F172A 0%, #0D9488 55%, #0F172A 100%)',
+                color: '#E8E7DC',
+                padding: '12px 26px',
+                borderRadius: '9999px',
+                border: '1px solid rgba(15, 118, 110, 0.5)',
+              }}
+            >
               قاموس كي إي بي
             </h2>
             <p
-              className="text-xl font-medium"
+              className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium w-fit mx-auto mt-3"
               style={{
-                color: '#D97706',
+                background:
+                  'linear-gradient(90deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.9))',
+                color: '#92400E',
+                padding: '8px 20px',
+                borderRadius: '9999px',
+                border: '1px solid rgba(234, 179, 8, 0.4)',
               }}
             >
               هذا القاموس ليس كلمات… بل فلسفة عمل
@@ -287,14 +309,14 @@ export function BrandStatement() {
                 }}
               >
                 <h3
-                  className="text-2xl font-bold mb-2"
+                  className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2"
                   style={{
                     color: item.color,
                   }}
                 >
                   {item.term}
                 </h3>
-                <p className="text-brand-dark/80 text-lg">{item.def}</p>
+                <p className="text-brand-dark/80 text-lg md:text-xl lg:text-2xl xl:text-3xl">{item.def}</p>
               </motion.div>
             ))}
           </div>
@@ -302,7 +324,7 @@ export function BrandStatement() {
       </section>
 
       {/* Values Section */}
-      <section className="p-[5%] bg-brand-cream relative">
+      <section className="p-[5%] bg-brand-cream relative" dir={isRTL ? "rtl" : "ltr"}>
         <div className="   sm:px-6 lg:px-8">
           <motion.div
             initial={{
@@ -317,13 +339,15 @@ export function BrandStatement() {
             className="text-center mb-16"
           >
             <h2
-              className="text-4xl md:text-5xl font-bold mb-8"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8"
               style={{
                 background: 'linear-gradient(90deg, #C8A45C 0%, #0A1628 100%)',
                 color: 'white',
                 padding: '12px 28px',
-                borderRadius: '8px',
-                display: 'inline-block',
+                borderRadius: '12px',
+                border: '1px solid rgba(15, 23, 42, 0.4)',
+                width: 'fit-content',
+                margin: '0 auto',
               }}
             >
               قيم كي إي بي للتجارة
@@ -331,7 +355,17 @@ export function BrandStatement() {
 
            
 
-            <p className="text-xl text-brand-dark/70">
+            <p
+              className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-brand-dark/70 w-fit mx-auto mt-3"
+              style={{
+                background:
+                  'linear-gradient(120deg, rgba(248, 250, 252, 0.95), rgba(15, 23, 42, 0.06))',
+                color: '#0F172A',
+                padding: '10px 22px',
+                borderRadius: '9999px',
+                border: '1px solid rgba(148, 163, 184, 0.6)',
+              }}
+            >
               قيمنا ليست شعارات… بل قواعد تشغيل لا نتجاوزها
             </p>
           </motion.div>
@@ -369,10 +403,10 @@ export function BrandStatement() {
                 >
                   <div className="w-8 h-8">{val.icon}</div>
                 </div>
-                <h3 className="text-2xl font-bold text-brand-navy mb-3">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-brand-navy mb-3">
                   {val.title}
                 </h3>
-                <p className="text-brand-dark/70 leading-relaxed">{val.desc}</p>
+                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-brand-dark/70 leading-relaxed">{val.desc}</p>
               </motion.div>
             ))}
           </div>
