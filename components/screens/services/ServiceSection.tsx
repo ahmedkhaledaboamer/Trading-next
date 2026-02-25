@@ -10,11 +10,14 @@ interface FilterBarProps {
   categories: FilterCategory[]
   activeFilter: string | null
   onFilterChange: (title: string | null) => void
+  /** When set, clicking a filter scrolls the page to this element (e.g. "services-start"). */
+  scrollToSectionId?: string
 }
 export function FilterBar({
   categories,
   activeFilter,
   onFilterChange,
+  scrollToSectionId,
 }: FilterBarProps) {
   const allCategories = [
     {
@@ -23,11 +26,30 @@ export function FilterBar({
     },
     ...categories,
   ]
+
+  const handleFilterClick = (title: string | null) => {
+    onFilterChange(title)
+    if (scrollToSectionId) {
+      const target = document.getElementById(scrollToSectionId)
+      if (target) {
+        const rect = target.getBoundingClientRect()
+        const isMobile = window.innerWidth < 768
+        const offset = isMobile ? 100 : 0
+        const top = window.scrollY + rect.top - offset
+
+        window.scrollTo({
+          top,
+          behavior: 'smooth',
+        })
+      }
+    }
+  }
+
   return (
-    <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200/60 shadow-sm  ">
-      <div className=" flex justify-center items-center px-4 py-4">
+    <div  className="sticky top-22 md:top-24 lg:top-24 z-40 bg-white/80 backdrop-blur-xl border-b border-gray-200/60 shadow-sm  ">
+      <div className=" flex justify-center items-center px-1 py-2 lg:px-4 lg:py8">
         <div
-          className="flex gap-3 overflow-x-auto scrollbar-hide pb-1"
+          className="flex gap-3 overflow-x-auto scrollbar-hide p-4"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
@@ -42,7 +64,7 @@ export function FilterBar({
               <motion.button
                 key={cat.title}
                 onClick={() =>
-                  onFilterChange(cat.title === 'الكل' ? null : cat.title)
+                  handleFilterClick(cat.title === 'الكل' ? null : cat.title)
                 }
                 whileHover={{
                   scale: 1.05,
@@ -50,7 +72,7 @@ export function FilterBar({
                 whileTap={{
                   scale: 0.95,
                 }}
-                className="relative flex-shrink-0 px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 border-2"
+                className="relative flex-shrink-0 px-4 py-2 lg:px-6 lg:py-4 rounded-full text-base md:text-lg lg:text-xl xl:text-3xl font-bold transition-all duration-300 border-2 cursor-pointer"
                 style={{
                   backgroundColor: isActive ? cat.accentColor : 'transparent',
                   color: isActive ? '#fff' : cat.accentColor,
@@ -142,15 +164,12 @@ export function ServiceSection({
             viewport={{
               once: true,
             }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 inline-block relative pb-2"
+            style={{
+              backgroundColor: accentColor,
+            }}
+            className="p-5 rounded-2xl text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 inline-block relative"
           >
             {title}
-            <span
-              className="absolute bottom-0 left-0 w-full h-1 rounded-full"
-              style={{
-                backgroundColor: accentColor,
-              }}
-            />
           </motion.h2>
 
           {subtitle && (
@@ -167,7 +186,11 @@ export function ServiceSection({
               transition={{
                 delay: 0.2,
               }}
-              className="text-gray-600   text-lg"
+              className="text-gray-600 w-fit mx-auto text-base md:text-lg lg:text-xl xl:text-3xl border-2 rounded-2xl px-4 py-2"
+              style={{
+                borderColor: accentColor,
+                color: accentColor,
+              }}
             >
               {subtitle}
             </motion.p>

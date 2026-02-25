@@ -1,6 +1,7 @@
 'use client'
  import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
+import Image from 'next/image'
 export function HeroSection() {
   return (
     <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden text-white">
@@ -14,13 +15,15 @@ export function HeroSection() {
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920&h=1080"
           alt="خلفية تجارية"
           className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
         />
         {/* Dark gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a237e]/85 via-[#0d47a1]/80 to-[#00897b]/75"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       {/* Animated Background Shapes */}
@@ -92,7 +95,7 @@ export function HeroSection() {
           }}
         >
           <div className="inline-block mb-6 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
-            <span className="text-lg md:text-xl font-medium text-teal-100">
+            <span className="text-base md:text-lg lg:text-xl xl:text-3xl font-medium text-teal-100">
               شريكك الأول في التجارة والتقنية
             </span>
           </div>
@@ -104,7 +107,7 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-blue-100   leading-relaxed mb-10 font-light">
+          <p className="text-xl lg:text-2xl xl:text-4xl text-blue-100   leading-relaxed mb-10 font-light">
             نقدّم مجموعة واسعة من الخدمات التجارية والتقنية التي تلبي احتياجات
             الشركات والأفراد، مع التزام كامل بالجودة، الاحترافية، والمعايير
             العالمية.
@@ -117,7 +120,7 @@ export function HeroSection() {
             whileTap={{
               scale: 0.95,
             }}
-            className="px-8 py-4 bg-white text-blue-900 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center mx-auto gap-2"
+            className="px-8 py-4 bg-white text-blue-900 rounded-full font-bold text-base md:text-lg cursor-pointer lg:text-xl xl:text-3xl cursor-pointer shadow-lg hover:shadow-xl transition-all flex items-center mx-auto gap-2"
             onClick={() => {
               document.getElementById('services-start')?.scrollIntoView({
                 behavior: 'smooth',
