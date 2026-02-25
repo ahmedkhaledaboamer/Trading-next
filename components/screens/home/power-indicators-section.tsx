@@ -25,7 +25,7 @@ export default function PowerIndicatorsSection() {
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage:
-            "url('https://www.transparenttextures.com/patterns/cubes.png')",
+            "url('images/36.webp')",
         }}
       />
 

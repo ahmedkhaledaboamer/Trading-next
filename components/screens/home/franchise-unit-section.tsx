@@ -130,7 +130,7 @@ export default async function FranchiseUnitSection() {
                 )}
               >
                 <Image
-                  src="/images/10.webp"
+                  src="/images/29.webp"
                   alt="اجتماع عمل لوحدة الامتياز التجاري"
                   width={900}
                   height={600}

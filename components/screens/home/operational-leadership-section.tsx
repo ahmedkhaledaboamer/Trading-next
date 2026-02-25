@@ -30,7 +30,7 @@ const rooms: Room[] = [
       "متابعة اتجاهات الطلب",
       "تقييم المخاطر التجارية",
     ],
-    imageSrc: "/images/2.webp",
+    imageSrc: "/images/32.webp",
     imageAlt: "شاشة تعرض حركة الأسعار في الأسواق المالية",
   },
   {
@@ -43,7 +43,7 @@ const rooms: Room[] = [
       "تتبع الشحنات في الوقت الفعلي",
       "ضمان ثبات الإمداد",
     ],
-    imageSrc: "/images/9.webp",
+    imageSrc: "/images/33.webp",
     imageAlt: "ممرات شحن وموانئ لوجستية",
   },
   {
@@ -56,7 +56,7 @@ const rooms: Room[] = [
       "مراجعة شهادات الجودة",
       "ضمان مطابقة المواصفات الدولية",
     ],
-    imageSrc: "/images/1.webp",
+    imageSrc: "/images/34.webp",
     imageAlt: "مكونات إلكترونية تخضع للفحص والجودة",
   },
   {
@@ -69,7 +69,7 @@ const rooms: Room[] = [
       "تنسيق عمليات التسليم",
       "رفع كفاءة الحركة اللوجستية",
     ],
-    imageSrc: "/images/3.webp",
+    imageSrc: "/images/35.webp",
     imageAlt: "أوناش وساحات شحن في ميناء تجاري",
   },
 ];

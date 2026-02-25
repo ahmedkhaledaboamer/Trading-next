@@ -34,19 +34,28 @@ export default async function BusinessEntitySection() {
             {/* Text / left side */}
             <div className="flex flex-col gap-6">
               <p
-                className="text-primary font-semibold text-base md:text-3xl"
+                className="text-primary font-semibold"
+                style={{
+                  fontSize: "clamp(2rem, 1.05vw, 1.05rem)",
+                }}
               >
                 الكيان التجاري
               </p>
 
               <h2
-                className="text-secondary font-bold leading-tight text-2xl md:text-5xl"
+                className="text-secondary font-bold leading-tight"
+                style={{
+                  fontSize: "clamp(3rem, 2.6vw, 2.8rem)",
+                }}
               >
                 منظومة متكاملة تدير حركة التجارة باحترافية عالية
               </h2>
 
               <p
-                className="text-secondary/80 text-base md:text-2xl"
+                className="text-secondary/80"
+                style={{
+                  fontSize: "clamp(2rem, 1.15vw, 1.15rem)",
+                }}
               >
                 كي إي بي للتجارة تعمل وفق نموذج تشغيل متقدم يدمج بين الرؤية
                 الاستراتيجية والتنفيذ الدقيق لضمان الريادة في السوق.
@@ -69,15 +78,18 @@ export default async function BusinessEntitySection() {
                         <Icon
                           className="text-primary"
                           style={{
-                            width: "1.3rem",
-                            height: "1.3rem",
+                            width: "2rem",
+                            height: "2rem",
                           }}
                           strokeWidth={2}
                           aria-hidden
                         />
                       </span>
                       <span
-                        className="text-secondary font-semibold text-base md:text-xl"
+                        className="text-secondary font-semibold"
+                        style={{
+                          fontSize: "clamp(2rem, 1.05vw, 1.05rem)",
+                        }}
                       >
                         {feature.title}
                       </span>
@@ -88,7 +100,10 @@ export default async function BusinessEntitySection() {
 
               {/* Highlighted quote */}
               <div
-                className="mt-4 rounded-2xl bg-primary/5 border border-primary/30 px-5 py-4 text-secondary/90 text-base md:text-xl"
+                className="mt-4 rounded-2xl bg-primary/5 border border-primary/30 px-5 py-4 text-secondary/90"
+                style={{
+                  fontSize: "clamp(2rem, 1.05vw, 1.05rem)",
+                }}
               >
                 “نُدير عمليات الاستيراد، التصدير، التوزيع، والتوريد عبر منظومة
                 تشغيلية تضمن السرعة، الثبات، والجودة في كل خطوة.”
@@ -113,7 +128,7 @@ export default async function BusinessEntitySection() {
       )}
     >
       <Image
-        src="/images/10.webp"
+        src="/images/40.webp"
         alt="منظومة متكاملة تدير حركة التجارة"
         width={900}
         height={600}

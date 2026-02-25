@@ -48,7 +48,7 @@ export default async function InternationalExpansionSection() {
           <div className="group relative overflow-hidden shadow-2xl rounded-3xl bg-transparent">
             <div className="h-80 relative overflow-hidden">
               <Image
-                src="/images/2.webp"
+                src="/images/30.webp"
                 alt="مهام وحدة التوسع الدولي"
                 fill
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -79,7 +79,7 @@ export default async function InternationalExpansionSection() {
           <div className="group relative overflow-hidden shadow-2xl rounded-3xl bg-transparent">
             <div className="h-80 relative overflow-hidden">
               <Image
-                src="/images/1.webp"
+                src="/images/31.webp"
                 alt="نتائج وحدة التوسع الدولي"
                 fill
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

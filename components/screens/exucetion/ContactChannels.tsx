@@ -4,9 +4,12 @@ import {
   MessageCircleIcon,
   UserCheckIcon,
 } from 'lucide-react'
-export function ContactChannels() {
+import { getLocale } from 'next-intl/server';
+export async function ContactChannels() {
+  const locale = await getLocale();
+  const isRTL = locale === "ar";
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section className="relative bg-white overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
       <div className="flex flex-col lg:flex-row h-full">
         {/* Image Side */}
         <div className="lg:w-1/2 h-96 lg:h-auto relative min-h-[500px]">

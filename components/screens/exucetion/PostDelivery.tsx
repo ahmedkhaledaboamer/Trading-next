@@ -1,7 +1,10 @@
 import { PostDeliveryProgress } from './PostDeliveryProgress'
-export function PostDelivery() {
+import { getLocale } from 'next-intl/server';
+export async function PostDelivery() {
+  const locale = await getLocale();
+  const isRTL = locale === "ar";
   return (
-    <section className="relative py-24 overflow-hidden bg-black/70">
+    <section className="relative py-24 overflow-hidden bg-black/70" dir={isRTL ? "rtl" : "ltr"}>
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20"
         style={{

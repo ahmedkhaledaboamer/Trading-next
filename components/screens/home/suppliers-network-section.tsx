@@ -30,7 +30,7 @@ export default async function SuppliersNetworkSection() {
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/9.webp"
+          src="/images/37.webp"
           alt="شبكة مورّدين عالمية في الموانئ البحرية"
           fill
           className="object-cover"
