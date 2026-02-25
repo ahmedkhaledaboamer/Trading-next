@@ -1,4 +1,4 @@
- import {  Globe } from "lucide-react";
+import {  Globe } from "lucide-react";
 import Image from "next/image";
 import { getLocale } from "next-intl/server";
 
@@ -30,14 +30,12 @@ export default async function InternationalExpansionSection() {
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4 mb-12 md:mb-16">
           <h2
-            className="font-bold text-secondary leading-tight"
-            style={{ fontSize: "clamp(1.9rem, 2.6vw, 2.7rem)" }}
+            className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
           >
             وحدة التوسع الدولي
           </h2>
           <p
-            className="text-secondary/80  "
-            style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+            className="text-secondary/80 text-base md:text-2xl"
           >
             وحدة استراتيجية مسؤولة عن فتح أسواق جديدة وتوسيع نطاق النفوذ
             التجاري لشركائنا حول العالم.
@@ -60,15 +58,14 @@ export default async function InternationalExpansionSection() {
             </div>
 
             <div className="bg-[#F8F6F1] p-8 md:p-10 relative z-10 -mt-10 mx-4 md:mx-6 shadow-lg rounded-3xl">
-              <h3 className="text-xl md:text-2xl font-bold text-[#1A1A2E] mb-6 md:mb-8 tracking-wide border-b border-[#C9A84C]/20 pb-4">
+              <h3 className="text-xl md:text-3xl font-bold text-[#1A1A2E] mb-6 md:mb-8 tracking-wide border-b border-[#C9A84C]/20 pb-4">
                 مهام الوحدة
               </h3>
               <ul className="space-y-3 md:space-y-4">
                 {unitTasks.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-3 md:gap-4 text-[#4A4A5A]"
-                    style={{ fontSize: "clamp(1rem, 1.1vw, 1.1rem)" }}
+                    className="flex items-center gap-3 md:gap-4 text-[#4A4A5A] text-base md:text-xl"
                   >
                     <div className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full" />
                     {item}
@@ -92,15 +89,14 @@ export default async function InternationalExpansionSection() {
             </div>
 
             <div className="bg-[#F8F6F1] p-8 md:p-10 relative z-10 -mt-10 mx-4 md:mx-6 shadow-lg rounded-3xl">
-              <h3 className="text-xl md:text-2xl font-bold text-[#1A1A2E] mb-6 md:mb-8 tracking-wide border-b border-[#C9A84C]/20 pb-4">
+              <h3 className="text-xl md:text-3xl font-bold text-[#1A1A2E] mb-6 md:mb-8 tracking-wide border-b border-[#C9A84C]/20 pb-4">
                 نتائج الوحدة
               </h3>
               <ul className="space-y-3 md:space-y-4">
                 {unitResults.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-3 md:gap-4 text-[#4A4A5A]"
-                    style={{ fontSize: "clamp(1rem, 1.1vw, 1.1rem)" }}
+                    className="flex items-center gap-3 md:gap-4 text-[#4A4A5A] text-base md:text-xl"
                   >
                     <div className="w-1.5 h-1.5 bg-[#C9A84C] rounded-full" />
                     {item}

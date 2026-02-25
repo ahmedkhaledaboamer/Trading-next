@@ -33,14 +33,12 @@ export default function PowerIndicatorsSection() {
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4 mb-12 md:mb-16">
           <h2
-            className="font-bold text-white leading-tight"
-            style={{ fontSize: "clamp(1.9rem, 2.6vw, 2.7rem)" }}
+            className="font-bold text-white leading-tight text-2xl md:text-6xl"
           >
             مؤشرات القوة
           </h2>
           <p
-            className="text-white/80  "
-            style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+            className="text-white/80 text-base md:text-2xl"
           >
             معايير أداء تعكس ثباتًا وسيادة في التنفيذ التجاري عبر مختلف الوحدات
             التشغيلية.
@@ -64,10 +62,9 @@ export default function PowerIndicatorsSection() {
               <div className="absolute top-0 right-0 w-16 h-16 bg-[#F8F6F1] -mr-8 -mt-8 rotate-45 group-hover:bg-white/20 transition-colors" />
 
               <div className="flex items-center gap-4 relative z-10">
-                <div className="w-4 h-4 bg-[#C9A84C] group-hover:bg-white transition-colors duration-300 rounded-sm" />
+                <div className="w-6 h-6 bg-[#C9A84C] group-hover:bg-white transition-colors duration-300 rounded-sm" />
                 <span
-                  className="font-bold text-[#1A1A2E] group-hover:text-white transition-colors duration-300"
-                  style={{ fontSize: "clamp(1rem, 1.15vw, 1.15rem)" }}
+                  className="font-bold text-[#1A1A2E] group-hover:text-white transition-colors duration-300 text-base md:text-2xl"
                 >
                   {item}
                 </span>

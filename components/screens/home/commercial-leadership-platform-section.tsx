@@ -33,16 +33,16 @@ export default function CommercialLeadershipPlatformSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 md:mb-8 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-black text-white mb-6 md:mb-8 tracking-tight">
             منصة القيادة التجارية
           </h2>
-          <p className="text-xl md:text-2xl lg:text-3xl text-[#C9A84C] mb-10 md:mb-14 font-light">
+          <p className="text-2xl md:text-3xl text-[#C9A84C] mb-10 md:mb-14 font-light">
             حيث تُدار عملياتك بثبات، وتُنفّذ قراراتك بدقة
           </p>
 
           <div className="w-24 md:w-32 h-px bg-white/25 mx-auto mb-10 md:mb-14" />
 
-          <p className="text-lg md:text-2xl text-white/80  mb-10 md:mb-16 leading-relaxed font-light">
+          <p className="text-lg md:text-xl text-white/80  mb-10 md:mb-16 leading-relaxed font-light">
             كي إي بي للتجارة ليست مجرد وسيط… إنها منصة قيادة تدير عملياتك
             التجارية وتضمن لك:
           </p>
@@ -53,7 +53,7 @@ export default function CommercialLeadershipPlatformSection() {
                 key={item}
                 className="py-5 md:py-7 border border-[#C9A84C]/30 bg-white/5 backdrop-blur-sm hover:bg-[#C9A84C] hover:text-[#1A1A2E] hover:border-[#C9A84C] transition-all duration-500 cursor-default group rounded-2xl"
               >
-                <span className="text-lg md:text-xl font-bold text-white group-hover:text-[#1A1A2E] transition-colors">
+                <span className="text-base md:text-lg font-bold text-white group-hover:text-[#1A1A2E] transition-colors">
                   {item}
                 </span>
               </div>

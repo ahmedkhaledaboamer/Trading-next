@@ -20,14 +20,12 @@ export default function CommercialProtectionSection() {
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4">
           <h2
-            className="font-bold text-secondary leading-tight"
-            style={{ fontSize: "clamp(1.9rem, 2.6vw, 2.7rem)" }}
+            className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
           >
             نظام الحماية التجارية
           </h2>
           <p
-            className="text-secondary/80  "
-            style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+            className="text-secondary/80 text-base md:text-2xl"
           >
             نظام متكامل يضمن حماية رأس المال التجاري في كل مرحلة من مراحل
             سلسلة القيمة.
@@ -52,7 +50,7 @@ export default function CommercialProtectionSection() {
               />
             </div>
             <div className="absolute bottom-0 left-0 bg-[#1A1A2E] p-6 md:p-8 z-20   rounded-tr-3xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
+              <h3 className="text-2xl md:text-4xl font-bold text-white leading-tight">
                 حماية شاملة{" "}
                 <span className="text-[#C9A84C]">لكل مرحلة</span> من مراحل التجارة
               </h3>
@@ -78,8 +76,7 @@ export default function CommercialProtectionSection() {
                   <Shield className="w-6 h-6 text-[#C9A84C] group-hover:text-white transition-colors" />
                 </div>
                 <span
-                  className="font-bold text-[#1A1A2E] group-hover:text-[#C9A84C] transition-colors"
-                  style={{ fontSize: "clamp(1rem, 1.15vw, 1.15rem)" }}
+                  className="font-bold text-[#1A1A2E] group-hover:text-[#C9A84C] transition-colors text-base md:text-2xl"
                 >
                   {item}
                 </span>

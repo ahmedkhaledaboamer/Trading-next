@@ -87,10 +87,10 @@ function DomainCard({ domain }: { domain: Domain }) {
 
       {/* Content */}
       <div className="p-5 flex-grow flex flex-col justify-center text-right">
-        <h3 className="text-[clamp(1.5rem,2.5vw,2.3rem)] font-bold text-secondary mb-2">
+        <h3 className="text-2xl md:text-4xl font-bold text-secondary mb-2">
           {domain.title}
         </h3>
-        <p className="text-[clamp(0.95rem,1.4vw,1.2rem)] text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4">
+        <p className="text-base md:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4">
           {domain.description}
         </p>
       </div>
@@ -105,14 +105,12 @@ export default function CommercialDomainsSection() {
         {/* Header */}
         <header className="flex flex-col items-start text-right gap-3 mb-10 md:mb-12">
           <h2
-            className="font-bold text-secondary leading-tight"
-            style={{ fontSize: "clamp(1.9rem, 2.6vw, 2.7rem)" }}
+            className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
           >
             مجالات النفوذ التجاري
           </h2>
           <p
-            className="text-secondary/80  "
-            style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+            className="text-secondary/80 text-base md:text-2xl"
           >
             كل مجال هنا يمثل وحدة قوة داخل كيان الشركة، صُممت لتخدم احتياجات
             السوق وتفتح قنوات نفوذ جديدة.

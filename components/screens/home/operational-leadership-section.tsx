@@ -88,14 +88,12 @@ export default async function OperationalLeadershipSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.6vw, 2.6rem)" }}
+              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
             >
               منظومة القيادة التشغيلية
             </h2>
             <p
-              className="text-secondary/80"
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-secondary/80 text-base md:text-2xl"
             >
               هيكل قيادة متكامل يضمن السيطرة الكاملة على حركة التجارة عبر أربع
               غرف تحكم رئيسية.
@@ -128,8 +126,7 @@ export default async function OperationalLeadershipSection() {
 
                     {/* Faded number */}
                     <span
-                      className="absolute top-4 text-white/30 font-extrabold select-none leading-none"
-                      style={{ fontSize: "clamp(2.5rem, 3.5vw, 3.5rem)" }}
+                      className="absolute top-4 text-white/30 font-extrabold select-none leading-none text-4xl md:text-6xl"
                     >
                       {room.number}
                     </span>
@@ -139,8 +136,7 @@ export default async function OperationalLeadershipSection() {
                       {/* Title + icon */}
                       <div className="flex items-center justify-between gap-3">
                         <h3
-                          className="font-bold text-white"
-                          style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                          className="font-bold text-white text-xl md:text-3xl"
                         >
                           {room.title}
                         </h3>
@@ -148,8 +144,8 @@ export default async function OperationalLeadershipSection() {
                           <Icon
                             className="text-secondary"
                             style={{
-                              width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                              height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                              width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                              height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                             }}
                             strokeWidth={2}
                           />
@@ -161,12 +157,9 @@ export default async function OperationalLeadershipSection() {
                         {room.points.map((point, idx) => (
                           <li
                             key={idx}
-                            className="flex items-start gap-2 text-white/90"
-                            style={{
-                              fontSize: "clamp(0.9rem, 1.05vw, 1.05rem)",
-                            }}
+                            className="flex items-start gap-2 text-white/90 text-base md:text-xl"
                           >
-                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                            <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                             <span>{point}</span>
                           </li>
                         ))}

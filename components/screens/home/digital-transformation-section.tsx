@@ -32,14 +32,12 @@ export default async function DigitalTransformationSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight"
-              style={{ fontSize: "clamp(1.75rem, 2.4vw, 2.5rem)" }}
+              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
             >
               وحدة التحول الرقمي
             </h2>
             <p
-              className="text-secondary/80"
-              style={{ fontSize: "clamp(1rem, 1.2vw, 1.2rem)" }}
+              className="text-secondary/80 text-base md:text-2xl"
             >
               وحدة متخصصة في تطوير البنية الرقمية لضمان سرعة، دقة، وشفافية في كل
               عملية تشغيلية.
@@ -59,16 +57,15 @@ export default async function DigitalTransformationSection() {
               >
                 <div className="flex items-center justify-between gap-3 mb-1">
                   <h3
-                    className="font-bold text-secondary"
-                    style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                    className="font-bold text-secondary text-xl md:text-3xl"
                   >
                     مهام الوحدة
                   </h3>
                   <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                     <Zap
                       style={{
-                        width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                        height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                        width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                        height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                       }}
                       strokeWidth={2}
                     />
@@ -78,10 +75,9 @@ export default async function DigitalTransformationSection() {
                   {unitTasks.map((task) => (
                     <li
                       key={task}
-                      className="flex items-start gap-2 text-secondary/85"
-                      style={{ fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)" }}
+                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
                     >
-                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{task}</span>
                     </li>
                   ))}
@@ -97,16 +93,15 @@ export default async function DigitalTransformationSection() {
               >
                 <div className="flex items-center justify-between gap-3 mb-1">
                   <h3
-                    className="font-bold text-secondary"
-                    style={{ fontSize: "clamp(1.1rem, 1.3vw, 1.3rem)" }}
+                    className="font-bold text-secondary text-xl md:text-3xl"
                   >
                     أهداف الوحدة
                   </h3>
                   <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                     <ArrowRightLeft
                       style={{
-                        width: "clamp(1.2rem, 1.4vw, 1.4rem)",
-                        height: "clamp(1.2rem, 1.4vw, 1.4rem)",
+                        width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                        height: "clamp(1.4rem, 1.4vw, 1.4rem)",
                       }}
                       strokeWidth={2}
                     />
@@ -116,10 +111,9 @@ export default async function DigitalTransformationSection() {
                   {unitGoals.map((goal) => (
                     <li
                       key={goal}
-                      className="flex items-start gap-2 text-secondary/85"
-                      style={{ fontSize: "clamp(0.95rem, 1.05vw, 1.05rem)" }}
+                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl"
                     >
-                      <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{goal}</span>
                     </li>
                   ))}
