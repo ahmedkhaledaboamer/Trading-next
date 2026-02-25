@@ -23,7 +23,7 @@ const domains: Domain[] = [
   },
   {
     id: "export",
-    title: "منظومة التصدير والتوسع الخارجي",
+    title: "منظومة التصدير والتوسع ",
     description:
       "مسارات تجارية تفتح أبواب التسويق الإقليمي والدولي أمام شركائنا في أسواق مختارة بعناية.",
     image: "/images/16.webp",
@@ -44,7 +44,7 @@ const domains: Domain[] = [
     },
   {
     id: "mobiles",
-    title: "مركز الهواتف الذكية والإكسسوارات",
+    title: "مركز الهواتف الذكية",
     description:
       "أحدث الإصدارات العالمية من الهواتف الذكية مع منظومة توزيع مرنة تغطي قنوات متعددة.",
       image: "/images/19.webp",
@@ -58,7 +58,7 @@ const domains: Domain[] = [
     },
   {
     id: "photo-video",
-    title: "مركز التصوير الفوتوغرافي والسينمائي",
+    title: "مركز التصوير الفوتوغرافي",
     description:
       "معدات تصوير احترافية، عدسات، وإكسسوارات تدعم صناعة المحتوى بجودة عالية.",
       image: "/images/21.webp",
@@ -87,10 +87,10 @@ function DomainCard({ domain }: { domain: Domain }) {
 
       {/* Content */}
       <div className="p-5 flex-grow flex flex-col justify-center text-right">
-        <h3 className="text-2xl md:text-4xl font-bold text-secondary mb-2">
+        <h3 className="text-2xl md:text-3xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2">
           {domain.title}
         </h3>
-        <p className="text-base md:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4">
+        <p className="text-base md:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
           {domain.description}
         </p>
       </div>
@@ -105,12 +105,12 @@ export default function CommercialDomainsSection() {
         {/* Header */}
         <header className="flex flex-col items-start text-right gap-3 mb-10 md:mb-12">
           <h2
-            className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
+            className="inline-block font-bold text-cyan-900 leading-tight text-2xl md:text-6xl bg-cyan-100 border border-cyan-300 rounded-2xl px-6 py-4"
           >
             مجالات النفوذ التجاري
           </h2>
           <p
-            className="text-secondary/80 text-base md:text-2xl"
+            className="inline-block text-emerald-900 text-base md:text-2xl bg-emerald-50 border border-emerald-200 rounded-full px-5 py-2 mt-1"
           >
             كل مجال هنا يمثل وحدة قوة داخل كيان الشركة، صُممت لتخدم احتياجات
             السوق وتفتح قنوات نفوذ جديدة.

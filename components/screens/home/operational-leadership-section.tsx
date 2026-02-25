@@ -88,12 +88,12 @@ export default async function OperationalLeadershipSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
+              className="inline-block font-bold text-[#004D40] leading-tight text-2xl md:text-6xl bg-[#E0F2F1] border border-[#80CBC4] rounded-2xl px-6 py-4"
             >
               منظومة القيادة التشغيلية
             </h2>
             <p
-              className="text-secondary/80 text-base md:text-2xl"
+              className="inline-block text-[#004D40] text-base md:text-2xl bg-[#B2DFDB] border border-[#4DB6AC] rounded-full px-5 py-2"
             >
               هيكل قيادة متكامل يضمن السيطرة الكاملة على حركة التجارة عبر أربع
               غرف تحكم رئيسية.
@@ -113,7 +113,7 @@ export default async function OperationalLeadershipSection() {
                   )}
                 >
                   {/* Background image */}
-                  <div className="relative h-64 md:h-72 lg:h-80">
+                  <div className="relative h-64 md:h-72 lg:h-120">
                     <Image
                       src={room.imageSrc}
                       alt={room.imageAlt}
@@ -132,11 +132,11 @@ export default async function OperationalLeadershipSection() {
                     </span>
 
                     {/* Content overlay */}
-                    <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-7 lg:p-8 gap-3">
+                    <div className="absolute inset-15 flex flex-col justify-end p-6 md:p-7 lg:p-8 gap-3 z-10">
                       {/* Title + icon */}
                       <div className="flex items-center justify-between gap-3">
                         <h3
-                          className="font-bold text-white text-xl md:text-3xl"
+                          className="font-bold text-white text-xl md:text-3xl xl:text-4xl"
                         >
                           {room.title}
                         </h3>
@@ -144,8 +144,8 @@ export default async function OperationalLeadershipSection() {
                           <Icon
                             className="text-secondary"
                             style={{
-                              width: "clamp(1.4rem, 1.4vw, 1.4rem)",
-                              height: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                              width: "2rem",
+                              height: "2rem",
                             }}
                             strokeWidth={2}
                           />
@@ -157,7 +157,7 @@ export default async function OperationalLeadershipSection() {
                         {room.points.map((point, idx) => (
                           <li
                             key={idx}
-                            className="flex items-start gap-2 text-white/90 text-base md:text-xl"
+                            className="flex items-start gap-2 text-white/90 text-base md:text-xl xl:text-3xl"
                           >
                             <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                             <span>{point}</span>

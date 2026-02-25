@@ -40,7 +40,29 @@ const pillars: Pillar[] = [
       imageSrc: "/images/25.webp",
       imageAlt: "اجتماع عمل يخطط للاستراتيجيات التجارية",
   },
-  
+
+];
+
+const pillarTitleColors = [
+  "text-emerald-500",
+  "text-sky-500",
+  "text-fuchsia-500",
+  "text-orange-500",
+  "text-lime-500",
+  "text-rose-500",
+  "text-cyan-500",
+  "text-amber-500",
+];
+
+const pillarTitleBgColors = [
+  "bg-emerald-50 border border-emerald-200",
+  "bg-sky-50 border border-sky-200",
+  "bg-fuchsia-50 border border-fuchsia-200",
+  "bg-orange-50 border border-orange-200",
+  "bg-lime-50 border border-lime-200",
+  "bg-rose-50 border border-rose-200",
+  "bg-cyan-50 border border-cyan-200",
+  "bg-amber-50 border border-amber-200",
 ];
 
 export default async function CommercialInfluenceSection() {
@@ -54,12 +76,12 @@ export default async function CommercialInfluenceSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="font-bold text-secondary leading-tight text-2xl md:text-6xl"
+              className="inline-block font-bold text-emerald-800 leading-tight text-2xl md:text-6xl bg-emerald-100 border border-emerald-300 rounded-2xl px-6 py-4"
             >
               بنية النفوذ التجاري
             </h2>
-            <p
-              className="text-secondary/80 text-base md:text-2xl"
+            <p 
+              className="inline-block text-sky-800 text-base md:text-2xl bg-sky-100 border border-sky-300 rounded-full px-5 py-2"
             >
               هيكل القوة داخل كي إي بي للتجارة يعتمد على ثلاث ركائز رئيسية
               تمنحنا عمقاً في السوق وقدرة عالية على التحكم.
@@ -68,8 +90,13 @@ export default async function CommercialInfluenceSection() {
 
           {/* Pillars row */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-            {pillars.map((pillar) => {
+            {pillars.map((pillar, index) => {
               const Icon = pillar.icon;
+              const titleColor =
+                pillarTitleColors[index % pillarTitleColors.length];
+              const titleBg =
+                pillarTitleBgColors[index % pillarTitleBgColors.length];
+
               return (
                 <article
                   key={pillar.id}
@@ -105,7 +132,11 @@ export default async function CommercialInfluenceSection() {
 
                     <div className="mt-3 flex flex-col gap-2">
                       <h3
-                        className="font-bold text-secondary text-xl md:text-3xl"
+                        className={cn(
+                          "inline-block font-bold text-xl md:text-3xl rounded-full px-4 py-2",
+                          titleColor,
+                          titleBg
+                        )}
                       >
                         {pillar.title}
                       </h3>
