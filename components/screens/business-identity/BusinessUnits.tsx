@@ -13,7 +13,6 @@ import {
   FileText,
   CheckCircle,
   Handshake,
-  TrendingUp,
 } from 'lucide-react'
 import Image from 'next/image'
 export function BusinessUnits( {locale}: {locale: string} ) {
@@ -268,7 +267,7 @@ export function BusinessUnits( {locale}: {locale: string} ) {
     <section className="  bg-gradient-to-b from-white to-gray-50" dir={isRTL ? "rtl" : "ltr"}>
       <div className=" p-[5%]">
         <div className="text-center mb-16">
-          <span className="text-[#0E7490] font-bold tracking-wider uppercase text-sm bg-[#0E7490]/10 px-4 py-1 rounded-full">
+          <span className="text-[#0E7490] font-bold tracking-wider uppercase text-base md:text-lg lg:text-xl xl:text-3xl bg-[#0E7490]/10 px-4 py-1 rounded-full">
             منظومة متكاملة
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#0A1628] mt-4 mb-6">

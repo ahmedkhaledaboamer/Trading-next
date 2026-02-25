@@ -10,6 +10,7 @@ import {
   Eye,
   Star,
 } from 'lucide-react'
+import Image from 'next/image'
 export function WhyKEP( {locale}: {locale: string} ) {
   const isRTL = locale === "ar";
   const features = [
@@ -114,19 +115,14 @@ export function WhyKEP( {locale}: {locale: string} ) {
                 لماذا كي إي بي للتجارة؟
               </h2>
               <div className="w-20 h-1.5 bg-[#D4A853] rounded-full mb-8" />
-              <p className="text-xl md:text-2xl lg:text-3xl xl:text-5xl text-gray-600 font-light mb-8">
-                لأننا نؤمن أن العميل يستحق الأفضل دائماً.
-              </p>
-              <p className="text-gray-500 leading-relaxed text-base md:text-lg lg:text-xl xl:text-2xl mb-8">
-                نحن لا نقدم مجرد خدمات، بل نبني شراكات طويلة الأمد قائمة على
-                الثقة المتبادلة والنجاح المشترك.
-              </p>
 
               {/* Added Visual Image */}
-              <div className="rounded-2xl overflow-hidden shadow-lg mt-8 relative h-64 w-full">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
+              <div className="rounded-2xl overflow-hidden shadow-lg mt-8 relative h-120 w-full">
+                <Image
+                  src="/images/image_2710.webp"
                   alt="Team Collaboration"
+                  width={600}
+                  height={600}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 to-transparent" />
@@ -157,12 +153,12 @@ export function WhyKEP( {locale}: {locale: string} ) {
                   viewport={{
                     once: true,
                   }}
-                  className="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group"
+                  className="flex items-center p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group"
                 >
                   <div
-                    className={`w-12 h-12 rounded-full ${feature.bg} ${feature.color} flex items-center justify-center ml-4 shrink-0 group-hover:scale-110 transition-transform duration-300`}
+                    className={`w-16 h-16 rounded-full ${feature.bg} ${feature.color} flex items-center justify-center ml-4 shrink-0 group-hover:scale-110 transition-transform duration-300`}
                   >
-                    <div className="w-6 h-6">{feature.icon}</div>
+                    <div className="w-10 h-10 flex items-center justify-center">{feature.icon}</div>
                   </div>
                   <span className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold text-gray-800 group-hover:text-[#0A1628] transition-colors">
                     {feature.text}

@@ -53,7 +53,7 @@ export function HeroSection() {
             duration: 0.8,
           }}
         >
-          <div className="inline-block mb-4 px-4 py-1 rounded-full border border-[#D4A853]/30 bg-[#D4A853]/10 text-[#D4A853] font-medium text-sm backdrop-blur-sm">
+          <div className="inline-block mb-4 px-4 py-1 rounded-full border border-[#D4A853]/30 bg-[#D4A853]/10 text-[#D4A853] font-medium text-base md:text-lg lg:text-xl xl:text-3xl backdrop-blur-sm">
             مسارك التجاري الموثوق
           </div>
 
