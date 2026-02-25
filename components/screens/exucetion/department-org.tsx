@@ -6,6 +6,7 @@ import {
   ShieldCheckIcon,
   BarChartIcon,
 } from 'lucide-react'
+import { getLocale } from 'next-intl/server'
 const departments = [
   {
     title: 'الإدارة العليا',
@@ -197,9 +198,11 @@ const roleTitleColors = [
   'text-amber-300',
 ]
 
-export function DepartmentOrg() {
+export async function DepartmentOrg() {
+  const locale = await getLocale();
+  const isRTL = locale === "ar";
   return (
-    <section className="p-[5%] bg-white">
+    <section className="p-[5%] bg-white" dir={isRTL ? "rtl" : "ltr"}>
       <div className="mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-5xl font-bold text-indigo-800 mb-4 bg-indigo-100 border-2 border-indigo-400 rounded-xl px-8 py-4 inline-block">
@@ -236,7 +239,7 @@ export function DepartmentOrg() {
               </div>
 
               {/* Roles List */}
-              <div className="p-6 space-y-4 bg-gray-900/80 border-t border-gray-700 h-full">
+              <div className="p-6 space-y-4 bg-gray-900/80 border-t border-gray-700 h-full" dir={isRTL ? "rtl" : "ltr"}>
                 {dept.roles.map((role, rIdx) => (
                   <div
                     key={rIdx}

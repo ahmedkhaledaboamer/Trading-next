@@ -5,7 +5,7 @@ import {
   ArchiveIcon,
   FileBarChartIcon,
 } from 'lucide-react'
-
+import { getLocale } from 'next-intl/server';
 const featureBgColors = [
   'bg-emerald-600 border-emerald-400',
   'bg-sky-600 border-sky-400',
@@ -36,9 +36,11 @@ const features = [
     text: 'تقارير حالة الطلب الدورية',
   },
 ]
-export function DocumentationSystem() {
+export async function DocumentationSystem() {
+  const locale = await getLocale();
+  const isRTL = locale === "ar";
   return (
-    <section className="bg-white text-gray-700 overflow-hidden">
+    <section className="bg-white text-gray-700 overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
       <div className="flex flex-col lg:flex-row">
         {/* Content Side */}
         <div className="lg:w-1/2 pt-[5%] pr-[2%] pb-[5%] pl-[5%] flex flex-col justify-center">

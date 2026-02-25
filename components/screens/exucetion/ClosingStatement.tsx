@@ -1,8 +1,11 @@
 import { ArrowLeftIcon } from 'lucide-react'
 import Link from 'next/link'
-export function ClosingStatement() {
+import { getLocale } from 'next-intl/server';
+export async function ClosingStatement() {
+  const locale = await getLocale();
+  const isRTL = locale === "ar";
   return (
-    <section className="relative p-[5%] overflow-hidden flex items-center justify-center text-center">
+    <section className="relative p-[5%] overflow-hidden flex items-center justify-center text-center" dir={isRTL ? "rtl" : "ltr"}>
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"

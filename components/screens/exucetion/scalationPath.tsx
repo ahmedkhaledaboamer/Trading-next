@@ -4,6 +4,7 @@ import {
   SettingsIcon,
   ShieldIcon,
 } from 'lucide-react'
+import { getLocale } from 'next-intl/server';
 
 const stepBgColors = [
   'bg-gradient-to-br from-emerald-500 via-emerald-500/90 to-white border-emerald-400/70',
@@ -11,9 +12,11 @@ const stepBgColors = [
   'bg-gradient-to-br from-fuchsia-500 via-fuchsia-500/50 to-white border-fuchsia-400/70',
   'bg-gradient-to-br from-orange-500 via-orange-500/50 to-white border-orange-400/70',
 ]
-export function EscalationPath() {
+export async function EscalationPath() {
+  const locale = await getLocale();
+  const isRTL = locale === "ar";
   return (
-    <section className="p-[5%] bg-gray-50">
+    <section className="p-[5%] bg-gray-50" dir={isRTL ? "rtl" : "ltr"}>
       <div className="mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Image Side */}
