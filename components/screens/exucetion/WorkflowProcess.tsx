@@ -8,6 +8,7 @@ import {
   FileCheckIcon,
   TrendingUpIcon,
 } from 'lucide-react'
+import { getLocale } from 'next-intl/server';
 const steps = [
   {
     title: 'استقبال الطلب',
@@ -50,7 +51,7 @@ const steps = [
     desc: 'توثيق العملية بالكامل وإبلاغ العميل بإتمامها',
   },
 ]
-export function WorkflowProcess() {
+export async function WorkflowProcess() {
   const cardColors = [
     'bg-gradient-to-br from-emerald-500/25 via-emerald-500/10 to-transparent border-emerald-400/70',
     'bg-gradient-to-br from-sky-500/25 via-sky-500/10 to-transparent border-sky-400/70',
@@ -83,8 +84,10 @@ export function WorkflowProcess() {
     'text-cyan-300',
     'text-amber-300',
   ]
+  const locale = await getLocale();
+  const isRTL = locale === "ar";
   return (
-    <section className="relative py-24 overflow-hidden bg-black/70">
+    <section className="relative py-24 overflow-hidden bg-black/70" dir={isRTL ? "rtl" : "ltr"}>
       {/* Background Image with Fixed Attachment */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20"
