@@ -1,7 +1,9 @@
 'use client'
  import { motion } from 'framer-motion'
 import { Eye, Target, Flag } from 'lucide-react'
-export function VisionMissionGoal() {
+import Image from 'next/image'
+export function VisionMissionGoal( {locale}: {locale: string} ) {
+  const isRTL = locale === "ar";
   const cards = [
     {
       title: 'الرؤية',
@@ -31,9 +33,10 @@ export function VisionMissionGoal() {
       overlay: 'bg-amber-900/60',
     },
   ]
+  
   return (
-    <section className="py-20 bg-gray-50 relative">
-      <div className="container mx-auto px-4">
+    <section className="pt-5 pb-[2%] px-[5%] bg-gray-50 relative" dir={isRTL ? "rtl" : "ltr"}>
+      <div className=" mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-32 relative z-20">
           {cards.map((card, index) => (
             <motion.div
@@ -56,10 +59,12 @@ export function VisionMissionGoal() {
               className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
             >
               {/* Image Header */}
-              <div className="relative h-48 overflow-hidden">
-                <img
+              <div className="relative h-90 overflow-hidden">
+                <Image
                   src={card.image}
                   alt={card.title}
+                  width={500}
+                  height={500}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div
@@ -82,10 +87,10 @@ export function VisionMissionGoal() {
               <div className={`h-1 bg-gradient-to-r ${card.gradient}`} />
 
               <div className="p-8 flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 font-cairo flex items-center gap-2">
+                <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold text-gray-900 mb-4 font-cairo flex items-center gap-2">
                   {card.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">{card.text}</p>
+                <p className="text-gray-600 leading-relaxed text-base md:text-lg lg:text-xl xl:text-2xl">{card.text}</p>
               </div>
             </motion.div>
           ))}

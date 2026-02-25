@@ -13,9 +13,10 @@ import {
   FileText,
   CheckCircle,
   Handshake,
-  TrendingUp,
 } from 'lucide-react'
-export function BusinessUnits() {
+import Image from 'next/image'
+export function BusinessUnits( {locale}: {locale: string} ) {
+  const isRTL = locale === "ar";
   const units = [
     {
       id: 1,
@@ -263,16 +264,16 @@ export function BusinessUnits() {
     } 
   ]
   return (
-    <section className="  bg-gradient-to-b from-white to-gray-50">
+    <section className="  bg-gradient-to-b from-white to-gray-50" dir={isRTL ? "rtl" : "ltr"}>
       <div className=" p-[5%]">
         <div className="text-center mb-16">
-          <span className="text-[#0E7490] font-bold tracking-wider uppercase text-sm bg-[#0E7490]/10 px-4 py-1 rounded-full">
+          <span className="text-[#0E7490] font-bold tracking-wider uppercase text-base md:text-lg lg:text-xl xl:text-3xl bg-[#0E7490]/10 px-4 py-1 rounded-full">
             منظومة متكاملة
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#0A1628] mt-4 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#0A1628] mt-4 mb-6">
             وحداتنا المتخصصة
           </h2>
-          <p className="text-xl text-gray-600  ">
+          <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-600  ">
             وحدات استراتيجية متكاملة تعمل معًا لضمان نجاح عملائنا في كل خطوة من
             رحلتهم التجارية
           </p>
@@ -301,9 +302,11 @@ export function BusinessUnits() {
             >
               {/* Image Header */}
               <div className="h-36 w-full relative overflow-hidden">
-                <img
+                <Image
                   src={unit.image}
                   alt={unit.name}
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Gradient overlay matching unit color */}
@@ -318,32 +321,32 @@ export function BusinessUnits() {
               <div className="px-8 pb-8 pt-0 flex-1 flex flex-col">
                 <div className="flex items-center gap-4 mb-6 -mt-7 relative z-10">
                   <div
-                    className={`w-14 h-14 rounded-xl ${unit.bg} ${unit.color} flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300`}
+                    className={`w-16 h-16 rounded-xl ${unit.bg} ${unit.color} flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300`}
                   >
-                    <div className="w-7 h-7">{unit.icon}</div>
+                    <div className="w-8 h-8">{unit.icon}</div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 leading-tight pt-6">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 leading-tight pt-10">
                     {unit.name}
                   </h3>
                 </div>
 
-                <p className="text-gray-600 mb-6 min-h-[48px] text-sm leading-relaxed">
+                <p className="text-base md:text-lg lg:text-xl xl:text-3xl text-gray-600 mb-6 min-h-[48px] leading-relaxed">
                   {unit.desc}
                 </p>
 
                 <div className="space-y-4 mt-auto">
                   <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className={`font-bold text-sm mb-3 ${unit.color}`}>
+                    <h4 className={`font-bold text-base md:text-lg xl:text-3xl mb-3 ${unit.color}`}>
                       مهام الوحدة:
                     </h4>
                     <ul className="space-y-2">
                       {unit.tasks.slice(0, 3).map((task, i) => (
                         <li
                           key={i}
-                          className="flex items-start text-sm text-gray-600"
+                          className="flex items-start text-base md:text-lg xl:text-2xl text-gray-600"
                         >
                           <span
-                            className={`w-1.5 h-1.5 rounded-full mt-1.5 ml-2 shrink-0 bg-gray-400`}
+                            className={`w-2 h-2 rounded-full mt-2 ml-2 shrink-0 bg-gray-400 `}
                           />
                           {task}
                         </li>
@@ -352,14 +355,14 @@ export function BusinessUnits() {
                   </div>
 
                   <div className="border-t border-gray-100 pt-4">
-                    <h4 className="font-bold text-sm text-gray-900 mb-2">
+                    <h4 className="font-bold text-base md:text-lg xl:text-3xl text-gray-900 mb-2">
                       القيمة للعميل:
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {unit.value.slice(0, 2).map((val, i) => (
                         <span
                           key={i}
-                          className={`text-xs px-2 py-1 rounded-md ${unit.bg} ${unit.color} font-medium`}
+                          className={`text-sm md:text-base lg:text-lg xl:text-xl  px-3 py-1 rounded-md ${unit.bg} ${unit.color} font-medium`}
                         >
                           {val}
                         </span>

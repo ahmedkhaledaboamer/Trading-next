@@ -12,6 +12,7 @@ import {
   Wrench,
   Wifi,
 } from 'lucide-react'
+import Image from 'next/image'
 export function ServicesSection() {
   const services = [
     {
@@ -89,11 +90,11 @@ export function ServicesSection() {
     <section className="  bg-white">
       <div className=" p-[5%]">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#0A1628] mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#0A1628] mb-4">
             خدماتنا المتكاملة
           </h2>
           <div className="w-24 h-1 bg-[#D4A853] mx-auto rounded-full mb-6" />
-          <p className="text-xl text-gray-600  ">
+          <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-600  ">
             كل خدمة مصممة لتمنحك سهولة، جودة، وثقة في كل خطوة
           </p>
         </div>
@@ -120,10 +121,12 @@ export function ServicesSection() {
               className="group rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#D4A853] hover:shadow-lg transition-all duration-300 text-center cursor-default overflow-hidden flex flex-col"
             >
               {/* Image Header */}
-              <div className="h-32 w-full relative overflow-hidden">
-                <img
+              <div className="h-90 w-full relative overflow-hidden">
+                <Image
                   src={service.image}
                   alt={service.name}
+                  width={700}
+                  height={700}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
@@ -134,12 +137,12 @@ export function ServicesSection() {
                 <div
                   className={`w-16 h-16 rounded-full ${service.color} text-white flex items-center justify-center shadow-lg border-4 border-white group-hover:scale-110 transition-transform duration-300`}
                 >
-                  <div className="w-8 h-8">{service.icon}</div>
+                  <div className="w-8 h-8 flex items-center justify-center">{service.icon}</div>
                 </div>
               </div>
 
               <div className="px-4 pb-6 pt-0">
-                <h3 className="font-bold text-gray-800 text-lg group-hover:text-[#0A1628] transition-colors">
+                <h3 className="font-bold text-gray-800 text-lg md:text-xl lg:text-2xl xl:text-3xl group-hover:text-[#0A1628] transition-colors">
                   {service.name}
                 </h3>
               </div>
