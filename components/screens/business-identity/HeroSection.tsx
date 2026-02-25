@@ -1,14 +1,17 @@
 'use client'
  import { motion } from 'framer-motion'
 import { ArrowLeft } from 'lucide-react'
+import Image from 'next/image'
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1628] text-white">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80"
+        <Image
+          src="/images/image_2710.webp"
           alt="Global Trade Background"
+          width={1920}
+          height={1080}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#0A1628]/80 mix-blend-multiply" />
@@ -54,15 +57,15 @@ export function HeroSection() {
             مسارك التجاري الموثوق
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold mb-6 leading-tight drop-shadow-lg">
             <span className="text-white">كي إي بي</span>
             <span className="text-[#D4A853]"> للتجارة</span>
-            <span className="block text-2xl md:text-3xl mt-4 font-normal text-gray-300">
+            <span className="block text-xl md:text-2xl lg:text-3xl xl:text-5xl mt-4 font-normal text-gray-300">
               ذ.م.م
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-200 mb-10  leading-relaxed drop-shadow-md">
+          <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-200 mb-10  leading-relaxed drop-shadow-md">
             شريكك التجاري الذي يفتح لك أبواب الأسواق بثقة وجودة وثبات.
             <br />
             في عالم تتسارع فيه حركة التجارة، نحن بوصلتك نحو النجاح.

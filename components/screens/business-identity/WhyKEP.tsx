@@ -10,7 +10,8 @@ import {
   Eye,
   Star,
 } from 'lucide-react'
-export function WhyKEP() {
+export function WhyKEP( {locale}: {locale: string} ) {
+  const isRTL = locale === "ar";
   const features = [
     {
       text: 'اهتمامًا حقيقيًا',
@@ -62,7 +63,7 @@ export function WhyKEP() {
     },
   ]
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden">
+    <section className="py-24 bg-gray-50 relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <svg
@@ -90,7 +91,7 @@ export function WhyKEP() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="px-[5%] mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3">
             <motion.div
@@ -109,14 +110,14 @@ export function WhyKEP() {
                 once: true,
               }}
             >
-              <h2 className="text-4xl font-bold text-[#0A1628] mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#0A1628] mb-6">
                 لماذا كي إي بي للتجارة؟
               </h2>
               <div className="w-20 h-1.5 bg-[#D4A853] rounded-full mb-8" />
-              <p className="text-2xl text-gray-600 font-light mb-8">
+              <p className="text-xl md:text-2xl lg:text-3xl xl:text-5xl text-gray-600 font-light mb-8">
                 لأننا نؤمن أن العميل يستحق الأفضل دائماً.
               </p>
-              <p className="text-gray-500 leading-relaxed mb-8">
+              <p className="text-gray-500 leading-relaxed text-base md:text-lg lg:text-xl xl:text-2xl mb-8">
                 نحن لا نقدم مجرد خدمات، بل نبني شراكات طويلة الأمد قائمة على
                 الثقة المتبادلة والنجاح المشترك.
               </p>
@@ -129,7 +130,7 @@ export function WhyKEP() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 to-transparent" />
-                <div className="absolute bottom-4 right-4 text-white font-bold text-lg">
+                <div className="absolute bottom-4 right-4 text-white font-bold text-lg md:text-xl lg:text-2xl xl:text-4xl">
                   فريق عمل متكامل لخدمتك
                 </div>
               </div>
@@ -163,7 +164,7 @@ export function WhyKEP() {
                   >
                     <div className="w-6 h-6">{feature.icon}</div>
                   </div>
-                  <span className="text-lg font-semibold text-gray-800 group-hover:text-[#0A1628] transition-colors">
+                  <span className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold text-gray-800 group-hover:text-[#0A1628] transition-colors">
                     {feature.text}
                   </span>
                 </motion.div>
