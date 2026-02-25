@@ -1,30 +1,109 @@
-export default function HeroSection() {
-    return (
-      <section className="w-full bg-secondary text-white">
-        <div className="p-[5%] flex flex-col gap-6 max-w-4xl">
-          <p className="text-primary font-semibold tracking-widest uppercase text-sm">
-            الهوية التجارية
-          </p>
-          <h1
-            className="font-bold leading-tight"
-            style={{ fontSize: "clamp(2rem, 4vw, 3.5rem)" }}
-          >
-            في كي إي بي للتجارة، اخترنا أن نكتب تعريفنا بطريقة لا تشبه أحدًا
+'use client'
+ import { motion } from 'framer-motion'
+import { ArrowLeft } from 'lucide-react'
+export function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1628] text-white">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80"
+          alt="Global Trade Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#0A1628]/80 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-transparent to-[#0A1628]/50" />
+      </div>
+
+      {/* Background Gradients & Shapes */}
+      <div className="absolute inset-0 overflow-hidden z-0">
+        <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-[#0E7490] opacity-20 blur-[100px]" />
+        <div className="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#D4A853] opacity-10 blur-[100px]" />
+
+        {/* Geometric Patterns (SVG) */}
+        <svg
+          className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 0 L100 0 L100 100 Z" fill="url(#grad1)" />
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#D4A853" />
+              <stop offset="100%" stopColor="#0E7490" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10 text-center">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.8,
+          }}
+        >
+          <div className="inline-block mb-4 px-4 py-1 rounded-full border border-[#D4A853]/30 bg-[#D4A853]/10 text-[#D4A853] font-medium text-sm backdrop-blur-sm">
+            مسارك التجاري الموثوق
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
+            <span className="text-white">كي إي بي</span>
+            <span className="text-[#D4A853]"> للتجارة</span>
+            <span className="block text-2xl md:text-3xl mt-4 font-normal text-gray-300">
+              ذ.م.م
+            </span>
           </h1>
-          <p
-            className="text-white/75 leading-relaxed max-w-2xl"
-            style={{ fontSize: "clamp(1rem, 1.3vw, 1.25rem)" }}
-          >
-            لسنا شركة تكرر ما يقوله الآخرون. نحن نعرّف أنفسنا بالطريقة التي
-            نعمل بها: بوضوح لا يختبئ خلف الكلمات، وبقوة تُرى في التنفيذ.
+
+          <p className="text-xl md:text-2xl text-gray-200 mb-10  leading-relaxed drop-shadow-md">
+            شريكك التجاري الذي يفتح لك أبواب الأسواق بثقة وجودة وثبات.
+            <br />
+            في عالم تتسارع فيه حركة التجارة، نحن بوصلتك نحو النجاح.
           </p>
-          <p
-            className="text-white/60 italic border-r-4 border-primary pr-4"
-            style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.1rem)" }}
-          >
-            هذه الصفحة ليست مقدمة… هذه هوية مكتوبة بصدق.
-          </p>
-        </div>
-      </section>
-    );
-  }
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button className="px-8 py-4 bg-[#D4A853] text-[#0A1628] font-bold rounded-lg hover:bg-[#b68d40] transition-colors flex items-center gap-2 shadow-lg shadow-[#D4A853]/20">
+              اكتشف خدماتنا
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+            <button className="px-8 py-4 bg-white/10 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm">
+              تواصل معنا
+            </button>
+          </div>
+        </motion.div>
+
+        {/* Floating Elements */}
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 6,
+            ease: 'easeInOut',
+          }}
+          className="absolute top-1/4 right-[10%] w-16 h-16 border-4 border-[#D4A853]/20 rounded-full hidden md:block backdrop-blur-sm"
+        />
+        <motion.div
+          animate={{
+            y: [0, 20, 0],
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 5,
+            ease: 'easeInOut',
+            delay: 1,
+          }}
+          className="absolute bottom-1/4 left-[10%] w-24 h-24 border-4 border-[#0E7490]/30 rounded-lg rotate-45 hidden md:block backdrop-blur-sm"
+        />
+      </div>
+    </section>
+  )
+}
