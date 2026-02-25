@@ -1,15 +1,18 @@
- 'use client'
- import { motion } from 'framer-motion'
+'use client'
+import { motion } from 'framer-motion'
 import { BoxIcon } from 'lucide-react'
+import NextImage from 'next/image'
+
 interface ServiceCardProps {
   title: string
-  description: string  
+  description: string
   points: string[]
   icon: typeof BoxIcon
   image: string
-  colorClass: string  
-  accentColor: string  
+  colorClass: string
+  accentColor: string
   delay?: number
+  isRTL: boolean
 }
 export function ServiceCard({
   title,
@@ -20,7 +23,9 @@ export function ServiceCard({
   colorClass,
   accentColor,
   delay = 0,
+  isRTL,
 }: ServiceCardProps) {
+  const direction = isRTL ? "rtl" : "ltr";
   return (
     <motion.div
       initial={{
@@ -51,10 +56,12 @@ export function ServiceCard({
       }}
     >
       {/* Card Image Area */}
-      <div className="relative h-48 overflow-hidden">
-        <img
+      <div className="relative h-100 overflow-hidden">
+        <NextImage
           src={image}
           alt={title}
+          width={500}
+          height={500}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
@@ -64,12 +71,12 @@ export function ServiceCard({
         {/* Icon Header - Overlapping Image */}
         <div className="flex items-center justify-between mb-4 -mt-7 relative z-10">
           <div
-            className={`w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white ${colorClass}`}
+            className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg border-4 border-white ${colorClass}`}
             style={{
               backgroundColor: accentColor,
             }}
           >
-            <Icon size={24} strokeWidth={1.5} />
+            <Icon size={32} strokeWidth={1.5} />
           </div>
           <div
             className="h-1.5 w-12 rounded-full opacity-20 mt-8"
@@ -80,13 +87,13 @@ export function ServiceCard({
         </div>
 
         {/* Title */}
-        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
+        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-3 leading-tight">
           {title}
         </h3>
 
         {/* Description Pill */}
         <div
-          className="inline-block px-3 py-1.5 rounded-xl text-sm font-medium mb-5 self-start"
+          className="inline-block px-3 py-1.5 rounded-xl text-base md:text-lg lg:text-xl xl:text-3xl font-medium mb-5 self-start"
           style={{
             backgroundColor: `${accentColor}15`,
             color: accentColor,
@@ -98,9 +105,9 @@ export function ServiceCard({
         {/* Bullet Points */}
         <ul className="space-y-2 mt-auto">
           {points.map((point, index) => (
-            <li key={index} className="flex items-start text-gray-600 text-sm">
+            <li key={index} className="flex items-start text-gray-600 text-base md:text-lg lg:text-xl xl:text-3xl">
               <span
-                className="mt-1.5 w-2 h-2 rounded-full flex-shrink-0 ml-2"
+                className={`mt-5 w-3 h-3 rounded-full shrink-0 ${direction === "ltr" ? "mr-2" : "ml-2"}`}
                 style={{
                   backgroundColor: accentColor,
                 }}

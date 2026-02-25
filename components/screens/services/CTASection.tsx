@@ -1,18 +1,21 @@
  'use client'
  import { motion } from 'framer-motion'
 import { ArrowLeft, Mail } from 'lucide-react'
+import NextImage from 'next/image'
 export function CTASection() {
   return (
-    <section className="relative p-[5%] overflow-hidden">
+    <section className="bg-white relative p-[5%] overflow-hidden container mx-auto rounded-4xl my-[2%] border-4 border-primary/30">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <NextImage
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
           alt="Team meeting"
           className="w-full h-full object-cover"
+          width={1000}
+          height={1000}
         />
-        <div className="absolute inset-0 bg-blue-500 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-blue via-primary/80 to-transparent" />
+        <div className="absolute inset-0 bg-black/50 mix-blend-multiply" />
+        <div className="absolute inset-0 " />
       </div>
 
       <div className=" text-center relative z-10">
@@ -33,22 +36,22 @@ export function CTASection() {
           }}
           className=" "
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white tracking-tight drop-shadow-xl">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold mb-8 text-white tracking-tight drop-shadow-xl">
             هل تحتاج إلى خدمة مخصصة؟
           </h2>
-          <p className="text-xl md:text-2xl text-blue-100 mb-12 leading-relaxed font-medium  mx-auto">
+          <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-blue-100 mb-12 leading-relaxed font-medium  mx-auto">
             فريقنا من الخبراء جاهز لمساعدتك في العثور على الحل الأمثل لأعمالك.
             تواصل معنا اليوم للحصول على استشارة مجانية وحلول مصممة خصيصاً
             لاحتياجاتكم.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="w-full sm:w-auto px-10 py-5 bg-white text-primary rounded-xl font-bold text-lg hover:bg-gray-100 transition-all flex items-center justify-center gap-3 shadow-2xl hover:shadow-white/20 transform hover:-translate-y-1 duration-300">
+            <button className="w-full sm:w-auto px-10 py-5 bg-white text-primary rounded-xl font-bold text-base md:text-lg lg:text-xl xl:text-3xl cursor-pointer hover:bg-gray-100 transition-all flex items-center justify-center gap-3 shadow-2xl hover:shadow-white/20 transform hover:-translate-y-1 duration-300">
               <span>تواصل معنا الآن</span>
               <ArrowLeft size={22} />
             </button>
 
-            <button className="w-full sm:w-auto px-10 py-5 bg-teal/20 backdrop-blur-md border-2 border-white/30 text-white rounded-xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3 hover:border-white/50">
+            <button className="w-full sm:w-auto px-10 py-5 bg-teal/20 backdrop-blur-md border-2 border-white/30 text-white rounded-xl font-bold text-base md:text-lg lg:text-xl xl:text-3xl cursor-pointer hover:bg-white/10 transition-all flex items-center justify-center gap-3 hover:border-white/50">
               <Mail size={22} />
               <span>أرسل استفساراً</span>
             </button>
