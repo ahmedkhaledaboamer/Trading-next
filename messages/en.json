@@ -10,10 +10,6 @@
                 "href": "/"
             },
             {
-                "label": "Execution",
-                "href": "/execution"
-            },
-            {
                 "label": "Services",
                 "href": "/services"
             },
@@ -26,16 +22,8 @@
                 "href": "/business-identity"
             },
             {
-                "label": "About Us",
-                "href": "/about"
-            },
-            {
-                "label": "Privacy",
-                "href": "/privacy"
-            },
-            {
-                "label": "Contact",
-                "href": "/contact"
+                "label": "Execution",
+                "href": "/execution"
             }
         ]
     },
@@ -85,42 +73,30 @@
             "location": "United Arab Emirates"
         },
         "quickLinks": {
-            "title": "Quick Links",
-            "links": [
-                {
-                    "label": "Home",
-                    "href": "/"
-                },
-                {
-                    "label": "Execution",
-                    "href": "/execution"
-                },
-                {
-                    "label": "Our Services",
-                    "href": "/services"
-                },
-                {
-                    "label": "Your Business Path",
-                    "href": "/business-path"
-                },
-                {
-                    "label": "Business Identity",
-                    "href": "/business-identity"
-                },
-                {
-                    "label": "About Us",
-                    "href": "/about"
-                },
-                {
-                    "label": "Privacy Policy",
-                    "href": "/privacy"
-                },
-                {
-                    "label": "Contact Us",
-                    "href": "/contact"
-                }
-            ]
+        "title": "Quick Links",
+        "links": [
+        {
+            "label": "Home",
+            "href": "/"
         },
+        {
+            "label": "Our Services",
+            "href": "/services"
+        },
+        {
+            "label": "Your Business Path",
+            "href": "/business-path"
+        },
+        {
+            "label": "Business Identity",
+            "href": "/business-identity"
+        },
+        {
+            "label": "Execution",
+            "href": "/execution"
+        }
+        ]
+    },
         "ourGroup": {
             "title": "Our Group",
             "entities": [

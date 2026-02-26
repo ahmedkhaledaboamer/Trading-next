@@ -10,10 +10,6 @@
         "href": "/"
       },
       {
-        "label": "التنفيذ",
-        "href": "/execution"
-      },
-      {
         "label": "الخدمات",
         "href": "/services"
       },
@@ -26,16 +22,8 @@
         "href": "/business-identity"
       },
       {
-        "label": "من نحن",
-        "href": "/about"
-      },
-      {
-        "label": "الخصوصية",
-        "href": "/privacy"
-      },
-      {
-        "label": "اتصل بنا",
-        "href": "/contact"
+        "label": "التنفيذ",
+        "href": "/execution"
       }
     ]
   },
@@ -92,10 +80,6 @@
           "href": "/"
         },
         {
-          "label": "التنفيذ",
-          "href": "/execution"
-        },
-        {
           "label": "الخدمات",
           "href": "/services"
         },
@@ -108,16 +92,8 @@
           "href": "/business-identity"
         },
         {
-          "label": "من نحن",
-          "href": "/about"
-        },
-        {
-          "label": "سياسة الخصوصية",
-          "href": "/privacy"
-        },
-        {
-          "label": "تواصل معنا",
-          "href": "/contact"
+          "label": "التنفيذ",
+          "href": "/execution"
         }
       ]
     },

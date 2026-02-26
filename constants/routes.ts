@@ -4,19 +4,19 @@ export const routes = [
     href: "/",
   },
   {
-    label: "Department",
-    href: "/department",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
-  {
     label: "Services",
     href: "/services",
   },
   {
-    label: "Articles",
-    href: "/articles",
+    label: "Your Business Path",
+    href: "/business-path",
+  },
+  {
+    label: "Business Identity",
+    href: "/business-identity",
+  },
+  {
+    label: "Execution",
+    href: "/execution",
   },
 ];
