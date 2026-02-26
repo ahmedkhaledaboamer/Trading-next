@@ -29,7 +29,7 @@ export default async function InternationalExpansionSection() {
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4 mb-12 md:mb-16">
           <h2
-            className="inline-block font-bold text-sky-900 leading-tight text-2xl md:text-6xl bg-sky-100 border border-sky-300 rounded-2xl px-6 py-4"
+            className="inline-block font-bold text-sky-900 leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-sky-100 border border-sky-300 rounded-2xl px-6 py-4"
           >
             وحدة التوسع الدولي
           </h2>

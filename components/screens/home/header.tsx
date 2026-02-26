@@ -29,7 +29,7 @@ export default async function Header() {
         <h1
           className="font-bold text-primary"
           style={{
-            fontSize: "clamp(2rem, 3vw, 6rem)",
+            fontSize: "clamp(1.5rem, 2vw, 6rem)",
             lineHeight: "1.1",
           }}
         >
@@ -38,14 +38,14 @@ export default async function Header() {
         <h2
           className="font-bold text-white"
           style={{
-            fontSize: "clamp(1.25rem, 2.5vw, 7rem)",
+            fontSize: "clamp(1rem, 2vw, 7rem)",
             lineHeight: "1.2",
           }}
         >
          مركز القوة التجارية… ومنصة النفوذ في سلاسل التوريد العالمية
         </h2>
         <p className="p-4 bg-black/50 font-bold  border border-yellow-500 text-white rounded-2xl" style={{
-            fontSize: "clamp(1.25rem, 1.5vw, 3rem)",
+            fontSize: "clamp(1rem, 1vw, 3rem)",
             
           }}>
         في عالم تتسارع فيه حركة التجارة وتشتد فيه المنافسة، يبرز كيانٌ يمتلك البصيرة، والرؤية، والقدرة على التنفيذ.
@@ -53,7 +53,7 @@ export default async function Header() {
 
         </p>
         <p className="p-4 font-bold bg-black/50 border border-yellow-500 text-white rounded-2xl"style={{
-            fontSize: "clamp(1.25rem, 1.5vw, 2.5rem)",
+            fontSize: "clamp(1rem, 1.5vw, 2.5rem)",
             
           }}>نصنع النفوذ عبر شبكات توريد عالمية، علاقات راسخة، وخبرة تنفيذية تمنح عملاءنا قدرة الوصول إلى منتجات عالية الجودة، بأسعار تنافسية، وبآليات تشغيل دقيقة.</p>
         <div

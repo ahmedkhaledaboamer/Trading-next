@@ -32,7 +32,7 @@ export default async function DigitalTransformationSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="inline-block font-bold text-[#0D47A1] leading-tight text-2xl md:text-6xl bg-[#E3F2FD] border border-[#90CAF9] rounded-2xl px-6 py-4"
+              className="inline-block font-bold text-[#0D47A1] leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-[#E3F2FD] border border-[#90CAF9] rounded-2xl px-6 py-4"
             >
               وحدة التحول الرقمي
             </h2>
@@ -57,7 +57,7 @@ export default async function DigitalTransformationSection() {
               >
                 <div className="flex items-center justify-between gap-3 mb-1">
                   <h3
-                    className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
+                    className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-3xl 2xl:text-5xl"
                   >
                     مهام الوحدة
                   </h3>
@@ -75,7 +75,7 @@ export default async function DigitalTransformationSection() {
                   {unitTasks.map((task) => (
                     <li
                       key={task}
-                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
+                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-2xl 2xl:text-4xl"
                     >
                       <span className="mt-5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{task}</span>
@@ -93,7 +93,7 @@ export default async function DigitalTransformationSection() {
               >
                 <div className="flex items-center justify-between gap-3 mb-1">
                   <h3
-                    className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
+                    className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-3xl 2xl:text-5xl"
                   >
                     أهداف الوحدة
                   </h3>
@@ -111,7 +111,7 @@ export default async function DigitalTransformationSection() {
                   {unitGoals.map((goal) => (
                     <li
                       key={goal}
-                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
+                        className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-2xl 2xl:text-4xl"
                     >
                       <span className="mt-5 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                       <span>{goal}</span>

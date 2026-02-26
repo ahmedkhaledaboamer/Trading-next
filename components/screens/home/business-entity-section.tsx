@@ -51,23 +51,23 @@ export default async function BusinessEntitySection() {
   return (
     <section className="relative w-full bg-white" dir={isRTL ? "rtl" : "ltr"}>
       <div className="py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-16">
-        <div className="p-[5%]">
+        <div className="p-[5%] 2xl:px-[10%] 2xl:py-[5%]">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Text / left side */}
             <div className="flex flex-col gap-6">
               <p
-                className="inline-block text-primary font-semibold bg-primary/5 border border-primary/30 rounded-full px-4 py-1"
+                className="inline-block text-primary  font-semibold bg-primary/5 border border-primary/30 rounded-full px-4 py-1"
                 style={{
-                  fontSize: "clamp(2rem, 1.05vw, 1.05rem)",
+                  fontSize: "clamp(2rem, 2vw, 5rem)",
                 }}
               >
-                الكيان التجاري
+                الكيان التجاري 
               </p>
 
               <h2
                 className="inline-block text-secondary font-bold leading-tight bg-primary/5 border border-primary/40 rounded-2xl px-4 py-3"
                 style={{
-                  fontSize: "clamp(3rem, 2.6vw, 2.8rem)",
+                  fontSize: "clamp(2rem, 2.6vw, 2.8rem)",
                 }}
               >
                 منظومة متكاملة تدير حركة التجارة باحترافية عالية
@@ -76,7 +76,7 @@ export default async function BusinessEntitySection() {
               <p
                 className="text-secondary/80"
                 style={{
-                  fontSize: "clamp(2rem, 1.15vw, 1.15rem)",
+                  fontSize: "clamp(1.5rem, 1.15vw, 1.15rem)",
                 }}
               >
                 كي إي بي للتجارة تعمل وفق نموذج تشغيل متقدم يدمج بين الرؤية
@@ -114,7 +114,7 @@ export default async function BusinessEntitySection() {
                       <span
                         className="text-secondary font-semibold"
                         style={{
-                          fontSize: "clamp(2rem, 1.05vw, 1.05rem)",
+                          fontSize: "clamp(1.5rem, 1.05vw, 1.05rem)",
                         }}
                       >
                         {feature.title}
@@ -126,9 +126,9 @@ export default async function BusinessEntitySection() {
 
               {/* Highlighted quote */}
               <div
-                className="mt-4 rounded-2xl bg-primary/5 border border-primary/30 px-5 py-4 text-secondary/90"
+                className="mt-4 rounded-2xl text-center bg-primary/5 border border-primary/30 px-5 py-4 text-secondary/90"
                 style={{
-                  fontSize: "clamp(2rem, 1.05vw, 1.05rem)",
+                  fontSize: "clamp(1.2rem, 1.05vw, 1.05rem)",
                 }}
               >
                 “نُدير عمليات الاستيراد، التصدير، التوزيع، والتوريد عبر منظومة
@@ -137,18 +137,18 @@ export default async function BusinessEntitySection() {
             </div>
 
             {/* Image / right side */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center  items-center">
               <div className="relative w-full">
                 {/* Decorative border accent */}
                 <div
                   aria-hidden="true"
-                  className="absolute bottom-8 -right-8 w-[50%] h-full border-2 border-[#C9A84C] rounded-2xl z-0 pointer-events-none"
+                  className="absolute bottom-8 -right-8 w-[50%] lg:w-[80%] 2xl:w-[100%] h-full border-2 border-[#C9A84C] rounded-2xl z-0 pointer-events-none"
                 />
 
                 {/* Image card */}
                 <div
                   className={cn(
-                    "relative z-10 w-full md:w-[80%] rounded-3xl overflow-hidden",
+                    "relative z-10 w-full md:w-[80%] lg:w-[100%] rounded-3xl overflow-hidden",
                     "bg-white border border-primary/30",
                     "shadow-2xl"
                   )}

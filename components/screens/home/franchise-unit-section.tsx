@@ -5,10 +5,10 @@ import { getLocale } from "next-intl/server";
 
 const franchiseBenefits = [
   "توسع سريع للعلامة التجارية",
-  "تقليل المخاطر التشغيلية على الشركة الأم",
-  "زيادة الحصة السوقية عبر شركاء متعددين",
-  "دعم الشركاء بنظام تشغيل وتجربة جاهزة",
-  "تحقيق تدفقات دخل مستمرة من رسوم الامتياز ونسبة الأرباح"
+  "تقليل المخاطر التشغيلية على الشركة  ",
+  "زيادة الحصة السوقية عبر الشركاء  ",
+  "دعم الشركاء بنظام تشغيل جاهز",
+  "تحقيق تدفقات دخل مستمرة    "
 ];
 
 const franchiseTasks = [
@@ -33,7 +33,7 @@ export default async function FranchiseUnitSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="inline-block font-bold text-[#4E342E] leading-tight text-2xl md:text-6xl bg-[#FFE0B2] border border-[#FFB74D] rounded-2xl px-6 py-4"
+              className="inline-block font-bold text-[#4E342E] leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-[#FFE0B2] border border-[#FFB74D] rounded-2xl px-6 py-4"
             >
               وحدة الامتياز التجاري
             </h2>
@@ -56,7 +56,7 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
+                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-5xl"
                 >
                   فوائد الامتياز
                 </h3>
@@ -75,7 +75,7 @@ export default async function FranchiseUnitSection() {
                 {franchiseBenefits.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-4xl"
                   >
                     <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{item}</span>
@@ -93,7 +93,7 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
+                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-5xl"
                 >
                   مهام الوحدة
                 </h3>
@@ -112,7 +112,7 @@ export default async function FranchiseUnitSection() {
                 {franchiseTasks.map((task) => (
                   <li
                     key={task}
-                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-3xl"
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-4xl"
                   >
                     <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{task}</span>

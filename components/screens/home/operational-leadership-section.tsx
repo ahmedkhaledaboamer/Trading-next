@@ -88,7 +88,7 @@ export default async function OperationalLeadershipSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="inline-block font-bold text-[#004D40] leading-tight text-2xl md:text-6xl bg-[#E0F2F1] border border-[#80CBC4] rounded-2xl px-6 py-4"
+              className="inline-block font-bold text-[#004D40] leading-tight text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl bg-[#E0F2F1] border border-[#80CBC4] rounded-2xl px-6 py-4"
             >
               منظومة القيادة التشغيلية
             </h2>
@@ -136,7 +136,7 @@ export default async function OperationalLeadershipSection() {
                       {/* Title + icon */}
                       <div className="flex items-center justify-between gap-3">
                         <h3
-                          className="font-bold text-white text-xl md:text-3xl xl:text-4xl"
+                          className="font-bold text-white text-xl md:text-xl xl:text-2xl 2xl:text-6xl"
                         >
                           {room.title}
                         </h3>
@@ -157,7 +157,7 @@ export default async function OperationalLeadershipSection() {
                         {room.points.map((point, idx) => (
                           <li
                             key={idx}
-                            className="flex items-start gap-2 text-white/90 text-base md:text-xl xl:text-3xl"
+                            className="flex items-start gap-2 text-white/90 text-base md:text-xl xl:text-lg 2xl:text-4xl"
                           >
                             <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                             <span>{point}</span>

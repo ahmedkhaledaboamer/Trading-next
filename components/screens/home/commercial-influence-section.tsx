@@ -18,7 +18,7 @@ const pillars: Pillar[] = [
     title: "النفوذ التشغيلي",
     icon: Cog,
     description:
-      "تحكم كامل في مسارات التوريد من المصدر إلى العميل، مع بنية تشغيلية مرنة وسريعة الاستجابة.",
+      "تحكم كامل في مسارات التوريد من المصدر إلى العميل، مع بنية تشغيلية سريعة الاستجابة.",
     imageSrc: "/images/23.webp",
     imageAlt: "فريق يعمل على إدارة العمليات التشغيلية في بيئة مكتبية",
   },
@@ -36,7 +36,7 @@ const pillars: Pillar[] = [
     title: "النفوذ الاستراتيجي",
     icon: Target,
     description:
-      "قرارات مبنية على تحليل عميق للبيانات واتجاهات السوق، وتبنّي نماذج عمل تخلق ميزة مستدامة.",
+      "قرارات مبنية على تحليل عميق للبيانات ، وتبنّي نماذج عمل تخلق ميزة مستدامة.",
       imageSrc: "/images/25.webp",
       imageAlt: "اجتماع عمل يخطط للاستراتيجيات التجارية",
   },
@@ -71,17 +71,17 @@ export default async function CommercialInfluenceSection() {
 
   return (
     <section className="relative w-full bg-white" dir={isRTL ? "rtl" : "ltr"}>
-      <div className=" p-[5%] pt-[0]">
+      <div className=" p-[5%] pt-[0%]">
         <div className=" flex flex-col gap-10 md:gap-12">
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="inline-block font-bold text-emerald-800 leading-tight text-2xl md:text-6xl bg-emerald-100 border border-emerald-300 rounded-2xl px-6 py-4"
+              className="inline-block font-bold text-emerald-800 leading-tight text-2xl md:text-3xl xl:text-4xl 2xl:text-6xl bg-emerald-100 border border-emerald-300 rounded-2xl px-6 py-4"
             >
               بنية النفوذ التجاري
             </h2>
             <p 
-              className="inline-block text-sky-800 text-base md:text-2xl bg-sky-100 border border-sky-300 rounded-full px-5 py-2"
+              className="inline-block text-sky-800 text-base md:text-xl bg-sky-100 border border-sky-300 rounded-full px-5 py-2"
             >
               هيكل القوة داخل كي إي بي للتجارة يعتمد على ثلاث ركائز رئيسية
               تمنحنا عمقاً في السوق وقدرة عالية على التحكم.
@@ -106,7 +106,7 @@ export default async function CommercialInfluenceSection() {
                   )}
                 >
                   {/* Image */}
-                  <div className="relative h-52 md:h-56 xl:h-200">
+                  <div className="relative h-52 md:h-64 lg:h-64 xl:h-80 2xl:h-200">
                     <Image
                       src={pillar.imageSrc}
                       alt={pillar.imageAlt}
@@ -133,7 +133,7 @@ export default async function CommercialInfluenceSection() {
                     <div className="mt-3 flex flex-col gap-2">
                       <h3
                         className={cn(
-                          "inline-block font-bold text-xl md:text-3xl rounded-full px-4 py-2",
+                          "inline-block text-center font-bold text-xl md:text-3xl rounded-full px-4 py-2",
                           titleColor,
                           titleBg
                         )}
@@ -141,7 +141,7 @@ export default async function CommercialInfluenceSection() {
                         {pillar.title}
                       </h3>
                       <p
-                        className="text-secondary/80 leading-relaxed text-base md:text-xl"
+                        className="text-secondary/80 leading-relaxed text-center text-base md:text-xl lg:text-lg xl:text-md 2xl:text-4xl"
                       >
                         {pillar.description}
                       </p>

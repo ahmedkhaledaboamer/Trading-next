@@ -57,7 +57,7 @@ export default function PowerIndicatorsSection() {
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4 mb-12 md:mb-16">
           <h2
-            className="inline-block font-bold text-amber-200 leading-tight text-2xl md:text-6xl bg-amber-900 border border-amber-500 rounded-2xl px-6 py-4"
+            className="inline-block font-bold text-amber-200 leading-tight text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl bg-amber-900 border border-amber-500 rounded-2xl px-6 py-4"
           >
             مؤشرات القوة
           </h2>

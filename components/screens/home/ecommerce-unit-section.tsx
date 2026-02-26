@@ -15,8 +15,7 @@ const unitTasks = [
   "تطوير حلول دفع إلكتروني",
   "إدارة المخزون الرقمي",
   "تشغيل حملات تسويق إلكتروني",
-  "ربط التوريد بالمنصات الرقمية",
-];
+ ];
 
 export default async function EcommerceUnitSection() {
   const locale = await getLocale();
@@ -29,7 +28,7 @@ export default async function EcommerceUnitSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-4">
             <h2
-              className="inline-block font-bold text-fuchsia-900 leading-tight text-2xl md:text-6xl bg-fuchsia-100 border border-fuchsia-300 rounded-2xl px-6 py-4"
+              className="inline-block font-bold text-fuchsia-900 leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-fuchsia-100 border border-fuchsia-300 rounded-2xl px-6 py-4"
             >
               وحدة التجارة الإلكترونية
             </h2>
@@ -48,22 +47,7 @@ export default async function EcommerceUnitSection() {
               "shadow-[0_22px_60px_rgba(0,0,0,0.16)] border border-primary/40"
             )}
           >
-            <div className="relative h-56 md:h-64 lg:h-100">
-              <Image
-                src="/images/image_2683.webp"
-                alt="منصة رقمية متكاملة للبيع والتوزيع"
-                fill
-                className="object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-l from-black/55 via-black/25 to-black/5" />
-              <div className="absolute inset-0 flex items-center justify-center md:justify-start px-6 md:px-10">
-                <h3
-                  className="font-bold text-center text-primary text-2xl md:text-4xl"
-                >
-                  منصة رقمية متكاملة للبيع والتوزيع
-                </h3>
-              </div>
-            </div>
+           
           </div>
 
           {/* Objectives & tasks cards */}

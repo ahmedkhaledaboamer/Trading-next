@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-import { Headphones, Layers, LucideIcon, Monitor, Package, Timer } from "lucide-react";
+import { Headphones, Layers, LucideIcon, Monitor, Package, Timer, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import { getLocale } from "next-intl/server";
 
@@ -32,13 +32,13 @@ const features: Feature[] = [
   },
   {
     id: "continuous-support",
-    title: "دعم فني وتشغيلي مستمر",
+    title: "دعم فني  ",
     icon: Headphones,
   },
   {
     id: "continuous-support-2",
-    title: "دعم فني وتشغيلي مستمر 2",
-    icon: Headphones,
+    title: "التشغيل مستمر ",
+    icon: TrendingUp   ,
   },
 ];
 
@@ -75,7 +75,7 @@ export default async function MajorProjectsUnitSection() {
           {/* Header */}
           <header className="flex flex-col items-start gap-3 text-right">
             <h2
-              className="inline-block font-bold text-[#283593] leading-tight text-2xl md:text-6xl bg-[#E8EAF6] border border-[#9FA8DA] rounded-2xl px-6 py-4"
+              className="inline-block font-bold text-[#283593] leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-[#E8EAF6] border border-[#9FA8DA] rounded-2xl px-6 py-4"
             >
               وحدة المشاريع الكبرى
             </h2>
@@ -108,7 +108,7 @@ export default async function MajorProjectsUnitSection() {
             </div>
 
             {/* Features grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 w-full md:w-1/2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 w-full md:w-1/2 ">
               {features.map((feature, idx) => {
                 const Icon = feature.icon;
                 return (
@@ -116,13 +116,13 @@ export default async function MajorProjectsUnitSection() {
                     key={feature.id}
                     className={cn(
                       "flex items-center justify-between gap-3 ",
-                      "rounded-2xl px-4 py-3 md:px-5 md:py-4 shadow-[0_10px_26px_rgba(0,0,0,0.04)]",
+                      "rounded-2xl px-4 py-3 md:px-5 md:py-2 xl:py-2 2xl:py-4 shadow-[0_10px_26px_rgba(0,0,0,0.04)]",
                       "transition-all duration-300 hover:-translate-y-1 hover:bg-[#C9A84C] hover:border-[#C9A84C] group",
                       featureCardColors[idx % featureCardColors.length]
                     )}
                   >
                     <span
-                      className="text-white font-semibold text-base md:text-xl xl:text-3xl group-hover:text-[#1A1A2E]"
+                      className="text-white font-semibold text-base md:text-xl xl:text-md 2xl:text-4xl group-hover:text-[#1A1A2E]"
                     >
                       {feature.title}
                     </span>

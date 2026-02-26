@@ -15,8 +15,7 @@ const supplyRegions = [
   "أوروبا",
   "الشرق الأوسط",
   "أمريكا الشمالية",
-  "أسواق ناشئة ذات فرص عالية",
-];
+ ];
 
 export default async function SuppliersNetworkSection() {
   const locale = await getLocale();
@@ -43,7 +42,7 @@ export default async function SuppliersNetworkSection() {
           {/* Header */}
           <header className="text-center flex flex-col items-center gap-3">
             <h2
-              className="inline-block font-bold text-amber-200 leading-tight text-2xl md:text-6xl bg-amber-900 border border-amber-500 rounded-2xl px-6 py-4"
+              className="inline-block font-bold text-amber-200 leading-tight text-2xl md:text-xl xl:text-2xl 2xl:text-6xl bg-amber-900 border border-amber-500 rounded-2xl px-6 py-4"
             >
               شبكة الموردين العالمية
             </h2>
@@ -66,7 +65,7 @@ export default async function SuppliersNetworkSection() {
             >
               <div className="p-6 md:p-7 lg:p-8 flex flex-col gap-4">
                 <h3
-                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl xl:text-5xl"
+                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-xl xl:text-2xl 2xl:text-5xl"
                 >
                   <span>مزايا الشبكة</span>
                   <Check
@@ -98,7 +97,7 @@ export default async function SuppliersNetworkSection() {
             >
               <div className="p-6 md:p-7 lg:p-8 flex flex-col gap-4">
                 <h3
-                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-2xl xl:text-5xl"
+                  className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-xl xl:text-2xl 2xl:text-5xl"
                 >
                   <span>مناطق التوريد الرئيسية</span>
                   <MapPin
