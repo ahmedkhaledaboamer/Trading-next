@@ -22,7 +22,7 @@ export async function ClosingStatement() {
           <div className="w-20 h-1 bg-[#C9A84C]" />
         </div>
 
-        <h2 className="text-2xl md:text-5xl font-bold text-fuchsia-100 mb-8 leading-tight bg-fuchsia-900/60 border-2 border-fuchsia-300 rounded-xl px-8 py-4">
+        <h2 className="text-xl md:text-2xl xl:text-4xl 2xl:text-5xl font-bold text-fuchsia-100 mb-8 leading-tight bg-fuchsia-900/60 border-2 border-fuchsia-300 rounded-xl px-8 py-4">
           كل منصب داخل المنظومة له دور واضح يخدمك أنت
         </h2>
 

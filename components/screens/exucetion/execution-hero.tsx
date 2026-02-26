@@ -4,7 +4,7 @@ import ScrollIndicator from "./scroll-indicator";
 export default async function ExecutionHero() {
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative flex items-center justify-center px-[5%] py-[2%]  h-[150vh] md:h-screen  w-full overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -17,8 +17,8 @@ export default async function ExecutionHero() {
       </div>
 
       {/* Content */}
-      <div className="relative h-full flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto z-10">
-        <h1 className="text-5xl md:text-6xl font-bold text-amber-100 mb-6 leading-tight border-4 border-amber-400 rounded-lg bg-amber-950/60 px-6 py-4 shadow-lg">
+      <div className="relative h-full flex flex-col items-center justify-center text-center px-4    z-10">
+        <h1 className="text-lg md:text-2xl xl:text-4xl 2xl:text-6xl font-bold text-amber-100 mb-6 leading-tight border-4 border-amber-400 rounded-lg bg-amber-950/60 px-6 py-4 shadow-lg">
           كي إي بي للتجارة
         </h1>
 
@@ -30,6 +30,8 @@ export default async function ExecutionHero() {
           نحن نؤمن أن نجاح العملية التجارية يبدأ من وضوح الأدوار، وسرعة
           الاستجابة، ودقة التنفيذ
         </p>
+        <p className="text-lg md:text-xl xl:text-lg 2xl:text-4xl mt-4   text-white leading-relaxed bg-primary/20 border-2 border-primary/60 rounded-lg px-6 py-4">
+        نعمل في كي إي بي للتجارة على بناء منظومة اتصالات تشغيلية واضحة تضمن انسيابية العمل بين جميع الأطراف، بدءاً من تحديد الأدوار ومسارات التواصل، وصولاً إلى سرعة الاستجابة ودقة نقل المعلومات. لأن نجاح العمليات التجارية لا يعتمد فقط على التخطيط، بل على تنفيذ منظم قائم على وضوح المسؤوليات وتكامل الفرق، بما يحقق تجربة احترافية ونتائج قابلة للقياس.        </p>
 
         {/* Scroll Indicator */}
         <ScrollIndicator />

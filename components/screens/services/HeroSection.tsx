@@ -95,19 +95,19 @@ export function HeroSection() {
           }}
         >
           <div className="inline-block mb-6 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
-            <span className="text-base md:text-lg lg:text-xl xl:text-3xl font-medium text-teal-100">
+            <span className="text-sm md:text-lg lg:text-xl xl:text-3xl 2xl:text-6xl font-medium text-teal-100">
               شريكك الأول في التجارة والتقنية
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tight leading-tight drop-shadow-lg">
+          <h1 className="text-xl md:text-2xl lg:text-3xl 2xl:text-6xl font-extrabold mb-6 tracking-tight leading-tight drop-shadow-lg">
             كي إي بي للتجارة
             <span className="block text-3xl md:text-5xl mt-4 font-bold text-teal-300">
               ذ.م.م
             </span>
           </h1>
 
-          <p className="text-xl lg:text-2xl xl:text-4xl text-blue-100   leading-relaxed mb-10 font-light">
+          <p className="text-lg lg:text-2xl 2xl:text-4xl text-blue-100   leading-relaxed mb-10 font-light">
             نقدّم مجموعة واسعة من الخدمات التجارية والتقنية التي تلبي احتياجات
             الشركات والأفراد، مع التزام كامل بالجودة، الاحترافية، والمعايير
             العالمية.

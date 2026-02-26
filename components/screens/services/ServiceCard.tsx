@@ -56,7 +56,7 @@ export function ServiceCard({
       }}
     >
       {/* Card Image Area */}
-      <div className="relative h-100 overflow-hidden">
+      <div className="relative h-72 md:h-100 lg:h-100 2xl:h-120 overflow-hidden">
         <NextImage
           src={image}
           alt={title}

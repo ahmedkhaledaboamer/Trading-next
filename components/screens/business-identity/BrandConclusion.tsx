@@ -94,7 +94,7 @@ export function BrandConclusion() {
             }}
           >
             <h2
-              className="text-5xl md:text-7xl font-bold text-brand-navy mb-8 leading-tight inline-block"
+              className="text-xl md:text-2xl lg:text-3xl 2xl:text-6xl font-bold text-brand-navy mb-8 leading-tight inline-block"
               style={{
                 background:
                   'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.85))',

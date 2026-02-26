@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export function HeroSection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+    <section className="relative p-[5%] h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60" />
@@ -69,7 +69,7 @@ export function HeroSection() {
           className="mb-8"
         >
           <span
-            className="inline-block py-2 px-8 rounded-full text-lg md:text-xl lg:text-2xl xl:text-3xl tracking-wider mb-2 backdrop-blur-sm border border-white/10"
+            className="inline-block py-2 px-8 rounded-full text-lg md:text-xl lg:text-xl 2xl:text-3xl tracking-wider mb-2 backdrop-blur-sm border border-white/10"
             style={{
               background: 'rgba(13, 148, 136, 0.15)',
               color: '#E8D5A3',
@@ -94,7 +94,7 @@ export function HeroSection() {
             delay: 0.2,
             ease: 'easeOut',
           }}
-          className="text-4xl md:text-4xl lg:text-4xl xl:text-8xl font-bold text-white mb-8 leading-tight flex flex-col items-center gap-4"
+          className="text-xl md:text-2xl lg:text-4xl 2xl:text-8xl font-bold text-white mb-8 leading-tight flex flex-col items-center gap-4"
         >
           <span
             className="px-8 py-2 rounded-xl"
@@ -136,11 +136,11 @@ export function HeroSection() {
             duration: 1,
             delay: 1,
           }}
-          className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white  font-bold leading-relaxed"
+          className="text-sm md:text-xl lg:text-2xl 2xl:text-4xl text-white  font-bold leading-relaxed border border-primary/60 bg-primary/30 p-2 rounded-lg "
         >
-          أسلوب تعامل، طريقة تفكير، ومعيار جودة ينعكس في كل خطوة
+        في كي إي بي للتجارة لا نرى الهوية التجارية مجرد شعار أو ألوان، بل إطاراً يحكم طريقة التفكير واتخاذ القرار والتعامل مع العملاء والشركاء. فهي تمثل معايير الجودة التي نلتزم بها، والأسلوب الذي نعبر به عن قيمنا، والطريقة التي نضمن بها تجربة متسقة تعكس احترافنا في كل تفاعل وخدمة نقدمها.
         </motion.p>
-      </div>
+       </div>
 
      
 
@@ -156,7 +156,7 @@ export function HeroSection() {
           delay: 2,
           duration: 1,
         }}
-        className="absolute bottom-8 xl:bottom-28 left-1/2 transform -translate-x-1/2 z-10"
+        className="absolute bottom-8 xl:bottom-4 left-1/2 transform -translate-x-1/2 z-10"
       >
         <motion.div
           animate={{

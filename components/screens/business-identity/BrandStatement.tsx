@@ -113,7 +113,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
               }}
             >
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6"
+              className="text-lg md:text-xl lg:text-3xl 2xl:text-6xl font-bold mb-6"
               style={{
                 background:
                   'linear-gradient(135deg, #0A1628 0%, #1a3a5c 100%)',
@@ -127,7 +127,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 بيان كي إي بي للتجارة
               </h2>
               <p
-                className="font-semibold text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-8 w-fit"
+                className="font-semibold text-sm md:text-xl lg:text-xl 2xl:text-4xl mb-8 w-fit"
                 style={{
                   background:
                     'linear-gradient(120deg, rgba(248, 250, 252, 0.95), rgba(251, 191, 36, 0.22))',
@@ -147,7 +147,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                     borderColor: '#C8A45C',
                   }}
                 >
-                  <ul className="space-y-4 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-brand-dark">
+                  <ul className="space-y-4 text-sm md:text-xl lg:text-xl 2xl:text-4xl font-medium text-brand-dark">
                     <li className="flex items-center gap-3">
                       <span
                         className="w-2 h-2 rounded-full"
@@ -187,7 +187,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                   </ul>
                 </div>
 
-                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-brand-dark/80 leading-relaxed">
+                <p className="text-sm md:text-xl lg:text-xl 2xl:text-3xl text-brand-dark/80 leading-relaxed">
                   نحن لا نبيع منتجات فقط… نحن نبني ثقة، ونصنع علاقة، ونقدّم
                   تجربة تعامل تُثبت نفسها مع الوقت، وتترك أثرًا يجعل العميل يعود
                   لأنه يريد، لا لأنه مضطر.
@@ -257,7 +257,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
             className="text-center mb-16"
           >
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 w-fit mx-auto"
+              className="text-lg md:text-xl lg:text-2xl 2xl:text-6xl font-bold mb-4 w-fit mx-auto"
               style={{
                 background:
                   'linear-gradient(135deg, #0F172A 0%, #0D9488 55%, #0F172A 100%)',
@@ -284,7 +284,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 gap-6">
             {dictionaryTerms.map((item, index) => (
               <motion.div
                 key={index}
@@ -339,7 +339,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
             className="text-center mb-16"
           >
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8"
+              className="text-lg md:text-xl lg:text-2xl 2xl:text-6xl font-bold mb-8"
               style={{
                 background: 'linear-gradient(90deg, #C8A45C 0%, #0A1628 100%)',
                 color: 'white',
@@ -403,10 +403,10 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 >
                   <div className="w-8 h-8">{val.icon}</div>
                 </div>
-                <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-brand-navy mb-3">
+                <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-5xl font-bold text-brand-navy mb-3">
                   {val.title}
                 </h3>
-                <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-brand-dark/70 leading-relaxed">{val.desc}</p>
+                <p className="text-sm md:text-lg lg:text-2xl 2xl:text-3xl text-brand-dark/70 leading-relaxed">{val.desc}</p>
               </motion.div>
             ))}
           </div>

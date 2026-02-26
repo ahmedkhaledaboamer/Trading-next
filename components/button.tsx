@@ -47,11 +47,11 @@ export default function Button({ children, className, variant, size = "md", ...p
       paddingRight: "clamp(1rem, 1.5vw, 1.5rem)",
     },
     lg: {
-      fontSize: "clamp(1.125rem, 1.5vw, 1.5rem)",
+      fontSize: "clamp(1rem, 1.5vw, 3rem)",
       paddingTop: "clamp(0.75rem, 1vw, 1.25rem)",
       paddingBottom: "clamp(0.75rem, 1vw, 1.25rem)",
-      paddingLeft: "clamp(1.25rem, 2vw, 2rem)",
-      paddingRight: "clamp(1.25rem, 2vw, 2rem)",
+      paddingLeft: "clamp(1rem, 2vw, 2rem)",
+      paddingRight: "clamp(1rem, 2vw, 2rem)",
     },
   };
 

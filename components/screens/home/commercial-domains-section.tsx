@@ -74,9 +74,9 @@ const domains: Domain[] = [
 
 function DomainCard({ domain }: { domain: Domain }) {
   return (
-    <div className="group p-[2%] bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 flex flex-row h-full">
+    <div className="group p-[2%] bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 flex flex-col md:flex-row h-full">
       {/* Image */}
-      <div className="relative rounded-2xl w-1/2 min-w-[200px] h-[200px] xl:h-[200px] 2xl:h-[400px] flex-shrink-0 overflow-hidden">
+      <div className="relative rounded-2xl w-full md:w-1/2 min-w-[200px] h-[200px] xl:h-[200px] 2xl:h-[400px] flex-shrink-0 overflow-hidden">
         <Image
           src={domain.image}
           alt={domain.title}
@@ -87,10 +87,10 @@ function DomainCard({ domain }: { domain: Domain }) {
 
       {/* Content */}
       <div className="p-5 flex-grow flex flex-col justify-center text-right">
-        <h3 className="text-2xl md:text-md xl:text-sm 2xl:text-6xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2">
+        <h3 className="text-sm md:text-md xl:text-sm 2xl:text-3xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2">
           {domain.title}
         </h3>
-        <p className="text-base md:text-md xl:text-sm 2xl:text-4xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
+        <p className=" text-center md:text-start text-sm md:text-md xl:text-sm 2xl:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
           {domain.description}
         </p>
       </div>
@@ -103,7 +103,7 @@ export default function CommercialDomainsSection() {
     <section className="w-full bg-gray-50  " dir="rtl">
       <div className="p-[5%]">
         {/* Header */}
-        <header className="flex flex-col items-start text-right gap-3 mb-10 md:mb-12">
+        <header className="flex flex-col items-center md:items-start text-right gap-3 mb-10 md:mb-12">
           <h2
             className="inline-block font-bold text-cyan-900 leading-tight text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl bg-cyan-100 border border-cyan-300 rounded-2xl px-6 py-4"
           >

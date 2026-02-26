@@ -90,7 +90,7 @@ export function ServicesSection() {
     <section className="  bg-white">
       <div className=" p-[5%]">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#0A1628] mb-4">
+          <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-[#0A1628] mb-4">
             خدماتنا المتكاملة
           </h2>
           <div className="w-24 h-1 bg-[#D4A853] mx-auto rounded-full mb-6" />
@@ -121,7 +121,7 @@ export function ServicesSection() {
               className="group rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#D4A853] hover:shadow-lg transition-all duration-300 text-center cursor-default overflow-hidden flex flex-col"
             >
               {/* Image Header */}
-              <div className="h-90 w-full relative overflow-hidden">
+              <div className="h-32 md:h-100 lg:h-52 2xl:h-120 w-full relative overflow-hidden">
                 <Image
                   src={service.image}
                   alt={service.name}
@@ -142,7 +142,7 @@ export function ServicesSection() {
               </div>
 
               <div className="px-4 pb-6 pt-0">
-                <h3 className="font-bold text-gray-800 text-lg md:text-xl lg:text-2xl xl:text-3xl group-hover:text-[#0A1628] transition-colors">
+                <h3 className="font-bold text-gray-800 text-md md:text-xl lg:text-xl 3xl:text-3xl group-hover:text-[#0A1628] transition-colors">
                   {service.name}
                 </h3>
               </div>

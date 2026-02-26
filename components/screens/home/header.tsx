@@ -57,7 +57,7 @@ export default async function Header() {
             
           }}>نصنع النفوذ عبر شبكات توريد عالمية، علاقات راسخة، وخبرة تنفيذية تمنح عملاءنا قدرة الوصول إلى منتجات عالية الجودة، بأسعار تنافسية، وبآليات تشغيل دقيقة.</p>
         <div
-          className="flex items-center justify-center flex-col lg:flex-row"
+          className="flex items-center justify-center  flex-row"
           style={{
             gap: "clamp(1rem, 2vw, 2rem)",
           }}

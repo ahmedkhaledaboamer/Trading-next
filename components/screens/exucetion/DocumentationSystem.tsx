@@ -45,7 +45,7 @@ export async function DocumentationSystem() {
         {/* Content Side */}
         <div className="lg:w-1/2 pt-[5%] pr-[2%] pb-[5%] pl-[5%] flex flex-col justify-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center lg:text-left text-slate-800 bg-slate-200 border-2 border-slate-500 rounded-xl px-6 py-4 w-fit mx-auto lg:mx-0">نظام التوثيق والمتابعة</h2>
-          <p className="text-blue-900 mb-12 text-l md:text-lg text-center lg:text-left bg-blue-100 border-2 border-blue-400 rounded-lg px-6 py-4 w-fit">
+          <p className="text-blue-900 mb-12 text-l md:text-lg text-center xl:text-start bg-blue-100 border-2 border-blue-400 rounded-lg px-6 py-4 w-fit">
             كل خطوة في العملية يتم توثيقها داخل نظام تشغيل إلكتروني متكامل يضمن
             الشفافية الكاملة.
           </p>

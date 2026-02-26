@@ -202,16 +202,16 @@ export async function DepartmentOrg() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
   return (
-    <section className="p-[5%] bg-white" dir={isRTL ? "rtl" : "ltr"}>
+    <section className="p-[3%] md:p-[5%] bg-white" dir={isRTL ? "rtl" : "ltr"}>
       <div className="mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-5xl font-bold text-indigo-800 mb-4 bg-indigo-100 border-2 border-indigo-400 rounded-xl px-8 py-4 inline-block">
+          <h2 className="text-xl md:text-5xl font-bold text-indigo-800 mb-4 bg-indigo-100 border-2 border-indigo-400 rounded-xl px-8 py-4 inline-block">
             المناصب التجارية وأدوارها
           </h2>
           <div className="w-24 h-1 bg-[#C9A84C] mx-auto rounded-full" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 gap-8">
           {departments.map((dept, idx) => (
             <div
               key={idx}

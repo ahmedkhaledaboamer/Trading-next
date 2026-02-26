@@ -72,7 +72,7 @@ export function FilterBar({
                 whileTap={{
                   scale: 0.95,
                 }}
-                className="relative flex-shrink-0 px-4 py-2 lg:px-6 lg:py-4 rounded-full text-base md:text-lg lg:text-xl xl:text-3xl font-bold transition-all duration-300 border-2 cursor-pointer"
+                className="relative flex-shrink-0 px-2 py-2 lg:px-3 2xl:px-6 lg:py-4 rounded-full text-sm md:text-sm lg:text-sm 2xl:text-3xl font-bold transition-all duration-300 border-2 cursor-pointer"
                 style={{
                   backgroundColor: isActive ? cat.accentColor : 'transparent',
                   color: isActive ? '#fff' : cat.accentColor,
@@ -167,7 +167,7 @@ export function ServiceSection({
             style={{
               backgroundColor: accentColor,
             }}
-            className="p-5 rounded-2xl text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 inline-block relative"
+            className="p-5 rounded-2xl text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold text-white mb-4 inline-block relative"
           >
             {title}
           </motion.h2>
@@ -197,7 +197,7 @@ export function ServiceSection({
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-8">
           {children}
         </div>
       </div>

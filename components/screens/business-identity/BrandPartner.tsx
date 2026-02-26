@@ -24,7 +24,7 @@ export function BrandPartner() {
       color: '#DC2626',
     },
     {
-      text: 'نعتبر العميل شريكًا في القرار، لا متلقي خدمة.',
+      text: 'نعتبر العميل شريكًا في القرار    .',
       color: '#2563EB',
     },
   ]
@@ -83,7 +83,7 @@ export function BrandPartner() {
             className="text-center mb-16"
           >
             <h2
-              className="text-4xl md:text-5xl font-bold mb-4"
+              className="text-lg md:text-xl lg:text-3xl 2xl:text-6xl font-bold mb-4"
               style={{
                 background: 'linear-gradient(135deg, #0A1628, #0D9488)',
                 color: 'white',

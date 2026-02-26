@@ -40,14 +40,14 @@ export function ClientMessage() {
               <HeartHandshake className="w-8 h-8" />
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold mb-8 text-[#D4A853]">
+            <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-7xl font-bold mb-8 text-[#D4A853]">
               كلمة للعميل
             </h2>
 
             <div className="relative">
               <Quote className="absolute -top-8 -right-4 w-12 h-12 text-[#D4A853]/20 transform -scale-x-100" />
 
-              <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
+              <h3 className="text-xl md:text-2xl lg:text-3xl 2xl:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
                 "أنت لست رقمًا في قائمة… <br />
                 <span className="text-[#D4A853]">
                   أنت قيمة تُقدّر، وشريك نعتز به
@@ -55,7 +55,7 @@ export function ClientMessage() {
                 "
               </h3>
 
-              <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-200 leading-relaxed mb-8 drop-shadow-md">
+              <p className="text-sm md:text-xl lg:text-2xl xl:text-4xl text-gray-200 leading-relaxed mb-8 drop-shadow-md">
                 وركن أساسي في رحلتنا التجارية. نستمع لك، نفهم احتياجاتك، ونبني
                 لك مسارًا تجاريًا يناسب طموحك، لأن نجاحك جزء من هويتنا، وثقتك هي
                 رأس مالنا الحقيقي.

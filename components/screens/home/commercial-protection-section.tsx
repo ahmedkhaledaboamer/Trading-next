@@ -72,7 +72,7 @@ export default function CommercialProtectionSection() {
               />
             </div>
             <div className="absolute bottom-0 left-0 bg-[#1A1A2E] p-6 md:p-8 z-20   rounded-tr-3xl">
-              <h3 className="text-2xl md:text-2xl xl:text-2xl 2xl:text-6xl font-bold text-white leading-tight">
+              <h3 className="text-sm md:text-2xl xl:text-2xl 2xl:text-6xl font-bold text-white leading-tight">
                 حماية شاملة{" "}
                 <span className="text-[#C9A84C]">لكل مرحلة</span> من مراحل التجارة
               </h3>

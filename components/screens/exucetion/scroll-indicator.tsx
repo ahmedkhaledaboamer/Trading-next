@@ -2,7 +2,7 @@
 import { ArrowDownIcon } from "lucide-react"
 const ScrollIndicator = () => {
   return (
-    <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce" onClick={() => {
+    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 animate-bounce" onClick={() => {
       window.scrollTo({
         top: window.innerHeight,
         behavior: "smooth",

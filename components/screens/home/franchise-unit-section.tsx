@@ -82,7 +82,10 @@ export default async function FranchiseUnitSection() {
                   </li>
                 ))}
               </ul>
-            </article>
+              
+              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30   rounded-2xl p-4">
+              تعمل وحدة الامتياز التجاري على تحويل العلامات التجارية إلى نماذج قابلة للتوسع بثقة واستدامة. من خلال بناء أنظمة تشغيل واضحة، واختيار الشركاء المناسبين.</p>
+                          </article>
 
             {/* Tasks card */}
             <article
@@ -119,7 +122,9 @@ export default async function FranchiseUnitSection() {
                   </li>
                 ))}
               </ul>
-            </article>
+              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30   rounded-2xl p-4">
+              في وحدة الامتياز التجاري نعمل على تمكين العلامات من التوسع بطريقة مدروسة، عبر تصميم نماذج امتياز قابلة للتطبيق، ووضع معايير تشغيل دقيقة.     </p>
+              </article>
 
             {/* Image card */}
             <div className="flex justify-center lg:justify-end">

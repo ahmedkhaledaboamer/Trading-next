@@ -59,7 +59,7 @@ export function VisionMissionGoal( {locale}: {locale: string} ) {
               className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
             >
               {/* Image Header */}
-              <div className="relative h-90 overflow-hidden">
+              <div className="relative h-52 md:h-100 lg:h-60 2xl:h-120 overflow-hidden">
                 <Image
                   src={card.image}
                   alt={card.title}

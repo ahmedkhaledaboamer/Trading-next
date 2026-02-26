@@ -26,7 +26,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
         {
           icon: <Shield className="w-6 h-6" />,
           title: 'واعية',
-          desc: 'نفهم السوق، ونقرأ التفاصيل، ونتحرك بثقة.',
+          desc: 'نفهم السوق، ونقرأ التفاصيل،    .',
           color: '#DC2626', // Red
         },
         {
@@ -121,7 +121,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
                 مقدمة
               </h2>
 
-              <div className="space-y-6 text-lg md:text-xl lg:text-2xl xl:text-3xl text-white leading-relaxed bg-gradient-to-r from-[#74dddb8f] to-[#354ad1] p-6 rounded-lg shadow-lg border border-amber-400/30">
+              <div className="space-y-6 text-md md:text-xl lg:text-xl 2xl:text-3xl text-white leading-relaxed bg-gradient-to-r from-[#74dddb8f] to-[#354ad1] p-6 rounded-lg shadow-lg border border-amber-400/30">
                 <div className="flex items-start gap-4 mb-6">
 
                   <p className="flex-1">
@@ -136,7 +136,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
                   حقيقة تُقال كما هي.
                 </p>
                 <p
-                  className="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl pr-4"
+                  className="font-bold text-xl md:text-2xl lg:text-2xl 2xl:text-4xl pr-4"
                   style={{
                     color: '#ffff00',
                     borderRight: '4px solid #C8A45C',
@@ -200,7 +200,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
             </motion.div>
 
             {/* Content */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 text-center md:text-start">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -219,7 +219,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
                 className="mb-12"
               >
                 <h2
-                  className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 inline-block"
+                  className="text-lg md:text-3xl lg:text-4xl 2xl:text-7xl   font-bold mb-4 inline-block"
                   style={{
                     background:
                       "linear-gradient(120deg, #0A1628 0%, #0D9488 60%, #1E293B 100%)",
@@ -232,7 +232,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
                   شخصية العلامة التجارية
                 </h2>
                 <p
-                  className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mt-2 w-fit"
+                  className="text-xl md:text-xl lg:text-2xl 2xl:text-4xl font-semibold mt-2 w-fit"
                   style={{
                     background:
                       "linear-gradient(90deg, rgba(15, 23, 42, 0.04), rgba(15, 118, 110, 0.08))",
@@ -280,11 +280,11 @@ export function BrandIntro( {locale}: {locale: string} ) {
                       >
                         {trait.icon}
                       </div>
-                      <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-brand-navy">
+                      <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-4xl font-bold text-brand-navy">
                         {trait.title}
                       </h3>
                     </div>
-                    <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-brand-dark/70">{trait.desc}</p>
+                    <p className="text-sm md:text-xl lg:text-xl 2xl:text-3xl text-brand-dark/70">{trait.desc}</p>
                   </motion.div>
                 ))}
               </div>

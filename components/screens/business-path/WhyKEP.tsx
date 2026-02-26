@@ -111,7 +111,7 @@ export function WhyKEP( {locale}: {locale: string} ) {
                 once: true,
               }}
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#0A1628] mb-6">
+              <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-[#0A1628] mb-6">
                 لماذا كي إي بي للتجارة؟
               </h2>
               <div className="w-20 h-1.5 bg-[#D4A853] rounded-full mb-8" />
@@ -126,7 +126,7 @@ export function WhyKEP( {locale}: {locale: string} ) {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 to-transparent" />
-                <div className="absolute bottom-4 right-4 text-white font-bold text-lg md:text-xl lg:text-2xl xl:text-4xl">
+                <div className="absolute bottom-4 right-4 text-white font-bold text-lg md:text-xl lg:text-2xl 2xl:text-4xl">
                   فريق عمل متكامل لخدمتك
                 </div>
               </div>
@@ -160,7 +160,7 @@ export function WhyKEP( {locale}: {locale: string} ) {
                   >
                     <div className="w-10 h-10 flex items-center justify-center">{feature.icon}</div>
                   </div>
-                  <span className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold text-gray-800 group-hover:text-[#0A1628] transition-colors">
+                  <span className="text-lg md:text-xl lg:text-2xl 2xl:text-4xl font-semibold text-gray-800 group-hover:text-[#0A1628] transition-colors">
                     {feature.text}
                   </span>
                 </motion.div>

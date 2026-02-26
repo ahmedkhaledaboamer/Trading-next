@@ -56,7 +56,7 @@ export default async function BusinessEntitySection() {
             {/* Text / left side */}
             <div className="flex flex-col gap-6">
               <p
-                className="inline-block text-primary  font-semibold bg-primary/5 border border-primary/30 rounded-full px-4 py-1"
+                className="inline-block text-primary text-center  font-semibold bg-primary/5 border border-primary/30 rounded-full px-4 py-1"
                 style={{
                   fontSize: "clamp(2rem, 2vw, 5rem)",
                 }}
@@ -65,18 +65,18 @@ export default async function BusinessEntitySection() {
               </p>
 
               <h2
-                className="inline-block text-secondary font-bold leading-tight bg-primary/5 border border-primary/40 rounded-2xl px-4 py-3"
+                className="inline-block text-secondary text-center font-bold leading-tight bg-primary/5 border border-primary/40 rounded-2xl px-4 py-3"
                 style={{
-                  fontSize: "clamp(2rem, 2.6vw, 2.8rem)",
+                  fontSize: "clamp(0.75rem, 2.6vw, 2.8rem)",
                 }}
               >
                 منظومة متكاملة تدير حركة التجارة باحترافية عالية
               </h2>
 
               <p
-                className="text-secondary/80"
+                className="text-secondary/80 text-center"
                 style={{
-                  fontSize: "clamp(1.5rem, 1.15vw, 1.15rem)",
+                  fontSize: "clamp(1rem, 1.15vw, 1.15rem)",
                 }}
               >
                 كي إي بي للتجارة تعمل وفق نموذج تشغيل متقدم يدمج بين الرؤية

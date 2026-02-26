@@ -73,14 +73,14 @@ export default async function MajorProjectsUnitSection() {
       <div className="p-[5%]">
         <div className="flex flex-col gap-10 md:gap-12">
           {/* Header */}
-          <header className="flex flex-col items-start gap-3 text-right">
+          <header className="flex flex-col items-center md:items-start gap-3 text-right">
             <h2
-              className="inline-block font-bold text-[#283593] leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-[#E8EAF6] border border-[#9FA8DA] rounded-2xl px-6 py-4"
+              className="inline-block  font-bold text-[#283593] leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-[#E8EAF6] border border-[#9FA8DA] rounded-2xl px-6 py-4"
             >
               وحدة المشاريع الكبرى
             </h2>
             <p
-              className="inline-block text-[#303F9F] text-base md:text-2xl bg-[#C5CAE9] border border-[#7986CB] rounded-full px-5 py-2 mt-1"
+              className="inline-block text-[#303F9F] text-center md:text-start text-base md:text-2xl bg-[#C5CAE9] border border-[#7986CB] rounded-full px-5 py-2 mt-1"
             >
               وحدة مخصصة لإدارة المشاريع الضخمة، من التخطيط إلى التنفيذ عبر حلول
               توريد وتشغيل متكاملة.

@@ -270,16 +270,16 @@ export function BusinessUnits( {locale}: {locale: string} ) {
           <span className="text-[#0E7490] font-bold tracking-wider uppercase text-base md:text-lg lg:text-xl xl:text-3xl bg-[#0E7490]/10 px-4 py-1 rounded-full">
             منظومة متكاملة
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold text-[#0A1628] mt-4 mb-6">
+          <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-[#0A1628] mt-4 mb-6">
             وحداتنا المتخصصة
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-600  ">
+          <p className="text-md md:text-xl lg:text-2xl 2xl:text-4xl text-gray-600  ">
             وحدات استراتيجية متكاملة تعمل معًا لضمان نجاح عملائنا في كل خطوة من
             رحلتهم التجارية
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 gap-8">
           {units.map((unit, index) => (
             <motion.div
               key={unit.id}
@@ -301,7 +301,7 @@ export function BusinessUnits( {locale}: {locale: string} ) {
               className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-t-4 ${unit.border} group flex flex-col`}
             >
               {/* Image Header */}
-              <div className="h-36 w-full relative overflow-hidden">
+              <div className="h-36 md:h-100 lg:h-62 2xl:h-100 w-full relative overflow-hidden">
                 <Image
                   src={unit.image}
                   alt={unit.name}

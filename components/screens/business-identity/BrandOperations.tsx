@@ -73,7 +73,7 @@ export function BrandOperations() {
               }}
             >
               <h2
-                className="text-4xl font-bold mb-6 flex items-center gap-4"
+                className="text-lg md:text-xl lg:text-3xl 2xl:text-6xl font-bold mb-6 flex items-center gap-4"
                 style={{
                   background: '#0A1628',
                   color: '#C8A45C',

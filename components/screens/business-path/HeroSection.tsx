@@ -53,11 +53,11 @@ export function HeroSection() {
             duration: 0.8,
           }}
         >
-          <div className="inline-block mb-4 px-4 py-1 rounded-full border border-[#D4A853]/30 bg-[#D4A853]/10 text-[#D4A853] font-medium text-base md:text-lg lg:text-xl xl:text-3xl backdrop-blur-sm">
+          <div className="inline-block mb-4 px-4 py-1 rounded-full border border-[#D4A853]/30 bg-[#D4A853]/10 text-[#D4A853] font-medium text-base md:text-lg lg:text-xl 2xl:text-3xl backdrop-blur-sm">
             مسارك التجاري الموثوق
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-lg md:text-xl lg:text-4xl 2xl:text-8xl font-bold mb-6 leading-tight drop-shadow-lg">
             <span className="text-white">كي إي بي</span>
             <span className="text-[#D4A853]"> للتجارة</span>
             <span className="block text-xl md:text-2xl lg:text-3xl xl:text-5xl mt-4 font-normal text-gray-300">
@@ -65,18 +65,18 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-200 mb-10  leading-relaxed drop-shadow-md">
+          <p className="text-sm md:text-xl lg:text-2xl 2xl:text-4xl text-gray-200 mb-10  leading-relaxed drop-shadow-md">
             شريكك التجاري الذي يفتح لك أبواب الأسواق بثقة وجودة وثبات.
             <br />
             في عالم تتسارع فيه حركة التجارة، نحن بوصلتك نحو النجاح.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="cursor-pointer text-base md:text-lg lg:text-xl xl:text-3xl px-8 py-4 bg-[#D4A853] text-[#0A1628] font-bold rounded-lg hover:bg-[#b68d40] transition-colors flex items-center gap-2 shadow-lg shadow-[#D4A853]/20">
+          <div className="flex  flex-row items-center justify-center gap-4">
+            <button className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-[#D4A853] text-[#0A1628] font-bold rounded-lg hover:bg-[#b68d40] transition-colors flex items-center gap-2 shadow-lg shadow-[#D4A853]/20">
               اكتشف خدماتنا
               <ArrowLeft className="w-5 h-5" />
             </button>
-            <button className="cursor-pointer text-base md:text-lg lg:text-xl xl:text-3xl px-8 py-4 bg-white/10 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm">
+            <button className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-white/10 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm">
               تواصل معنا
             </button>
           </div>
