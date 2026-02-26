@@ -60,9 +60,69 @@
   "header": {
     "title": "Conseil Juridique Premium",
     "subtitle": "Expertise Juridique de Confiance avec des Normes d'Or",
+    "companyName": "KEP pour le Commerce S.à r.l.",
+    "tagline": "Le centre de la puissance commerciale… et la plateforme d'influence dans les chaînes d'approvisionnement mondiales",
+    "paragraph1": "Dans un monde où le commerce s'accélère et la concurrence s'intensifie, un acteur se distingue par sa vision, son insight et sa capacité d'exécution. KEP pour le Commerce n'est pas qu'une société… c'est un pôle commercial souverain qui gère des opérations d'approvisionnement et de distribution à travers plusieurs marchés, en maîtrisant les flux du commerce de la source au client.",
+    "paragraph2": "Nous construisons notre influence grâce à des réseaux d'approvisionnement mondiaux, des relations solides et une expérience opérationnelle qui donne à nos clients l'accès à des produits de qualité, des prix compétitifs et des mécanismes précis.",
+    "ctaBusinessPath": "Votre Parcours Commercial",
     "cta": {
       "bookConsultation": "Réservez Votre Consultation",
       "exploreServices": "Découvrez Nos Services"
+    }
+  },
+  "businessIdentity": {
+    "hero": {
+      "companyName": "KEP pour le Commerce",
+      "title": "Identité Commerciale",
+      "description": "Chez KEP pour le Commerce, nous ne considérons pas l'identité commerciale comme un simple logo ou des couleurs—c'est un cadre qui façonne notre façon de penser, de décider et d'interagir avec les clients et les partenaires. Elle reflète les normes de qualité auxquelles nous nous engageons, la manière dont nous exprimons nos valeurs et comment nous offrons une expérience cohérente qui reflète notre professionnalisme à chaque interaction et service.",
+      "discoverMore": "Découvrir plus"
+    },
+    "intro": {
+      "sectionTitle": "Introduction",
+      "p1": "Chez KEP pour le Commerce, nous avons choisi d'écrire qui nous sommes d'une manière qui ne ressemble à personne d'autre, parce que nous ne travaillons tout simplement comme personne d'autre.",
+      "p2": "Nous ne sommes pas une entreprise qui répète ce que les autres disent, nous n'utilisons pas les phrases de tous les sites, et nous ne cherchons pas des mots raffinés autant qu'une vérité dite telle quelle.",
+      "p3": "Nous nous définissons par notre façon de travailler :",
+      "p4": "Avec une clarté qui ne se cache pas derrière les mots, une force visible dans l'exécution avant d'être lue sur le papier, et une approche opérationnelle qui fait que le client sent qu'il a affaire à une entité qui sait ce qu'elle fait, pourquoi et comment.",
+      "p5": "Nous sommes une entité commerciale fondée sur des opérations réelles, des informations précises, une conscience du marché et une compréhension profonde de la dynamique du commerce international.",
+      "p6": "Cette page n'est pas une introduction… c'est une identité écrite avec honnêteté et dans un style qui reflète nos valeurs, notre façon de travailler et notre caractère commercial unique.",
+      "personalityTitle": "Personnalité de la marque",
+      "personalitySubtitle": "Notre personnalité n'est pas une voix écrite… c'est une façon d'agir",
+      "traits": {
+        "direct": { "title": "Directe", "desc": "Nous n'utilisons pas de mots plus grands que la vérité." },
+        "calm": { "title": "Calme", "desc": "Nous n'exagérons pas et ne promettons pas ce que nous ne pouvons pas tenir." },
+        "practical": { "title": "Pratique", "desc": "Nous nous concentrons sur l'exécution avant les paroles." },
+        "aware": { "title": "Consciente", "desc": "Nous comprenons le marché et lisons les détails." },
+        "professional": { "title": "Professionnelle", "desc": "Nous traitons le client comme il le mérite, pas comme d'habitude." },
+        "committed": { "title": "Engagée", "desc": "Nous tenons parole et construisons une confiance durable." }
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Votre premier partenaire en commerce et technologie",
+      "title": "KEP pour le Commerce",
+      "titleSuffix": "S.à r.l.",
+      "description": "Nous offrons une large gamme de services commerciaux et technologiques qui répondent aux besoins des entreprises et des particuliers, avec un engagement total en faveur de la qualité, du professionnalisme et des normes internationales.",
+      "cta": "Découvrir nos services"
+    }
+  },
+  "businessPath": {
+    "hero": {
+      "badge": "Votre parcours commercial de confiance",
+      "title1": "KEP",
+      "title2": " pour le Commerce",
+      "title3": " S.à r.l.",
+      "subtitle": "Votre partenaire commercial qui vous ouvre les portes des marchés avec confiance, qualité et stabilité. Dans un monde où le commerce s'accélère, nous sommes votre boussole vers le succès.",
+      "ctaServices": "Découvrir nos services",
+      "ctaContact": "Nous contacter"
+    }
+  },
+  "execution": {
+    "hero": {
+      "title": "KEP pour le Commerce",
+      "subtitle": "Mécanisme d'exécution des communications — un système de communication clair pour une expérience professionnelle",
+      "p1": "Nous croyons que le succès du processus commercial commence par la clarté des rôles, la rapidité de réponse et la précision d'exécution.",
+      "p2": "Chez KEP pour le Commerce nous construisons un système de communication opérationnel clair qui assure un travail fluide entre toutes les parties, de la définition des rôles et des canaux de communication à la rapidité de réponse et à la précision du transfert d'information. Car le succès des opérations commerciales ne dépend pas seulement de la planification, mais d'une exécution organisée fondée sur la clarté des responsabilités et l'intégration des équipes, pour une expérience professionnelle et des résultats mesurables."
     }
   },
   "footer": {

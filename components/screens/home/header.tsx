@@ -1,4 +1,5 @@
 import Button from "@/components/button";
+import { Link } from "@/i18n/routing";
 import { cn } from "@/utils/cn";
 import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -33,7 +34,7 @@ export default async function Header() {
             lineHeight: "1.1",
           }}
         >
-         كي إي بي للتجارة ذ.م.م
+          {t("companyName")}
         </h1>
         <h2
           className="font-bold text-white"
@@ -42,30 +43,29 @@ export default async function Header() {
             lineHeight: "1.2",
           }}
         >
-         مركز القوة التجارية… ومنصة النفوذ في سلاسل التوريد العالمية
+          {t("tagline")}
         </h2>
         <p className="p-4 bg-black/50 font-bold  border border-yellow-500 text-white rounded-2xl" style={{
             fontSize: "clamp(1rem, 1vw, 3rem)",
             
           }}>
-        في عالم تتسارع فيه حركة التجارة وتشتد فيه المنافسة، يبرز كيانٌ يمتلك البصيرة، والرؤية، والقدرة على التنفيذ.
-كي إي بي للتجارة ليست مجرد شركة… بل مركز تجاري سيادي يدير عمليات توريد وتوزيع تمتد عبر أسواق متعددة، ويُحكم السيطرة على مسارات التجارة من المصدر إلى العميل.
-
+          {t("paragraph1")}
         </p>
         <p className="p-4 font-bold bg-black/50 border border-yellow-500 text-white rounded-2xl"style={{
             fontSize: "clamp(1rem, 1.5vw, 2.5rem)",
             
-          }}>نصنع النفوذ عبر شبكات توريد عالمية، علاقات راسخة، وخبرة تنفيذية تمنح عملاءنا قدرة الوصول إلى منتجات عالية الجودة، بأسعار تنافسية، وبآليات تشغيل دقيقة.</p>
+          }}>{t("paragraph2")}</p>
         <div
           className="flex items-center justify-center  flex-row"
           style={{
             gap: "clamp(1rem, 2vw, 2rem)",
           }}
         >
-          <Button variant="primary" size="lg" className="font-extrabold">
-           
-مسارك التجاري
-          </Button>
+          <Link href="/business-path">
+            <Button variant="primary" size="lg" className="font-extrabold">
+              {t("ctaBusinessPath")}
+            </Button>
+          </Link>
           <Button variant="secondary" size="lg" className="font-extrabold">
             {t("cta.exploreServices")}
           </Button>

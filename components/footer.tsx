@@ -85,6 +85,7 @@ export default async function Footer() {
 
   return (
     <footer
+      id="contact"
       className="bg-secondary text-white"
       style={{
         paddingTop: "clamp(3rem, 4vw, 6rem)",

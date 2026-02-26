@@ -2,8 +2,10 @@
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export function HeroSection() {
+  const t = useTranslations('businessIdentity.hero')
   return (
     <section className="relative p-[5%] h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Background Image with Overlay */}
@@ -76,7 +78,7 @@ export function HeroSection() {
               border: '1px solid rgba(200, 164, 92, 0.3)',
             }}
           >
-            كي إي بي للتجارة
+            {t('companyName')}
           </span>
         </motion.div>
 
@@ -104,7 +106,7 @@ export function HeroSection() {
               textShadow: 'none',
             }}
           >
-            الهوية التجارية
+            {t('title')}
           </span>
          </motion.h1>
 
@@ -138,7 +140,7 @@ export function HeroSection() {
           }}
           className="text-sm md:text-xl lg:text-2xl 2xl:text-4xl text-white  font-bold leading-relaxed border border-primary/60 bg-primary/30 p-2 rounded-lg "
         >
-        في كي إي بي للتجارة لا نرى الهوية التجارية مجرد شعار أو ألوان، بل إطاراً يحكم طريقة التفكير واتخاذ القرار والتعامل مع العملاء والشركاء. فهي تمثل معايير الجودة التي نلتزم بها، والأسلوب الذي نعبر به عن قيمنا، والطريقة التي نضمن بها تجربة متسقة تعكس احترافنا في كل تفاعل وخدمة نقدمها.
+          {t('description')}
         </motion.p>
        </div>
 
@@ -177,7 +179,7 @@ export function HeroSection() {
             });
           }}
         >
-          <span className="text-sm md:text-base lg:text-lg xl:text-2xl mb-2">اكتشف المزيد</span>
+          <span className="text-sm md:text-base lg:text-lg xl:text-2xl mb-2">{t('discoverMore')}</span>
           <ChevronDown size={32} />
         </motion.div>
       </motion.div>

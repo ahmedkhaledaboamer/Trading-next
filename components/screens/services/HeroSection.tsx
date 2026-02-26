@@ -1,8 +1,11 @@
 'use client'
- import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+
 export function HeroSection() {
+  const t = useTranslations('services.hero')
   return (
     <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden text-white">
       {/* Font Import */}
@@ -96,21 +99,19 @@ export function HeroSection() {
         >
           <div className="inline-block mb-6 px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl">
             <span className="text-sm md:text-lg lg:text-xl xl:text-3xl 2xl:text-6xl font-medium text-teal-100">
-              شريكك الأول في التجارة والتقنية
+              {t('badge')}
             </span>
           </div>
 
           <h1 className="text-xl md:text-2xl lg:text-3xl 2xl:text-6xl font-extrabold mb-6 tracking-tight leading-tight drop-shadow-lg">
-            كي إي بي للتجارة
+            {t('title')}
             <span className="block text-3xl md:text-5xl mt-4 font-bold text-teal-300">
-              ذ.م.م
+              {t('titleSuffix')}
             </span>
           </h1>
 
           <p className="text-lg lg:text-2xl 2xl:text-4xl text-blue-100   leading-relaxed mb-10 font-light">
-            نقدّم مجموعة واسعة من الخدمات التجارية والتقنية التي تلبي احتياجات
-            الشركات والأفراد، مع التزام كامل بالجودة، الاحترافية، والمعايير
-            العالمية.
+            {t('description')}
           </p>
 
           <motion.button
@@ -127,7 +128,7 @@ export function HeroSection() {
               })
             }}
           >
-            <span>استكشف خدماتنا</span>
+            <span>{t('cta')}</span>
             <ArrowDown size={20} />
           </motion.button>
         </motion.div>

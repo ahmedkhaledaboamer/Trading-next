@@ -1,47 +1,25 @@
 'use client'
- import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Target, Eye, Zap, Shield, Award, HeartHandshake } from 'lucide-react'
 import Image from 'next/image'
-export function BrandIntro( {locale}: {locale: string} ) {
-    const isRTL = locale === "ar";
-    const personalityTraits = [
-        {
-          icon: <Target className="w-6 h-6" />,
-          title: 'صريحة',
-          desc: 'لا نستخدم كلمات أكبر من الحقيقة.',
-          color: '#0D9488', // Teal
-        },
-        {
-          icon: <Eye className="w-6 h-6" />,
-          title: 'هادئة',
-          desc: 'لا نبالغ، ولا نعد بما لا نستطيع.',
-          color: '#7C3AED', // Purple
-        },
-        {
-          icon: <Zap className="w-6 h-6" />,
-          title: 'عملية',
-          desc: 'نركز على التنفيذ قبل الكلام.',
-          color: '#D97706', // Amber
-        },
-        {
-          icon: <Shield className="w-6 h-6" />,
-          title: 'واعية',
-          desc: 'نفهم السوق، ونقرأ التفاصيل،    .',
-          color: '#DC2626', // Red
-        },
-        {
-          icon: <Award className="w-6 h-6" />,
-          title: 'محترفة',
-          desc: 'نعامل العميل كما يستحق، لا كما هو معتاد.',
-          color: '#059669', // Emerald
-        },
-        {
-          icon: <HeartHandshake className="w-6 h-6" />,
-          title: 'ملتزمة',
-          desc: 'نلتزم بما نقول، ونبني ثقة تدوم.',
-          color: '#2563EB', // Blue
-        },
-      ]
+import { useTranslations } from 'next-intl'
+
+const TRAIT_KEYS = ['direct', 'calm', 'practical', 'aware', 'professional', 'committed'] as const
+const TRAIT_ICONS = [Target, Eye, Zap, Shield, Award, HeartHandshake]
+const TRAIT_COLORS = ['#0D9488', '#7C3AED', '#D97706', '#DC2626', '#059669', '#2563EB']
+
+export function BrandIntro({ locale }: { locale: string }) {
+  const isRTL = locale === 'ar'
+  const t = useTranslations('businessIdentity.intro')
+  const personalityTraits = TRAIT_KEYS.map((key, i) => {
+    const IconComponent = TRAIT_ICONS[i]
+    return {
+      icon: <IconComponent className="w-6 h-6" />,
+      title: t(`traits.${key}.title`),
+      desc: t(`traits.${key}.desc`),
+      color: TRAIT_COLORS[i],
+    }
+  })
   return (
     <>
       {/* Introduction Section */}
@@ -118,23 +96,18 @@ export function BrandIntro( {locale}: {locale: string} ) {
                   border: '1px solid rgba(200, 164, 92, 0.6)',
                 }}
               >
-                مقدمة
+                {t('sectionTitle')}
               </h2>
 
               <div className="space-y-6 text-md md:text-xl lg:text-xl 2xl:text-3xl text-white leading-relaxed bg-gradient-to-r from-[#74dddb8f] to-[#354ad1] p-6 rounded-lg shadow-lg border border-amber-400/30">
                 <div className="flex items-start gap-4 mb-6">
 
                   <p className="flex-1">
-                    في كي إي بي للتجارة، اخترنا أن نكتب تعريفنا بطريقة لا تشبه
-                    أحدًا، لأننا ببساطة لا نعمل مثل أحد.
+                    {t('p1')}
                   </p>
                 </div>
 
-                <p>
-                  لسنا شركة تكرر ما يقوله الآخرون، ولا نستخدم العبارات التي
-                  تُقال في كل موقع، ولا نبحث عن كلمات منمّقة بقدر ما نبحث عن
-                  حقيقة تُقال كما هي.
-                </p>
+                <p>{t('p2')}</p>
                 <p
                   className="font-bold text-xl md:text-2xl lg:text-2xl 2xl:text-4xl pr-4"
                   style={{
@@ -142,25 +115,17 @@ export function BrandIntro( {locale}: {locale: string} ) {
                     borderRight: '4px solid #C8A45C',
                   }}
                 >
-                  نحن نعرّف أنفسنا بالطريقة التي نعمل بها:
+                  {t('p3')}
                 </p>
-                <p>
-                  بوضوح لا يختبئ خلف الكلمات، وبقوة تُرى في التنفيذ قبل أن تُقرأ
-                  في السطور، وبمنهجية تشغيلية تجعل العميل يشعر أنه يتعامل مع
-                  كيان يعرف ماذا يفعل، ولماذا يفعله، وكيف يفعله.
-                </p>
-                <p>
-                  نحن كيان تجاري يعتمد على تشغيل حقيقي، ومعلومات دقيقة، ورؤية
-                  واعية للسوق، وفهم عميق لديناميكية التجارة الدولية.
-                </p>
+                <p>{t('p4')}</p>
+                <p>{t('p5')}</p>
                 <p
                   className="italic"
                   style={{
                     color: '#eeeee0',
                   }}
                 >
-                  هذه الصفحة ليست مقدمة… هذه هوية مكتوبة بصدق، وبأسلوب يعكس
-                  قيمتنا، وطريقتنا في العمل، وشخصيتنا التجارية التي لا تتكرر.
+                  {t('p6')}
                 </p>
               </div>
             </motion.div>
@@ -229,7 +194,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
                     border: "1px solid rgba(200, 164, 92, 0.6)",
                   }}
                 >
-                  شخصية العلامة التجارية
+                  {t('personalityTitle')}
                 </h2>
                 <p
                   className="text-xl md:text-xl lg:text-2xl 2xl:text-4xl font-semibold mt-2 w-fit"
@@ -242,7 +207,7 @@ export function BrandIntro( {locale}: {locale: string} ) {
                     border: "1px solid rgba(148, 163, 184, 0.6)",
                   }}
                 >
-                  شخصيتنا ليست صوتًا مكتوبًا… بل أسلوب تعامل
+                  {t('personalitySubtitle')}
                 </p>
               </motion.div>
 

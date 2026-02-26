@@ -60,9 +60,69 @@
     "header": {
         "title": "Premium Legal Counsel",
         "subtitle": "Trusted Legal Expertise with a Gold‑Standard",
+        "companyName": "KEP for Trade L.L.C",
+        "tagline": "The Hub of Commercial Power… and the Platform of Influence in Global Supply Chains",
+        "paragraph1": "In a world where trade moves faster and competition grows fiercer, one entity stands out with vision, insight, and the ability to execute. KEP for Trade is not just a company… it is a sovereign commercial hub managing supply and distribution operations across multiple markets, controlling trade flows from source to customer.",
+        "paragraph2": "We build influence through global supply networks, solid relationships, and hands-on experience that gives our clients access to high-quality products, competitive prices, and precise operations.",
+        "ctaBusinessPath": "Your Business Path",
         "cta": {
             "bookConsultation": "Book Your Consultation",
             "exploreServices": "Explore Our Services"
+        }
+    },
+    "businessIdentity": {
+        "hero": {
+            "companyName": "KEP for Trade",
+            "title": "Business Identity",
+            "description": "At KEP for Trade we do not see business identity as just a logo or colours—it is a framework that shapes how we think, make decisions, and deal with clients and partners. It reflects the quality standards we commit to, the way we express our values, and how we deliver a consistent experience that reflects our professionalism in every interaction and service.",
+            "discoverMore": "Discover more"
+        },
+        "intro": {
+            "sectionTitle": "Introduction",
+            "p1": "At KEP for Trade we chose to write who we are in a way that resembles no one else, because we simply do not work like anyone else.",
+            "p2": "We are not a company that repeats what others say, we do not use the same phrases on every website, and we are not looking for polished words as much as we are looking for truth told as it is.",
+            "p3": "We define ourselves by the way we work:",
+            "p4": "With clarity that does not hide behind words, with strength that shows in execution before it is read on the page, and with an operational approach that makes the client feel they are dealing with an entity that knows what it does, why it does it, and how it does it.",
+            "p5": "We are a commercial entity built on real operations, accurate information, market awareness, and a deep understanding of international trade dynamics.",
+            "p6": "This page is not an introduction… it is an identity written with honesty and in a style that reflects our values, our way of working, and our unrepeatable commercial character.",
+            "personalityTitle": "Brand personality",
+            "personalitySubtitle": "Our personality is not a written voice… it is a way of dealing",
+            "traits": {
+                "direct": { "title": "Direct", "desc": "We do not use words bigger than the truth." },
+                "calm": { "title": "Calm", "desc": "We do not exaggerate or promise what we cannot deliver." },
+                "practical": { "title": "Practical", "desc": "We focus on execution before talk." },
+                "aware": { "title": "Aware", "desc": "We understand the market and read the details." },
+                "professional": { "title": "Professional", "desc": "We treat the client as they deserve, not as usual." },
+                "committed": { "title": "Committed", "desc": "We keep our word and build lasting trust." }
+            }
+        }
+    },
+    "services": {
+        "hero": {
+            "badge": "Your first partner in trade and technology",
+            "title": "KEP for Trade",
+            "titleSuffix": "L.L.C",
+            "description": "We offer a wide range of commercial and technology services that meet the needs of companies and individuals, with a full commitment to quality, professionalism and global standards.",
+            "cta": "Explore our services"
+        }
+    },
+    "businessPath": {
+        "hero": {
+            "badge": "Your trusted business path",
+            "title1": "KEP",
+            "title2": " for Trade",
+            "title3": " L.L.C",
+            "subtitle": "Your commercial partner that opens the doors of markets with confidence, quality and stability. In a world where trade is accelerating, we are your compass to success.",
+            "ctaServices": "Discover our services",
+            "ctaContact": "Contact us"
+        }
+    },
+    "execution": {
+        "hero": {
+            "title": "KEP for Trade",
+            "subtitle": "Communication execution mechanism — a clear communication system that ensures a professional experience",
+            "p1": "We believe that the success of the business process starts with clarity of roles, speed of response, and accuracy of execution.",
+            "p2": "At KEP for Trade we build a clear operational communication system that ensures smooth work between all parties, from defining roles and communication paths to speed of response and accuracy of information transfer. Because the success of business operations depends not only on planning, but on organised execution based on clarity of responsibilities and team integration, achieving a professional experience and measurable results."
         }
     },
     "footer": {

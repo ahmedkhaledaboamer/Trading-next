@@ -1,8 +1,12 @@
 'use client'
- import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
+
 export function HeroSection() {
+  const t = useTranslations('businessPath.hero')
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1628] text-white">
       {/* Background Image with Overlay */}
@@ -54,31 +58,33 @@ export function HeroSection() {
           }}
         >
           <div className="inline-block mb-4 px-4 py-1 rounded-full border border-[#D4A853]/30 bg-[#D4A853]/10 text-[#D4A853] font-medium text-base md:text-lg lg:text-xl 2xl:text-3xl backdrop-blur-sm">
-            مسارك التجاري الموثوق
+            {t('badge')}
           </div>
 
           <h1 className="text-lg md:text-xl lg:text-4xl 2xl:text-8xl font-bold mb-6 leading-tight drop-shadow-lg">
-            <span className="text-white">كي إي بي</span>
-            <span className="text-[#D4A853]"> للتجارة</span>
+            <span className="text-white">{t('title1')}</span>
+            <span className="text-[#D4A853]">{t('title2')}</span>
             <span className="block text-xl md:text-2xl lg:text-3xl xl:text-5xl mt-4 font-normal text-gray-300">
-              ذ.م.م
+              {t('title3')}
             </span>
           </h1>
 
-          <p className="text-sm md:text-xl lg:text-2xl 2xl:text-4xl text-gray-200 mb-10  leading-relaxed drop-shadow-md">
-            شريكك التجاري الذي يفتح لك أبواب الأسواق بثقة وجودة وثبات.
-            <br />
-            في عالم تتسارع فيه حركة التجارة، نحن بوصلتك نحو النجاح.
+          <p className="text-sm md:text-xl lg:text-2xl 2xl:text-4xl text-gray-200 mb-10  leading-relaxed drop-shadow-md whitespace-pre-line">
+            {t('subtitle')}
           </p>
 
           <div className="flex  flex-row items-center justify-center gap-4">
-            <button className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-[#D4A853] text-[#0A1628] font-bold rounded-lg hover:bg-[#b68d40] transition-colors flex items-center gap-2 shadow-lg shadow-[#D4A853]/20">
-              اكتشف خدماتنا
-              <ArrowLeft className="w-5 h-5" />
-            </button>
-            <button className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-white/10 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm">
-              تواصل معنا
-            </button>
+            <Link href="/services">
+              <button className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-[#D4A853] text-[#0A1628] font-bold rounded-lg hover:bg-[#b68d40] transition-colors flex items-center gap-2 shadow-lg shadow-[#D4A853]/20">
+                {t('ctaServices')}
+                <ArrowLeft className="w-5 h-5" />
+              </button>
+            </Link>
+            <a href="#contact">
+              <button type="button" className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-white/10 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm">
+                {t('ctaContact')}
+              </button>
+            </a>
           </div>
         </motion.div>
 
