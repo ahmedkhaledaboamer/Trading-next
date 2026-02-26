@@ -1,8 +1,10 @@
 import { PostDeliveryProgress } from './PostDeliveryProgress'
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
+
 export async function PostDelivery() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("execution.postDelivery");
   return (
     <section className="relative py-24 overflow-hidden bg-black/70" dir={isRTL ? "rtl" : "ltr"}>
       <div
@@ -29,16 +31,13 @@ export async function PostDelivery() {
           {/* Content Side */}
           <div className="lg:w-1/2 w-full">
             <h2 className="text-2xl md:text-4xl font-bold text-lime-100 mb-6 text-center lg:text-right bg-lime-900/60 border-2 border-lime-400 rounded-xl px-6 py-4 w-fit mx-auto lg:mx-0">
-              تقييم ما بعد التسليم
+              {t("title")}
             </h2>
             <p className="text-amber-200 mb-4 text-base md:text-lg text-center lg:text-right bg-amber-950/50 border-2 border-amber-500/70 rounded-lg px-6 py-3 w-fit mx-auto lg:mx-0">
-              بعد إتمام العملية، يتم التواصل مع العميل لإجراء تقييم شامل لضمان
-              التحسين المستمر.
+              {t("p1")}
             </p>
             <p className="text-sky-100 mb-10 text-base md:text-lg leading-relaxed text-center lg:text-right bg-sky-900/40 border-2 border-sky-400/70 rounded-lg px-6 py-4 w-fit mx-auto lg:mx-0">
-              نقيس الأداء بدقة في عدة جوانب أساسية مثل سرعة الإنجاز، جودة التنفيذ،
-              دقة المستندات، ومستوى التواصل، مع التركيز على الملاحظات التي تساعدنا
-              في التطوير المستمر.
+              {t("p2")}
             </p>
 
             <PostDeliveryProgress />

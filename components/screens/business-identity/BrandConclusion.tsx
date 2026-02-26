@@ -2,30 +2,33 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Shield, Clock, Award, Heart } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+
 export function BrandConclusion() {
+  const t = useTranslations('businessIdentity.conclusion')
   const pillars = [
     {
       icon: <Shield />,
-      title: 'الوضوح',
-      desc: 'لأن المعلومة حق.',
+      title: t('pillars.clarity.title'),
+      desc: t('pillars.clarity.desc'),
       color: '#0D9488',
     },
     {
       icon: <Clock />,
-      title: 'الالتزام',
-      desc: 'لأن الوقت قيمة.',
+      title: t('pillars.commitment.title'),
+      desc: t('pillars.commitment.desc'),
       color: '#D97706',
     },
     {
       icon: <Award />,
-      title: 'الجودة',
-      desc: 'لأنها أساس الثقة.',
+      title: t('pillars.quality.title'),
+      desc: t('pillars.quality.desc'),
       color: '#7C3AED',
     },
     {
       icon: <Heart />,
-      title: 'الاحترام',
-      desc: 'لأنه جوهر التعامل.',
+      title: t('pillars.respect.title'),
+      desc: t('pillars.respect.desc'),
       color: '#DC2626',
     },
   ]
@@ -103,7 +106,7 @@ export function BrandConclusion() {
                 border: '1px solid rgba(200, 164, 92, 0.5)',
               }}
             >
-              كي إي بي{' '}
+              {t('brandNamePrefix')}{' '}
               <span
                 style={{
                   background:
@@ -112,7 +115,7 @@ export function BrandConclusion() {
                   WebkitTextFillColor: 'transparent',
                 }}
               >
-                للتجارة
+                {t('brandNameHighlight')}
               </span>
             </h2>
 
@@ -127,7 +130,7 @@ export function BrandConclusion() {
                 border: '1px solid rgba(148, 163, 184, 0.6)',
               }}
             >
-              ليست مجرد شركة… هي أسلوب تعامل، طريقة تفكير، ومعيار جودة.
+              {t('tagline')}
             </p>
 
             <div
@@ -148,7 +151,7 @@ export function BrandConclusion() {
                 border: '1px solid rgba(200, 164, 92, 0.6)',
               }}
             >
-              هذه هوية مكتوبة بوضوح، وقوة، وثقة… لتقول للعميل:
+              {t('leadIn')}
             </p>
 
             <h3
@@ -157,7 +160,7 @@ export function BrandConclusion() {
                 color: '#C8A45C',
               }}
             >
-              أنت في المكان الصحيح.
+              {t('final')}
             </h3>
           </motion.div>
         </div>

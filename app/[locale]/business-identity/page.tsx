@@ -6,19 +6,34 @@ import { BrandStatement } from "@/components/screens/business-identity/BrandStat
 import { HeroSection } from "@/components/screens/business-identity/HeroSection";
 import { getLocale, getTranslations } from "next-intl/server";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({
+    locale,
+    namespace: "pages.businessIdentity",
+  });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
 export default async function BusinessIdentityPage() {
-  const t = await getTranslations("pages.businessIdentity");
   const locale = await getLocale();
 
   return (
     <>
-        
-    <HeroSection />
-    <BrandIntro locale={locale} />
-    <BrandStatement locale={locale} />
-    <BrandOperations />
-    <BrandPartner />
-    <BrandConclusion />
-     </>
+      <HeroSection />
+      <BrandIntro locale={locale} />
+      <BrandStatement locale={locale} />
+      <BrandOperations />
+      <BrandPartner />
+      <BrandConclusion />
+    </>
   );
 }

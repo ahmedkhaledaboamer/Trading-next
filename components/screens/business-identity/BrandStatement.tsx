@@ -8,88 +8,63 @@ import {
   Briefcase,
   Globe,
 } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+
+const DICTIONARY_KEYS = [
+  'supply',
+  'client',
+  'quality',
+  'commitment',
+  'marketing',
+  'credibility',
+  'service',
+  'success',
+] as const
+
+const DICTIONARY_COLORS = [
+  '#0D9488',
+  '#7C3AED',
+  '#D97706',
+  '#DC2626',
+  '#059669',
+  '#2563EB',
+  '#DB2777',
+  '#C8A45C',
+] as const
+
+const VALUE_KEYS = [
+  'clarity',
+  'commitment',
+  'respect',
+  'accuracy',
+  'continuity',
+  'professionalism',
+] as const
+
+const VALUE_ICONS = [BookOpen, Clock, Users, CheckCircle, Globe, Briefcase]
+const VALUE_COLORS = ['#0D9488', '#7C3AED', '#D97706', '#DC2626', '#2563EB', '#059669']
+
+const STATEMENT_BULLET_KEYS = ['0', '1', '2', '3'] as const
+
 export function BrandStatement( {locale}: {locale: string} ) {
   const isRTL = locale === "ar";
-  const dictionaryTerms = [
-    {
-      term: 'التوريد',
-      def: 'وصول في الوقت، لا وصول وخلاص.',
-      color: '#0D9488',
-    },
-    {
-      term: 'العميل',
-      def: 'شريك قرار، لا رقم في النظام.',
-      color: '#7C3AED',
-    },
-    {
-      term: 'الجودة',
-      def: 'نتيجة تُقاس، لا كلمة تُقال.',
-      color: '#D97706',
-    },
-    {
-      term: 'الالتزام',
-      def: 'موعد ثابت، لا احتمال.',
-      color: '#DC2626',
-    },
-    {
-      term: 'التسويق',
-      def: 'انطباع يبقى، لا إعلان يمر.',
-      color: '#059669',
-    },
-    {
-      term: 'المصداقية',
-      def: 'أسلوب عمل، لا شعار.',
-      color: '#2563EB',
-    },
-    {
-      term: 'الخدمة',
-      def: 'تجربة كاملة، لا خطوة منفصلة.',
-      color: '#DB2777',
-    },
-    {
-      term: 'النجاح',
-      def: 'نتيجة مشتركة، لا إنجاز فردي.',
-      color: '#C8A45C',
-    },
-  ]
-  const values = [
-    {
-      icon: <BookOpen />,
-      title: 'الوضوح',
-      desc: 'نقول الحقيقة كما هي، بلا تجميل ولا التفاف.',
-      color: '#0D9488',
-    },
-    {
-      icon: <Clock />,
-      title: 'الالتزام',
-      desc: 'الموعد عندنا عقد… والتنفيذ مسؤولية.',
-      color: '#7C3AED',
-    },
-    {
-      icon: <Users />,
-      title: 'الاحترام',
-      desc: 'احترام وقت العميل، وماله، وثقته.',
-      color: '#D97706',
-    },
-    {
-      icon: <CheckCircle />,
-      title: 'الدقة',
-      desc: 'كل خطوة محسوبة، وكل معلومة مؤكدة.',
-      color: '#DC2626',
-    },
-    {
-      icon: <Globe />,
-      title: 'الاستمرارية',
-      desc: 'علاقة طويلة المدى، مش صفقة قصيرة.',
-      color: '#2563EB',
-    },
-    {
-      icon: <Briefcase />,
-      title: 'الاحتراف',
-      desc: 'أسلوب عمل ثابت لا يتغير مهما تغيّرت الظروف.',
-      color: '#059669',
-    },
-  ]
+  const t = useTranslations('businessIdentity.statement')
+
+  const dictionaryTerms = DICTIONARY_KEYS.map((key, index) => ({
+    term: t(`dictionary.terms.${key}.term`),
+    def: t(`dictionary.terms.${key}.def`),
+    color: DICTIONARY_COLORS[index],
+  }))
+
+  const values = VALUE_KEYS.map((key, index) => {
+    const Icon = VALUE_ICONS[index]
+    return {
+      icon: <Icon />,
+      title: t(`values.items.${key}.title`),
+      desc: t(`values.items.${key}.desc`),
+      color: VALUE_COLORS[index],
+    }
+  })
   return (
     <>
       {/* Statement Section */}
@@ -124,7 +99,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 width: 'fit-content',
               }}
             >
-                بيان كي إي بي للتجارة
+                {t('heading')}
               </h2>
               <p
                 className="font-semibold text-sm md:text-xl lg:text-xl 2xl:text-4xl mb-8 w-fit"
@@ -137,7 +112,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                   border: '1px solid rgba(217, 119, 6, 0.45)',
                 }}
               >
-                هذا البيان ليس صياغة رسمية… بل إعلان صريح لطريقة عملنا
+                {t('subheading')}
               </p>
 
               <div className="space-y-6">
@@ -148,49 +123,22 @@ export function BrandStatement( {locale}: {locale: string} ) {
                   }}
                 >
                   <ul className="space-y-4 text-sm md:text-xl lg:text-xl 2xl:text-4xl font-medium text-brand-dark">
-                    <li className="flex items-center gap-3">
-                      <span
-                        className="w-2 h-2 rounded-full"
-                        style={{
-                          background: '#0D9488',
-                        }}
-                      ></span>
-                      نلتزم قبل أن نعد.
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span
-                        className="w-2 h-2 rounded-full"
-                        style={{
-                          background: '#7C3AED',
-                        }}
-                      ></span>
-                      نُظهر قبل أن نتكلم.
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span
-                        className="w-2 h-2 rounded-full"
-                        style={{
-                          background: '#D97706',
-                        }}
-                      ></span>
-                      ننفّذ قبل أن نروّج.
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span
-                        className="w-2 h-2 rounded-full"
-                        style={{
-                          background: '#DC2626',
-                        }}
-                      ></span>
-                      ونعتبر العميل شريكًا في القرار قبل أن يكون متعاملًا.
-                    </li>
+                    {STATEMENT_BULLET_KEYS.map((key, index) => (
+                      <li key={key} className="flex items-center gap-3">
+                        <span
+                          className="w-2 h-2 rounded-full"
+                          style={{
+                            background: DICTIONARY_COLORS[index] ?? '#C8A45C',
+                          }}
+                        ></span>
+                        {t(`bullets.${key}`)}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <p className="text-sm md:text-xl lg:text-xl 2xl:text-3xl text-brand-dark/80 leading-relaxed">
-                  نحن لا نبيع منتجات فقط… نحن نبني ثقة، ونصنع علاقة، ونقدّم
-                  تجربة تعامل تُثبت نفسها مع الوقت، وتترك أثرًا يجعل العميل يعود
-                  لأنه يريد، لا لأنه مضطر.
+                  {t('paragraph')}
                 </p>
               </div>
             </motion.div>
@@ -267,7 +215,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 border: '1px solid rgba(15, 118, 110, 0.5)',
               }}
             >
-              قاموس كي إي بي
+              {t('dictionary.title')}
             </h2>
             <p
               className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium w-fit mx-auto mt-3"
@@ -280,7 +228,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 border: '1px solid rgba(234, 179, 8, 0.4)',
               }}
             >
-              هذا القاموس ليس كلمات… بل فلسفة عمل
+              {t('dictionary.subtitle')}
             </p>
           </motion.div>
 
@@ -350,7 +298,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 margin: '0 auto',
               }}
             >
-              قيم كي إي بي للتجارة
+              {t('values.title')}
             </h2>
 
            
@@ -366,7 +314,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 border: '1px solid rgba(148, 163, 184, 0.6)',
               }}
             >
-              قيمنا ليست شعارات… بل قواعد تشغيل لا نتجاوزها
+              {t('values.subtitle')}
             </p>
           </motion.div>
 

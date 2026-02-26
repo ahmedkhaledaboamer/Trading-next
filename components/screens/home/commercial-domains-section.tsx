@@ -1,84 +1,22 @@
- "use client";
+"use client";
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useTranslations } from "next-intl";
 
 import "swiper/css";
 
-type Domain = {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-};
+type DomainData = { id: string; title: string; description: string };
+const domainImages = ["/images/15.webp", "/images/16.webp", "/images/17.webp", "/images/18.webp", "/images/19.webp", "/images/20.webp", "/images/21.webp", "/images/22.webp"];
 
-const domains: Domain[] = [
-  {
-    id: "import",
-    title: "منظومة الاستيراد الدولي",
-    description:
-      "ارتباط مباشر بالأسواق العالمية يضمن منتجات عالية الجودة ووصولاً ثابتاً بإجراءات دولية موثوقة.",
-    image: "/images/15.webp",
-  },
-  {
-    id: "export",
-    title: "منظومة التصدير والتوسع ",
-    description:
-      "مسارات تجارية تفتح أبواب التسويق الإقليمي والدولي أمام شركائنا في أسواق مختارة بعناية.",
-    image: "/images/16.webp",
-  },
-  {
-    id: "home-appliances",
-    title: "مركز الأجهزة المنزلية والكهربية",
-    description:
-      "حلول متكاملة للأجهزة المنزلية والابتكارات من الأجهزة الكبرى إلى المستلزمات الدقيقة.",
-    image: "/images/17.webp",
-  },
-  {
-    id: "electronics",
-    title: "مركز الأجهزة الإلكترونية والتقنية",
-    description:
-      "أجهزة إلكترونية متقدمة، شاشات، وحلول تقنية مصممة لتخدم مختلف القطاعات التجارية.",
-      image: "/images/18.webp",
-    },
-  {
-    id: "mobiles",
-    title: "مركز الهواتف الذكية",
-    description:
-      "أحدث الإصدارات العالمية من الهواتف الذكية مع منظومة توزيع مرنة تغطي قنوات متعددة.",
-      image: "/images/19.webp",
-    },
-  {
-    id: "gaming",
-    title: "مركز الألعاب والترفيه الرقمي",
-    description:
-      "منتجات ألعاب، كونسولات، وإكسسوارات موجهة لقطاع الترفيه الرقمي المتنامي.",
-      image: "/images/20.webp",
-    },
-  {
-    id: "photo-video",
-    title: "مركز التصوير الفوتوغرافي",
-    description:
-      "معدات تصوير احترافية، عدسات، وإكسسوارات تدعم صناعة المحتوى بجودة عالية.",
-      image: "/images/21.webp",
-    },
-  {
-    id: "networks",
-    title: "مركز الشبكات والاتصالات",
-    description:
-      "حلول شبكات متكاملة، أجهزة اتصال، وبنى تحتية تدعم استمرارية الأعمال بكفاءة.",
-      image: "/images/22.webp",
-    },
-];
-
-function DomainCard({ domain }: { domain: Domain }) {
+function DomainCard({ domain, image }: { domain: DomainData; image: string }) {
   return (
     <div className="group p-[2%] bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 flex flex-col md:flex-row h-full">
       {/* Image */}
       <div className="relative rounded-2xl w-full md:w-1/2 min-w-[200px] h-[200px] xl:h-[200px] 2xl:h-[400px] flex-shrink-0 overflow-hidden">
         <Image
-          src={domain.image}
+          src={image}
           alt={domain.title}
           fill
           className="object-cover shadow-lg bg-center rounded-2xl group-hover:scale-105 transition-transform duration-500"
@@ -99,6 +37,9 @@ function DomainCard({ domain }: { domain: Domain }) {
 }
 
 export default function CommercialDomainsSection() {
+  const t = useTranslations("home.commercialDomains");
+  const domains = t.raw("domains") as DomainData[];
+
   return (
     <section className="w-full bg-gray-50  " dir="rtl">
       <div className="p-[5%]">
@@ -107,13 +48,12 @@ export default function CommercialDomainsSection() {
           <h2
             className="inline-block font-bold text-cyan-900 leading-tight text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl bg-cyan-100 border border-cyan-300 rounded-2xl px-6 py-4"
           >
-            مجالات النفوذ التجاري
+            {t("title")}
           </h2>
           <p
             className="inline-block text-emerald-900 text-base md:text-2xl bg-emerald-50 border border-emerald-200 rounded-full px-5 py-2 mt-1"
           >
-            كل مجال هنا يمثل وحدة قوة داخل كيان الشركة، صُممت لتخدم احتياجات
-            السوق وتفتح قنوات نفوذ جديدة.
+            {t("subtitle")}
           </p>
         </header>
 
@@ -142,9 +82,9 @@ export default function CommercialDomainsSection() {
               1920: { slidesPerView: 3 },
             }}
           >
-            {domains.map((domain) => (
+            {domains.map((domain, i) => (
               <SwiperSlide key={`row1-${domain.id}`} className="p-2">
-                <DomainCard domain={domain} />
+                <DomainCard domain={domain} image={domainImages[i]} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -172,9 +112,9 @@ export default function CommercialDomainsSection() {
               1920: { slidesPerView: 3 },
             }}
           >
-            {[...domains].reverse().map((domain) => (
+            {[...domains].reverse().map((domain, i) => (
               <SwiperSlide key={`row2-${domain.id}`} className="p-2">
-                <DomainCard domain={domain} />
+                <DomainCard domain={domain} image={domainImages[domains.length - 1 - i]} />
               </SwiperSlide>
             ))}
           </Swiper>

@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Button from "../button";
 import LocaleSwitcher from "../locale-switcher";
+import Logo from "../logo";
 
 interface Route {
   href: string;
@@ -159,14 +160,7 @@ const MobileNavbar = () => {
               padding: "clamp(1rem, 2vw, 2rem)",
             }}
           >
-            <h2
-              className="text-white font-bold"
-              style={{
-                fontSize: "clamp(1.25rem, 2vw, 1.75rem)",
-              }}
-            >
-              Menu
-            </h2>
+            <Logo size={120} className="h-10 w-auto" />
             <Button
               variant="ghost"
               onClick={toggleMenu}
@@ -229,7 +223,14 @@ const MobileNavbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex ">
+            <div
+              className="flex"
+              style={{
+                paddingLeft: "clamp(1rem, 2vw, 2rem)",
+                paddingRight: "clamp(1rem, 2vw, 2rem)",
+                marginTop: "clamp(1rem, 1.5vw, 1.5rem)",
+              }}
+            >
               <LocaleSwitcher />
             </div>
           </nav>
@@ -241,15 +242,19 @@ const MobileNavbar = () => {
               padding: "clamp(1rem, 2vw, 2rem)",
             }}
           >
-            <div className="flex items-center justify-center"></div>
-            <Button
-              variant="primary"
-              className="w-full"
+            <Link
+              href="/execution"
               onClick={handleLinkClick}
-              aria-label={t("cta")}
+              className="block"
             >
-              {t("cta")}
-            </Button>
+              <Button
+                variant="primary"
+                className="w-full"
+                aria-label={t("cta")}
+              >
+                {t("cta")}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

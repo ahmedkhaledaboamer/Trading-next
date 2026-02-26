@@ -1,26 +1,9 @@
 import { cn } from "@/utils/cn";
 import { Check, Crown, Eye, Zap, type LucideIcon } from "lucide-react";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
 
-const features = [
-  {
-    title: "قوة المركز",
-    icon: Zap,
-  },
-  {
-    title: "وضوح الرؤية",
-    icon: Eye,
-  },
-  {
-    title: "دقة التنفيذ",
-    icon: Check,
-  },
-  {
-    title: "سيادة القرار التجاري",
-    icon: Crown,
-  },
-];
+const featureIcons = [Zap, Eye, Check, Crown] as const;
 
 const featureCardColors = [
   "bg-gradient-to-br from-emerald-500/25 via-emerald-500/10 to-transparent border-emerald-400/70",
@@ -47,6 +30,8 @@ const featureIconColors = [
 export default async function BusinessEntitySection() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("home.businessEntity");
+  const featuresRaw = t.raw("features") as { title: string }[];
 
   return (
     <section className="relative w-full bg-white" dir={isRTL ? "rtl" : "ltr"}>
@@ -61,7 +46,7 @@ export default async function BusinessEntitySection() {
                   fontSize: "clamp(2rem, 2vw, 5rem)",
                 }}
               >
-                الكيان التجاري 
+                {t("badge")}
               </p>
 
               <h2
@@ -70,7 +55,7 @@ export default async function BusinessEntitySection() {
                   fontSize: "clamp(0.75rem, 2.6vw, 2.8rem)",
                 }}
               >
-                منظومة متكاملة تدير حركة التجارة باحترافية عالية
+                {t("heading")}
               </h2>
 
               <p
@@ -79,14 +64,13 @@ export default async function BusinessEntitySection() {
                   fontSize: "clamp(1rem, 1.15vw, 1.15rem)",
                 }}
               >
-                كي إي بي للتجارة تعمل وفق نموذج تشغيل متقدم يدمج بين الرؤية
-                الاستراتيجية والتنفيذ الدقيق لضمان الريادة في السوق.
+                {t("description")}
               </p>
 
               {/* Features grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-                {features.map((feature, index) => {
-                  const Icon = feature.icon as LucideIcon;
+                {featuresRaw.map((feature, index) => {
+                  const Icon = featureIcons[index] as LucideIcon;
                   const cardColor =
                     featureCardColors[index % featureCardColors.length];
                   const iconColor =
@@ -117,7 +101,7 @@ export default async function BusinessEntitySection() {
                           fontSize: "clamp(1.5rem, 1.05vw, 1.05rem)",
                         }}
                       >
-                        {feature.title}
+                        {feature.title as string}
                       </span>
                     </div>
                   );
@@ -131,8 +115,7 @@ export default async function BusinessEntitySection() {
                   fontSize: "clamp(1.2rem, 1.05vw, 1.05rem)",
                 }}
               >
-                “نُدير عمليات الاستيراد، التصدير، التوزيع، والتوريد عبر منظومة
-                تشغيلية تضمن السرعة، الثبات، والجودة في كل خطوة.”
+                {t("quote")}
               </div>
             </div>
 
@@ -155,7 +138,7 @@ export default async function BusinessEntitySection() {
                 >
                   <Image
                     src="/images/40.webp"
-                    alt="منظومة متكاملة تدير حركة التجارة"
+                    alt={t("imageAlt")}
                     width={900}
                     height={600}
                     className="w-full h-full object-cover "

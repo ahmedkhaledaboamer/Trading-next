@@ -3,7 +3,7 @@
         "title": "Home Page"
     },
     "navbar": {
-        "cta": "Book Your Consultation",
+        "cta": "Book Your Service",
         "routes": [
             {
                 "label": "Home",
@@ -14,7 +14,7 @@
                 "href": "/services"
             },
             {
-                "label": "Your Business Path",
+                "label": "Business Path",
                 "href": "/business-path"
             },
             {
@@ -28,29 +28,29 @@
         ]
     },
     "pages": {
+        "home": {
+            "title": "Home | KEP for Trade",
+            "description": "Discover KEP for Trade, a sovereign commercial hub managing supply and distribution across global markets."
+        },
         "execution": {
-            "title": "Execution",
-            "description": "Execution page - We provide comprehensive legal execution services."
+            "title": "Execution | KEP for Trade",
+            "description": "We provide comprehensive legal execution services."
         },
         "services": {
-            "title": "Services",
-            "description": "Services page - Explore our premium legal services."
+            "title": "Services | KEP for Trade",
+            "description": "Explore our premium legal services."
         },
         "businessPath": {
-            "title": "Your Business Path",
-            "description": "Your Business Path page - Your guide to building a successful business path."
+            "title": "Business Path | KEP for Trade",
+            "description": "Your guide to building a successful business path."
         },
         "businessIdentity": {
-            "title": "Business Identity",
-            "description": "Business Identity page - We help you build your business identity."
+            "title": "Business Identity | KEP for Trade",
+            "description": "We help you build your business identity."
         },
         "about": {
-            "title": "About Us",
+            "title": "About Us | KEP for Trade",
             "description": "Learn about our team, vision and mission."
-        },
-        "privacy": {
-            "title": "Privacy Policy",
-            "description": "Privacy policy and protection of your data."
         }
     },
     "content": {
@@ -70,32 +70,319 @@
             "exploreServices": "Explore Our Services"
         }
     },
-    "businessIdentity": {
-        "hero": {
-            "companyName": "KEP for Trade",
-            "title": "Business Identity",
-            "description": "At KEP for Trade we do not see business identity as just a logo or colours—it is a framework that shapes how we think, make decisions, and deal with clients and partners. It reflects the quality standards we commit to, the way we express our values, and how we deliver a consistent experience that reflects our professionalism in every interaction and service.",
-            "discoverMore": "Discover more"
+    "home": {
+        "businessEntity": {
+            "badge": "The Business Entity",
+            "heading": "An integrated system that manages trade with high professionalism",
+            "description": "KEP for Trade operates under an advanced operational model that combines strategic vision with precise execution to ensure market leadership.",
+            "features": [
+                {"title": "Power of the Hub"},
+                {"title": "Clarity of Vision"},
+                {"title": "Precision in Execution"},
+                {"title": "Sovereignty of Commercial Decision"}
+            ],
+            "quote": "We manage import, export, distribution, and supply operations through an operational system that ensures speed, stability, and quality at every step.",
+            "imageAlt": "An integrated system that manages trade"
         },
-        "intro": {
-            "sectionTitle": "Introduction",
-            "p1": "At KEP for Trade we chose to write who we are in a way that resembles no one else, because we simply do not work like anyone else.",
-            "p2": "We are not a company that repeats what others say, we do not use the same phrases on every website, and we are not looking for polished words as much as we are looking for truth told as it is.",
-            "p3": "We define ourselves by the way we work:",
-            "p4": "With clarity that does not hide behind words, with strength that shows in execution before it is read on the page, and with an operational approach that makes the client feel they are dealing with an entity that knows what it does, why it does it, and how it does it.",
-            "p5": "We are a commercial entity built on real operations, accurate information, market awareness, and a deep understanding of international trade dynamics.",
-            "p6": "This page is not an introduction… it is an identity written with honesty and in a style that reflects our values, our way of working, and our unrepeatable commercial character.",
-            "personalityTitle": "Brand personality",
-            "personalitySubtitle": "Our personality is not a written voice… it is a way of dealing",
-            "traits": {
-                "direct": { "title": "Direct", "desc": "We do not use words bigger than the truth." },
-                "calm": { "title": "Calm", "desc": "We do not exaggerate or promise what we cannot deliver." },
-                "practical": { "title": "Practical", "desc": "We focus on execution before talk." },
-                "aware": { "title": "Aware", "desc": "We understand the market and read the details." },
-                "professional": { "title": "Professional", "desc": "We treat the client as they deserve, not as usual." },
-                "committed": { "title": "Committed", "desc": "We keep our word and build lasting trust." }
-            }
+        "commercialInfluence": {
+            "title": "Structure of Commercial Influence",
+            "subtitle": "The power structure within KEP for Trade rests on three main pillars that give us market depth and high control capability.",
+            "pillars": [
+                {"title": "Operational Influence", "description": "Full control of supply chains from source to customer, with a fast-response operational structure.", "imageAlt": "Team managing operational processes in an office environment"},
+                {"title": "Market Influence", "description": "Strong presence in multiple markets gives the company high negotiating power and impact on demand flows.", "imageAlt": "City skyline and markets representing market influence"},
+                {"title": "Strategic Influence", "description": "Decisions based on deep data analysis and adoption of business models that create sustainable advantage.", "imageAlt": "Business meeting planning commercial strategies"}
+            ]
+        },
+        "powerIndicators": {
+            "title": "Power Indicators",
+            "subtitle": "Performance standards that reflect stability and sovereignty in commercial execution across operational units.",
+            "items": ["Deep understanding of demand nature", "Accurate market analysis", "High execution capability", "Strict commitment to quality", "Reliable supply networks", "Speed in delivery", "Operational flexibility", "Protection of commercial capital"]
+        },
+        "commercialProtection": {
+            "title": "Commercial Protection System",
+            "subtitle": "An integrated system that protects commercial capital at every stage of the value chain.",
+            "imageAlt": "Commercial protection system",
+            "highlight": "Comprehensive protection ",
+            "highlightSuffix": "for every stage of trade",
+            "items": ["Protection of supply from disruption", "Protection of quality from decline", "Protection of contractual commitments", "Protection of delivery timelines", "Protection of inventory from risks"]
+        },
+        "commercialDomains": {
+            "title": "Commercial Influence Domains",
+            "subtitle": "Each domain here represents a unit of strength within the company entity, designed to serve market needs and open new channels of influence.",
+            "domains": [
+                {"id": "import", "title": "International Import System", "description": "Direct connection to global markets ensures high-quality products and stable access through trusted international procedures."},
+                {"id": "export", "title": "Export and Expansion System", "description": "Trade channels that open doors to regional and international marketing for our partners in carefully selected markets."},
+                {"id": "home-appliances", "title": "Home Appliances and Electrical Center", "description": "Integrated solutions for home appliances and innovations from major appliances to fine accessories."},
+                {"id": "electronics", "title": "Electronics and Technology Center", "description": "Advanced electronics, screens, and technology solutions designed to serve various commercial sectors."},
+                {"id": "mobiles", "title": "Smartphones Center", "description": "Latest global smartphone releases with a flexible distribution system covering multiple channels."},
+                {"id": "gaming", "title": "Gaming and Digital Entertainment Center", "description": "Gaming products, consoles, and accessories targeting the growing digital entertainment sector."},
+                {"id": "photo-video", "title": "Photography Center", "description": "Professional photography equipment, lenses, and accessories supporting high-quality content production."},
+                {"id": "networks", "title": "Networks and Communications Center", "description": "Integrated network solutions, communication devices, and infrastructure supporting business continuity efficiently."}
+            ]
+        },
+        "suppliersNetwork": {
+            "title": "Global Suppliers Network",
+            "subtitle": "A supply network spanning multiple continents that gives the company strength in access, selection, and risk management.",
+            "imageAlt": "Global supplier network at seaports",
+            "benefitsTitle": "Network Benefits",
+            "benefits": ["Diverse supply sources", "Protection from market disruptions", "Immediate alternatives", "Higher negotiating power on prices and quantities"],
+            "regionsTitle": "Main Supply Regions",
+            "regions": ["East Asia", "Europe", "Middle East", "North America"]
+        },
+        "digitalTransformation": {
+            "title": "Digital Transformation Unit",
+            "subtitle": "A specialized unit developing digital infrastructure to ensure speed, accuracy, and transparency in every operational process.",
+            "imageAlt": "Digital transformation unit at KEP for Trade",
+            "tasksTitle": "Unit Tasks",
+            "tasks": ["Digitizing supply and distribution operations", "Developing shipment tracking systems", "Building real-time operational dashboards", "Improving customer experience through digital solutions", "Using AI in market analysis"],
+            "goalsTitle": "Unit Goals",
+            "goals": ["Raising operational efficiency", "Reducing human error", "Accelerating decision-making", "Enhancing operational transparency"]
+        },
+        "ecommerceUnit": {
+            "title": "E-Commerce Unit",
+            "subtitle": "A specialized unit in managing and developing digital sales operations through integrated e-commerce platforms.",
+            "objectivesTitle": "Unit Objectives",
+            "objectives": ["Reaching a larger customer base", "Accelerating sales operations", "Improving purchase experience", "Supporting partners in full digital transformation"],
+            "tasksTitle": "Unit Tasks",
+            "tasks": ["Managing e-commerce stores", "Developing electronic payment solutions", "Managing digital inventory", "Running digital marketing campaigns"]
+        },
+        "franchiseUnit": {
+            "title": "Franchise Unit",
+            "subtitle": "A specialized unit for granting commercial franchise for brands managed by KEP for Trade, according to clear operational standards.",
+            "benefitsTitle": "Franchise Benefits",
+            "benefits": ["Rapid brand expansion", "Reducing operational risks for the company", "Increasing market share through partners", "Supporting partners with a ready operational system", "Achieving steady revenue streams"],
+            "tasksTitle": "Unit Tasks",
+            "tasks": ["Preparing commercial franchise models", "Selecting suitable franchise partners", "Providing training and operational support", "Monitoring execution quality at franchise points", "Ensuring brand compliance with its commercial standards"],
+            "benefitsNote": "The franchise unit works to transform brands into scalable models with confidence and sustainability. Through building clear operational systems and selecting the right partners.",
+            "tasksNote": "In the franchise unit we enable brands to expand in a measured way, by designing applicable franchise models and setting precise operational standards.",
+            "imageAlt": "Business meeting for the franchise unit"
+        },
+        "internationalExpansion": {
+            "title": "International Expansion Unit",
+            "subtitle": "A strategic unit responsible for opening new markets and expanding the commercial influence of our partners worldwide.",
+            "imageAltTasks": "International expansion unit tasks",
+            "imageAltResults": "International expansion unit results",
+            "tasksTitle": "Unit Tasks",
+            "tasks": ["Studying regional and international markets", "Building new partnerships in multiple countries", "Opening new supply lines", "Evaluating growth opportunities in emerging markets"],
+            "resultsTitle": "Unit Results",
+            "results": ["Increased international presence", "Diversified supply sources", "Enhanced negotiating power", "Creating new business opportunities for partners"]
+        },
+        "majorProjectsUnit": {
+            "title": "Major Projects Unit",
+            "subtitle": "A unit dedicated to managing large-scale projects, from planning to execution through integrated supply and operational solutions.",
+            "imageAlt": "Specialized unit for managing major projects",
+            "features": [
+                {"id": "large-quantities", "title": "Bulk supply"},
+                {"id": "advanced-tech", "title": "Advanced technical equipment"},
+                {"id": "integrated-solutions", "title": "Integrated operational solutions"},
+                {"id": "long-term-supply", "title": "Long-term supply management"},
+                {"id": "continuous-support", "title": "Technical support"},
+                {"id": "continuous-support-2", "title": "Continuous operation"}
+            ]
+        },
+        "operationalLeadership": {
+            "title": "Operational Leadership System",
+            "subtitle": "An integrated leadership structure that ensures full control over trade flows through four main control rooms.",
+            "rooms": [
+                {"id": "market", "number": "01", "title": "Market Monitoring Room", "points": ["Real-time price movement analysis", "Tracking demand trends", "Commercial risk assessment"], "imageAlt": "Screen displaying price movements in financial markets"},
+                {"id": "supply", "number": "02", "title": "Supply Control Room", "points": ["Managing international supply lines", "Real-time shipment tracking", "Ensuring supply stability"], "imageAlt": "Shipping corridors and logistics ports"},
+                {"id": "quality", "number": "03", "title": "Quality and Compliance Room", "points": ["Product inspection before shipping", "Quality certificate review", "Ensuring international specification compliance"], "imageAlt": "Electronic components undergoing quality inspection"},
+                {"id": "operations", "number": "04", "title": "Logistics Operations Room", "points": ["Managing internal and external transport", "Coordinating delivery operations", "Improving logistics flow efficiency"], "imageAlt": "Cranes and loading yards at a commercial port"}
+            ]
         }
+    },
+    "businessIdentity": {
+      "hero": {
+        "companyName": "KEP for Trade",
+        "title": "Business Identity",
+        "description": "At KEP for Trade we do not see business identity as just a logo or colours—it is a framework that shapes how we think, make decisions, and deal with clients and partners. It reflects the quality standards we commit to, the way we express our values, and how we deliver a consistent experience that reflects our professionalism in every interaction and service.",
+        "discoverMore": "Discover more"
+      },
+      "intro": {
+        "sectionTitle": "Introduction",
+        "p1": "At KEP for Trade we chose to write who we are in a way that resembles no one else, because we simply do not work like anyone else.",
+        "p2": "We are not a company that repeats what others say, we do not use the same phrases on every website, and we are not looking for polished words as much as we are looking for truth told as it is.",
+        "p3": "We define ourselves by the way we work:",
+        "p4": "With clarity that does not hide behind words, with strength that shows in execution before it is read on the page, and with an operational approach that makes the client feel they are dealing with an entity that knows what it does, why it does it, and how it does it.",
+        "p5": "We are a commercial entity built on real operations, accurate information, market awareness, and a deep understanding of international trade dynamics.",
+        "p6": "This page is not an introduction… it is an identity written with honesty and in a style that reflects our values, our way of working, and our unrepeatable commercial character.",
+        "personalityTitle": "Brand personality",
+        "personalitySubtitle": "Our personality is not a written voice… it is a way of dealing",
+        "traits": {
+          "direct": { "title": "Direct", "desc": "We do not use words bigger than the truth." },
+          "calm": { "title": "Calm", "desc": "We do not exaggerate or promise what we cannot deliver." },
+          "practical": { "title": "Practical", "desc": "We focus on execution before talk." },
+          "aware": { "title": "Aware", "desc": "We understand the market and read the details." },
+          "professional": { "title": "Professional", "desc": "We treat the client as they deserve, not as usual." },
+          "committed": { "title": "Committed", "desc": "We keep our word and build lasting trust." }
+        }
+      },
+      "statement": {
+        "heading": "KEP for Trade Statement",
+        "subheading": "This statement is not a formal text… it is a clear declaration of how we work",
+        "bullets": [
+          "We commit before we promise.",
+          "We show before we speak.",
+          "We execute before we promote.",
+          "And we treat the client as a partner in decision before they are a mere customer."
+        ],
+        "paragraph": "We do not only sell products… we build trust, create relationships, and deliver an experience that proves itself over time and leaves an impact that makes the client return because they want to, not because they have to.",
+        "dictionary": {
+          "title": "KEP Dictionary",
+          "subtitle": "This dictionary is not words… it is a work philosophy",
+          "terms": {
+            "supply": {
+              "term": "Supply",
+              "def": "Arrival on time, not just arrival."
+            },
+            "client": {
+              "term": "Client",
+              "def": "A decision partner, not a number in a system."
+            },
+            "quality": {
+              "term": "Quality",
+              "def": "A result that is measured, not a word that is said."
+            },
+            "commitment": {
+              "term": "Commitment",
+              "def": "A fixed date, not a possibility."
+            },
+            "marketing": {
+              "term": "Marketing",
+              "def": "An impression that lasts, not an advert that passes."
+            },
+            "credibility": {
+              "term": "Credibility",
+              "def": "A way of working, not a slogan."
+            },
+            "service": {
+              "term": "Service",
+              "def": "A complete experience, not a single step."
+            },
+            "success": {
+              "term": "Success",
+              "def": "A shared result, not an individual achievement."
+            }
+          }
+        },
+        "values": {
+          "title": "KEP for Trade Values",
+          "subtitle": "Our values are not slogans… they are operating rules we do not cross",
+          "items": {
+            "clarity": {
+              "title": "Clarity",
+              "desc": "We tell the truth as it is, without decoration or detours."
+            },
+            "commitment": {
+              "title": "Commitment",
+              "desc": "For us, a deadline is a contract… and execution is a responsibility."
+            },
+            "respect": {
+              "title": "Respect",
+              "desc": "Respecting the client’s time, money and trust."
+            },
+            "accuracy": {
+              "title": "Accuracy",
+              "desc": "Every step is calculated and every piece of information verified."
+            },
+            "continuity": {
+              "title": "Continuity",
+              "desc": "A long‑term relationship, not a short transaction."
+            },
+            "professionalism": {
+              "title": "Professionalism",
+              "desc": "A consistent way of working that does not change, no matter the circumstances."
+            }
+          }
+        }
+      },
+      "operations": {
+        "communication": {
+          "title": "Communication style",
+          "tagline": "We communicate with the client in one way only:",
+          "points": [
+            "We explain… we do not justify.",
+            "We clarify… we do not confuse.",
+            "We inform… we do not leave them guessing.",
+            "We provide information… not impressions.",
+            "We use language that respects the client’s mind… and does not waste their time."
+          ],
+          "footer": "For us, communication is not a service… it is part of our identity."
+        },
+        "brandPromise": {
+          "title": "Brand promise",
+          "intro": "We promise the client three things we never back down from:",
+          "items": [
+            "Clear information",
+            "Precise execution",
+            "A respectful experience"
+          ],
+          "footer": "This promise is our standard… it is how we hold ourselves accountable before the client ever does."
+        },
+        "proveValue": {
+          "title": "How do we prove our value?",
+          "intro": "We prove our value with actions not words, and with outcomes not promises:",
+          "points": [
+            "Execution speed that is calculated, not random.",
+            "Documents that are accurate, with no errors and no delays.",
+            "Shipments that are tracked moment by moment, from the source to the client’s door.",
+            "Strong international relationships that make the way easier instead of more complicated.",
+            "Continuous price and market analysis that ensures the best decision at the best time.",
+            "Flexible solutions that suit every client, every market and every case."
+          ],
+          "quote": "We do not say \"we are the best\"… we let the results say that."
+        },
+        "credibility": {
+          "title": "How do we demonstrate our credibility?",
+          "intro": "Credibility is not an option… it is part of our operating system:",
+          "points": [
+            "Contracts that are clear and leave no room for interpretation.",
+            "Invoices that are transparent, with no surprises.",
+            "Continuous updates at every stage.",
+            "Execution that can be measured, not based on talk.",
+            "Commitment that does not change even when circumstances do.",
+            "Full documentation of every step, from the first call to the final signature."
+          ]
+        }
+      },
+      "partner": {
+        "title": "What makes us different?",
+        "subtitle": "We are not different in words… but in the way we work",
+        "differences": [
+          "We make our steps clear and visible.",
+          "We share every piece of information related to the client’s request.",
+          "We work with an operating system that does not rely on luck.",
+          "We track shipments moment by moment.",
+          "We deliver documents without a single mistake.",
+          "We treat the client as a partner in decision."
+        ],
+        "footer": "For us, difference is not a style… it is an operating system."
+      },
+      "conclusion": {
+        "brandNamePrefix": "KEP",
+        "brandNameHighlight": "for Trade",
+        "tagline": "Not just a company… it is a way of dealing, a way of thinking, and a quality standard.",
+        "leadIn": "This is an identity written with clarity, strength and confidence… to say to the client:",
+        "final": "You are in the right place.",
+        "pillars": {
+          "clarity": {
+            "title": "Clarity",
+            "desc": "Because information is a right."
+          },
+          "commitment": {
+            "title": "Commitment",
+            "desc": "Because time has value."
+          },
+          "quality": {
+            "title": "Quality",
+            "desc": "Because it is the basis of trust."
+          },
+          "respect": {
+            "title": "Respect",
+            "desc": "Because it is the essence of interaction."
+          }
+        }
+      }
     },
     "services": {
         "hero": {
@@ -104,6 +391,499 @@
             "titleSuffix": "L.L.C",
             "description": "We offer a wide range of commercial and technology services that meet the needs of companies and individuals, with a full commitment to quality, professionalism and global standards.",
             "cta": "Explore our services"
+        },
+        "filters": {
+            "all": "All"
+        },
+        "sections": {
+            "tradeLogistics": {
+                "title": "Trade and Logistics Services",
+                "subtitle": "Integrated import and export solutions connecting you to global markets",
+                "services": {
+                    "import": {
+                        "title": "International Import",
+                        "description": "End-to-end import management",
+                        "points": {
+                            "0": "Selecting suppliers",
+                            "1": "Inspecting goods",
+                            "2": "Sea and air freight",
+                            "3": "Cargo insurance"
+                        }
+                    },
+                    "export": {
+                        "title": "International Export",
+                        "description": "Exporting to global markets",
+                        "points": {
+                            "0": "Preparing shipments",
+                            "1": "Document authentication",
+                            "2": "International shipping",
+                            "3": "Delivery follow-up"
+                        }
+                    },
+                    "seaShipping": {
+                        "title": "Sea Freight",
+                        "description": "Reliable ocean shipping solutions",
+                        "points": {
+                            "0": "Full containers (FCL)",
+                            "1": "Partial loads (LCL)",
+                            "2": "Shipment tracking",
+                            "3": "Marine insurance"
+                        }
+                    },
+                    "airShipping": {
+                        "title": "Air Freight",
+                        "description": "Global speed in transportation",
+                        "points": {
+                            "0": "Express shipping",
+                            "1": "Sensitive cargo",
+                            "2": "Temporary storage",
+                            "3": "Warehouse delivery"
+                        }
+                    },
+                    "customs": {
+                        "title": "Customs Clearance",
+                        "description": "Fast and secure border crossing",
+                        "points": {
+                            "0": "Preparing documents",
+                            "1": "Paying duties and fees",
+                            "2": "Inspection and clearance",
+                            "3": "Final delivery"
+                        }
+                    },
+                    "storage": {
+                        "title": "Logistics Warehousing",
+                        "description": "Secure and organised warehouses",
+                        "points": {
+                            "0": "Long‑term storage",
+                            "1": "Short‑term storage",
+                            "2": "Inventory management",
+                            "3": "Goods protection"
+                        }
+                    },
+                    "landTransport": {
+                        "title": "Land Transport",
+                        "description": "Local transport network",
+                        "points": {
+                            "0": "Refrigerated trucks",
+                            "1": "Express transport",
+                            "2": "GPS tracking",
+                            "3": "Daily deliveries"
+                        }
+                    },
+                    "commercialInsurance": {
+                        "title": "Commercial Insurance",
+                        "description": "Protecting your shipments and business",
+                        "points": {
+                            "0": "Cargo insurance",
+                            "1": "Transport insurance",
+                            "2": "Risk assessment",
+                            "3": "Fast compensation"
+                        }
+                    }
+                }
+            },
+            "ePayments": {
+                "title": "Electronic Payment Solutions",
+                "subtitle": "Modern financial technologies to simplify your business transactions",
+                "services": {
+                    "posDevices": {
+                        "title": "Electronic POS Devices",
+                        "description": "Latest generation payment terminals",
+                        "points": {
+                            "0": "Supplying POS devices",
+                            "1": "Installation and setup",
+                            "2": "Regular maintenance",
+                            "3": "Technical support"
+                        }
+                    },
+                    "smartCards": {
+                        "title": "Smart Payment Cards",
+                        "description": "Global‑standard security",
+                        "points": {
+                            "0": "EMV cards",
+                            "1": "NFC cards",
+                            "2": "Customising and printing",
+                            "3": "Card lifecycle management"
+                        }
+                    },
+                    "mobilePayments": {
+                        "title": "Mobile Payment Solutions",
+                        "description": "Faster and easier transactions",
+                        "points": {
+                            "0": "Apple Pay",
+                            "1": "Google Pay",
+                            "2": "QR payments",
+                            "3": "App integrations"
+                        }
+                    },
+                    "paymentGateways": {
+                        "title": "Online Payment Gateways",
+                        "description": "Full integration with your stores",
+                        "points": {
+                            "0": "Store integration",
+                            "1": "Data protection",
+                            "2": "Financial reporting",
+                            "3": "Technical support"
+                        }
+                    }
+                }
+            },
+            "computingTech": {
+                "title": "Computing and Technology Equipment",
+                "subtitle": "Advanced technology setups for offices and companies",
+                "services": {
+                    "desktopComputers": {
+                        "title": "Desktop Computers",
+                        "description": "High performance for businesses",
+                        "points": {
+                            "0": "Supplying devices",
+                            "1": "Configuration and setup",
+                            "2": "Maintenance",
+                            "3": "Technical support"
+                        }
+                    },
+                    "laptops": {
+                        "title": "Laptops",
+                        "description": "Top global brands",
+                        "points": {
+                            "0": "Device sales",
+                            "1": "Corporate supply",
+                            "2": "System setup",
+                            "3": "Maintenance"
+                        }
+                    },
+                    "printersScanners": {
+                        "title": "Printers and Scanners",
+                        "description": "Advanced printing solutions",
+                        "points": {
+                            "0": "Laser printers",
+                            "1": "Inkjet printers",
+                            "2": "Scanners",
+                            "3": "Toner and supplies"
+                        }
+                    },
+                    "monitorsAccessories": {
+                        "title": "Monitors and Accessories",
+                        "description": "High resolution for every use‑case",
+                        "points": {
+                            "0": "Office monitors",
+                            "1": "Display screens",
+                            "2": "Keyboards",
+                            "3": "Accessories"
+                        }
+                    },
+                    "serversDataCenters": {
+                        "title": "Servers and Data Centers",
+                        "description": "Digital infrastructure for your business",
+                        "points": {
+                            "0": "Rack servers",
+                            "1": "Storage units",
+                            "2": "Backup solutions",
+                            "3": "Data center setup"
+                        }
+                    },
+                    "storageUnits": {
+                        "title": "Storage Units",
+                        "description": "Secure data capacity",
+                        "points": {
+                            "0": "SSD",
+                            "1": "HDD",
+                            "2": "NAS",
+                            "3": "RAID"
+                        }
+                    },
+                    "peripherals": {
+                        "title": "Peripherals",
+                        "description": "Professional accessories",
+                        "points": {
+                            "0": "Mice",
+                            "1": "Keyboards",
+                            "2": "Headsets",
+                            "3": "Webcams"
+                        }
+                    },
+                    "osSetup": {
+                        "title": "Operating Systems and Setup",
+                        "description": "Building a complete work environment",
+                        "points": {
+                            "0": "Windows installation",
+                            "1": "Linux installation",
+                            "2": "Drivers",
+                            "3": "Device configuration"
+                        }
+                    }
+                }
+            },
+            "softwareDev": {
+                "title": "Software and Development",
+                "subtitle": "Smart software solutions to support your business growth",
+                "services": {
+                    "corporateSystems": {
+                        "title": "Corporate Software and Systems",
+                        "description": "Professional business software",
+                        "points": {
+                            "0": "ERP systems",
+                            "1": "CRM systems",
+                            "2": "Accounting systems",
+                            "3": "HR systems"
+                        }
+                    },
+                    "appDevelopment": {
+                        "title": "Application and System Development",
+                        "description": "Tailor‑made solutions",
+                        "points": {
+                            "0": "Mobile applications",
+                            "1": "Web platforms",
+                            "2": "Custom software",
+                            "3": "Systems integration"
+                        }
+                    },
+                    "cloudComputing": {
+                        "title": "Cloud Computing",
+                        "description": "Running your systems on the cloud",
+                        "points": {
+                            "0": "Cloud hosting",
+                            "1": "Backups",
+                            "2": "Resource scaling",
+                            "3": "Cloud security"
+                        }
+                    },
+                    "softwareSupport": {
+                        "title": "Software Technical Support",
+                        "description": "Ongoing maintenance and upgrades",
+                        "points": {
+                            "0": "Updates",
+                            "1": "Bug fixing",
+                            "2": "Performance optimisation",
+                            "3": "Continuous monitoring"
+                        }
+                    }
+                }
+            },
+            "networks": {
+                "title": "Networks and Communications",
+                "subtitle": "Robust infrastructure for stable, always‑on connectivity",
+                "services": {
+                    "communicationDevices": {
+                        "title": "Communication and Network Devices",
+                        "description": "Global‑standard performance",
+                        "points": {
+                            "0": "Routers",
+                            "1": "Switches",
+                            "2": "Modems",
+                            "3": "Communication devices"
+                        }
+                    },
+                    "cablingFiber": {
+                        "title": "Network and Fiber Cabling",
+                        "description": "High‑speed connectivity",
+                        "points": {
+                            "0": "Cable runs",
+                            "1": "Fiber optics",
+                            "2": "Network points installation",
+                            "3": "Testing and certification"
+                        }
+                    },
+                    "computerParts": {
+                        "title": "Computer Spare Parts",
+                        "description": "Original, guaranteed components",
+                        "points": {
+                            "0": "Motherboards",
+                            "1": "RAM",
+                            "2": "SSD drives",
+                            "3": "Power supplies"
+                        }
+                    },
+                    "electronicParts": {
+                        "title": "Electronic Device Spare Parts",
+                        "description": "Certified quality components",
+                        "points": {
+                            "0": "Electronic boards",
+                            "1": "Screens",
+                            "2": "Sensors",
+                            "3": "Control units"
+                        }
+                    }
+                }
+            },
+            "mediaEntertainment": {
+                "title": "Media and Entertainment",
+                "subtitle": "Integrated audio, visual and entertainment solutions",
+                "services": {
+                    "avDevices": {
+                        "title": "Audio‑Visual Devices",
+                        "description": "Sound and image solutions",
+                        "points": {
+                            "0": "Speakers",
+                            "1": "Screens",
+                            "2": "Sound systems",
+                            "3": "Projectors"
+                        }
+                    },
+                    "surveillance": {
+                        "title": "Surveillance and Recording Systems",
+                        "description": "24/7 protection",
+                        "points": {
+                            "0": "CCTV cameras",
+                            "1": "DVR / NVR",
+                            "2": "Smart monitoring systems",
+                            "3": "Installation and maintenance"
+                        }
+                    },
+                    "photoEquipment": {
+                        "title": "Photography Equipment",
+                        "description": "For professionals and enthusiasts",
+                        "points": {
+                            "0": "Cameras",
+                            "1": "Lenses",
+                            "2": "Flashes",
+                            "3": "Bags and tripods"
+                        }
+                    },
+                    "cinemaEquipment": {
+                        "title": "Cinema Production Equipment",
+                        "description": "Advanced production solutions",
+                        "points": {
+                            "0": "Cinema cameras",
+                            "1": "Cinema lighting",
+                            "2": "Microphones",
+                            "3": "Studio equipment"
+                        }
+                    },
+                    "gameConsoles": {
+                        "title": "Video Game Consoles",
+                        "description": "Latest entertainment platforms",
+                        "points": {
+                            "0": "PlayStation",
+                            "1": "Xbox",
+                            "2": "Nintendo",
+                            "3": "VR devices"
+                        }
+                    },
+                    "gamingAccessories": {
+                        "title": "Gaming Accessories",
+                        "description": "A complete gaming experience",
+                        "points": {
+                            "0": "Controllers",
+                            "1": "Headsets",
+                            "2": "Chargers",
+                            "3": "Digital cards"
+                        }
+                    },
+                    "homeTheaterSystems": {
+                        "title": "Home Theatre Systems",
+                        "description": "Cinema‑like experience at home",
+                        "points": {
+                            "0": "Large screens",
+                            "1": "Surround systems",
+                            "2": "Professional installation",
+                            "3": "Sound calibration"
+                        }
+                    },
+                    "proDisplayScreens": {
+                        "title": "Professional Display Screens",
+                        "description": "Display solutions for businesses",
+                        "points": {
+                            "0": "LED screens",
+                            "1": "Meeting room displays",
+                            "2": "Advertising screens",
+                            "3": "Maintenance"
+                        }
+                    }
+                }
+            },
+            "mobilesConsumer": {
+                "title": "Mobiles and Consumer Devices",
+                "subtitle": "Latest smart and home devices",
+                "services": {
+                    "mobilePhones": {
+                        "title": "Mobile Phones",
+                        "description": "Latest releases",
+                        "points": {
+                            "0": "Phone sales",
+                            "1": "Corporate supply",
+                            "2": "System setup",
+                            "3": "Repairs"
+                        }
+                    },
+                    "phoneAccessories": {
+                        "title": "Phone Accessories",
+                        "description": "Protection and performance",
+                        "points": {
+                            "0": "Covers and cases",
+                            "1": "Headphones",
+                            "2": "Chargers",
+                            "3": "Cables"
+                        }
+                    },
+                    "homeAppliances": {
+                        "title": "Home Electrical Appliances",
+                        "description": "High quality for your home",
+                        "points": {
+                            "0": "Refrigerators",
+                            "1": "Washing machines",
+                            "2": "Dryers",
+                            "3": "Small appliances"
+                        }
+                    },
+                    "cookersOvens": {
+                        "title": "Cookers and Ovens",
+                        "description": "Advanced kitchen setups",
+                        "points": {
+                            "0": "Ovens",
+                            "1": "Cookers",
+                            "2": "Range hoods",
+                            "3": "Installation and maintenance"
+                        }
+                    },
+                    "watchesParts": {
+                        "title": "Watches and Spare Parts",
+                        "description": "Precision and elegance",
+                        "points": {
+                            "0": "Men’s watches",
+                            "1": "Women’s watches",
+                            "2": "Batteries",
+                            "3": "Fine servicing"
+                        }
+                    },
+                    "wearables": {
+                        "title": "Wearable Devices",
+                        "description": "Modern health‑tech",
+                        "points": {
+                            "0": "Smart watches",
+                            "1": "Health bands",
+                            "2": "Sleep tracking",
+                            "3": "Activity tracking"
+                        }
+                    },
+                    "smartHome": {
+                        "title": "Smart Home Devices",
+                        "description": "Comfort and full control",
+                        "points": {
+                            "0": "Smart bulbs",
+                            "1": "Smart plugs",
+                            "2": "Voice control",
+                            "3": "Apps and automations"
+                        }
+                    },
+                    "phoneParts": {
+                        "title": "Phone Spare Parts",
+                        "description": "Original, guaranteed parts",
+                        "points": {
+                            "0": "Screens",
+                            "1": "Batteries",
+                            "2": "Charging ports",
+                            "3": "Cameras"
+                        }
+                    }
+                }
+            }
+        },
+        "cta": {
+            "title": "Need a custom service?",
+            "description": "Our team of experts is ready to help you find the optimal solution for your business. Contact us today for a free consultation and tailored solutions for your needs.",
+            "primaryCta": "Contact us now",
+            "secondaryCta": "Send an enquiry"
         }
     },
     "businessPath": {
@@ -115,6 +895,247 @@
             "subtitle": "Your commercial partner that opens the doors of markets with confidence, quality and stability. In a world where trade is accelerating, we are your compass to success.",
             "ctaServices": "Discover our services",
             "ctaContact": "Contact us"
+        },
+        "visionMissionGoal": {
+            "cards": {
+                "vision": {
+                    "title": "Vision",
+                    "text": "To be the first commercial choice for clients seeking consistent quality, reliable supply chains, and a relationship where they are always at the center of attention."
+                },
+                "mission": {
+                    "title": "Mission",
+                    "text": "To deliver integrated commercial solutions built on transparency, precision and commitment, with a focus on client needs and a premium experience that strengthens their trust at every step."
+                },
+                "goal": {
+                    "title": "Goal",
+                    "text": "To empower our clients to reach the best products and markets through studied supply routes, professional execution and service that treats them as true partners in success."
+                }
+            }
+        },
+        "clientMessage": {
+            "title": "A word to our client",
+            "quoteLine1": "You are not just a number on a list…",
+            "quoteHighlight": "You are a valued asset and a partner we are proud of",
+            "paragraph": "and a cornerstone of our commercial journey. We listen to you, understand your needs, and build a business path that matches your ambition, because your success is part of our identity, and your trust is our true capital."
+        },
+        "servicesSection": {
+            "title": "Our integrated services",
+            "subtitle": "Each service is designed to give you ease, quality and confidence at every step",
+            "services": {
+                "import": "International import",
+                "localDistribution": "Local distribution",
+                "externalExpansion": "External expansion",
+                "electronics": "Electronics",
+                "homeAppliances": "Home appliances",
+                "smartphones": "Smartphones",
+                "digitalEntertainment": "Digital entertainment",
+                "audioVisual": "Audio & visual",
+                "spareParts": "Spare parts",
+                "networks": "Networks & communications"
+            }
+        },
+        "whyKEP": {
+            "title": "Why KEP for Trade?",
+            "overlayText": "A complete team at your service",
+            "features": {
+                "care": "Genuine care",
+                "consistentQuality": "Unchanging quality",
+                "commitment": "Uncompromising commitment",
+                "easyExecution": "Execution without complexity",
+                "fairPrices": "Fair pricing",
+                "continuousFollowup": "Continuous follow‑up",
+                "clarity": "Clarity at every stage",
+                "premiumExperience": "A refined client experience"
+            }
+        },
+        "businessUnits": {
+            "badge": "Integrated system",
+            "title": "Our specialized units",
+            "subtitle": "Strategic, integrated units working together to secure our clients’ success at every step of their commercial journey",
+            "tasksTitle": "Unit tasks:",
+            "valueTitle": "Value to the client:",
+            "units": {
+                "risk": {
+                    "name": "Commercial Risk Unit",
+                    "desc": "A specialized unit protecting clients’ businesses from disruptions that could threaten supply stability.",
+                    "tasks": {
+                        "0": "Analysing risks in target markets",
+                        "1": "Assessing supplier stability",
+                        "2": "Monitoring price volatility",
+                        "3": "Managing transport and shipping risks"
+                    },
+                    "value": {
+                        "0": "Ensured continuity of supply",
+                        "1": "Protection of commercial capital",
+                        "2": "Reduced operational losses"
+                    }
+                },
+                "internationalExpansion": {
+                    "name": "International Expansion Unit",
+                    "desc": "A strategic unit focused on opening new markets for our clients and expanding their commercial influence.",
+                    "tasks": {
+                        "0": "Studying international markets",
+                        "1": "Building new partnerships",
+                        "2": "Opening new supply lines",
+                        "3": "Supporting client expansion plans"
+                    },
+                    "value": {
+                        "0": "Access to new markets",
+                        "1": "Diversified supply sources",
+                        "2": "Stronger competitive position"
+                    }
+                },
+                "digitalTransformation": {
+                    "name": "Digital Transformation Unit",
+                    "desc": "Developing digital infrastructure to ensure speed, accuracy and transparency in every commercial process.",
+                    "tasks": {
+                        "0": "Digitising supply operations",
+                        "1": "Developing shipment tracking systems",
+                        "2": "Building real‑time dashboards",
+                        "3": "Using AI to support decisions"
+                    },
+                    "value": {
+                        "0": "Higher speed and transparency",
+                        "1": "Reduced human error",
+                        "2": "More professional client experience"
+                    }
+                },
+                "franchise": {
+                    "name": "Franchise Unit",
+                    "desc": "Expanding brands through granting franchise rights to regional and local partners.",
+                    "tasks": {
+                        "0": "Preparing franchise models",
+                        "1": "Selecting franchise partners",
+                        "2": "Providing training and support",
+                        "3": "Monitoring branch quality"
+                    },
+                    "value": {
+                        "0": "Faster expansion with lower risk",
+                        "1": "Full operational support",
+                        "2": "A brand ready to succeed"
+                    }
+                },
+                "ecommerce": {
+                    "name": "E‑Commerce Unit",
+                    "desc": "Managing and developing digital sales operations across e‑commerce platforms.",
+                    "tasks": {
+                        "0": "Managing online stores",
+                        "1": "Developing payment solutions",
+                        "2": "Managing digital inventory",
+                        "3": "Running digital marketing campaigns"
+                    },
+                    "value": {
+                        "0": "Faster reach to customers",
+                        "1": "Increased sales volumes",
+                        "2": "Smooth purchasing experience"
+                    }
+                },
+                "compliance": {
+                    "name": "Commercial Compliance Unit",
+                    "desc": "Ensuring that all company operations comply with local, international and legal standards.",
+                    "tasks": {
+                        "0": "Reviewing commercial contracts",
+                        "1": "Ensuring products meet standards",
+                        "2": "Tracking laws and regulations",
+                        "3": "Managing documents and certificates"
+                    },
+                    "value": {
+                        "0": "Legally safe transactions",
+                        "1": "Certified products",
+                        "2": "Protection from violations"
+                    }
+                },
+                "supplierDevelopment": {
+                    "name": "Supplier Development Unit",
+                    "desc": "Improving supplier quality and performance to guarantee stable and reliable supply.",
+                    "tasks": {
+                        "0": "Assessing supplier performance",
+                        "1": "Building quality‑improvement plans",
+                        "2": "Developing long‑term relationships",
+                        "3": "Training and qualifying suppliers"
+                    },
+                    "value": {
+                        "0": "Higher quality and better prices",
+                        "1": "More stable supply chains",
+                        "2": "Strategic partnerships"
+                    }
+                },
+                "financialAnalysis": {
+                    "name": "Financial Analysis Unit",
+                    "desc": "Analysing financial data to support commercial decisions and optimise returns.",
+                    "tasks": {
+                        "0": "Analysing supply costs",
+                        "1": "Evaluating market feasibility",
+                        "2": "Studying profitability and risk",
+                        "3": "Preparing detailed financial reports"
+                    },
+                    "value": {
+                        "0": "Decisions based on solid numbers",
+                        "1": "Reduced financial risk",
+                        "2": "Clear visibility on costs"
+                    }
+                },
+                "customerService": {
+                    "name": "Customer Service Unit",
+                    "desc": "A dedicated unit for clients who require close follow‑up and a premium service experience.",
+                    "tasks": {
+                        "0": "Personal follow‑up for each client",
+                        "1": "Providing a dedicated account manager",
+                        "2": "Ensuring rapid response times",
+                        "3": "Delivering immediate solutions to issues"
+                    },
+                    "value": {
+                        "0": "Greater attention and care",
+                        "1": "Faster completion of requests",
+                        "2": "A high‑end service experience"
+                    }
+                },
+                "contractManagement": {
+                    "name": "Contract Management Unit",
+                    "desc": "Drafting, reviewing and managing contracts to protect the rights of both clients and the company.",
+                    "tasks": {
+                        "0": "Drafting commercial contracts",
+                        "1": "Reviewing legal clauses",
+                        "2": "Following up on obligations",
+                        "3": "Managing renewals"
+                    },
+                    "value": {
+                        "0": "Full clarity in agreements",
+                        "1": "Legal protection",
+                        "2": "Strict adherence to every clause"
+                    }
+                },
+                "quality": {
+                    "name": "Total Quality Unit",
+                    "desc": "Monitoring quality at every stage of supply and delivery to ensure excellence.",
+                    "tasks": {
+                        "0": "Inspecting products before shipping",
+                        "1": "Reviewing quality on arrival",
+                        "2": "Monitoring supplier performance",
+                        "3": "Addressing operational issues"
+                    },
+                    "value": {
+                        "0": "Consistent quality",
+                        "1": "Reliable products",
+                        "2": "Fewer errors and issues"
+                    }
+                },
+                "internationalRelations": {
+                    "name": "International Relations Unit",
+                    "desc": "Building strategic relationships with commercial entities worldwide to open new horizons.",
+                    "tasks": {
+                        "0": "Communicating with global companies",
+                        "1": "Building trade alliances",
+                        "2": "Attending international exhibitions",
+                        "3": "Supporting client expansion abroad"
+                    },
+                    "value": {
+                        "0": "Larger commercial opportunities",
+                        "1": "Access to new markets",
+                        "2": "Ongoing international support"
+                    }
+                }
+            }
         }
     },
     "execution": {
@@ -123,6 +1144,302 @@
             "subtitle": "Communication execution mechanism — a clear communication system that ensures a professional experience",
             "p1": "We believe that the success of the business process starts with clarity of roles, speed of response, and accuracy of execution.",
             "p2": "At KEP for Trade we build a clear operational communication system that ensures smooth work between all parties, from defining roles and communication paths to speed of response and accuracy of information transfer. Because the success of business operations depends not only on planning, but on organised execution based on clarity of responsibilities and team integration, achieving a professional experience and measurable results."
+        },
+        "departmentOrg": {
+            "title": "Commercial positions and their roles",
+            "departments": [
+                {
+                    "title": "Executive management",
+                    "roles": [
+                        {
+                            "title": "Supply Chain Manager",
+                            "desc": "Oversees supply sources, supplier selection and control of goods movement."
+                        },
+                        {
+                            "title": "Import & Export Manager",
+                            "desc": "Leads import and export operations and manages international shipping."
+                        },
+                        {
+                            "title": "Strategic Planning Manager",
+                            "desc": "Sets operational plans and defines priorities for growth and expansion."
+                        },
+                        {
+                            "title": "Business Development Manager",
+                            "desc": "Builds strategic partnerships and explores new market opportunities."
+                        }
+                    ]
+                },
+                {
+                    "title": "Import & Export",
+                    "roles": [
+                        {
+                            "title": "Import Coordinator",
+                            "desc": "Follows up shipments, prepares documents and ensures compliance with procedures."
+                        },
+                        {
+                            "title": "Export Coordinator",
+                            "desc": "Prepares export shipments and organises all required documentation."
+                        },
+                        {
+                            "title": "Customs Clearance Officer",
+                            "desc": "Completes customs procedures and follows up cargo release."
+                        },
+                        {
+                            "title": "Documentation Officer",
+                            "desc": "Prepares invoices, bills of lading and reviews shipment data."
+                        }
+                    ]
+                },
+                {
+                    "title": "Logistics & Operations",
+                    "roles": [
+                        {
+                            "title": "Logistics Manager",
+                            "desc": "Manages transport, container tracking and improves operational efficiency."
+                        },
+                        {
+                            "title": "Warehouse Supervisor",
+                            "desc": "Receives goods, inspects quality and organises storage."
+                        },
+                        {
+                            "title": "Sea Freight Coordinator",
+                            "desc": "Books containers and follows up sailings and vessel schedules."
+                        },
+                        {
+                            "title": "Air Freight Coordinator",
+                            "desc": "Organises express shipments and monitors on‑time delivery."
+                        }
+                    ]
+                },
+                {
+                    "title": "Clients & Sales",
+                    "roles": [
+                        {
+                            "title": "Commercial Accounts Consultant",
+                            "desc": "Communicates with clients and understands their commercial needs."
+                        },
+                        {
+                            "title": "Key Account Manager",
+                            "desc": "Manages major clients and strengthens long‑term relationships."
+                        },
+                        {
+                            "title": "Sales Manager",
+                            "desc": "Leads the sales team and achieves targeted growth."
+                        },
+                        {
+                            "title": "Customer Service Coordinator",
+                            "desc": "Follows up client enquiries and ensures their full satisfaction."
+                        }
+                    ]
+                },
+                {
+                    "title": "Quality & Compliance",
+                    "roles": [
+                        {
+                            "title": "Quality Auditor",
+                            "desc": "Reviews processes and ensures adherence to standards."
+                        },
+                        {
+                            "title": "Commercial Compliance Manager",
+                            "desc": "Reviews regulations and reduces legal and regulatory risks."
+                        },
+                        {
+                            "title": "Risk Management Officer",
+                            "desc": "Analyses operational risks and sets mitigation plans."
+                        },
+                        {
+                            "title": "Internal Auditor",
+                            "desc": "Evaluates performance and ensures compliance with internal policies."
+                        }
+                    ]
+                },
+                {
+                    "title": "Analytics & Support",
+                    "roles": [
+                        {
+                            "title": "Pricing & Market Analyst",
+                            "desc": "Analyses global prices and supports commercial decisions."
+                        },
+                        {
+                            "title": "Contracts Manager",
+                            "desc": "Drafts contracts and reviews commercial terms and conditions."
+                        },
+                        {
+                            "title": "Operations Data Analyst",
+                            "desc": "Analyses performance indicators and prepares periodic reports."
+                        },
+                        {
+                            "title": "Administrative Support Officer",
+                            "desc": "Coordinates internal operations and supports execution teams."
+                        }
+                    ]
+                }
+            ]
+        },
+        "workflow": {
+            "title": "Communication execution mechanism",
+            "subtitle": "From the first call to final delivery",
+            "steps": [
+                {
+                    "title": "Receiving the request",
+                    "desc": "The request is received by the communication coordinator and recorded accurately."
+                },
+                {
+                    "title": "Routing the request",
+                    "desc": "It is transferred directly to the accounts consultant or the import/export team."
+                },
+                {
+                    "title": "Communicating with the client",
+                    "desc": "Needs are identified, details are clarified and suitable solutions are presented."
+                },
+                {
+                    "title": "Starting execution",
+                    "desc": "The operations team starts executing the request according to a clear plan."
+                },
+                {
+                    "title": "Continuous follow‑up",
+                    "desc": "Shipments are tracked, the client is updated and timelines are respected."
+                },
+                {
+                    "title": "Quality review",
+                    "desc": "The quality auditor verifies that every step has been completed correctly."
+                },
+                {
+                    "title": "Evaluation & improvement",
+                    "desc": "Performance is analysed and insights are extracted to improve future operations."
+                },
+                {
+                    "title": "Closing the process",
+                    "desc": "The process is fully documented and the client is informed of its completion."
+                }
+            ]
+        },
+        "responseTime": {
+            "title": "Our response commitments",
+            "subtitle": "We value your time and commit to the highest standards of speed and efficiency",
+            "stats": [
+                {
+                    "title": "Initial response",
+                    "time": "2 hours",
+                    "desc": "Within"
+                },
+                {
+                    "title": "Proposal submission",
+                    "time": "24 hours",
+                    "desc": "Within"
+                },
+                {
+                    "title": "Execution start",
+                    "time": "48 hours",
+                    "desc": "Within"
+                },
+                {
+                    "title": "Issue resolution",
+                    "time": "6 hours",
+                    "desc": "Within"
+                }
+            ]
+        },
+        "escalation": {
+            "imageTitle": "Escalation path",
+            "imageSubtitle": "A clear path to ensure fast issue resolution",
+            "steps": [
+                {
+                    "title": "1. Service coordinator",
+                    "desc": "First point of contact for any comment or note."
+                },
+                {
+                    "title": "2. Account manager",
+                    "desc": "Follows up and resolves operational challenges."
+                },
+                {
+                    "title": "3. Operations manager",
+                    "desc": "Handles advanced managerial and technical decisions."
+                },
+                {
+                    "title": "4. Executive management",
+                    "desc": "The final guarantee of service quality."
+                }
+            ]
+        },
+        "documentation": {
+            "title": "Documentation and tracking system",
+            "subtitle": "Every step in the process is documented inside an integrated digital operating system that ensures full transparency.",
+            "features": [
+                {
+                    "text": "Electronic registration of the request"
+                },
+                {
+                    "text": "Secure storage of documents"
+                },
+                {
+                    "text": "Real‑time tracking of execution stages"
+                },
+                {
+                    "text": "Archiving of invoices and shipments"
+                },
+                {
+                    "text": "Periodic request status reports"
+                }
+            ]
+        },
+        "postDelivery": {
+            "title": "Post‑delivery evaluation",
+            "p1": "After the process is completed, we contact the client to conduct a comprehensive evaluation that ensures continuous improvement.",
+            "p2": "We measure performance precisely across key areas such as speed of completion, quality of execution, document accuracy and communication level, focusing on feedback that helps us to keep improving.",
+            "metrics": [
+                {
+                    "label": "Execution quality",
+                    "score": "10/10",
+                    "width": "100%"
+                },
+                {
+                    "label": "Speed of completion",
+                    "score": "9.5/10",
+                    "width": "95%"
+                },
+                {
+                    "label": "Document accuracy",
+                    "score": "10/10",
+                    "width": "100%"
+                },
+                {
+                    "label": "Communication level",
+                    "score": "9.8/10",
+                    "width": "98%"
+                },
+                {
+                    "label": "Improvement notes",
+                    "score": "9/10",
+                    "width": "90%"
+                }
+            ]
+        },
+        "closing": {
+            "title": "Every position within the system has a clear role that serves you",
+            "paragraph": "We work as one team to ensure that your request moves with speed, precision and the highest level of professionalism. We value your time, respect your needs and place your success at the top of our priorities.",
+            "cta": "Contact us now"
+        },
+        "contactChannels": {
+            "imageTitle": "Official communication channels",
+            "channels": [
+                {
+                    "title": "Dedicated commercial contact number",
+                    "desc": "A direct line for clients and commercial partners."
+                },
+                {
+                    "title": "Official email for requests",
+                    "desc": "For sending documents and quotation requests."
+                },
+                {
+                    "title": "Business WhatsApp for fast follow‑up",
+                    "desc": "Instant updates on shipment status and urgent requests."
+                },
+                {
+                    "title": "Dedicated account manager for key clients",
+                    "desc": "A single point of contact to ensure a smooth and tailored experience."
+                }
+            ]
         }
     },
     "footer": {

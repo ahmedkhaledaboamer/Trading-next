@@ -1,25 +1,14 @@
 import { cn } from "@/utils/cn";
 import { Check, MapPin } from "lucide-react";
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
-
-const networkBenefits = [
-  "تنوع مصادر التوريد",
-  "حماية من اضطرابات السوق",
-  "توفير بدائل فورية",
-  "قوة تفاوضية أعلى في الأسعار والكميات",
-];
-
-const supplyRegions = [
-  "شرق آسيا",
-  "أوروبا",
-  "الشرق الأوسط",
-  "أمريكا الشمالية",
- ];
+import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function SuppliersNetworkSection() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("home.suppliersNetwork");
+  const benefits = t.raw("benefits") as string[];
+  const regions = t.raw("regions") as string[];
 
   return (
     <section
@@ -30,7 +19,7 @@ export default async function SuppliersNetworkSection() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/37.webp"
-          alt="شبكة مورّدين عالمية في الموانئ البحرية"
+          alt={t("imageAlt")}
           fill
           className="object-cover"
         />
@@ -44,13 +33,12 @@ export default async function SuppliersNetworkSection() {
             <h2
               className="inline-block font-bold text-amber-200 leading-tight text-2xl md:text-xl xl:text-2xl 2xl:text-6xl bg-amber-900 border border-amber-500 rounded-2xl px-6 py-4"
             >
-              شبكة الموردين العالمية
+              {t("title")}
             </h2>
             <p
               className="inline-block text-sky-100 text-base md:text-2xl xl:text-3xl bg-sky-900/80 border border-sky-500 rounded-full px-5 py-2"
             >
-              شبكة توريد تمتد عبر قارات متعددة تمنح الشركة قوة في الوصول،
-              الاختيار، وإدارة المخاطر.
+              {t("subtitle")}
             </p>
           </header>
 
@@ -67,7 +55,7 @@ export default async function SuppliersNetworkSection() {
                 <h3
                   className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-xl xl:text-2xl 2xl:text-5xl"
                 >
-                  <span>مزايا الشبكة</span>
+                  <span>{t("benefitsTitle")}</span>
                   <Check
                     className="text-primary"
                     style={{ width: "2rem", height: "2rem" }}
@@ -75,7 +63,7 @@ export default async function SuppliersNetworkSection() {
                   />
                 </h3>
                 <ul className="space-y-2.5">
-                  {networkBenefits.map((item) => (
+                  {benefits.map((item) => (
                     <li
                       key={item}
                       className="flex items-start gap-2 text-white/90 text-base md:text-xl xl:text-3xl"
@@ -99,7 +87,7 @@ export default async function SuppliersNetworkSection() {
                 <h3
                   className="font-bold text-white border-b border-white/15 pb-3 mb-1 flex items-center justify-between gap-3 text-base md:text-xl xl:text-2xl 2xl:text-5xl"
                 >
-                  <span>مناطق التوريد الرئيسية</span>
+                  <span>{t("regionsTitle")}</span>
                   <MapPin
                     className="text-primary"
                     style={{ width: "2rem", height: "2rem" }}
@@ -107,7 +95,7 @@ export default async function SuppliersNetworkSection() {
                   />
                 </h3>
                 <ul className="space-y-2.5">
-                  {supplyRegions.map((region) => (
+                  {regions.map((region) => (
                     <li
                       key={region}
                       className="flex items-start gap-2 text-white/90 text-base md:text-xl xl:text-3xl"

@@ -8,6 +8,7 @@ import {
   ZapIcon,
 } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 
 const cardColors = [
   'bg-gradient-to-br from-emerald-500/25 via-emerald-500/10 to-transparent border-emerald-400/70',
@@ -42,64 +43,42 @@ const barColors = [
   'bg-amber-400',
 ]
 
-const items = [
-  {
-    label: 'جودة التنفيذ',
-    icon: StarIcon,
-    width: '100%',
-    score: '10/10',
-  },
-  {
-    label: 'سرعة الإنجاز',
-    icon: ZapIcon,
-    width: '95%',
-    score: '9.5/10',
-  },
-  {
-    label: 'دقة المستندات',
-    icon: CheckSquareIcon,
-    width: '100%',
-    score: '10/10',
-  },
-  {
-    label: 'مستوى التواصل',
-    icon: MessageSquareIcon,
-    width: '98%',
-    score: '9.8/10',
-  },
-  {
-    label: 'ملاحظات للتحسين',
-    icon: ThumbsUpIcon,
-    width: '90%',
-    score: '9/10',
-  },
-]
+const metricVisuals = [
+  { icon: StarIcon },
+  { icon: ZapIcon },
+  { icon: CheckSquareIcon },
+  { icon: MessageSquareIcon },
+  { icon: ThumbsUpIcon },
+] as const
 
 export function PostDeliveryProgress() {
+  const t = useTranslations('execution.postDelivery')
+  const metrics = t.raw('metrics') as { label: string; score: string; width: string }[]
+
   return (
     <div className="space-y-6">
-      {items.map((item, idx) => {
+      {metrics.map((metric, idx) => {
         const cardColor = cardColors[idx % cardColors.length]
         const barColor = barColors[idx % barColors.length]
+        const visual = metricVisuals[idx]
 
         return (
           <div
             key={idx}
             className={`relative bg-gray-900/80 backdrop-blur-sm p-4 rounded-2xl border text-white overflow-hidden ${cardColor}`}
           >
-
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-3">
-                <item.icon className="w-5 h-5 text-white/80" />
-                <span className="font-bold text-base md:text-lg">{item.label}</span>
+                <visual.icon className="w-5 h-5 text-white/80" />
+                <span className="font-bold text-base md:text-lg">{metric.label}</span>
               </div>
-              <span className="text-base md:text-lg text-gray-200 font-mono">{item.score}</span>
+              <span className="text-base md:text-lg text-gray-200 font-mono">{metric.score}</span>
             </div>
 
             <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
               <motion.div
                 initial={{ width: 0 }}
-                animate={{ width: item.width }}
+                animate={{ width: metric.width }}
                 transition={{
                   duration: 1.1,
                   delay: idx * 0.15,

@@ -1,5 +1,5 @@
- 'use client'
- import { motion } from 'framer-motion'
+'use client'
+import { motion } from 'framer-motion'
 import {
   Heart,
   Shield,
@@ -11,60 +11,67 @@ import {
   Star,
 } from 'lucide-react'
 import Image from 'next/image'
-export function WhyKEP( {locale}: {locale: string} ) {
-  const isRTL = locale === "ar";
+import { useTranslations } from 'next-intl'
+
+export function WhyKEP({ locale }: { locale: string }) {
+  const isRTL = locale === 'ar'
+  const t = useTranslations('businessPath.whyKEP')
+
   const features = [
     {
-      text: 'اهتمامًا حقيقيًا',
+      text: t('features.care'),
       icon: <Heart />,
       color: 'text-red-500',
       bg: 'bg-red-50',
     },
     {
-      text: 'جودة لا تتغير',
+      text: t('features.consistentQuality'),
       icon: <Shield />,
       color: 'text-blue-500',
       bg: 'bg-blue-50',
     },
     {
-      text: 'التزامًا لا يتراجع',
+      text: t('features.commitment'),
       icon: <CheckCircle />,
       color: 'text-green-500',
       bg: 'bg-green-50',
     },
     {
-      text: 'تنفيذًا بلا تعقيد',
+      text: t('features.easyExecution'),
       icon: <Zap />,
       color: 'text-yellow-500',
       bg: 'bg-yellow-50',
     },
     {
-      text: 'أسعارًا عادلة',
+      text: t('features.fairPrices'),
       icon: <DollarSign />,
       color: 'text-emerald-500',
       bg: 'bg-emerald-50',
     },
     {
-      text: 'متابعة مستمرة',
+      text: t('features.continuousFollowup'),
       icon: <RefreshCw />,
       color: 'text-indigo-500',
       bg: 'bg-indigo-50',
     },
     {
-      text: 'وضوحًا في كل مرحلة',
+      text: t('features.clarity'),
       icon: <Eye />,
       color: 'text-cyan-500',
       bg: 'bg-cyan-50',
     },
     {
-      text: 'تجربة تعامل راقية',
+      text: t('features.premiumExperience'),
       icon: <Star />,
       color: 'text-amber-500',
       bg: 'bg-amber-50',
     },
   ]
   return (
-    <section className="py-24 bg-gray-50 relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
+    <section
+      className="py-24 bg-gray-50 relative overflow-hidden"
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <svg
@@ -112,7 +119,7 @@ export function WhyKEP( {locale}: {locale: string} ) {
               }}
             >
               <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-[#0A1628] mb-6">
-                لماذا كي إي بي للتجارة؟
+                {t('title')}
               </h2>
               <div className="w-20 h-1.5 bg-[#D4A853] rounded-full mb-8" />
 
@@ -127,7 +134,7 @@ export function WhyKEP( {locale}: {locale: string} ) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/60 to-transparent" />
                 <div className="absolute bottom-4 right-4 text-white font-bold text-lg md:text-xl lg:text-2xl 2xl:text-4xl">
-                  فريق عمل متكامل لخدمتك
+                  {t('overlayText')}
                 </div>
               </div>
             </motion.div>

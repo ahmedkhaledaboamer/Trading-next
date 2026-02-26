@@ -1,18 +1,8 @@
- "use client";
+"use client";
 
 import { cn } from "@/utils/cn";
 import { motion } from "framer-motion";
-
-const indicators = [
-  "فهم عميق لطبيعة الطلب",
-  "تحليل سوقي دقيق",
-  "قدرة تنفيذية عالية",
-  "التزام صارم بالجودة",
-  "شبكات توريد موثوقة",
-  "سرعة في الإنجاز",
-  "مرونة تشغيلية",
-  "حماية رأس المال التجاري",
-];
+import { useTranslations } from "next-intl";
 
 const cardColors = [
   "bg-gradient-to-br from-emerald-500 via-emerald-400 to-emerald-600 border-emerald-400",
@@ -37,6 +27,9 @@ const indicatorColors = [
 ];
 
 export default function PowerIndicatorsSection() {
+  const t = useTranslations("home.powerIndicators");
+  const items = t.raw("items") as string[];
+
   return (
     <section
       className="py-20 md:py-28 bg-[#1A1A2E] relative overflow-hidden"
@@ -59,18 +52,17 @@ export default function PowerIndicatorsSection() {
           <h2
             className="inline-block font-bold text-amber-200 leading-tight text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl bg-amber-900 border border-amber-500 rounded-2xl px-6 py-4"
           >
-            مؤشرات القوة
+            {t("title")}
           </h2>
           <p
             className="inline-block text-cyan-100 text-base md:text-2xl bg-cyan-900 border border-cyan-500 rounded-full px-5 py-2"
           >
-            معايير أداء تعكس ثباتًا وسيادة في التنفيذ التجاري عبر مختلف الوحدات
-            التشغيلية.
+            {t("subtitle")}
           </p>
         </header>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {indicators.map((item, idx) => (
+          {items.map((item, idx) => (
             <motion.div
               key={item}
               initial={{ opacity: 0, y: 20 }}

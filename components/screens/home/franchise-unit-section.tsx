@@ -1,27 +1,14 @@
 import { cn } from "@/utils/cn";
 import { BadgePercent, Briefcase } from "lucide-react";
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
-
-const franchiseBenefits = [
-  "توسع سريع للعلامة التجارية",
-  "تقليل المخاطر التشغيلية على الشركة  ",
-  "زيادة الحصة السوقية عبر الشركاء  ",
-  "دعم الشركاء بنظام تشغيل جاهز",
-  "تحقيق تدفقات دخل مستمرة    "
-];
-
-const franchiseTasks = [
-  "إعداد نماذج الامتياز التجاري",
-  "اختيار شركاء الامتياز المناسبين",
-  "توفير التدريب والدعم التشغيلي",
-  "مراقبة جودة التنفيذ في نقاط الامتياز",
-  "ضمان التزام العلامة بمعاييرها التجارية",
-];
+import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function FranchiseUnitSection() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("home.franchiseUnit");
+  const benefits = t.raw("benefits") as string[];
+  const tasks = t.raw("tasks") as string[];
 
   return (
     <section
@@ -35,13 +22,12 @@ export default async function FranchiseUnitSection() {
             <h2
               className="inline-block font-bold text-[#4E342E] leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-[#FFE0B2] border border-[#FFB74D] rounded-2xl px-6 py-4"
             >
-              وحدة الامتياز التجاري
+              {t("title")}
             </h2>
             <p
               className="inline-block text-[#5D4037] text-base md:text-2xl bg-[#FFF8E1] border border-[#FFECB3] rounded-full px-5 py-2"
             >
-              وحدة متخصصة لمنح الامتياز التجاري للعلامات التي تديرها كي إي بي
-              للتجارة، وفق معايير تشغيلية واضحة.
+              {t("subtitle")}
             </p>
           </header>
 
@@ -58,7 +44,7 @@ export default async function FranchiseUnitSection() {
                 <h3
                   className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-5xl"
                 >
-                  فوائد الامتياز
+                  {t("benefitsTitle")}
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <BadgePercent
@@ -72,7 +58,7 @@ export default async function FranchiseUnitSection() {
               </div>
 
               <ul className="space-y-2.5">
-                {franchiseBenefits.map((item) => (
+                {benefits.map((item) => (
                   <li
                     key={item}
                     className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-4xl"
@@ -82,10 +68,11 @@ export default async function FranchiseUnitSection() {
                   </li>
                 ))}
               </ul>
-              
-              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30   rounded-2xl p-4">
-              تعمل وحدة الامتياز التجاري على تحويل العلامات التجارية إلى نماذج قابلة للتوسع بثقة واستدامة. من خلال بناء أنظمة تشغيل واضحة، واختيار الشركاء المناسبين.</p>
-                          </article>
+
+              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30 rounded-2xl p-4">
+                {t("benefitsNote")}
+              </p>
+            </article>
 
             {/* Tasks card */}
             <article
@@ -98,7 +85,7 @@ export default async function FranchiseUnitSection() {
                 <h3
                   className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-5xl"
                 >
-                  مهام الوحدة
+                  {t("tasksTitle")}
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <Briefcase
@@ -112,7 +99,7 @@ export default async function FranchiseUnitSection() {
               </div>
 
               <ul className="space-y-2.5">
-                {franchiseTasks.map((task) => (
+                {tasks.map((task) => (
                   <li
                     key={task}
                     className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-4xl"
@@ -122,9 +109,10 @@ export default async function FranchiseUnitSection() {
                   </li>
                 ))}
               </ul>
-              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30   rounded-2xl p-4">
-              في وحدة الامتياز التجاري نعمل على تمكين العلامات من التوسع بطريقة مدروسة، عبر تصميم نماذج امتياز قابلة للتطبيق، ووضع معايير تشغيل دقيقة.     </p>
-              </article>
+              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30 rounded-2xl p-4">
+                {t("tasksNote")}
+              </p>
+            </article>
 
             {/* Image card */}
             <div className="flex justify-center lg:justify-end">
@@ -137,7 +125,7 @@ export default async function FranchiseUnitSection() {
               >
                 <Image
                   src="/images/29.webp"
-                  alt="اجتماع عمل لوحدة الامتياز التجاري"
+                  alt={t("imageAlt")}
                   width={900}
                   height={600}
                   className="h-full w-full object-cover"

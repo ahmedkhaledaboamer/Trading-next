@@ -13,10 +13,25 @@ import OperationalLeadershipSection from "@/components/screens/home/operational-
 import SuppliersNetworkSection from "@/components/screens/home/suppliers-network-section";
 import WorkMethodologySection from "@/components/screens/home/work-methodology-section";
 import PowerIndicatorsSection from "@/components/screens/home/power-indicators-section";
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.home" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default async function Page() {
   return (
-    <main>
+    <main>CommercialProtectionSection
       <Header />
       <BusinessEntitySection />
       <CommercialInfluenceSection />

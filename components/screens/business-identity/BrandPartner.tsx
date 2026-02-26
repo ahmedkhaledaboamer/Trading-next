@@ -1,30 +1,33 @@
  'use client'
  import { motion } from 'framer-motion'
 import { Handshake, Users, HelpCircle, CheckSquare } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+
 export function BrandPartner() {
+  const t = useTranslations('businessIdentity.partner')
   const differences = [
     {
-      text: 'نُظهر خطواتنا بوضوح.',
+      text: t('differences.0'),
       color: '#0D9488',
     },
     {
-      text: 'نشارك العميل كل معلومة تخص طلبه.',
+      text: t('differences.1'),
       color: '#D97706',
     },
     {
-      text: 'نعمل بمنهجية تشغيل لا تعتمد على الحظ.',
+      text: t('differences.2'),
       color: '#7C3AED',
     },
     {
-      text: 'نتابع الشحنات لحظة بلحظة.',
+      text: t('differences.3'),
       color: '#059669',
     },
     {
-      text: 'نُسلم مستندات بلا خطأ واحد.',
+      text: t('differences.4'),
       color: '#DC2626',
     },
     {
-      text: 'نعتبر العميل شريكًا في القرار    .',
+      text: t('differences.5'),
       color: '#2563EB',
     },
   ]
@@ -93,7 +96,7 @@ export function BrandPartner() {
                 border: '1px solid rgba(13, 148, 136, 0.55)',
               }}
             >
-              ما الذي يجعلنا مختلفين؟
+              {t('title')}
             </h2>
             <p
               className="text-xl text-brand-dark/70 w-fit mx-auto"
@@ -106,7 +109,7 @@ export function BrandPartner() {
                 border: '1px solid rgba(13, 148, 136, 0.45)',
               }}
             >
-              نحن لا نختلف بالكلام… بل بطريقة العمل
+              {t('subtitle')}
             </p>
           </motion.div>
 
@@ -167,7 +170,7 @@ export function BrandPartner() {
                 color: '#C8A45C',
               }}
             >
-              الاختلاف عندنا ليس أسلوبًا… بل نظام تشغيل.
+              {t('footer')}
             </span>
           </motion.div>
         </div>

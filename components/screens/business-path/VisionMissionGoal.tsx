@@ -1,32 +1,36 @@
 'use client'
- import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Eye, Target, Flag } from 'lucide-react'
 import Image from 'next/image'
-export function VisionMissionGoal( {locale}: {locale: string} ) {
-  const isRTL = locale === "ar";
+import { useTranslations } from 'next-intl'
+
+export function VisionMissionGoal({ locale }: { locale: string }) {
+  const isRTL = locale === 'ar'
+  const t = useTranslations('businessPath.visionMissionGoal')
+
   const cards = [
     {
-      title: 'الرؤية',
+      title: t('cards.vision.title'),
       icon: <Eye className="w-8 h-8 text-white" />,
-      text: 'أن نكون الخيار التجاري الأول للعملاء الذين يبحثون عن جودة ثابتة، ومسارات توريد موثوقة، وتجربة تعامل تُشعرهم بأنهم في قلب الاهتمام.',
+      text: t('cards.vision.text'),
       gradient: 'from-blue-600 to-blue-800',
       image:
         'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
       overlay: 'bg-blue-900/60',
     },
     {
-      title: 'الرسالة',
+      title: t('cards.mission.title'),
       icon: <Target className="w-8 h-8 text-white" />,
-      text: 'تقديم حلول تجارية متكاملة تُبنى على الشفافية، والدقة، والالتزام، مع التركيز على احتياجات العميل وتوفير تجربة تعامل راقية تُعزز ثقته في كل خطوة.',
+      text: t('cards.mission.text'),
       gradient: 'from-teal-600 to-teal-800',
       image:
         'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80',
       overlay: 'bg-teal-900/60',
     },
     {
-      title: 'الهدف',
+      title: t('cards.goal.title'),
       icon: <Flag className="w-8 h-8 text-white" />,
-      text: 'تمكين عملائنا من الوصول إلى أفضل المنتجات والأسواق عبر مسارات توريد مدروسة، وتنفيذ احترافي، وخدمة تُشعرهم بأنهم شركاء في النجاح.',
+      text: t('cards.goal.text'),
       gradient: 'from-amber-500 to-amber-700',
       image:
         'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
@@ -35,7 +39,10 @@ export function VisionMissionGoal( {locale}: {locale: string} ) {
   ]
   
   return (
-    <section className="pt-5 pb-[2%] px-[5%] bg-gray-50 relative" dir={isRTL ? "rtl" : "ltr"}>
+    <section
+      className="pt-5 pb-[2%] px-[5%] bg-gray-50 relative"
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       <div className=" mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-32 relative z-20">
           {cards.map((card, index) => (

@@ -1,7 +1,10 @@
- 'use client'
- import { motion } from 'framer-motion'
+'use client'
+import { motion } from 'framer-motion'
 import { Quote, HeartHandshake } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+
 export function ClientMessage() {
+  const t = useTranslations('businessPath.clientMessage')
   return (
     <section className="py-24 bg-[#0A1628] text-white relative overflow-hidden">
       {/* Background Image with Overlay */}
@@ -41,24 +44,22 @@ export function ClientMessage() {
             </div>
 
             <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-7xl font-bold mb-8 text-[#D4A853]">
-              كلمة للعميل
+              {t('title')}
             </h2>
 
             <div className="relative">
               <Quote className="absolute -top-8 -right-4 w-12 h-12 text-[#D4A853]/20 transform -scale-x-100" />
 
               <h3 className="text-xl md:text-2xl lg:text-3xl 2xl:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
-                "أنت لست رقمًا في قائمة… <br />
-                <span className="text-[#D4A853]">
-                  أنت قيمة تُقدّر، وشريك نعتز به
-                </span>
+                "
+                {t('quoteLine1')}
+                <br />
+                <span className="text-[#D4A853]">{t('quoteHighlight')}</span>
                 "
               </h3>
 
               <p className="text-sm md:text-xl lg:text-2xl xl:text-4xl text-gray-200 leading-relaxed mb-8 drop-shadow-md">
-                وركن أساسي في رحلتنا التجارية. نستمع لك، نفهم احتياجاتك، ونبني
-                لك مسارًا تجاريًا يناسب طموحك، لأن نجاحك جزء من هويتنا، وثقتك هي
-                رأس مالنا الحقيقي.
+                {t('paragraph')}
               </p>
 
               <Quote className="absolute -bottom-8 -left-4 w-12 h-12 text-[#D4A853]/20" />

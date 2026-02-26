@@ -12,16 +12,19 @@ interface FilterBarProps {
   onFilterChange: (title: string | null) => void
   /** When set, clicking a filter scrolls the page to this element (e.g. "services-start"). */
   scrollToSectionId?: string
+  /** Localized label for the "all" filter button. */
+  allLabel: string
 }
 export function FilterBar({
   categories,
   activeFilter,
   onFilterChange,
   scrollToSectionId,
+  allLabel,
 }: FilterBarProps) {
   const allCategories = [
     {
-      title: 'الكل',
+      title: allLabel,
       accentColor: '#1a237e',
     },
     ...categories,
@@ -57,14 +60,14 @@ export function FilterBar({
         >
           {allCategories.map((cat) => {
             const isActive =
-              cat.title === 'الكل'
+              cat.title === allLabel
                 ? activeFilter === null
                 : activeFilter === cat.title
             return (
               <motion.button
                 key={cat.title}
                 onClick={() =>
-                  handleFilterClick(cat.title === 'الكل' ? null : cat.title)
+                  handleFilterClick(cat.title === allLabel ? null : cat.title)
                 }
                 whileHover={{
                   scale: 1.05,

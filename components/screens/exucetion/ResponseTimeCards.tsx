@@ -1,6 +1,7 @@
-'use client'
+"use client"
 import { motion } from 'framer-motion'
 import { Clock, FileText, Zap, Shield } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 const cardColors = [
   'bg-gradient-to-br from-emerald-500/25 via-emerald-500/10 to-transparent border-emerald-400/70',
@@ -24,56 +25,33 @@ const badgeColors = [
   'bg-amber-500',
 ]
 
-const stats = [
-  {
-    id: 1,
-    title: 'الرد الأولي',
-    time: '2 ساعة',
-    desc: 'خلال',
-    icon: Clock,
-    gradient: 'from-purple-500 to-indigo-600',
-  },
-  {
-    id: 2,
-    title: 'تقديم العرض',
-    time: '24 ساعة',
-    desc: 'خلال',
-    icon: FileText,
-    gradient: 'from-blue-500 to-cyan-600',
-  },
-  {
-    id: 3,
-    title: 'بدء التنفيذ',
-    time: '48 ساعة',
-    desc: 'خلال',
-    icon: Zap,
-    gradient: 'from-cyan-500 to-teal-600',
-  },
-  {
-    id: 4,
-    title: 'حل المشكلات',
-    time: '6 ساعات',
-    desc: 'خلال',
-    icon: Shield,
-    gradient: 'from-pink-500 to-rose-600',
-  },
-]
+const statVisuals = [
+  { icon: Clock, gradient: 'from-purple-500 to-indigo-600' },
+  { icon: FileText, gradient: 'from-blue-500 to-cyan-600' },
+  { icon: Zap, gradient: 'from-cyan-500 to-teal-600' },
+  { icon: Shield, gradient: 'from-pink-500 to-rose-600' },
+] as const
+
 export function ResponseTimeCards() {
+  const t = useTranslations("execution.responseTime")
+  const stats = t.raw("stats") as { title: string; time: string; desc: string }[]
   return (
     <section className="p-[5%] bg-white relative">
       <div className="mx-auto text-center mb-16">
         <h2 className="text-2xl md:text-5xl font-bold text-teal-800 mb-4 bg-teal-100 border-2 border-teal-500 rounded-xl px-8 py-4 w-fit mx-auto">
-          التزاماتنا بالاستجابة
+          {t("title")}
         </h2>
         <p className="text-slate-700 text-base md:text-lg bg-slate-200 border-2 border-slate-400 rounded-lg px-6 py-3 w-fit mx-auto">
-          نقدر وقتكم ونلتزم بأعلى معايير السرعة والكفاءة
+          {t("subtitle")}
         </p>
       </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {stats.map((stat, index) => {
+          const visual = statVisuals[index]
+          return (
             <motion.div
-              key={stat.id}
+              key={index}
               initial={{
                 opacity: 0,
                 scale: 0.9,
@@ -99,7 +77,7 @@ export function ResponseTimeCards() {
                 <div
                   className={`w-14 h-14 rounded-full flex items-center justify-center mb-6 shadow-lg ${badgeColors[index % badgeColors.length]}`}
                 >
-                  <stat.icon className="w-7 h-7 text-white" />
+                  <visual.icon className="w-7 h-7 text-white" />
                 </div>
                 <p className="text-slate-400 text-base md:text-lg mb-1">{stat.desc}</p>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
@@ -108,8 +86,9 @@ export function ResponseTimeCards() {
                 <p className="text-[#0EA5E9] text-xl md:text-2xl font-medium">{stat.title}</p>
               </div>
             </motion.div>
-          ))}
-        </div>
+          )
+        })}
+      </div>
       
     </section>
   )

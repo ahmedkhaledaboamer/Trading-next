@@ -3,7 +3,7 @@
     "title": "Page d'accueil"
   },
   "navbar": {
-    "cta": "Réservez Votre Consultation",
+    "cta": "Réservez Votre Service",
     "routes": [
       {
         "label": "Accueil",
@@ -28,29 +28,29 @@
     ]
   },
   "pages": {
+    "home": {
+      "title": "Accueil | KEP pour le Commerce",
+      "description": "Découvrez KEP pour le Commerce, un pôle commercial souverain qui gère l'approvisionnement et la distribution sur les marchés mondiaux."
+    },
     "execution": {
-      "title": "Exécution",
-      "description": "Page d'exécution - Nous fournissons des services d'exécution juridique complets."
+      "title": "Exécution | KEP pour le Commerce",
+      "description": "Nous fournissons des services d'exécution juridique complets."
     },
     "services": {
-      "title": "Services",
-      "description": "Page des services - Découvrez nos services juridiques premium."
+      "title": "Services | KEP pour le Commerce",
+      "description": "Découvrez nos services juridiques premium."
     },
     "businessPath": {
-      "title": "Votre Parcours Commercial",
-      "description": "Page de votre parcours commercial - Votre guide pour construire un parcours commercial réussi."
+      "title": "Votre Parcours Commercial | KEP pour le Commerce",
+      "description": "Votre guide pour construire un parcours commercial réussi."
     },
     "businessIdentity": {
-      "title": "Identité Commerciale",
-      "description": "Page d'identité commerciale - Nous vous aidons à construire votre identité commerciale."
+      "title": "Identité Commerciale | KEP pour le Commerce",
+      "description": "Nous vous aidons à construire votre identité commerciale."
     },
     "about": {
-      "title": "À Propos de Nous",
+      "title": "À Propos de Nous | KEP pour le Commerce",
       "description": "Découvrez notre équipe, notre vision et notre mission."
-    },
-    "privacy": {
-      "title": "Politique de Confidentialité",
-      "description": "Politique de confidentialité et protection de vos données."
     }
   },
   "content": {
@@ -68,6 +68,127 @@
     "cta": {
       "bookConsultation": "Réservez Votre Consultation",
       "exploreServices": "Découvrez Nos Services"
+    }
+  },
+  "home": {
+    "businessEntity": {
+      "badge": "L'Entité Commerciale",
+      "heading": "Un système intégré qui gère le commerce avec un professionnalisme élevé",
+      "description": "KEP pour le Commerce opère selon un modèle opérationnel avancé qui allie vision stratégique et exécution précise pour assurer le leadership sur le marché.",
+      "features": [
+        {"title": "Puissance du hub"},
+        {"title": "Clarté de la vision"},
+        {"title": "Précision dans l'exécution"},
+        {"title": "Souveraineté de la décision commerciale"}
+      ],
+      "quote": "Nous gérons les opérations d'importation, d'exportation, de distribution et d'approvisionnement via un système opérationnel qui assure rapidité, stabilité et qualité à chaque étape.",
+      "imageAlt": "Un système intégré qui gère le commerce"
+    },
+    "commercialInfluence": {
+      "title": "Structure de l'influence commerciale",
+      "subtitle": "La structure de pouvoir au sein de KEP pour le Commerce repose sur trois piliers principaux qui nous donnent profondeur de marché et forte capacité de contrôle.",
+      "pillars": [
+        {"title": "Influence opérationnelle", "description": "Contrôle total des chaînes d'approvisionnement de la source au client, avec une structure opérationnelle à réponse rapide.", "imageAlt": "Équipe gérant les processus opérationnels en environnement de bureau"},
+        {"title": "Influence de marché", "description": "Une présence forte sur plusieurs marchés donne à l'entreprise un fort pouvoir de négociation et un impact sur les flux de demande.", "imageAlt": "Skyline urbain et marchés représentant l'influence de marché"},
+        {"title": "Influence stratégique", "description": "Décisions basées sur une analyse approfondie des données et l'adoption de modèles d'affaires créant un avantage durable.", "imageAlt": "Réunion d'affaires planifiant les stratégies commerciales"}
+      ]
+    },
+    "powerIndicators": {
+      "title": "Indicateurs de puissance",
+      "subtitle": "Normes de performance qui reflètent stabilité et souveraineté dans l'exécution commerciale à travers les unités opérationnelles.",
+      "items": ["Compréhension approfondie de la nature de la demande", "Analyse de marché précise", "Haute capacité d'exécution", "Engagement strict envers la qualité", "Réseaux d'approvisionnement fiables", "Rapidité d'exécution", "Flexibilité opérationnelle", "Protection du capital commercial"]
+    },
+    "commercialProtection": {
+      "title": "Système de protection commerciale",
+      "subtitle": "Un système intégré qui protège le capital commercial à chaque étape de la chaîne de valeur.",
+      "imageAlt": "Système de protection commerciale",
+      "highlight": "Protection complète ",
+      "highlightSuffix": "à chaque étape du commerce",
+      "items": ["Protection de l'approvisionnement contre les ruptures", "Protection de la qualité contre le déclin", "Protection des engagements contractuels", "Protection des délais de livraison", "Protection des stocks contre les risques"]
+    },
+    "commercialDomains": {
+      "title": "Domaines d'influence commerciale",
+      "subtitle": "Chaque domaine représente une unité de force au sein de l'entité, conçue pour servir les besoins du marché et ouvrir de nouveaux canaux d'influence.",
+      "domains": [
+        {"id": "import", "title": "Système d'importation international", "description": "Connexion directe aux marchés mondiaux garantissant des produits de qualité et un accès stable via des procédures internationales fiables."},
+        {"id": "export", "title": "Système d'exportation et d'expansion", "description": "Canaux commerciaux ouvrant les portes du marketing régional et international à nos partenaires sur des marchés soigneusement sélectionnés."},
+        {"id": "home-appliances", "title": "Centre électroménager et électrique", "description": "Solutions intégrées pour l'électroménager et l'innovation, des grands appareils aux accessoires fins."},
+        {"id": "electronics", "title": "Centre électronique et technologique", "description": "Électronique avancée, écrans et solutions technologiques au service des différents secteurs commerciaux."},
+        {"id": "mobiles", "title": "Centre smartphones", "description": "Dernières sorties mondiales de smartphones avec un système de distribution flexible couvrant plusieurs canaux."},
+        {"id": "gaming", "title": "Centre gaming et divertissement numérique", "description": "Produits gaming, consoles et accessoires pour le secteur du divertissement numérique en croissance."},
+        {"id": "photo-video", "title": "Centre photographie", "description": "Équipement photo professionnel, objectifs et accessoires pour une production de contenu de haute qualité."},
+        {"id": "networks", "title": "Centre réseaux et communications", "description": "Solutions réseau intégrées, équipements de communication et infrastructure assurant la continuité des affaires."}
+      ]
+    },
+    "suppliersNetwork": {
+      "title": "Réseau mondial de fournisseurs",
+      "subtitle": "Un réseau d'approvisionnement couvrant plusieurs continents donnant à l'entreprise force d'accès, de sélection et de gestion des risques.",
+      "imageAlt": "Réseau mondial de fournisseurs dans les ports maritimes",
+      "benefitsTitle": "Avantages du réseau",
+      "benefits": ["Sources d'approvisionnement diversifiées", "Protection contre les perturbations du marché", "Alternatives immédiates", "Pouvoir de négociation accru sur les prix et quantités"],
+      "regionsTitle": "Régions d'approvisionnement principales",
+      "regions": ["Asie de l'Est", "Europe", "Moyen-Orient", "Amérique du Nord"]
+    },
+    "digitalTransformation": {
+      "title": "Unité de transformation numérique",
+      "subtitle": "Unité spécialisée dans le développement de l'infrastructure numérique pour assurer rapidité, précision et transparence dans chaque processus opérationnel.",
+      "imageAlt": "Unité de transformation numérique chez KEP pour le Commerce",
+      "tasksTitle": "Tâches de l'unité",
+      "tasks": ["Numérisation des opérations d'approvisionnement et de distribution", "Développement de systèmes de suivi des expéditions", "Construction de tableaux de bord opérationnels en temps réel", "Amélioration de l'expérience client via des solutions numériques", "Utilisation de l'IA dans l'analyse de marché"],
+      "goalsTitle": "Objectifs de l'unité",
+      "goals": ["Augmenter l'efficacité opérationnelle", "Réduire les erreurs humaines", "Accélérer la prise de décision", "Renforcer la transparence opérationnelle"]
+    },
+    "ecommerceUnit": {
+      "title": "Unité e-commerce",
+      "subtitle": "Unité spécialisée dans la gestion et le développement des ventes numériques via des plateformes e-commerce intégrées.",
+      "objectivesTitle": "Objectifs de l'unité",
+      "objectives": ["Atteindre une clientèle plus large", "Accélérer les opérations de vente", "Améliorer l'expérience d'achat", "Soutenir les partenaires dans la transformation numérique complète"],
+      "tasksTitle": "Tâches de l'unité",
+      "tasks": ["Gestion des boutiques en ligne", "Développement de solutions de paiement électronique", "Gestion des stocks numériques", "Lancement de campagnes de marketing digital"]
+    },
+    "franchiseUnit": {
+      "title": "Unité franchise",
+      "subtitle": "Unité spécialisée dans l'octroi de franchises commerciales pour les marques gérées par KEP pour le Commerce, selon des normes opérationnelles claires.",
+      "benefitsTitle": "Avantages de la franchise",
+      "benefits": ["Expansion rapide de la marque", "Réduction des risques opérationnels", "Augmentation de part de marché via les partenaires", "Soutien aux partenaires avec un système opérationnel prêt", "Génération de flux de revenus réguliers"],
+      "tasksTitle": "Tâches de l'unité",
+      "tasks": ["Préparation des modèles de franchise commerciale", "Sélection des partenaires franchise adaptés", "Formation et support opérationnel", "Contrôle qualité d'exécution en points franchise", "Respect des normes commerciales de la marque"],
+      "benefitsNote": "L'unité franchise transforme les marques en modèles évolutifs avec confiance et durabilité, en construisant des systèmes opérationnels clairs et en sélectionnant les bons partenaires.",
+      "tasksNote": "Dans l'unité franchise nous permettons aux marques de se développer de manière mesurée, en concevant des modèles de franchise applicables et des normes opérationnelles précises.",
+      "imageAlt": "Réunion d'affaires de l'unité franchise"
+    },
+    "internationalExpansion": {
+      "title": "Unité d'expansion internationale",
+      "subtitle": "Unité stratégique responsable de l'ouverture de nouveaux marchés et de l'élargissement de l'influence commerciale de nos partenaires dans le monde.",
+      "imageAltTasks": "Tâches de l'unité d'expansion internationale",
+      "imageAltResults": "Résultats de l'unité d'expansion internationale",
+      "tasksTitle": "Tâches de l'unité",
+      "tasks": ["Étude des marchés régionaux et internationaux", "Construction de nouveaux partenariats dans plusieurs pays", "Ouverture de nouvelles lignes d'approvisionnement", "Évaluation des opportunités de croissance dans les marchés émergents"],
+      "resultsTitle": "Résultats de l'unité",
+      "results": ["Présence internationale accrue", "Sources d'approvisionnement diversifiées", "Pouvoir de négociation renforcé", "Nouvelles opportunités commerciales pour les partenaires"]
+    },
+    "majorProjectsUnit": {
+      "title": "Unité grands projets",
+      "subtitle": "Unité dédiée à la gestion de projets d'envergure, de la planification à l'exécution via des solutions d'approvisionnement et opérationnelles intégrées.",
+      "imageAlt": "Unité spécialisée dans la gestion des grands projets",
+      "features": [
+        {"id": "large-quantities", "title": "Approvisionnement en gros"},
+        {"id": "advanced-tech", "title": "Équipements techniques avancés"},
+        {"id": "integrated-solutions", "title": "Solutions opérationnelles intégrées"},
+        {"id": "long-term-supply", "title": "Gestion d'approvisionnement à long terme"},
+        {"id": "continuous-support", "title": "Support technique"},
+        {"id": "continuous-support-2", "title": "Exploitation continue"}
+      ]
+    },
+    "operationalLeadership": {
+      "title": "Système de leadership opérationnel",
+      "subtitle": "Une structure de leadership intégrée assurant un contrôle total des flux commerciaux via quatre salles de contrôle principales.",
+      "rooms": [
+        {"id": "market", "number": "01", "title": "Salle de surveillance du marché", "points": ["Analyse en temps réel des mouvements de prix", "Suivi des tendances de la demande", "Évaluation des risques commerciaux"], "imageAlt": "Écran affichant les mouvements de prix sur les marchés financiers"},
+        {"id": "supply", "number": "02", "title": "Salle de contrôle de l'approvisionnement", "points": ["Gestion des lignes d'approvisionnement internationales", "Suivi des expéditions en temps réel", "Garantie de stabilité de l'approvisionnement"], "imageAlt": "Couloirs d'expédition et ports logistiques"},
+        {"id": "quality", "number": "03", "title": "Salle qualité et conformité", "points": ["Inspection des produits avant expédition", "Vérification des certificats de qualité", "Conformité aux spécifications internationales"], "imageAlt": "Composants électroniques en contrôle qualité"},
+        {"id": "operations", "number": "04", "title": "Salle des opérations logistiques", "points": ["Gestion du transport interne et externe", "Coordination des livraisons", "Amélioration de l'efficacité des flux logistiques"], "imageAlt": "Grues et aires de chargement dans un port commercial"}
+      ]
     }
   },
   "businessIdentity": {
@@ -95,6 +216,172 @@
         "professional": { "title": "Professionnelle", "desc": "Nous traitons le client comme il le mérite, pas comme d'habitude." },
         "committed": { "title": "Engagée", "desc": "Nous tenons parole et construisons une confiance durable." }
       }
+    },
+    "statement": {
+      "heading": "Déclaration de KEP pour le Commerce",
+      "subheading": "Cette déclaration n’est pas une formule officielle… mais une affirmation claire de notre façon de travailler",
+      "bullets": [
+        "Nous nous engageons avant de promettre.",
+        "Nous montrons avant de parler.",
+        "Nous exécutons avant de promouvoir.",
+        "Et nous considérons le client comme un partenaire de décision avant d’être un simple interlocuteur."
+      ],
+      "paragraph": "Nous ne vendons pas seulement des produits… nous construisons la confiance, créons une relation et offrons une expérience qui fait ses preuves avec le temps et laisse une empreinte qui donne envie au client de revenir par choix, et non par obligation.",
+      "dictionary": {
+        "title": "Dictionnaire de KEP",
+        "subtitle": "Ce dictionnaire n’est pas une liste de mots… c’est une philosophie de travail",
+        "terms": {
+          "supply": {
+            "term": "Approvisionnement",
+            "def": "Une arrivée au bon moment, pas une simple livraison."
+          },
+          "client": {
+            "term": "Client",
+            "def": "Un partenaire de décision, pas un numéro dans un système."
+          },
+          "quality": {
+            "term": "Qualité",
+            "def": "Un résultat mesurable, pas un mot que l’on répète."
+          },
+          "commitment": {
+            "term": "Engagement",
+            "def": "Une date fixe, pas une simple éventualité."
+          },
+          "marketing": {
+            "term": "Marketing",
+            "def": "Une impression qui reste, pas une publicité qui passe."
+          },
+          "credibility": {
+            "term": "Crédibilité",
+            "def": "Une manière de travailler, pas un slogan."
+          },
+          "service": {
+            "term": "Service",
+            "def": "Une expérience complète, pas une étape isolée."
+          },
+          "success": {
+            "term": "Succès",
+            "def": "Un résultat partagé, pas une réussite individuelle."
+          }
+        }
+      },
+      "values": {
+        "title": "Valeurs de KEP pour le Commerce",
+        "subtitle": "Nos valeurs ne sont pas des slogans… ce sont des règles de fonctionnement que nous ne franchissons pas",
+        "items": {
+          "clarity": {
+            "title": "Clarté",
+            "desc": "Nous disons la vérité telle qu’elle est, sans embellissement ni détour."
+          },
+          "commitment": {
+            "title": "Engagement",
+            "desc": "Pour nous, un délai est un contrat… et l’exécution une responsabilité."
+          },
+          "respect": {
+            "title": "Respect",
+            "desc": "Respect du temps, de l’argent et de la confiance du client."
+          },
+          "accuracy": {
+            "title": "Précision",
+            "desc": "Chaque étape est calculée, chaque information est vérifiée."
+          },
+          "continuity": {
+            "title": "Continuité",
+            "desc": "Une relation de long terme, pas une transaction ponctuelle."
+          },
+          "professionalism": {
+            "title": "Professionnalisme",
+            "desc": "Une façon de travailler constante qui ne change pas, quelles que soient les circonstances."
+          }
+        }
+      }
+    },
+    "operations": {
+      "communication": {
+        "title": "Style de communication",
+        "tagline": "Nous communiquons avec le client d’une seule manière :",
+        "points": [
+          "Nous expliquons… nous ne nous justifions pas.",
+          "Nous clarifions… nous ne créons pas de confusion.",
+          "Nous informons… nous ne laissons pas le client deviner.",
+          "Nous fournissons une information… pas une impression.",
+          "Nous utilisons un langage qui respecte l’intelligence du client… sans lui faire perdre son temps."
+        ],
+        "footer": "Pour nous, la communication n’est pas un service… c’est une partie de notre identité."
+      },
+      "brandPromise": {
+        "title": "Promesse de marque",
+        "intro": "Nous promettons au client trois choses sur lesquelles nous ne revenons pas :",
+        "items": [
+          "Une information claire",
+          "Une exécution précise",
+          "Une expérience de relation respectueuse"
+        ],
+        "footer": "Cette promesse est notre référence… c’est sur elle que nous nous évaluons avant même que le client ne nous juge."
+      },
+      "proveValue": {
+        "title": "Comment prouvons‑nous notre valeur ?",
+        "intro": "Nous prouvons notre valeur par les actes, pas par les paroles, et par les résultats, pas par les promesses :",
+        "points": [
+          "Une vitesse d’exécution calculée, jamais aléatoire.",
+          "Des documents précis, sans erreurs ni retards.",
+          "Des expéditions suivies instant après instant, de la source jusqu’à la porte du client.",
+          "Des relations internationales solides qui facilitent la route au lieu de la compliquer.",
+          "Une analyse continue des prix et des marchés qui garantit la meilleure décision au meilleur moment.",
+          "Des solutions flexibles qui s’adaptent à chaque client, chaque marché et chaque situation."
+        ],
+        "quote": "Nous ne disons pas « nous sommes les meilleurs »… nous laissons les résultats le dire pour nous."
+      },
+      "credibility": {
+        "title": "Comment démontrons‑nous notre crédibilité ?",
+        "intro": "La crédibilité n’est pas une option… c’est une partie intégrante de notre système de fonctionnement :",
+        "points": [
+          "Des contrats clairs qui ne laissent aucune place à l’interprétation.",
+          "Des factures transparentes, sans surprises.",
+          "Des mises à jour continues à chaque étape.",
+          "Une exécution mesurable, qui ne repose pas sur des paroles.",
+          "Un engagement qui ne change pas, même lorsque les circonstances évoluent.",
+          "Une documentation complète de chaque étape, du premier appel jusqu’à la dernière signature."
+        ]
+      }
+    },
+    "partner": {
+      "title": "Qu’est‑ce qui nous rend différents ?",
+      "subtitle": "Notre différence ne se trouve pas dans les mots… mais dans notre façon de travailler",
+      "differences": [
+        "Nous rendons chacune de nos étapes visible et claire.",
+        "Nous partageons avec le client chaque information liée à sa demande.",
+        "Nous travaillons avec un système opérationnel qui ne dépend pas de la chance.",
+        "Nous suivons les expéditions instant après instant.",
+        "Nous remettons des documents sans la moindre erreur.",
+        "Nous considérons le client comme un partenaire dans la décision."
+      ],
+      "footer": "Pour nous, la différence n’est pas un style… c’est un système de fonctionnement."
+    },
+    "conclusion": {
+      "brandNamePrefix": "KEP",
+      "brandNameHighlight": "pour le Commerce",
+      "tagline": "Ce n’est pas simplement une société… c’est une façon de traiter, une façon de penser et une norme de qualité.",
+      "leadIn": "Voici une identité écrite avec clarté, force et confiance… pour dire au client :",
+      "final": "Vous êtes au bon endroit.",
+      "pillars": {
+        "clarity": {
+          "title": "Clarté",
+          "desc": "Parce que l’information est un droit."
+        },
+        "commitment": {
+          "title": "Engagement",
+          "desc": "Parce que le temps a de la valeur."
+        },
+        "quality": {
+          "title": "Qualité",
+          "desc": "Parce qu’elle est le fondement de la confiance."
+        },
+        "respect": {
+          "title": "Respect",
+          "desc": "Parce qu’il est au cœur de la relation."
+        }
+      }
     }
   },
   "services": {
@@ -104,6 +391,499 @@
       "titleSuffix": "S.à r.l.",
       "description": "Nous offrons une large gamme de services commerciaux et technologiques qui répondent aux besoins des entreprises et des particuliers, avec un engagement total en faveur de la qualité, du professionnalisme et des normes internationales.",
       "cta": "Découvrir nos services"
+    },
+    "filters": {
+      "all": "Tous"
+    },
+    "sections": {
+      "tradeLogistics": {
+        "title": "Commerce et services logistiques",
+        "subtitle": "Solutions d’import‑export intégrées qui vous connectent aux marchés internationaux",
+        "services": {
+          "import": {
+            "title": "Importation internationale",
+            "description": "Gestion complète des opérations d’importation",
+            "points": {
+              "0": "Sélection des fournisseurs",
+              "1": "Inspection des marchandises",
+              "2": "Transport maritime et aérien",
+              "3": "Assurance des cargaisons"
+            }
+          },
+          "export": {
+            "title": "Exportation internationale",
+            "description": "Export vers les marchés mondiaux",
+            "points": {
+              "0": "Préparation des expéditions",
+              "1": "Authentification des documents",
+              "2": "Expédition internationale",
+              "3": "Suivi de la livraison"
+            }
+          },
+          "seaShipping": {
+            "title": "Transport maritime",
+            "description": "Solutions d’expédition fiables",
+            "points": {
+              "0": "Conteneurs complets (FCL)",
+              "1": "Chargements partiels (LCL)",
+              "2": "Suivi des expéditions",
+              "3": "Assurance maritime"
+            }
+          },
+          "airShipping": {
+            "title": "Transport aérien",
+            "description": "Vitesse mondiale dans le transport",
+            "points": {
+              "0": "Expédition express",
+              "1": "Marchandises sensibles",
+              "2": "Stockage temporaire",
+              "3": "Livraison aux entrepôts"
+            }
+          },
+          "customs": {
+            "title": "Dédouanement",
+            "description": "Passage rapide et sécurisé",
+            "points": {
+              "0": "Préparation des documents",
+              "1": "Paiement des droits et taxes",
+              "2": "Inspection et dédouanement",
+              "3": "Livraison finale"
+            }
+          },
+          "storage": {
+            "title": "Stockage logistique",
+            "description": "Entrepôts sûrs et organisés",
+            "points": {
+              "0": "Stockage long terme",
+              "1": "Stockage court terme",
+              "2": "Gestion des stocks",
+              "3": "Protection des marchandises"
+            }
+          },
+          "landTransport": {
+            "title": "Transport terrestre",
+            "description": "Réseau de transport local",
+            "points": {
+              "0": "Camions frigorifiques",
+              "1": "Transport express",
+              "2": "Suivi GPS",
+              "3": "Livraisons quotidiennes"
+            }
+          },
+          "commercialInsurance": {
+            "title": "Assurance commerciale",
+            "description": "Protection de vos cargaisons et de votre activité",
+            "points": {
+              "0": "Assurance marchandises",
+              "1": "Assurance transport",
+              "2": "Évaluation des risques",
+              "3": "Indemnisation rapide"
+            }
+          }
+        }
+      },
+      "ePayments": {
+        "title": "Solutions de paiement électronique",
+        "subtitle": "Technologies financières modernes pour faciliter vos transactions commerciales",
+        "services": {
+          "posDevices": {
+            "title": "Terminaux de paiement POS",
+            "description": "Dernière génération d’appareils de paiement",
+            "points": {
+              "0": "Fourniture de terminaux POS",
+              "1": "Installation et mise en service",
+              "2": "Maintenance régulière",
+              "3": "Support technique"
+            }
+          },
+          "smartCards": {
+            "title": "Cartes de paiement intelligentes",
+            "description": "Normes de sécurité internationales",
+            "points": {
+              "0": "Cartes EMV",
+              "1": "Cartes NFC",
+              "2": "Personnalisation et impression",
+              "3": "Gestion du cycle de vie des cartes"
+            }
+          },
+          "mobilePayments": {
+            "title": "Solutions de paiement mobile",
+            "description": "Transactions plus rapides et plus simples",
+            "points": {
+              "0": "Apple Pay",
+              "1": "Google Pay",
+              "2": "Paiement par QR code",
+              "3": "Intégration aux applications"
+            }
+          },
+          "paymentGateways": {
+            "title": "Passerelles de paiement en ligne",
+            "description": "Intégration complète avec vos boutiques",
+            "points": {
+              "0": "Intégration boutique",
+              "1": "Protection des données",
+              "2": "Rapports financiers",
+              "3": "Support technique"
+            }
+          }
+        }
+      },
+      "computingTech": {
+        "title": "Équipements informatiques et technologiques",
+        "subtitle": "Infrastructures techniques avancées pour bureaux et entreprises",
+        "services": {
+          "desktopComputers": {
+            "title": "Ordinateurs de bureau",
+            "description": "Haute performance pour les entreprises",
+            "points": {
+              "0": "Fourniture d’appareils",
+              "1": "Configuration et installation",
+              "2": "Maintenance",
+              "3": "Support technique"
+            }
+          },
+          "laptops": {
+            "title": "Ordinateurs portables",
+            "description": "Les meilleures marques internationales",
+            "points": {
+              "0": "Vente d’appareils",
+              "1": "Fourniture aux entreprises",
+              "2": "Configuration des systèmes",
+              "3": "Maintenance"
+            }
+          },
+          "printersScanners": {
+            "title": "Imprimantes et scanners",
+            "description": "Solutions d’impression avancées",
+            "points": {
+              "0": "Imprimantes laser",
+              "1": "Imprimantes jet d’encre",
+              "2": "Scanners",
+              "3": "Consommables et accessoires"
+            }
+          },
+          "monitorsAccessories": {
+            "title": "Écrans et accessoires",
+            "description": "Haute résolution pour tous les usages",
+            "points": {
+              "0": "Écrans de bureau",
+              "1": "Écrans d’affichage",
+              "2": "Claviers",
+              "3": "Accessoires"
+            }
+          },
+          "serversDataCenters": {
+            "title": "Serveurs et centres de données",
+            "description": "Infrastructure numérique complète",
+            "points": {
+              "0": "Serveurs rack",
+              "1": "Unités de stockage",
+              "2": "Solutions de sauvegarde",
+              "3": "Mise en place de data centers"
+            }
+          },
+          "storageUnits": {
+            "title": "Unités de stockage",
+            "description": "Capacité de données sécurisée",
+            "points": {
+              "0": "SSD",
+              "1": "HDD",
+              "2": "NAS",
+              "3": "RAID"
+            }
+          },
+          "peripherals": {
+            "title": "Périphériques",
+            "description": "Accessoires professionnels",
+            "points": {
+              "0": "Souris",
+              "1": "Claviers",
+              "2": "Casques",
+              "3": "Webcams"
+            }
+          },
+          "osSetup": {
+            "title": "Systèmes d’exploitation et configuration",
+            "description": "Création d’un environnement de travail complet",
+            "points": {
+              "0": "Installation de Windows",
+              "1": "Installation de Linux",
+              "2": "Pilotes",
+              "3": "Configuration des appareils"
+            }
+          }
+        }
+      },
+      "softwareDev": {
+        "title": "Logiciels et développement",
+        "subtitle": "Solutions logicielles intelligentes pour soutenir la croissance de votre entreprise",
+        "services": {
+          "corporateSystems": {
+            "title": "Logiciels et systèmes d’entreprise",
+            "description": "Solutions logicielles professionnelles",
+            "points": {
+              "0": "Systèmes ERP",
+              "1": "Systèmes CRM",
+              "2": "Logiciels de comptabilité",
+              "3": "Systèmes RH"
+            }
+          },
+          "appDevelopment": {
+            "title": "Développement d’applications et de systèmes",
+            "description": "Solutions conçues sur mesure",
+            "points": {
+              "0": "Applications mobiles",
+              "1": "Plateformes web",
+              "2": "Logiciels spécifiques",
+              "3": "Intégration de systèmes"
+            }
+          },
+          "cloudComputing": {
+            "title": "Informatique en nuage",
+            "description": "Exploitation de vos systèmes via le cloud",
+            "points": {
+              "0": "Hébergement cloud",
+              "1": "Sauvegardes",
+              "2": "Extension des ressources",
+              "3": "Sécurité cloud"
+            }
+          },
+          "softwareSupport": {
+            "title": "Support technique logiciel",
+            "description": "Maintenance et mises à jour continues",
+            "points": {
+              "0": "Mises à jour",
+              "1": "Correction de bugs",
+              "2": "Optimisation des performances",
+              "3": "Surveillance continue"
+            }
+          }
+        }
+      },
+      "networks": {
+        "title": "Réseaux et communications",
+        "subtitle": "Infrastructure robuste pour une connectivité stable et continue",
+        "services": {
+          "communicationDevices": {
+            "title": "Équipements de communication et réseaux",
+            "description": "Performance selon les normes internationales",
+            "points": {
+              "0": "Routeurs",
+              "1": "Switchs",
+              "2": "Modems",
+              "3": "Équipements de communication"
+            }
+          },
+          "cablingFiber": {
+            "title": "Câblage réseau et fibre optique",
+            "description": "Vitesse de connexion élevée",
+            "points": {
+              "0": "Câblage réseau",
+              "1": "Fibre optique",
+              "2": "Installation de points réseau",
+              "3": "Tests et certification"
+            }
+          },
+          "computerParts": {
+            "title": "Pièces détachées informatiques",
+            "description": "Pièces d’origine garanties",
+            "points": {
+              "0": "Cartes mères",
+              "1": "RAM",
+              "2": "Disques SSD",
+              "3": "Alimentations"
+            }
+          },
+          "electronicParts": {
+            "title": "Pièces détachées électroniques",
+            "description": "Qualité certifiée",
+            "points": {
+              "0": "Cartes électroniques",
+              "1": "Écrans",
+              "2": "Capteurs",
+              "3": "Unités de contrôle"
+            }
+          }
+        }
+      },
+      "mediaEntertainment": {
+        "title": "Médias et divertissement",
+        "subtitle": "Solutions audio, visuelles et de divertissement intégrées",
+        "services": {
+          "avDevices": {
+            "title": "Équipements audio‑visuels",
+            "description": "Solutions son et image",
+            "points": {
+              "0": "Enceintes",
+              "1": "Écrans",
+              "2": "Systèmes audio",
+              "3": "Projecteurs"
+            }
+          },
+          "surveillance": {
+            "title": "Systèmes de surveillance et d’enregistrement",
+            "description": "Protection 24h/24",
+            "points": {
+              "0": "Caméras CCTV",
+              "1": "DVR / NVR",
+              "2": "Systèmes de surveillance intelligents",
+              "3": "Installation et maintenance"
+            }
+          },
+          "photoEquipment": {
+            "title": "Équipements de photographie",
+            "description": "Pour professionnels et amateurs",
+            "points": {
+              "0": "Appareils photo",
+              "1": "Objectifs",
+              "2": "Flashs",
+              "3": "Sacs et trépieds"
+            }
+          },
+          "cinemaEquipment": {
+            "title": "Équipements de production cinéma",
+            "description": "Solutions de production avancées",
+            "points": {
+              "0": "Caméras cinéma",
+              "1": "Éclairage cinéma",
+              "2": "Microphones",
+              "3": "Équipements de studio"
+            }
+          },
+          "gameConsoles": {
+            "title": "Consoles de jeux vidéo",
+            "description": "Dernières plateformes de divertissement",
+            "points": {
+              "0": "PlayStation",
+              "1": "Xbox",
+              "2": "Nintendo",
+              "3": "Casques VR"
+            }
+          },
+          "gamingAccessories": {
+            "title": "Accessoires gaming",
+            "description": "Expérience de jeu complète",
+            "points": {
+              "0": "Manettes",
+              "1": "Casques",
+              "2": "Chargeurs",
+              "3": "Cartes numériques"
+            }
+          },
+          "homeTheaterSystems": {
+            "title": "Systèmes home cinéma",
+            "description": "Une expérience cinéma à domicile",
+            "points": {
+              "0": "Grands écrans",
+              "1": "Systèmes surround",
+              "2": "Installation professionnelle",
+              "3": "Calibration audio"
+            }
+          },
+          "proDisplayScreens": {
+            "title": "Écrans d’affichage professionnels",
+            "description": "Solutions d’affichage pour entreprises",
+            "points": {
+              "0": "Écrans LED",
+              "1": "Écrans de salle de réunion",
+              "2": "Écrans publicitaires",
+              "3": "Maintenance"
+            }
+          }
+        }
+      },
+      "mobilesConsumer": {
+        "title": "Mobiles et appareils grand public",
+        "subtitle": "Derniers appareils intelligents et électroménagers",
+        "services": {
+          "mobilePhones": {
+            "title": "Téléphones mobiles",
+            "description": "Dernières sorties",
+            "points": {
+              "0": "Vente de téléphones",
+              "1": "Fourniture aux entreprises",
+              "2": "Configuration des systèmes",
+              "3": "Réparation"
+            }
+          },
+          "phoneAccessories": {
+            "title": "Accessoires pour téléphones",
+            "description": "Protection et performance",
+            "points": {
+              "0": "Coques et étuis",
+              "1": "Casques audio",
+              "2": "Chargeurs",
+              "3": "Câbles"
+            }
+          },
+          "homeAppliances": {
+            "title": "Appareils électroménagers",
+            "description": "Haute qualité pour la maison",
+            "points": {
+              "0": "Réfrigérateurs",
+              "1": "Lave‑linge",
+              "2": "Sèche‑linge",
+              "3": "Petits appareils"
+            }
+          },
+          "cookersOvens": {
+            "title": "Cuisinières et fours",
+            "description": "Équipements de cuisine avancés",
+            "points": {
+              "0": "Fours",
+              "1": "Cuisinières",
+              "2": "Hottes aspirantes",
+              "3": "Installation et maintenance"
+            }
+          },
+          "watchesParts": {
+            "title": "Montres et pièces détachées",
+            "description": "Précision et élégance",
+            "points": {
+              "0": "Montres homme",
+              "1": "Montres femme",
+              "2": "Piles",
+              "3": "Service de précision"
+            }
+          },
+          "wearables": {
+            "title": "Objets connectés",
+            "description": "Technologies modernes pour la santé",
+            "points": {
+              "0": "Montres connectées",
+              "1": "Bracelets de santé",
+              "2": "Suivi du sommeil",
+              "3": "Suivi de l’activité"
+            }
+          },
+          "smartHome": {
+            "title": "Appareils domestiques intelligents",
+            "description": "Confort et contrôle total",
+            "points": {
+              "0": "Ampoules intelligentes",
+              "1": "Prises intelligentes",
+              "2": "Commande vocale",
+              "3": "Applications et automatisations"
+            }
+          },
+          "phoneParts": {
+            "title": "Pièces détachées pour téléphones",
+            "description": "Pièces d’origine garanties",
+            "points": {
+              "0": "Écrans",
+              "1": "Batteries",
+              "2": "Connecteurs de charge",
+              "3": "Caméras"
+            }
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Vous avez besoin d’un service sur mesure ?",
+      "description": "Notre équipe d’experts est prête à vous aider à trouver la solution optimale pour votre activité. Contactez‑nous dès aujourd’hui pour une consultation gratuite et des solutions adaptées à vos besoins.",
+      "primaryCta": "Contactez‑nous maintenant",
+      "secondaryCta": "Envoyer une demande"
     }
   },
   "businessPath": {
@@ -115,6 +895,247 @@
       "subtitle": "Votre partenaire commercial qui vous ouvre les portes des marchés avec confiance, qualité et stabilité. Dans un monde où le commerce s'accélère, nous sommes votre boussole vers le succès.",
       "ctaServices": "Découvrir nos services",
       "ctaContact": "Nous contacter"
+    },
+    "visionMissionGoal": {
+      "cards": {
+        "vision": {
+          "title": "Vision",
+          "text": "Être le premier choix commercial pour les clients qui recherchent une qualité constante, des chaînes d’approvisionnement fiables et une relation où ils sont toujours au centre de l’attention."
+        },
+        "mission": {
+          "title": "Mission",
+          "text": "Fournir des solutions commerciales intégrées fondées sur la transparence, la précision et l’engagement, avec un focus sur les besoins du client et une expérience haut de gamme qui renforce sa confiance à chaque étape."
+        },
+        "goal": {
+          "title": "Objectif",
+          "text": "Permettre à nos clients d’accéder aux meilleurs produits et marchés grâce à des circuits d’approvisionnement étudiés, une exécution professionnelle et un service qui les considère comme de véritables partenaires de succès."
+        }
+      }
+    },
+    "clientMessage": {
+      "title": "Un mot pour notre client",
+      "quoteLine1": "Vous n’êtes pas un simple numéro sur une liste…",
+      "quoteHighlight": "Vous êtes une valeur précieuse et un partenaire dont nous sommes fiers",
+      "paragraph": "et un pilier essentiel de notre parcours commercial. Nous vous écoutons, comprenons vos besoins et construisons un parcours commercial à la hauteur de vos ambitions, car votre succès fait partie de notre identité et votre confiance est notre véritable capital."
+    },
+    "servicesSection": {
+      "title": "Nos services intégrés",
+      "subtitle": "Chaque service est conçu pour vous offrir simplicité, qualité et confiance à chaque étape",
+      "services": {
+        "import": "Importation internationale",
+        "localDistribution": "Distribution locale",
+        "externalExpansion": "Expansion externe",
+        "electronics": "Électronique",
+        "homeAppliances": "Électroménager",
+        "smartphones": "Smartphones",
+        "digitalEntertainment": "Divertissement numérique",
+        "audioVisual": "Audio & vidéo",
+        "spareParts": "Pièces détachées",
+        "networks": "Réseaux & communications"
+      }
+    },
+    "whyKEP": {
+      "title": "Pourquoi KEP pour le Commerce ?",
+      "overlayText": "Une équipe complète à votre service",
+      "features": {
+        "care": "Une attention authentique",
+        "consistentQuality": "Une qualité qui ne change pas",
+        "commitment": "Un engagement qui ne faiblit pas",
+        "easyExecution": "Une exécution sans complexité",
+        "fairPrices": "Des prix équitables",
+        "continuousFollowup": "Un suivi continu",
+        "clarity": "Clarté à chaque étape",
+        "premiumExperience": "Une expérience client raffinée"
+      }
+    },
+    "businessUnits": {
+      "badge": "Système intégré",
+      "title": "Nos unités spécialisées",
+      "subtitle": "Des unités stratégiques et intégrées qui travaillent ensemble pour garantir le succès de nos clients à chaque étape de leur parcours commercial",
+      "tasksTitle": "Tâches de l’unité :",
+      "valueTitle": "Valeur pour le client :",
+      "units": {
+        "risk": {
+          "name": "Unité des risques commerciaux",
+          "desc": "Une unité spécialisée dans la protection des activités des clients contre les perturbations pouvant affecter la stabilité de l’approvisionnement.",
+          "tasks": {
+            "0": "Analyse des risques sur les marchés cibles",
+            "1": "Évaluation de la stabilité des fournisseurs",
+            "2": "Suivi de la volatilité des prix",
+            "3": "Gestion des risques de transport et d’expédition"
+          },
+          "value": {
+            "0": "Continuité de l’approvisionnement",
+            "1": "Protection du capital commercial",
+            "2": "Réduction des pertes opérationnelles"
+          }
+        },
+        "internationalExpansion": {
+          "name": "Unité d’expansion internationale",
+          "desc": "Une unité stratégique dédiée à l’ouverture de nouveaux marchés et à l’extension de l’influence commerciale des clients.",
+          "tasks": {
+            "0": "Étude des marchés internationaux",
+            "1": "Construction de nouveaux partenariats",
+            "2": "Ouverture de nouvelles lignes d’approvisionnement",
+            "3": "Accompagnement des plans d’expansion des clients"
+          },
+          "value": {
+            "0": "Accès à de nouveaux marchés",
+            "1": "Diversification des sources d’approvisionnement",
+            "2": "Position concurrentielle renforcée"
+          }
+        },
+        "digitalTransformation": {
+          "name": "Unité de transformation numérique",
+          "desc": "Développement de l’infrastructure numérique pour assurer rapidité, précision et transparence dans chaque processus commercial.",
+          "tasks": {
+            "0": "Numérisation des opérations d’approvisionnement",
+            "1": "Développement de systèmes de suivi des expéditions",
+            "2": "Construction de tableaux de bord en temps réel",
+            "3": "Utilisation de l’IA pour soutenir la décision"
+          },
+          "value": {
+            "0": "Plus de rapidité et de transparence",
+            "1": "Réduction des erreurs humaines",
+            "2": "Expérience client plus professionnelle"
+          }
+        },
+        "franchise": {
+          "name": "Unité franchise",
+          "desc": "Extension des marques via l’octroi de franchises à des partenaires locaux et régionaux.",
+          "tasks": {
+            "0": "Préparation des modèles de franchise",
+            "1": "Sélection des partenaires franchise",
+            "2": "Fourniture de formation et de support",
+            "3": "Contrôle de la qualité des points de vente"
+          },
+          "value": {
+            "0": "Expansion plus rapide avec moins de risques",
+            "1": "Soutien opérationnel complet",
+            "2": "Une marque prête à réussir"
+          }
+        },
+        "ecommerce": {
+          "name": "Unité e‑commerce",
+          "desc": "Gestion et développement des ventes numériques sur les différentes plateformes de commerce électronique.",
+          "tasks": {
+            "0": "Gestion des boutiques en ligne",
+            "1": "Développement de solutions de paiement",
+            "2": "Gestion des stocks numériques",
+            "3": "Lancement de campagnes de marketing digital"
+          },
+          "value": {
+            "0": "Accès plus rapide aux clients",
+            "1": "Augmentation du volume des ventes",
+            "2": "Expérience d’achat fluide"
+          }
+        },
+        "compliance": {
+          "name": "Unité de conformité commerciale",
+          "desc": "Veille à ce que toutes les opérations de l’entreprise respectent les normes locales, internationales et juridiques.",
+          "tasks": {
+            "0": "Revue des contrats commerciaux",
+            "1": "Vérification de la conformité des produits",
+            "2": "Suivi des lois et réglementations",
+            "3": "Gestion des documents et certifications"
+          },
+          "value": {
+            "0": "Transactions juridiquement sécurisées",
+            "1": "Produits certifiés",
+            "2": "Protection contre les infractions"
+          }
+        },
+        "supplierDevelopment": {
+          "name": "Unité de développement des fournisseurs",
+          "desc": "Amélioration de la qualité et de la performance des fournisseurs pour garantir un approvisionnement stable et fiable.",
+          "tasks": {
+            "0": "Évaluation des performances des fournisseurs",
+            "1": "Élaboration de plans d’amélioration de la qualité",
+            "2": "Construction de relations à long terme",
+            "3": "Formation et accompagnement des fournisseurs"
+          },
+          "value": {
+            "0": "Meilleure qualité et meilleurs prix",
+            "1": "Chaînes d’approvisionnement plus stables",
+            "2": "Partenariats stratégiques"
+          }
+        },
+        "financialAnalysis": {
+          "name": "Unité d’analyse financière",
+          "desc": "Analyse des données financières pour soutenir les décisions commerciales et optimiser les rendements.",
+          "tasks": {
+            "0": "Analyse des coûts d’approvisionnement",
+            "1": "Évaluation de la faisabilité des marchés",
+            "2": "Étude de la rentabilité et des risques",
+            "3": "Préparation de rapports financiers détaillés"
+          },
+          "value": {
+            "0": "Décisions fondées sur des chiffres solides",
+            "1": "Réduction des risques financiers",
+            "2": "Visibilité claire sur les coûts"
+          }
+        },
+        "customerService": {
+          "name": "Unité service client",
+          "desc": "Une unité dédiée aux clients qui nécessitent un suivi rapproché et une expérience de service haut de gamme.",
+          "tasks": {
+            "0": "Suivi personnalisé pour chaque client",
+            "1": "Mise à disposition d’un chargé de compte dédié",
+            "2": "Assurer une grande rapidité de réponse",
+            "3": "Proposer des solutions immédiates aux problèmes"
+          },
+          "value": {
+            "0": "Attention et soin accrus",
+            "1": "Traitement plus rapide des demandes",
+            "2": "Expérience de service haut de gamme"
+          }
+        },
+        "contractManagement": {
+          "name": "Unité de gestion des contrats",
+          "desc": "Rédaction, révision et gestion des contrats pour protéger les droits des clients et de l’entreprise.",
+          "tasks": {
+            "0": "Rédaction de contrats commerciaux",
+            "1": "Revue des clauses juridiques",
+            "2": "Suivi des engagements contractuels",
+            "3": "Gestion des renouvellements"
+          },
+          "value": {
+            "0": "Clarté totale des accords",
+            "1": "Protection juridique",
+            "2": "Respect strict de chaque clause"
+          }
+        },
+        "quality": {
+          "name": "Unité qualité totale",
+          "desc": "Contrôle de la qualité à chaque étape de l’approvisionnement et de la livraison pour garantir l’excellence.",
+          "tasks": {
+            "0": "Inspection des produits avant expédition",
+            "1": "Contrôle qualité à l’arrivée",
+            "2": "Suivi de la performance des fournisseurs",
+            "3": "Traitement des incidents opérationnels"
+          },
+          "value": {
+            "0": "Qualité constante",
+            "1": "Produits fiables",
+            "2": "Moins d’erreurs et de problèmes"
+          }
+        },
+        "internationalRelations": {
+          "name": "Unité relations internationales",
+          "desc": "Construction de relations stratégiques avec des acteurs commerciaux dans le monde entier pour ouvrir de nouveaux horizons.",
+          "tasks": {
+            "0": "Communication avec des entreprises internationales",
+            "1": "Construction d’alliances commerciales",
+            "2": "Participation à des salons internationaux",
+            "3": "Soutien à l’expansion des clients à l’étranger"
+          },
+          "value": {
+            "0": "Plus grandes opportunités commerciales",
+            "1": "Accès à de nouveaux marchés",
+            "2": "Soutien international continu"
+          }
+        }
+      }
     }
   },
   "execution": {
@@ -123,6 +1144,302 @@
       "subtitle": "Mécanisme d'exécution des communications — un système de communication clair pour une expérience professionnelle",
       "p1": "Nous croyons que le succès du processus commercial commence par la clarté des rôles, la rapidité de réponse et la précision d'exécution.",
       "p2": "Chez KEP pour le Commerce nous construisons un système de communication opérationnel clair qui assure un travail fluide entre toutes les parties, de la définition des rôles et des canaux de communication à la rapidité de réponse et à la précision du transfert d'information. Car le succès des opérations commerciales ne dépend pas seulement de la planification, mais d'une exécution organisée fondée sur la clarté des responsabilités et l'intégration des équipes, pour une expérience professionnelle et des résultats mesurables."
+    },
+    "departmentOrg": {
+      "title": "Les postes commerciaux et leurs rôles",
+      "departments": [
+        {
+          "title": "Direction exécutive",
+          "roles": [
+            {
+              "title": "Responsable chaîne d'approvisionnement",
+              "desc": "Supervise les sources d'approvisionnement, la sélection des fournisseurs et le flux des marchandises."
+            },
+            {
+              "title": "Responsable import‑export",
+              "desc": "Dirige les opérations d'importation et d'exportation et gère le transport international."
+            },
+            {
+              "title": "Responsable planification stratégique",
+              "desc": "Élabore les plans opérationnels et définit les priorités de croissance et d'expansion."
+            },
+            {
+              "title": "Responsable développement commercial",
+              "desc": "Construit des partenariats stratégiques et explore de nouvelles opportunités de marché."
+            }
+          ]
+        },
+        {
+          "title": "Importation & exportation",
+          "roles": [
+            {
+              "title": "Coordinateur import",
+              "desc": "Suit les expéditions, prépare les documents et veille au respect des procédures."
+            },
+            {
+              "title": "Coordinateur export",
+              "desc": "Prépare les expéditions d'exportation et organise toute la documentation requise."
+            },
+            {
+              "title": "Agent de dédouanement",
+              "desc": "Finalise les procédures douanières et suit la mainlevée des marchandises."
+            },
+            {
+              "title": "Responsable documentation",
+              "desc": "Prépare les factures, les connaissements et vérifie les données des expéditions."
+            }
+          ]
+        },
+        {
+          "title": "Logistique & opérations",
+          "roles": [
+            {
+              "title": "Responsable logistique",
+              "desc": "Gère le transport, le suivi des conteneurs et améliore l'efficacité opérationnelle."
+            },
+            {
+              "title": "Superviseur d'entrepôt",
+              "desc": "Réceptionne les marchandises, contrôle la qualité et organise le stockage."
+            },
+            {
+              "title": "Coordinateur transport maritime",
+              "desc": "Réserve les conteneurs et suit les départs et les plannings des navires."
+            },
+            {
+              "title": "Coordinateur transport aérien",
+              "desc": "Organise les expéditions urgentes et surveille le respect des délais de livraison."
+            }
+          ]
+        },
+        {
+          "title": "Clients & ventes",
+          "roles": [
+            {
+              "title": "Conseiller comptes commerciaux",
+              "desc": "Communique avec les clients et comprend leurs besoins commerciaux."
+            },
+            {
+              "title": "Responsable grands comptes",
+              "desc": "Gère les principaux clients et renforce les relations à long terme."
+            },
+            {
+              "title": "Responsable des ventes",
+              "desc": "Dirige l'équipe commerciale et atteint les objectifs de croissance."
+            },
+            {
+              "title": "Coordinateur service client",
+              "desc": "Suit les demandes des clients et veille à leur entière satisfaction."
+            }
+          ]
+        },
+        {
+          "title": "Qualité & conformité",
+          "roles": [
+            {
+              "title": "Auditeur qualité",
+              "desc": "Passe en revue les processus et s'assure du respect des normes."
+            },
+            {
+              "title": "Responsable conformité commerciale",
+              "desc": "Suit la réglementation et réduit les risques juridiques et réglementaires."
+            },
+            {
+              "title": "Responsable gestion des risques",
+              "desc": "Analyse les risques opérationnels et met en place des plans de traitement."
+            },
+            {
+              "title": "Auditeur interne",
+              "desc": "Évalue la performance et veille au respect des politiques internes."
+            }
+          ]
+        },
+        {
+          "title": "Analyse & support",
+          "roles": [
+            {
+              "title": "Analyste prix & marchés",
+              "desc": "Analyse les prix mondiaux et soutient les décisions commerciales."
+            },
+            {
+              "title": "Responsable contrats",
+              "desc": "Rédige les contrats et revoit les conditions commerciales."
+            },
+            {
+              "title": "Analyste données opérationnelles",
+              "desc": "Analyse les indicateurs de performance et prépare les rapports périodiques."
+            },
+            {
+              "title": "Chargé de support administratif",
+              "desc": "Coordonne les opérations internes et soutient les équipes d'exécution."
+            }
+          ]
+        }
+      ]
+    },
+    "workflow": {
+      "title": "Mécanisme d'exécution des communications",
+      "subtitle": "De l'appel initial jusqu'à la livraison finale",
+      "steps": [
+        {
+          "title": "Réception de la demande",
+          "desc": "La demande est reçue par le coordinateur de communication et enregistrée avec précision."
+        },
+        {
+          "title": "Orientation de la demande",
+          "desc": "Elle est transférée directement au conseiller comptes ou à l'équipe import/export."
+        },
+        {
+          "title": "Communication avec le client",
+          "desc": "Les besoins sont identifiés, les détails clarifiés et des solutions adaptées sont proposées."
+        },
+        {
+          "title": "Lancement de l'exécution",
+          "desc": "L'équipe opérations commence l'exécution de la demande selon un plan clair."
+        },
+        {
+          "title": "Suivi continu",
+          "desc": "Suivi des expéditions, mise à jour du client et respect des délais."
+        },
+        {
+          "title": "Revue qualité",
+          "desc": "L'auditeur qualité s'assure que chaque étape a été réalisée correctement."
+        },
+        {
+          "title": "Évaluation & amélioration",
+          "desc": "Analyse des performances et extraction d'enseignements pour améliorer les opérations futures."
+        },
+        {
+          "title": "Clôture du processus",
+          "desc": "Le processus est entièrement documenté et le client est informé de son achèvement."
+        }
+      ]
+    },
+    "responseTime": {
+      "title": "Nos engagements de réponse",
+      "subtitle": "Nous valorisons votre temps et respectons les plus hauts standards de rapidité et d'efficacité",
+      "stats": [
+        {
+          "title": "Réponse initiale",
+          "time": "2 heures",
+          "desc": "Dans un délai de"
+        },
+        {
+          "title": "Envoi de l'offre",
+          "time": "24 heures",
+          "desc": "Dans un délai de"
+        },
+        {
+          "title": "Lancement de l'exécution",
+          "time": "48 heures",
+          "desc": "Dans un délai de"
+        },
+        {
+          "title": "Résolution des problèmes",
+          "time": "6 heures",
+          "desc": "Dans un délai de"
+        }
+      ]
+    },
+    "escalation": {
+      "imageTitle": "Parcours d'escalade",
+      "imageSubtitle": "Un chemin clair pour garantir une résolution rapide des problèmes",
+      "steps": [
+        {
+          "title": "1. Coordinateur de service",
+          "desc": "Premier point de contact pour toute remarque ou demande."
+        },
+        {
+          "title": "2. Responsable de compte",
+          "desc": "Assure le suivi et résout les défis opérationnels."
+        },
+        {
+          "title": "3. Responsable opérations",
+          "desc": "Prend en charge les décisions managériales et techniques avancées."
+        },
+        {
+          "title": "4. Direction exécutive",
+          "desc": "Garantie finale de la qualité du service."
+        }
+      ]
+    },
+    "documentation": {
+      "title": "Système de documentation et de suivi",
+      "subtitle": "Chaque étape du processus est documentée dans un système opérationnel numérique intégré qui garantit une transparence totale.",
+      "features": [
+        {
+          "text": "Enregistrement électronique de la demande"
+        },
+        {
+          "text": "Archivage sécurisé des documents"
+        },
+        {
+          "text": "Suivi en temps réel des étapes d'exécution"
+        },
+        {
+          "text": "Archivage des factures et des expéditions"
+        },
+        {
+          "text": "Rapports périodiques sur l'état des demandes"
+        }
+      ]
+    },
+    "postDelivery": {
+      "title": "Évaluation post‑livraison",
+      "p1": "Une fois le processus terminé, nous contactons le client pour réaliser une évaluation complète garantissant l'amélioration continue.",
+      "p2": "Nous mesurons la performance avec précision sur des aspects essentiels tels que la rapidité d'exécution, la qualité des opérations, l'exactitude des documents et le niveau de communication, en nous concentrant sur les retours qui nous aident à progresser en permanence.",
+      "metrics": [
+        {
+          "label": "Qualité d'exécution",
+          "score": "10/10",
+          "width": "100%"
+        },
+        {
+          "label": "Vitesse d'exécution",
+          "score": "9.5/10",
+          "width": "95%"
+        },
+        {
+          "label": "Exactitude des documents",
+          "score": "10/10",
+          "width": "100%"
+        },
+        {
+          "label": "Niveau de communication",
+          "score": "9.8/10",
+          "width": "98%"
+        },
+        {
+          "label": "Axes d'amélioration",
+          "score": "9/10",
+          "width": "90%"
+        }
+      ]
+    },
+    "closing": {
+      "title": "Chaque poste au sein du système a un rôle clair au service du client",
+      "paragraph": "Nous travaillons comme une seule équipe pour que votre demande progresse avec rapidité, précision et au plus haut niveau de professionnalisme. Nous valorisons votre temps, respectons vos besoins et plaçons votre réussite au cœur de nos priorités.",
+      "cta": "Contactez‑nous maintenant"
+    },
+    "contactChannels": {
+      "imageTitle": "Canaux de communication officiels",
+      "channels": [
+        {
+          "title": "Numéro dédié au contact commercial",
+          "desc": "Ligne directe pour les clients et partenaires commerciaux."
+        },
+        {
+          "title": "Adresse e‑mail officielle pour les demandes",
+          "desc": "Pour l'envoi des documents et des demandes de devis."
+        },
+        {
+          "title": "WhatsApp Business pour un suivi rapide",
+          "desc": "Mises à jour instantanées sur l'état des expéditions et les demandes urgentes."
+        },
+        {
+          "title": "Responsable de compte dédié aux grands clients",
+          "desc": "Un point de contact unique pour garantir une expérience fluide et personnalisée."
+        }
+      ]
     }
   },
   "footer": {

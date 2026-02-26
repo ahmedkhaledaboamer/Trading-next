@@ -1,8 +1,12 @@
- 'use client'
- import { motion } from 'framer-motion'
+'use client'
+import { motion } from 'framer-motion'
 import { ArrowLeft, Mail } from 'lucide-react'
 import NextImage from 'next/image'
+import { useTranslations } from 'next-intl'
+
 export function CTASection() {
+  const t = useTranslations('services.cta')
+
   return (
     <section className="bg-white relative p-[5%] overflow-hidden container mx-auto rounded-4xl my-[2%] border-4 border-primary/30">
       {/* Background Image */}
@@ -37,23 +41,21 @@ export function CTASection() {
           className=" "
         >
           <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold mb-8 text-white tracking-tight drop-shadow-xl">
-            هل تحتاج إلى خدمة مخصصة؟
+            {t('title')}
           </h2>
           <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-blue-100 mb-12 leading-relaxed font-medium  mx-auto">
-            فريقنا من الخبراء جاهز لمساعدتك في العثور على الحل الأمثل لأعمالك.
-            تواصل معنا اليوم للحصول على استشارة مجانية وحلول مصممة خصيصاً
-            لاحتياجاتكم.
+            {t('description')}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <button className="w-full sm:w-auto px-10 py-5 bg-white text-primary rounded-xl font-bold text-base md:text-lg lg:text-xl xl:text-3xl cursor-pointer hover:bg-gray-100 transition-all flex items-center justify-center gap-3 shadow-2xl hover:shadow-white/20 transform hover:-translate-y-1 duration-300">
-              <span>تواصل معنا الآن</span>
+              <span>{t('primaryCta')}</span>
               <ArrowLeft size={22} />
             </button>
 
             <button className="w-full sm:w-auto px-10 py-5 bg-teal/20 backdrop-blur-md border-2 border-white/30 text-white rounded-xl font-bold text-base md:text-lg lg:text-xl xl:text-3xl cursor-pointer hover:bg-white/10 transition-all flex items-center justify-center gap-3 hover:border-white/50">
               <Mail size={22} />
-              <span>أرسل استفساراً</span>
+              <span>{t('secondaryCta')}</span>
             </button>
           </div>
         </motion.div>

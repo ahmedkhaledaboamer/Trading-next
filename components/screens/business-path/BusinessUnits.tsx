@@ -1,4 +1,4 @@
-'use client' 
+'use client'
 import { motion } from 'framer-motion'
 import {
   ShieldAlert,
@@ -15,267 +15,292 @@ import {
   Handshake,
 } from 'lucide-react'
 import Image from 'next/image'
-export function BusinessUnits( {locale}: {locale: string} ) {
-  const isRTL = locale === "ar";
+import { useTranslations } from 'next-intl'
+
+export function BusinessUnits({ locale }: { locale: string }) {
+  const isRTL = locale === 'ar'
+  const t = useTranslations('businessPath.businessUnits')
   const units = [
     {
       id: 1,
-      name: 'وحدة المخاطر التجارية',
+      name: t('units.risk.name'),
       icon: <ShieldAlert />,
       color: 'text-red-600',
       bg: 'bg-red-50',
       border: 'border-red-500',
-      desc: 'وحدة متخصصة في حماية أعمال العملاء من أي اضطرابات قد تؤثر على استقرار التوريد.',
+      desc: t('units.risk.desc'),
       tasks: [
-        'تحليل المخاطر في الأسواق',
-        'تقييم استقرار الموردين',
-        'مراقبة تقلبات الأسعار',
-        'إدارة مخاطر النقل والشحن',
+        t('units.risk.tasks.0'),
+        t('units.risk.tasks.1'),
+        t('units.risk.tasks.2'),
+        t('units.risk.tasks.3'),
       ],
       value: [
-        'ضمان استمرارية التوريد',
-        'حماية رأس المال التجاري',
-        'تقليل الخسائر التشغيلية',
+        t('units.risk.value.0'),
+        t('units.risk.value.1'),
+        t('units.risk.value.2'),
       ],
       image:
         'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80',
     },
     {
       id: 2,
-      name: 'وحدة التوسع الدولي',
+      name: t('units.internationalExpansion.name'),
       icon: <Globe />,
       color: 'text-blue-600',
       bg: 'bg-blue-50',
       border: 'border-blue-500',
-      desc: 'وحدة استراتيجية تهدف إلى فتح أسواق جديدة لعملائنا وتوسيع نطاق نفوذهم التجاري.',
+      desc: t('units.internationalExpansion.desc'),
       tasks: [
-        'دراسة الأسواق الدولية',
-        'بناء شراكات جديدة',
-        'فتح خطوط توريد جديدة',
-        'دعم العملاء في التوسع',
+        t('units.internationalExpansion.tasks.0'),
+        t('units.internationalExpansion.tasks.1'),
+        t('units.internationalExpansion.tasks.2'),
+        t('units.internationalExpansion.tasks.3'),
       ],
       value: [
-        'وصول لأسواق جديدة',
-        'تنويع مصادر التوريد',
-        'تعزيز القوة التنافسية',
+        t('units.internationalExpansion.value.0'),
+        t('units.internationalExpansion.value.1'),
+        t('units.internationalExpansion.value.2'),
       ],
       image:
         'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=80',
     },
     {
       id: 3,
-      name: 'وحدة التحول الرقمي',
+      name: t('units.digitalTransformation.name'),
       icon: <Monitor />,
       color: 'text-purple-600',
       bg: 'bg-purple-50',
       border: 'border-purple-500',
-      desc: 'تطوير البنية الرقمية لضمان سرعة، دقة، وشفافية في كل عملية تجارية.',
+      desc: t('units.digitalTransformation.desc'),
       tasks: [
-        'رقمنة عمليات التوريد',
-        'تطوير أنظمة تتبع الشحنات',
-        'بناء لوحات تحكم لحظية',
-        'استخدام الذكاء الاصطناعي',
+        t('units.digitalTransformation.tasks.0'),
+        t('units.digitalTransformation.tasks.1'),
+        t('units.digitalTransformation.tasks.2'),
+        t('units.digitalTransformation.tasks.3'),
       ],
       value: [
-        'سرعة أعلى وشفافية أكبر',
-        'تقليل الأخطاء البشرية',
-        'تجربة تعامل احترافية',
+        t('units.digitalTransformation.value.0'),
+        t('units.digitalTransformation.value.1'),
+        t('units.digitalTransformation.value.2'),
       ],
       image:
         'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80',
     },
     {
       id: 4,
-      name: 'وحدة الامتياز التجاري',
+      name: t('units.franchise.name'),
       icon: <Award />,
       color: 'text-amber-600',
       bg: 'bg-amber-50',
       border: 'border-amber-500',
-      desc: 'توسيع العلامات التجارية عبر منح الامتياز لشركاء محليين وإقليميين.',
+      desc: t('units.franchise.desc'),
       tasks: [
-        'إعداد نماذج الامتياز',
-        'اختيار شركاء الامتياز',
-        'توفير التدريب والدعم',
-        'مراقبة جودة الفروع',
+        t('units.franchise.tasks.0'),
+        t('units.franchise.tasks.1'),
+        t('units.franchise.tasks.2'),
+        t('units.franchise.tasks.3'),
       ],
       value: [
-        'توسع أسرع ومخاطر أقل',
-        'دعم تشغيلي كامل',
-        'علامة تجارية جاهزة للنجاح',
+        t('units.franchise.value.0'),
+        t('units.franchise.value.1'),
+        t('units.franchise.value.2'),
       ],
       image:
         'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&q=80',
     },
     {
       id: 5,
-      name: 'وحدة التجارة الإلكترونية',
+      name: t('units.ecommerce.name'),
       icon: <ShoppingCart />,
       color: 'text-green-600',
       bg: 'bg-green-50',
       border: 'border-green-500',
-      desc: 'إدارة وتطوير عمليات البيع الرقمي عبر المنصات الإلكترونية المختلفة.',
+      desc: t('units.ecommerce.desc'),
       tasks: [
-        'إدارة المتاجر الإلكترونية',
-        'تطوير حلول الدفع',
-        'إدارة المخزون الرقمي',
-        'حملات التسويق الإلكتروني',
+        t('units.ecommerce.tasks.0'),
+        t('units.ecommerce.tasks.1'),
+        t('units.ecommerce.tasks.2'),
+        t('units.ecommerce.tasks.3'),
       ],
-      value: ['وصول أسرع للعملاء', 'زيادة المبيعات', 'تجربة شراء سلسة'],
+      value: [
+        t('units.ecommerce.value.0'),
+        t('units.ecommerce.value.1'),
+        t('units.ecommerce.value.2'),
+      ],
       image:
         'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&q=80',
     },
     {
       id: 6,
-      name: 'وحدة الامتثال التجاري',
+      name: t('units.compliance.name'),
       icon: <FileCheck />,
       color: 'text-indigo-600',
       bg: 'bg-indigo-50',
       border: 'border-indigo-500',
-      desc: 'ضمان التزام كل عمليات الشركة بالمعايير المحلية والدولية والقانونية.',
+      desc: t('units.compliance.desc'),
       tasks: [
-        'مراجعة العقود التجارية',
-        'مطابقة المنتجات للمعايير',
-        'متابعة القوانين واللوائح',
-        'إدارة الوثائق والشهادات',
+        t('units.compliance.tasks.0'),
+        t('units.compliance.tasks.1'),
+        t('units.compliance.tasks.2'),
+        t('units.compliance.tasks.3'),
       ],
-      value: ['تعامل قانوني آمن', 'منتجات معتمدة', 'حماية من المخالفات'],
+      value: [
+        t('units.compliance.value.0'),
+        t('units.compliance.value.1'),
+        t('units.compliance.value.2'),
+      ],
       image:
         'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80',
     },
     {
       id: 7,
-      name: 'وحدة تطوير الموردين',
+      name: t('units.supplierDevelopment.name'),
       icon: <Users />,
       color: 'text-cyan-600',
       bg: 'bg-cyan-50',
       border: 'border-cyan-500',
-      desc: 'رفع جودة الموردين وتحسين أدائهم لضمان استقرار التوريد وجودته.',
+      desc: t('units.supplierDevelopment.desc'),
       tasks: [
-        'تقييم أداء الموردين',
-        'تطوير خطط تحسين الجودة',
-        'بناء علاقات طويلة المدى',
-        'تدريب الموردين',
+        t('units.supplierDevelopment.tasks.0'),
+        t('units.supplierDevelopment.tasks.1'),
+        t('units.supplierDevelopment.tasks.2'),
+        t('units.supplierDevelopment.tasks.3'),
       ],
       value: [
-        'جودة أعلى وأسعار أفضل',
-        'استقرار أكبر في التوريد',
-        'شراكات استراتيجية',
+        t('units.supplierDevelopment.value.0'),
+        t('units.supplierDevelopment.value.1'),
+        t('units.supplierDevelopment.value.2'),
       ],
       image:
         'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&q=80',
     },
     {
       id: 8,
-      name: 'وحدة التحليل المالي',
+      name: t('units.financialAnalysis.name'),
       icon: <BarChart3 />,
       color: 'text-emerald-600',
       bg: 'bg-emerald-50',
       border: 'border-emerald-500',
-      desc: 'تحليل البيانات المالية لدعم القرارات التجارية وضمان أفضل عائد.',
+      desc: t('units.financialAnalysis.desc'),
       tasks: [
-        'تحليل تكاليف التوريد',
-        'تقييم جدوى الأسواق',
-        'دراسة الربحية والمخاطر',
-        'تقارير مالية دقيقة',
+        t('units.financialAnalysis.tasks.0'),
+        t('units.financialAnalysis.tasks.1'),
+        t('units.financialAnalysis.tasks.2'),
+        t('units.financialAnalysis.tasks.3'),
       ],
       value: [
-        'قرارات مبنية على أرقام',
-        'تقليل المخاطر المالية',
-        'رؤية واضحة للتكاليف',
+        t('units.financialAnalysis.value.0'),
+        t('units.financialAnalysis.value.1'),
+        t('units.financialAnalysis.value.2'),
       ],
       image:
         'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80',
     },
     {
       id: 9,
-      name: 'وحدة خدمة العملاء',
+      name: t('units.customerService.name'),
       icon: <Headphones />,
       color: 'text-rose-600',
       bg: 'bg-rose-50',
       border: 'border-rose-500',
-      desc: 'وحدة مخصصة للعملاء الذين يحتاجون متابعة خاصة وتجربة تعامل راقية.',
+      desc: t('units.customerService.desc'),
       tasks: [
-        'متابعة شخصية لكل عميل',
-        'توفير مدير حساب خاص',
-        'سرعة استجابة عالية',
-        'حلول فورية للمشاكل',
+        t('units.customerService.tasks.0'),
+        t('units.customerService.tasks.1'),
+        t('units.customerService.tasks.2'),
+        t('units.customerService.tasks.3'),
       ],
-      value: ['اهتمام أعلى', 'سرعة في الإنجاز', 'تجربة تعامل فاخرة'],
+      value: [
+        t('units.customerService.value.0'),
+        t('units.customerService.value.1'),
+        t('units.customerService.value.2'),
+      ],
       image:
         'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=400&q=80',
     },
     {
       id: 10,
-      name: 'وحدة إدارة العقود',
+      name: t('units.contractManagement.name'),
       icon: <FileText />,
       color: 'text-slate-600',
       bg: 'bg-slate-50',
       border: 'border-slate-500',
-      desc: 'صياغة، مراجعة، وإدارة العقود لضمان حقوق العملاء والشركة.',
+      desc: t('units.contractManagement.desc'),
       tasks: [
-        'صياغة العقود التجارية',
-        'مراجعة البنود القانونية',
-        'متابعة الالتزامات',
-        'إدارة التجديدات',
+        t('units.contractManagement.tasks.0'),
+        t('units.contractManagement.tasks.1'),
+        t('units.contractManagement.tasks.2'),
+        t('units.contractManagement.tasks.3'),
       ],
       value: [
-        'وضوح كامل في الاتفاقيات',
-        'حماية قانونية',
-        'التزام صارم بكل بند',
+        t('units.contractManagement.value.0'),
+        t('units.contractManagement.value.1'),
+        t('units.contractManagement.value.2'),
       ],
       image:
         'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80',
     },
     {
       id: 11,
-      name: 'وحدة الجودة الشاملة',
+      name: t('units.quality.name'),
       icon: <CheckCircle />,
       color: 'text-orange-600',
       bg: 'bg-orange-50',
       border: 'border-orange-500',
-      desc: 'مراقبة الجودة في كل مرحلة من مراحل التوريد والتسليم لضمان التميز.',
+      desc: t('units.quality.desc'),
       tasks: [
-        'فحص المنتجات قبل الشحن',
-        'مراجعة الجودة بعد الوصول',
-        'مراقبة أداء الموردين',
-        'معالجة أي خلل تشغيلي',
+        t('units.quality.tasks.0'),
+        t('units.quality.tasks.1'),
+        t('units.quality.tasks.2'),
+        t('units.quality.tasks.3'),
       ],
-      value: ['جودة ثابتة', 'منتجات موثوقة', 'تقليل الأخطاء والمشاكل'],
+      value: [
+        t('units.quality.value.0'),
+        t('units.quality.value.1'),
+        t('units.quality.value.2'),
+      ],
       image:
         'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=80',
     },
     {
       id: 12,
-      name: 'وحدة العلاقات الدولية',
+      name: t('units.internationalRelations.name'),
       icon: <Handshake />,
       color: 'text-sky-600',
       bg: 'bg-sky-50',
       border: 'border-sky-500',
-      desc: 'بناء علاقات استراتيجية مع كيانات تجارية حول العالم لفتح آفاق جديدة.',
+      desc: t('units.internationalRelations.desc'),
       tasks: [
-        'التواصل مع الشركات العالمية',
-        'بناء تحالفات تجارية',
-        'حضور المعارض الدولية',
-        'دعم توسع العملاء',
+        t('units.internationalRelations.tasks.0'),
+        t('units.internationalRelations.tasks.1'),
+        t('units.internationalRelations.tasks.2'),
+        t('units.internationalRelations.tasks.3'),
       ],
-      value: ['فرص تجارية أكبر', 'وصول لأسواق جديدة', 'دعم دولي مستمر'],
+      value: [
+        t('units.internationalRelations.value.0'),
+        t('units.internationalRelations.value.1'),
+        t('units.internationalRelations.value.2'),
+      ],
       image:
         'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80',
     } 
   ]
   return (
-    <section className="  bg-gradient-to-b from-white to-gray-50" dir={isRTL ? "rtl" : "ltr"}>
+    <section
+      className="  bg-gradient-to-b from-white to-gray-50"
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       <div className=" p-[5%]">
         <div className="text-center mb-16">
           <span className="text-[#0E7490] font-bold tracking-wider uppercase text-base md:text-lg lg:text-xl xl:text-3xl bg-[#0E7490]/10 px-4 py-1 rounded-full">
-            منظومة متكاملة
+            {t('badge')}
           </span>
           <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-[#0A1628] mt-4 mb-6">
-            وحداتنا المتخصصة
+            {t('title')}
           </h2>
           <p className="text-md md:text-xl lg:text-2xl 2xl:text-4xl text-gray-600  ">
-            وحدات استراتيجية متكاملة تعمل معًا لضمان نجاح عملائنا في كل خطوة من
-            رحلتهم التجارية
+            {t('subtitle')}
           </p>
         </div>
 
@@ -337,7 +362,7 @@ export function BusinessUnits( {locale}: {locale: string} ) {
                 <div className="space-y-4 mt-auto">
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className={`font-bold text-base md:text-lg xl:text-3xl mb-3 ${unit.color}`}>
-                      مهام الوحدة:
+                      {t('tasksTitle')}
                     </h4>
                     <ul className="space-y-2">
                       {unit.tasks.slice(0, 3).map((task, i) => (
@@ -356,7 +381,7 @@ export function BusinessUnits( {locale}: {locale: string} ) {
 
                   <div className="border-t border-gray-100 pt-4">
                     <h4 className="font-bold text-base md:text-lg xl:text-3xl text-gray-900 mb-2">
-                      القيمة للعميل:
+                      {t('valueTitle')}
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {unit.value.slice(0, 2).map((val, i) => (

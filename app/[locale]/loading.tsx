@@ -1,4 +1,4 @@
-import Logo from "@/components/logo";
+import Image from "next/image";
 
 const styleTag = `
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
@@ -75,8 +75,8 @@ export default function Loading() {
         <div
           className="absolute spin-cw rounded-full"
           style={{
-            width: 118,
-            height: 118,
+            width: 160,
+            height: 160,
             borderRadius: "9999px",
             border: "2px solid transparent",
             borderTopColor: "#fd9908",
@@ -88,15 +88,22 @@ export default function Loading() {
         <div
           className="pulse-logo relative flex items-center justify-center rounded-3xl z-10"
           style={{
-            width: 84,
-            height: 84,
+            width: 130,
+            height: 130,
             background:
               "linear-gradient(135deg, rgba(15,23,42,0.96) 0%, rgba(30,41,59,0.96) 100%)",
             boxShadow:
               "0 0 28px rgba(253,153,8,0.55), inset 0 1px 0 rgba(255,255,255,0.12)",
           }}
         >
-          <Logo size={64} />
+          <Image
+            src="/images/Logo.png"
+            alt="KIB logo"
+            width={64}
+            height={64}
+            priority
+            className="rounded-3xl object-contain w-[80%] h-[80%]"
+          />
         </div>
       </div>
     </div>

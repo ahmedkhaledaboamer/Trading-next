@@ -1,25 +1,14 @@
 import { cn } from "@/utils/cn";
 import { ShoppingBag, Target } from "lucide-react";
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
-
-const unitObjectives = [
-  "الوصول إلى شريحة أكبر من العملاء",
-  "تسريع عمليات البيع",
-  "تحسين تجربة الشراء",
-  "دعم الشركاء في التحول الرقمي الكامل",
-];
-
-const unitTasks = [
-  "إدارة المتاجر الإلكترونية",
-  "تطوير حلول دفع إلكتروني",
-  "إدارة المخزون الرقمي",
-  "تشغيل حملات تسويق إلكتروني",
- ];
+import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function EcommerceUnitSection() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("home.ecommerceUnit");
+  const objectives = t.raw("objectives") as string[];
+  const tasks = t.raw("tasks") as string[];
 
   return (
     <section className="relative w-full bg-white" dir={isRTL ? "rtl" : "ltr"}>
@@ -30,13 +19,12 @@ export default async function EcommerceUnitSection() {
             <h2
               className="inline-block font-bold text-fuchsia-900 leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-fuchsia-100 border border-fuchsia-300 rounded-2xl px-6 py-4"
             >
-              وحدة التجارة الإلكترونية
+              {t("title")}
             </h2>
             <p
               className="inline-block text-indigo-900 text-base md:text-2xl bg-indigo-50 border border-indigo-200 rounded-full px-5 py-2"
             >
-              وحدة متخصصة في إدارة وتطوير عمليات البيع الرقمي عبر منصات متكاملة
-              للتجارة الإلكترونية.
+              {t("subtitle")}
             </p>
           </header>
 
@@ -63,7 +51,7 @@ export default async function EcommerceUnitSection() {
                 <h3
                   className="font-bold text-orange-700 border border-orange-300 bg-orange-700/20 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
                 >
-                  أهداف الوحدة
+                  {t("objectivesTitle")}
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <Target
@@ -76,12 +64,12 @@ export default async function EcommerceUnitSection() {
                 </span>
               </div>
               <ul className="space-y-2">
-                {unitObjectives.map((item, idx) => (
+                {objectives.map((item, idx) => (
                   <li
                     key={item}
                     className={cn(
                       "text-secondary/85 pb-2 text-base md:text-xl xl:text-3xl",
-                      idx !== unitObjectives.length - 1 && "border-b border-secondary/10"
+                      idx !== objectives.length - 1 && "border-b border-secondary/10"
                     )}
                   >
                     {item}
@@ -101,7 +89,7 @@ export default async function EcommerceUnitSection() {
                 <h3
                   className="font-bold text-orange-700 border border-orange-300 bg-orange-700/20 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl"
                 >
-                  مهام الوحدة
+                  {t("tasksTitle")}
                 </h3>
                 <span className="inline-flex items-center justify-center rounded-2xl bg-primary/10 text-primary p-2.5">
                   <ShoppingBag
@@ -114,12 +102,12 @@ export default async function EcommerceUnitSection() {
                 </span>
               </div>
               <ul className="space-y-2">
-                {unitTasks.map((task, idx) => (
+                {tasks.map((task, idx) => (
                   <li
                     key={task}
                     className={cn(
                       "text-secondary/85 pb-2 text-base md:text-xl xl:text-3xl",
-                      idx !== unitTasks.length - 1 && "border-b border-secondary/10"
+                      idx !== tasks.length - 1 && "border-b border-secondary/10"
                     )}
                   >
                     {task}

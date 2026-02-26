@@ -1,24 +1,12 @@
-import {  Globe } from "lucide-react";
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
-
-const unitTasks = [
-  "دراسة الأسواق الإقليمية والدولية",
-  "بناء شراكات جديدة في دول متعددة",
-  "فتح خطوط توريد جديدة",
-  "تقييم فرص النمو في الأسواق الناشئة",
- ];
-
-const unitResults = [
-  "زيادة الحضور الدولي",
-  "تنويع مصادر التوريد",
-  "تعزيز القوة التفاوضية",
-  "خلق فرص تجارية جديدة للشركاء",
-];
+import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function InternationalExpansionSection() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("home.internationalExpansion");
+  const tasks = t.raw("tasks") as string[];
+  const results = t.raw("results") as string[];
 
   return (
     <section
@@ -31,13 +19,12 @@ export default async function InternationalExpansionSection() {
           <h2
             className="inline-block font-bold text-sky-900 leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-sky-100 border border-sky-300 rounded-2xl px-6 py-4"
           >
-            وحدة التوسع الدولي
+            {t("title")}
           </h2>
           <p
             className="inline-block text-teal-900 text-base md:text-2xl bg-teal-50 border border-teal-200 rounded-full px-5 py-2"
           >
-            وحدة استراتيجية مسؤولة عن فتح أسواق جديدة وتوسيع نطاق النفوذ
-            التجاري لشركائنا حول العالم.
+            {t("subtitle")}
           </p>
         </header>
 
@@ -48,20 +35,19 @@ export default async function InternationalExpansionSection() {
             <div className="h-80 relative overflow-hidden">
               <Image
                 src="/images/30.webp"
-                alt="مهام وحدة التوسع الدولي"
+                alt={t("imageAltTasks")}
                 fill
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-[#1A1A2E]/60 group-hover:bg-[#1A1A2E]/40 transition-colors" />
-              
             </div>
 
             <div className="bg-[#F8F6F1] p-8 md:p-10 relative z-10 -mt-10 mx-4 md:mx-6 shadow-lg rounded-3xl">
               <h3 className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl mb-6 md:mb-8 tracking-wide border-b border-[#C9A84C]/20 pb-4">
-                مهام الوحدة
+                {t("tasksTitle")}
               </h3>
               <ul className="space-y-3 md:space-y-4">
-                {unitTasks.map((item, i) => (
+                {tasks.map((item, i) => (
                   <li
                     key={i}
                     className="flex items-center gap-3 md:gap-4 text-[#4A4A5A] text-base md:text-xl xl:text-3xl"
@@ -79,20 +65,19 @@ export default async function InternationalExpansionSection() {
             <div className="h-80  relative overflow-hidden">
               <Image
                 src="/images/31.webp"
-                alt="نتائج وحدة التوسع الدولي"
+                alt={t("imageAltResults")}
                 fill
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-[#1A1A2E]/60 group-hover:bg-[#1A1A2E]/40 transition-colors" />
-               
             </div>
 
             <div className="bg-[#F8F6F1] p-8 md:p-10 relative z-10 -mt-10 mx-4 md:mx-6 shadow-lg rounded-3xl">
               <h3 className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-3xl xl:text-5xl mb-6 md:mb-8 tracking-wide border-b border-[#C9A84C]/20 pb-4">
-                نتائج الوحدة
+                {t("resultsTitle")}
               </h3>
               <ul className="space-y-3 md:space-y-4">
-                {unitResults.map((item, i) => (
+                {results.map((item, i) => (
                   <li
                     key={i}
                     className="flex items-center gap-3 md:gap-4 text-[#4A4A5A] text-base md:text-xl xl:text-3xl"

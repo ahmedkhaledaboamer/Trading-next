@@ -1,46 +1,29 @@
 import { cn } from "@/utils/cn";
-import { Headphones, Layers, LucideIcon, Monitor, Package, Timer, TrendingUp } from "lucide-react";
+import {
+  Headphones,
+  Layers,
+  LucideIcon,
+  Monitor,
+  Package,
+  Timer,
+  TrendingUp,
+} from "lucide-react";
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
-interface Feature {
+interface FeatureData {
   id: string;
   title: string;
-  icon: LucideIcon;
 }
 
-const features: Feature[] = [
-  {
-    id: "large-quantities",
-    title: "توريد كميات كبيرة",
-    icon: Package,
-  },
-  {
-    id: "advanced-tech",
-    title: "تجهيزات تقنية متقدمة",
-    icon: Monitor,
-  },
-  {
-    id: "integrated-solutions",
-    title: "حلول تشغيلية متكاملة",
-    icon: Layers,
-  },
-  {
-    id: "long-term-supply",
-    title: "إدارة توريد طويلة المدى",
-    icon: Timer,
-  },
-  {
-    id: "continuous-support",
-    title: "دعم فني  ",
-    icon: Headphones,
-  },
-  {
-    id: "continuous-support-2",
-    title: "التشغيل مستمر ",
-    icon: TrendingUp   ,
-  },
-];
+const featureIcons: Record<string, LucideIcon> = {
+  "large-quantities": Package,
+  "advanced-tech": Monitor,
+  "integrated-solutions": Layers,
+  "long-term-supply": Timer,
+  "continuous-support": Headphones,
+  "continuous-support-2": TrendingUp,
+};
 
 const featureCardColors = [
   "bg-gradient-to-br from-emerald-500 via-emerald-400 to-emerald-600 border-emerald-400",
@@ -67,6 +50,8 @@ const featureIconColors = [
 export default async function MajorProjectsUnitSection() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("home.majorProjectsUnit");
+  const features = t.raw("features") as FeatureData[];
 
   return (
     <section className="w-full bg-[#f7f3eb]" dir={isRTL ? "rtl" : "ltr"}>
@@ -77,13 +62,12 @@ export default async function MajorProjectsUnitSection() {
             <h2
               className="inline-block  font-bold text-[#283593] leading-tight text-2xl md:text-xl xl:text-4xl 2xl:text-6xl bg-[#E8EAF6] border border-[#9FA8DA] rounded-2xl px-6 py-4"
             >
-              وحدة المشاريع الكبرى
+              {t("title")}
             </h2>
             <p
               className="inline-block text-[#303F9F] text-center md:text-start text-base md:text-2xl bg-[#C5CAE9] border border-[#7986CB] rounded-full px-5 py-2 mt-1"
             >
-              وحدة مخصصة لإدارة المشاريع الضخمة، من التخطيط إلى التنفيذ عبر حلول
-              توريد وتشغيل متكاملة.
+              {t("subtitle")}
             </p>
           </header>
 
@@ -99,7 +83,7 @@ export default async function MajorProjectsUnitSection() {
               >
                 <Image
                   src="/images/image_2678.webp"
-                  alt="وحدة متخصصة لإدارة المشاريع الكبرى"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover"
                   priority
@@ -110,7 +94,7 @@ export default async function MajorProjectsUnitSection() {
             {/* Features grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 w-full md:w-1/2 ">
               {features.map((feature, idx) => {
-                const Icon = feature.icon;
+                const Icon = featureIcons[feature.id];
                 return (
                   <div
                     key={feature.id}
@@ -133,13 +117,15 @@ export default async function MajorProjectsUnitSection() {
                         featureIconColors[idx % featureIconColors.length]
                       )}
                     >
-                      <Icon
-                        style={{
-                          width: "clamp(1.4rem, 1.4vw, 1.4rem)",
-                          height: "clamp(1.4rem, 1.4vw, 1.4rem)",
-                        }}
-                        strokeWidth={2}
-                      />
+                      {Icon && (
+                        <Icon
+                          style={{
+                            width: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                            height: "clamp(1.4rem, 1.4vw, 1.4rem)",
+                          }}
+                          strokeWidth={2}
+                        />
+                      )}
                     </span>
                   </div>
                 );

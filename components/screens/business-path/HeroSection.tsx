@@ -1,11 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 
-export function HeroSection() {
+export function HeroSection({locale}: {locale: string}) {
+  const isRTL = locale === 'ar'
   const t = useTranslations('businessPath.hero')
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1628] text-white">
@@ -23,9 +24,9 @@ export function HeroSection() {
       </div>
 
       {/* Background Gradients & Shapes */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-[#0E7490] opacity-20 blur-[100px]" />
-        <div className="absolute bottom-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#D4A853] opacity-10 blur-[100px]" />
+      <div className="absolute inset-0 overflow-hidden ">
+        <div className="relative top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-[#0E7490] opacity-20 blur-[100px]" />
+        <div className="relative bottom-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-[#D4A853] opacity-10 blur-[100px]" />
 
         {/* Geometric Patterns (SVG) */}
         <svg
@@ -45,6 +46,7 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 relative z-10 text-center">
         <motion.div
+          className="relative z-10"
           initial={{
             opacity: 0,
             y: 30,
@@ -61,9 +63,9 @@ export function HeroSection() {
             {t('badge')}
           </div>
 
-          <h1 className="text-lg md:text-xl lg:text-4xl 2xl:text-8xl font-bold mb-6 leading-tight drop-shadow-lg">
-            <span className="text-white">{t('title1')}</span>
-            <span className="text-[#D4A853]">{t('title2')}</span>
+          <h1 dir={!isRTL ? 'rtl' : 'ltr'} className="text-lg md:text-xl lg:text-4xl 2xl:text-8xl font-bold mb-6 leading-tight drop-shadow-lg">
+            <span className={`text-[#D4A853] inline-block ${isRTL ? 'mr-5' : 'ml-5'}`}>{t('title2')} </span>
+            <span className="text-white inline-block">{t('title1')}</span>
             <span className="block text-xl md:text-2xl lg:text-3xl xl:text-5xl mt-4 font-normal text-gray-300">
               {t('title3')}
             </span>
@@ -76,8 +78,9 @@ export function HeroSection() {
           <div className="flex  flex-row items-center justify-center gap-4">
             <Link href="/services">
               <button className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-[#D4A853] text-[#0A1628] font-bold rounded-lg hover:bg-[#b68d40] transition-colors flex items-center gap-2 shadow-lg shadow-[#D4A853]/20">
+                {isRTL ? <ArrowLeft className="w-5 h-5" /> : ""}
                 {t('ctaServices')}
-                <ArrowLeft className="w-5 h-5" />
+                {isRTL ? "" : <ArrowRight className="w-5 h-5" />}
               </button>
             </Link>
             <a href="#contact">
@@ -98,7 +101,7 @@ export function HeroSection() {
             duration: 6,
             ease: 'easeInOut',
           }}
-          className="absolute top-1/4 right-[10%] w-16 h-16 border-4 border-[#D4A853]/20 rounded-full hidden md:block backdrop-blur-sm"
+          className="absolute top-1/4 right-[10%] w-16 h-16 border-4 border-[#D4A853]/20 rounded-full hidden md:block backdrop-blur-sm z-0"
         />
         <motion.div
           animate={{
@@ -110,7 +113,7 @@ export function HeroSection() {
             ease: 'easeInOut',
             delay: 1,
           }}
-          className="absolute bottom-1/4 left-[10%] w-24 h-24 border-4 border-[#0E7490]/30 rounded-lg rotate-45 hidden md:block backdrop-blur-sm"
+          className="absolute bottom-1/4 left-[10%] w-24 h-24 border-4 border-[#0E7490]/30 rounded-lg rotate-45 hidden md:block backdrop-blur-sm z-0"
         />
       </div>
     </section>

@@ -46,433 +46,764 @@ import {
 import { motion, AnimatePresence } from 'framer-motion'
 import { CTASection } from '@/components/screens/services/CTASection'
 import { HeroSection } from '@/components/screens/services/HeroSection'
-import { FilterBar, ServiceSection } from '@/components/screens/services/ServiceSection'
+import {
+  FilterBar,
+  ServiceSection,
+} from '@/components/screens/services/ServiceSection'
 import { ServiceCard } from '@/components/screens/services/ServiceCard'
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 
-export function ServicesPageClient( {locale}: {locale: string} ) {
+export function ServicesPageClient({ locale }: { locale: string }) {
   const isRTL = locale === "ar";
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
+
+  const tSections = useTranslations('services.sections')
+  const tFilters = useTranslations('services.filters')
 
   const sections = [
     /* ================= التجارة والخدمات اللوجستية (8) ================= */
     {
-      title: 'التجارة والخدمات اللوجستية',
-      subtitle: 'حلول استيراد وتصدير متكاملة تربطك بالأسواق العالمية',
+      title: tSections('tradeLogistics.title'),
+      subtitle: tSections('tradeLogistics.subtitle'),
       bgColor: 'bg-white',
       accentColor: '#2563eb',
       services: [
         {
-          title: 'الاستيراد الدولي',
-          description: 'إدارة عمليات الاستيراد',
+          title: tSections('tradeLogistics.services.import.title'),
+          description: tSections('tradeLogistics.services.import.description'),
           icon: Ship,
           image:
             'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['اختيار الموردين', 'فحص البضائع', 'شحن بحري وجوي', 'تأمين الشحنات'],
+          points: [
+            tSections('tradeLogistics.services.import.points.0'),
+            tSections('tradeLogistics.services.import.points.1'),
+            tSections('tradeLogistics.services.import.points.2'),
+            tSections('tradeLogistics.services.import.points.3'),
+          ],
         },
         {
-          title: 'التصدير الدولي',
-          description: 'تصدير للأسواق العالمية',
+          title: tSections('tradeLogistics.services.export.title'),
+          description: tSections('tradeLogistics.services.export.description'),
           icon: Globe,
           image:
             'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تجهيز الشحنات', 'توثيق المستندات', 'شحن دولي', 'متابعة التسليم'],
+          points: [
+            tSections('tradeLogistics.services.export.points.0'),
+            tSections('tradeLogistics.services.export.points.1'),
+            tSections('tradeLogistics.services.export.points.2'),
+            tSections('tradeLogistics.services.export.points.3'),
+          ],
         },
         {
-          title: 'الشحن البحري',
-          description: 'حلول شحن موثوقة',
+          title: tSections('tradeLogistics.services.seaShipping.title'),
+          description: tSections(
+            'tradeLogistics.services.seaShipping.description',
+          ),
           icon: Anchor,
           image:
             'https://images.unsplash.com/photo-1494412574643-35d324698420?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['حاويات كاملة FCL', 'شحن جزئي LCL', 'تتبع الشحنات', 'تأمين بحري'],
+          points: [
+            tSections('tradeLogistics.services.seaShipping.points.0'),
+            tSections('tradeLogistics.services.seaShipping.points.1'),
+            tSections('tradeLogistics.services.seaShipping.points.2'),
+            tSections('tradeLogistics.services.seaShipping.points.3'),
+          ],
         },
         {
-          title: 'الشحن الجوي',
-          description: 'سرعة عالمية في النقل',
+          title: tSections('tradeLogistics.services.airShipping.title'),
+          description: tSections(
+            'tradeLogistics.services.airShipping.description',
+          ),
           icon: Plane,
           image:
             'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['شحن سريع', 'شحن حساس', 'تخزين مؤقت', 'توصيل للمستودعات'],
+          points: [
+            tSections('tradeLogistics.services.airShipping.points.0'),
+            tSections('tradeLogistics.services.airShipping.points.1'),
+            tSections('tradeLogistics.services.airShipping.points.2'),
+            tSections('tradeLogistics.services.airShipping.points.3'),
+          ],
         },
         {
-          title: 'التخليص الجمركي',
-          description: 'عبور سريع وآمن',
+          title: tSections('tradeLogistics.services.customs.title'),
+          description: tSections(
+            'tradeLogistics.services.customs.description',
+          ),
           icon: FileCheck,
           image:
             'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تجهيز المستندات', 'دفع الرسوم', 'فحص وتخليص', 'تسليم نهائي'],
+          points: [
+            tSections('tradeLogistics.services.customs.points.0'),
+            tSections('tradeLogistics.services.customs.points.1'),
+            tSections('tradeLogistics.services.customs.points.2'),
+            tSections('tradeLogistics.services.customs.points.3'),
+          ],
         },
         {
-          title: 'التخزين اللوجستي',
-          description: 'مستودعات آمنة ومنظمة',
+          title: tSections('tradeLogistics.services.storage.title'),
+          description: tSections(
+            'tradeLogistics.services.storage.description',
+          ),
           icon: Package,
           image:
             'https://images.unsplash.com/photo-1581093588401-22f5c6d2c7d0?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تخزين طويل', 'تخزين قصير', 'إدارة مخزون', 'حماية بضائع'],
+          points: [
+            tSections('tradeLogistics.services.storage.points.0'),
+            tSections('tradeLogistics.services.storage.points.1'),
+            tSections('tradeLogistics.services.storage.points.2'),
+            tSections('tradeLogistics.services.storage.points.3'),
+          ],
         },
         {
-          title: 'النقل البري',
-          description: 'شبكة نقل محلية',
+          title: tSections('tradeLogistics.services.landTransport.title'),
+          description: tSections(
+            'tradeLogistics.services.landTransport.description',
+          ),
           icon: Truck,
           image:
             'https://images.unsplash.com/photo-1501706362039-c6e08b7c40d2?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['شاحنات مبردة', 'نقل سريع', 'تتبع GPS', 'توصيل يومي'],
+          points: [
+            tSections('tradeLogistics.services.landTransport.points.0'),
+            tSections('tradeLogistics.services.landTransport.points.1'),
+            tSections('tradeLogistics.services.landTransport.points.2'),
+            tSections('tradeLogistics.services.landTransport.points.3'),
+          ],
         },
         {
-          title: 'التأمين التجاري',
-          description: 'حماية شحناتك وأعمالك',
+          title: tSections('tradeLogistics.services.commercialInsurance.title'),
+          description: tSections(
+            'tradeLogistics.services.commercialInsurance.description',
+          ),
           icon: Shield,
           image:
             'https://images.unsplash.com/photo-1565372919396-5a0f6c89bca1?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تأمين بضائع', 'تأمين نقل', 'تقييم مخاطر', 'تعويض سريع'],
+          points: [
+            tSections('tradeLogistics.services.commercialInsurance.points.0'),
+            tSections('tradeLogistics.services.commercialInsurance.points.1'),
+            tSections('tradeLogistics.services.commercialInsurance.points.2'),
+            tSections('tradeLogistics.services.commercialInsurance.points.3'),
+          ],
         },
       ],
     },
 
     /* ================= الدفع الإلكتروني (4) ================= */
     {
-      title: 'حلول الدفع الإلكتروني',
-      subtitle: 'تقنيات مالية حديثة لتسهيل معاملاتك التجارية',
+      title: tSections('ePayments.title'),
+      subtitle: tSections('ePayments.subtitle'),
       bgColor: 'bg-[#f0fdf4]',
       accentColor: '#059669',
       services: [
         {
-          title: 'أجهزة الدفع الإلكتروني POS',
-          description: 'أحدث أجهزة الدفع',
+          title: tSections('ePayments.services.posDevices.title'),
+          description: tSections(
+            'ePayments.services.posDevices.description',
+          ),
           icon: CreditCard,
           image:
             'https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['توريد أجهزة POS', 'تركيب وتشغيل', 'صيانة دورية', 'دعم فني'],
+          points: [
+            tSections('ePayments.services.posDevices.points.0'),
+            tSections('ePayments.services.posDevices.points.1'),
+            tSections('ePayments.services.posDevices.points.2'),
+            tSections('ePayments.services.posDevices.points.3'),
+          ],
         },
         {
-          title: 'بطاقات الدفع الذكية',
-          description: 'معايير أمان عالمية',
+          title: tSections('ePayments.services.smartCards.title'),
+          description: tSections(
+            'ePayments.services.smartCards.description',
+          ),
           icon: Wallet,
           image:
             'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['بطاقات EMV', 'بطاقات NFC', 'تخصيص وطباعة', 'إدارة البطاقات'],
+          points: [
+            tSections('ePayments.services.smartCards.points.0'),
+            tSections('ePayments.services.smartCards.points.1'),
+            tSections('ePayments.services.smartCards.points.2'),
+            tSections('ePayments.services.smartCards.points.3'),
+          ],
         },
         {
-          title: 'حلول الدفع عبر الهاتف',
-          description: 'عمليات أسرع وأسهل',
+          title: tSections('ePayments.services.mobilePayments.title'),
+          description: tSections(
+            'ePayments.services.mobilePayments.description',
+          ),
           icon: Smartphone,
           image:
             'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['Apple Pay', 'Google Pay', 'QR Payment', 'ربط مع التطبيقات'],
+          points: [
+            tSections('ePayments.services.mobilePayments.points.0'),
+            tSections('ePayments.services.mobilePayments.points.1'),
+            tSections('ePayments.services.mobilePayments.points.2'),
+            tSections('ePayments.services.mobilePayments.points.3'),
+          ],
         },
         {
-          title: 'بوابات الدفع الإلكترونية',
-          description: 'تكامل مع المتاجر',
+          title: tSections('ePayments.services.paymentGateways.title'),
+          description: tSections(
+            'ePayments.services.paymentGateways.description',
+          ),
           icon: Database,
           image:
             'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['ربط متجر', 'حماية بيانات', 'تقارير مالية', 'دعم تقني'],
+          points: [
+            tSections('ePayments.services.paymentGateways.points.0'),
+            tSections('ePayments.services.paymentGateways.points.1'),
+            tSections('ePayments.services.paymentGateways.points.2'),
+            tSections('ePayments.services.paymentGateways.points.3'),
+          ],
         },
       ],
     },
 
     /* ================= الحاسب والتقنية (8) ================= */
     {
-      title: 'أجهزة الحاسب والتقنية',
-      subtitle: 'تجهيزات تقنية متطورة للمكاتب والشركات',
+      title: tSections('computingTech.title'),
+      subtitle: tSections('computingTech.subtitle'),
       bgColor: 'bg-[#faf5ff]',
       accentColor: '#7c3aed',
       services: [
         {
-          title: 'أجهزة الكمبيوتر المكتبية',
-          description: 'أداء عالي للشركات',
+          title: tSections('computingTech.services.desktopComputers.title'),
+          description: tSections(
+            'computingTech.services.desktopComputers.description',
+          ),
           icon: Monitor,
           image:
             'https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['توريد أجهزة', 'إعداد وتجهيز', 'صيانة', 'دعم فني'],
+          points: [
+            tSections('computingTech.services.desktopComputers.points.0'),
+            tSections('computingTech.services.desktopComputers.points.1'),
+            tSections('computingTech.services.desktopComputers.points.2'),
+            tSections('computingTech.services.desktopComputers.points.3'),
+          ],
         },
         {
-          title: 'أجهزة اللابتوب',
-          description: 'أفضل العلامات العالمية',
+          title: tSections('computingTech.services.laptops.title'),
+          description: tSections(
+            'computingTech.services.laptops.description',
+          ),
           icon: Laptop,
           image:
             'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['بيع أجهزة', 'توريد للشركات', 'إعداد أنظمة', 'صيانة'],
+          points: [
+            tSections('computingTech.services.laptops.points.0'),
+            tSections('computingTech.services.laptops.points.1'),
+            tSections('computingTech.services.laptops.points.2'),
+            tSections('computingTech.services.laptops.points.3'),
+          ],
         },
         {
-          title: 'الطابعات والماسحات',
-          description: 'حلول طباعة متطورة',
+          title: tSections('computingTech.services.printersScanners.title'),
+          description: tSections(
+            'computingTech.services.printersScanners.description',
+          ),
           icon: Printer,
           image:
             'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['طابعات ليزر', 'طابعات نافثة', 'ماسحات ضوئية', 'أحبار وملحقات'],
+          points: [
+            tSections('computingTech.services.printersScanners.points.0'),
+            tSections('computingTech.services.printersScanners.points.1'),
+            tSections('computingTech.services.printersScanners.points.2'),
+            tSections('computingTech.services.printersScanners.points.3'),
+          ],
         },
         {
-          title: 'الشاشات والملحقات',
-          description: 'دقة عالية لكل الاستخدامات',
+          title: tSections('computingTech.services.monitorsAccessories.title'),
+          description: tSections(
+            'computingTech.services.monitorsAccessories.description',
+          ),
           icon: MonitorSmartphone,
           image:
             'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['شاشات مكتبية', 'شاشات عرض', 'لوحات مفاتيح', 'إكسسوارات'],
+          points: [
+            tSections('computingTech.services.monitorsAccessories.points.0'),
+            tSections('computingTech.services.monitorsAccessories.points.1'),
+            tSections('computingTech.services.monitorsAccessories.points.2'),
+            tSections('computingTech.services.monitorsAccessories.points.3'),
+          ],
         },
         {
-          title: 'السيرفرات ومراكز البيانات',
-          description: 'بنية تحتية رقمية',
+          title: tSections('computingTech.services.serversDataCenters.title'),
+          description: tSections(
+            'computingTech.services.serversDataCenters.description',
+          ),
           icon: Server,
           image:
             'https://images.unsplash.com/photo-1558494949-ef526b0042a0?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['سيرفرات Rack', 'وحدات تخزين', 'حلول نسخ احتياطي', 'إعداد مراكز بيانات'],
+          points: [
+            tSections('computingTech.services.serversDataCenters.points.0'),
+            tSections('computingTech.services.serversDataCenters.points.1'),
+            tSections('computingTech.services.serversDataCenters.points.2'),
+            tSections('computingTech.services.serversDataCenters.points.3'),
+          ],
         },
         {
-          title: 'وحدات التخزين',
-          description: 'مساحات آمنة للبيانات',
+          title: tSections('computingTech.services.storageUnits.title'),
+          description: tSections(
+            'computingTech.services.storageUnits.description',
+          ),
           icon: HardDrive,
           image:
             'https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['SSD', 'HDD', 'NAS', 'RAID'],
+          points: [
+            tSections('computingTech.services.storageUnits.points.0'),
+            tSections('computingTech.services.storageUnits.points.1'),
+            tSections('computingTech.services.storageUnits.points.2'),
+            tSections('computingTech.services.storageUnits.points.3'),
+          ],
         },
         {
-          title: 'الأجهزة الطرفية',
-          description: 'ملحقات احترافية',
+          title: tSections('computingTech.services.peripherals.title'),
+          description: tSections(
+            'computingTech.services.peripherals.description',
+          ),
           icon: Mouse,
           image:
             'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['ماوس', 'كيبورد', 'سماعات', 'كاميرات ويب'],
+          points: [
+            tSections('computingTech.services.peripherals.points.0'),
+            tSections('computingTech.services.peripherals.points.1'),
+            tSections('computingTech.services.peripherals.points.2'),
+            tSections('computingTech.services.peripherals.points.3'),
+          ],
         },
         {
-          title: 'أنظمة التشغيل والتثبيت',
-          description: 'إعداد بيئة عمل كاملة',
+          title: tSections('computingTech.services.osSetup.title'),
+          description: tSections(
+            'computingTech.services.osSetup.description',
+          ),
           icon: Settings,
           image:
             'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تنصيب ويندوز', 'تنصيب لينكس', 'تعريفات', 'تهيئة أجهزة'],
+          points: [
+            tSections('computingTech.services.osSetup.points.0'),
+            tSections('computingTech.services.osSetup.points.1'),
+            tSections('computingTech.services.osSetup.points.2'),
+            tSections('computingTech.services.osSetup.points.3'),
+          ],
         },
       ],
     },
 
     /* ================= البرمجيات (4) ================= */
     {
-      title: 'البرمجيات والتطوير',
-      subtitle: 'حلول برمجية ذكية لدعم نمو أعمالك',
+      title: tSections('softwareDev.title'),
+      subtitle: tSections('softwareDev.subtitle'),
       bgColor: 'bg-[#fffbeb]',
       accentColor: '#ea580c',
       services: [
         {
-          title: 'البرمجيات وأنظمة الشركات',
-          description: 'برمجيات احترافية',
+          title: tSections('softwareDev.services.corporateSystems.title'),
+          description: tSections(
+            'softwareDev.services.corporateSystems.description',
+          ),
           icon: Code,
           image:
             'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['ERP', 'CRM', 'أنظمة محاسبة', 'أنظمة موارد بشرية'],
+          points: [
+            tSections('softwareDev.services.corporateSystems.points.0'),
+            tSections('softwareDev.services.corporateSystems.points.1'),
+            tSections('softwareDev.services.corporateSystems.points.2'),
+            tSections('softwareDev.services.corporateSystems.points.3'),
+          ],
         },
         {
-          title: 'تطوير التطبيقات والأنظمة',
-          description: 'حلول مصممة خصيصًا',
+          title: tSections('softwareDev.services.appDevelopment.title'),
+          description: tSections(
+            'softwareDev.services.appDevelopment.description',
+          ),
           icon: AppWindow,
           image:
             'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تطبيقات موبايل', 'أنظمة ويب', 'برمجيات خاصة', 'تكامل الأنظمة'],
+          points: [
+            tSections('softwareDev.services.appDevelopment.points.0'),
+            tSections('softwareDev.services.appDevelopment.points.1'),
+            tSections('softwareDev.services.appDevelopment.points.2'),
+            tSections('softwareDev.services.appDevelopment.points.3'),
+          ],
         },
         {
-          title: 'الحوسبة السحابية',
-          description: 'تشغيل أنظمتك عبر السحابة',
+          title: tSections('softwareDev.services.cloudComputing.title'),
+          description: tSections(
+            'softwareDev.services.cloudComputing.description',
+          ),
           icon: Cloud,
           image:
             'https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['استضافة سحابية', 'نسخ احتياطي', 'توسعة موارد', 'أمان سحابي'],
+          points: [
+            tSections('softwareDev.services.cloudComputing.points.0'),
+            tSections('softwareDev.services.cloudComputing.points.1'),
+            tSections('softwareDev.services.cloudComputing.points.2'),
+            tSections('softwareDev.services.cloudComputing.points.3'),
+          ],
         },
         {
-          title: 'الدعم الفني البرمجي',
-          description: 'صيانة وتحديث مستمر',
+          title: tSections('softwareDev.services.softwareSupport.title'),
+          description: tSections(
+            'softwareDev.services.softwareSupport.description',
+          ),
           icon: Shield,
           image:
             'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تحديثات', 'إصلاح أخطاء', 'تحسين أداء', 'مراقبة مستمرة'],
+          points: [
+            tSections('softwareDev.services.softwareSupport.points.0'),
+            tSections('softwareDev.services.softwareSupport.points.1'),
+            tSections('softwareDev.services.softwareSupport.points.2'),
+            tSections('softwareDev.services.softwareSupport.points.3'),
+          ],
         },
       ],
     },
 
     /* الشبكات (4) كما هي */
     {
-      title: 'الشبكات والاتصالات',
-      subtitle: 'بنية تحتية قوية لاتصال دائم ومستقر',
+      title: tSections('networks.title'),
+      subtitle: tSections('networks.subtitle'),
       bgColor: 'bg-[#ecfeff]',
       accentColor: '#0891b2',
       services: [
         {
-          title: 'أجهزة الاتصالات والشبكات',
-          description: 'معايير عالمية للأداء',
+          title: tSections('networks.services.communicationDevices.title'),
+          description: tSections(
+            'networks.services.communicationDevices.description',
+          ),
           icon: Radio,
           image:
             'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['راوترات', 'سويتشات', 'مودمات', 'أجهزة اتصال'],
+          points: [
+            tSections('networks.services.communicationDevices.points.0'),
+            tSections('networks.services.communicationDevices.points.1'),
+            tSections('networks.services.communicationDevices.points.2'),
+            tSections('networks.services.communicationDevices.points.3'),
+          ],
         },
         {
-          title: 'تمديدات الشبكات والألياف',
-          description: 'سرعة اتصال عالية',
+          title: tSections('networks.services.cablingFiber.title'),
+          description: tSections(
+            'networks.services.cablingFiber.description',
+          ),
           icon: Cable,
           image:
             'https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['تمديدات كابلات', 'ألياف ضوئية', 'تركيب نقاط شبكة', 'اختبار واعتماد'],
+          points: [
+            tSections('networks.services.cablingFiber.points.0'),
+            tSections('networks.services.cablingFiber.points.1'),
+            tSections('networks.services.cablingFiber.points.2'),
+            tSections('networks.services.cablingFiber.points.3'),
+          ],
         },
         {
-          title: 'قطع غيار الحاسب الآلي',
-          description: 'قطع أصلية ومضمونة',
+          title: tSections('networks.services.computerParts.title'),
+          description: tSections(
+            'networks.services.computerParts.description',
+          ),
           icon: Cpu,
           image:
             'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['لوحات أم', 'رامات', 'أقراص SSD', 'مزودات طاقة'],
+          points: [
+            tSections('networks.services.computerParts.points.0'),
+            tSections('networks.services.computerParts.points.1'),
+            tSections('networks.services.computerParts.points.2'),
+            tSections('networks.services.computerParts.points.3'),
+          ],
         },
         {
-          title: 'قطع غيار الأجهزة الإلكترونية',
-          description: 'جودة معتمدة',
+          title: tSections('networks.services.electronicParts.title'),
+          description: tSections(
+            'networks.services.electronicParts.description',
+          ),
           icon: CircuitBoard,
           image:
             'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['لوحات إلكترونية', 'شاشات', 'حساسات', 'وحدات تحكم'],
+          points: [
+            tSections('networks.services.electronicParts.points.0'),
+            tSections('networks.services.electronicParts.points.1'),
+            tSections('networks.services.electronicParts.points.2'),
+            tSections('networks.services.electronicParts.points.3'),
+          ],
         },
       ],
     },
 
     /* الوسائط والترفيه (8) */
     {
-      title: 'الوسائط والترفيه',
-      subtitle: 'تجهيزات صوتية ومرئية وترفيهية متكاملة',
+      title: tSections('mediaEntertainment.title'),
+      subtitle: tSections('mediaEntertainment.subtitle'),
       bgColor: 'bg-[#fff1f2]',
       accentColor: '#e11d48',
       services: [
         {
-          title: 'الأجهزة السمعية والمرئية',
-          description: 'حلول صوت وصورة',
+          title: tSections('mediaEntertainment.services.avDevices.title'),
+          description: tSections(
+            'mediaEntertainment.services.avDevices.description',
+          ),
           icon: Speaker,
           image:
             'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['سماعات', 'شاشات', 'أنظمة صوت', 'أجهزة عرض'],
+          points: [
+            tSections('mediaEntertainment.services.avDevices.points.0'),
+            tSections('mediaEntertainment.services.avDevices.points.1'),
+            tSections('mediaEntertainment.services.avDevices.points.2'),
+            tSections('mediaEntertainment.services.avDevices.points.3'),
+          ],
         },
         {
-          title: 'أنظمة المراقبة والتسجيل',
-          description: 'حماية على مدار الساعة',
+          title: tSections('mediaEntertainment.services.surveillance.title'),
+          description: tSections(
+            'mediaEntertainment.services.surveillance.description',
+          ),
           icon: Camera,
           image:
             'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['كاميرات CCTV', 'DVR / NVR', 'أنظمة مراقبة ذكية', 'تركيب وصيانة'],
+          points: [
+            tSections('mediaEntertainment.services.surveillance.points.0'),
+            tSections('mediaEntertainment.services.surveillance.points.1'),
+            tSections('mediaEntertainment.services.surveillance.points.2'),
+            tSections('mediaEntertainment.services.surveillance.points.3'),
+          ],
         },
         {
-          title: 'معدات التصوير الفوتوغرافي',
-          description: 'للمحترفين والهواة',
+          title: tSections('mediaEntertainment.services.photoEquipment.title'),
+          description: tSections(
+            'mediaEntertainment.services.photoEquipment.description',
+          ),
           icon: CameraIcon,
           image:
             'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['كاميرات', 'عدسات', 'فلاشات', 'حقائب وحوامل'],
+          points: [
+            tSections('mediaEntertainment.services.photoEquipment.points.0'),
+            tSections('mediaEntertainment.services.photoEquipment.points.1'),
+            tSections('mediaEntertainment.services.photoEquipment.points.2'),
+            tSections('mediaEntertainment.services.photoEquipment.points.3'),
+          ],
         },
         {
-          title: 'معدات التصوير السينمائي',
-          description: 'حلول إنتاج متقدمة',
+          title: tSections('mediaEntertainment.services.cinemaEquipment.title'),
+          description: tSections(
+            'mediaEntertainment.services.cinemaEquipment.description',
+          ),
           icon: Film,
           image:
             'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['كاميرات سينما', 'إضاءة سينمائية', 'ميكروفونات', 'معدات ستوديو'],
+          points: [
+            tSections('mediaEntertainment.services.cinemaEquipment.points.0'),
+            tSections('mediaEntertainment.services.cinemaEquipment.points.1'),
+            tSections('mediaEntertainment.services.cinemaEquipment.points.2'),
+            tSections('mediaEntertainment.services.cinemaEquipment.points.3'),
+          ],
         },
         {
-          title: 'أجهزة ألعاب الفيديو',
-          description: 'أحدث منصات الترفيه',
+          title: tSections('mediaEntertainment.services.gameConsoles.title'),
+          description: tSections(
+            'mediaEntertainment.services.gameConsoles.description',
+          ),
           icon: Gamepad2,
           image:
             'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['بلايستيشن', 'إكس بوكس', 'نينتندو', 'أجهزة VR'],
+          points: [
+            tSections('mediaEntertainment.services.gameConsoles.points.0'),
+            tSections('mediaEntertainment.services.gameConsoles.points.1'),
+            tSections('mediaEntertainment.services.gameConsoles.points.2'),
+            tSections('mediaEntertainment.services.gameConsoles.points.3'),
+          ],
         },
         {
-          title: 'إكسسوارات الألعاب الرقمية',
-          description: 'تجربة لعب متكاملة',
+          title: tSections('mediaEntertainment.services.gamingAccessories.title'),
+          description: tSections(
+            'mediaEntertainment.services.gamingAccessories.description',
+          ),
           icon: Joystick,
           image:
             'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['يد تحكم', 'سماعات', 'شواحن', 'بطاقات رقمية'],
+          points: [
+            tSections('mediaEntertainment.services.gamingAccessories.points.0'),
+            tSections('mediaEntertainment.services.gamingAccessories.points.1'),
+            tSections('mediaEntertainment.services.gamingAccessories.points.2'),
+            tSections('mediaEntertainment.services.gamingAccessories.points.3'),
+          ],
         },
         {
-          title: 'أنظمة المسرح المنزلي',
-          description: 'تجربة سينما في منزلك',
+          title: tSections(
+            'mediaEntertainment.services.homeTheaterSystems.title',
+          ),
+          description: tSections(
+            'mediaEntertainment.services.homeTheaterSystems.description',
+          ),
           icon: Speaker,
           image:
             'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['شاشات كبيرة', 'أنظمة محيطية', 'تركيب احترافي', 'معايرة صوت'],
+          points: [
+            tSections(
+              'mediaEntertainment.services.homeTheaterSystems.points.0',
+            ),
+            tSections(
+              'mediaEntertainment.services.homeTheaterSystems.points.1',
+            ),
+            tSections(
+              'mediaEntertainment.services.homeTheaterSystems.points.2',
+            ),
+            tSections(
+              'mediaEntertainment.services.homeTheaterSystems.points.3',
+            ),
+          ],
         },
         {
-          title: 'شاشات العرض الاحترافية',
-          description: 'حلول عرض للشركات',
+          title: tSections(
+            'mediaEntertainment.services.proDisplayScreens.title',
+          ),
+          description: tSections(
+            'mediaEntertainment.services.proDisplayScreens.description',
+          ),
           icon: Monitor,
           image:
             'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['شاشات LED', 'شاشات اجتماعات', 'شاشات إعلانات', 'صيانة'],
+          points: [
+            tSections(
+              'mediaEntertainment.services.proDisplayScreens.points.0',
+            ),
+            tSections(
+              'mediaEntertainment.services.proDisplayScreens.points.1',
+            ),
+            tSections(
+              'mediaEntertainment.services.proDisplayScreens.points.2',
+            ),
+            tSections(
+              'mediaEntertainment.services.proDisplayScreens.points.3',
+            ),
+          ],
         },
       ],
     },
 
     /* الهواتف والاستهلاكية (8) */
     {
-      title: 'الهواتف والأجهزة الاستهلاكية',
-      subtitle: 'أحدث الأجهزة الذكية والمنزلية',
+      title: tSections('mobilesConsumer.title'),
+      subtitle: tSections('mobilesConsumer.subtitle'),
       bgColor: 'bg-white',
       accentColor: '#d97706',
       services: [
         {
-          title: 'الهواتف المتحركة',
-          description: 'أحدث الإصدارات',
+          title: tSections('mobilesConsumer.services.mobilePhones.title'),
+          description: tSections(
+            'mobilesConsumer.services.mobilePhones.description',
+          ),
           icon: Phone,
           image:
             'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['بيع هواتف', 'توريد للشركات', 'إعداد أنظمة', 'صيانة'],
+          points: [
+            tSections('mobilesConsumer.services.mobilePhones.points.0'),
+            tSections('mobilesConsumer.services.mobilePhones.points.1'),
+            tSections('mobilesConsumer.services.mobilePhones.points.2'),
+            tSections('mobilesConsumer.services.mobilePhones.points.3'),
+          ],
         },
         {
-          title: 'إكسسوارات الهواتف',
-          description: 'حماية وأداء',
+          title: tSections('mobilesConsumer.services.phoneAccessories.title'),
+          description: tSections(
+            'mobilesConsumer.services.phoneAccessories.description',
+          ),
           icon: Headphones,
           image:
             'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['جرابات', 'سماعات', 'شواحن', 'كابلات'],
+          points: [
+            tSections('mobilesConsumer.services.phoneAccessories.points.0'),
+            tSections('mobilesConsumer.services.phoneAccessories.points.1'),
+            tSections('mobilesConsumer.services.phoneAccessories.points.2'),
+            tSections('mobilesConsumer.services.phoneAccessories.points.3'),
+          ],
         },
         {
-          title: 'الأجهزة الكهربائية المنزلية',
-          description: 'جودة عالية للمنزل',
+          title: tSections('mobilesConsumer.services.homeAppliances.title'),
+          description: tSections(
+            'mobilesConsumer.services.homeAppliances.description',
+          ),
           icon: Refrigerator,
           image:
             'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['ثلاجات', 'غسالات', 'مجففات', 'أجهزة صغيرة'],
+          points: [
+            tSections('mobilesConsumer.services.homeAppliances.points.0'),
+            tSections('mobilesConsumer.services.homeAppliances.points.1'),
+            tSections('mobilesConsumer.services.homeAppliances.points.2'),
+            tSections('mobilesConsumer.services.homeAppliances.points.3'),
+          ],
         },
         {
-          title: 'المواقد والأفران والطباخات',
-          description: 'تجهيزات مطابخ متطورة',
+          title: tSections('mobilesConsumer.services.cookersOvens.title'),
+          description: tSections(
+            'mobilesConsumer.services.cookersOvens.description',
+          ),
           icon: CookingPot,
           image:
             'https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['أفران', 'طباخات', 'شفاطات', 'تركيب وصيانة'],
+          points: [
+            tSections('mobilesConsumer.services.cookersOvens.points.0'),
+            tSections('mobilesConsumer.services.cookersOvens.points.1'),
+            tSections('mobilesConsumer.services.cookersOvens.points.2'),
+            tSections('mobilesConsumer.services.cookersOvens.points.3'),
+          ],
         },
         {
-          title: 'الساعات وقطع غيارها',
-          description: 'دقة وأناقة',
+          title: tSections('mobilesConsumer.services.watchesParts.title'),
+          description: tSections(
+            'mobilesConsumer.services.watchesParts.description',
+          ),
           icon: Watch,
           image:
             'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['ساعات رجالي', 'ساعات نسائي', 'بطاريات', 'صيانة دقيقة'],
+          points: [
+            tSections('mobilesConsumer.services.watchesParts.points.0'),
+            tSections('mobilesConsumer.services.watchesParts.points.1'),
+            tSections('mobilesConsumer.services.watchesParts.points.2'),
+            tSections('mobilesConsumer.services.watchesParts.points.3'),
+          ],
         },
         {
-          title: 'الأجهزة القابلة للارتداء',
-          description: 'تقنيات حديثة للصحة',
+          title: tSections('mobilesConsumer.services.wearables.title'),
+          description: tSections(
+            'mobilesConsumer.services.wearables.description',
+          ),
           icon: Watch,
           image:
             'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['ساعات ذكية', 'أساور صحية', 'تتبع نوم', 'تتبع نشاط'],
+          points: [
+            tSections('mobilesConsumer.services.wearables.points.0'),
+            tSections('mobilesConsumer.services.wearables.points.1'),
+            tSections('mobilesConsumer.services.wearables.points.2'),
+            tSections('mobilesConsumer.services.wearables.points.3'),
+          ],
         },
         {
-          title: 'الأجهزة الذكية المنزلية',
-          description: 'راحة وتحكم كامل',
+          title: tSections('mobilesConsumer.services.smartHome.title'),
+          description: tSections(
+            'mobilesConsumer.services.smartHome.description',
+          ),
           icon: Wifi,
           image:
             'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['لمبات ذكية', 'مقابس ذكية', 'تحكم صوتي', 'تطبيقات'],
+          points: [
+            tSections('mobilesConsumer.services.smartHome.points.0'),
+            tSections('mobilesConsumer.services.smartHome.points.1'),
+            tSections('mobilesConsumer.services.smartHome.points.2'),
+            tSections('mobilesConsumer.services.smartHome.points.3'),
+          ],
         },
         {
-          title: 'قطع غيار الهواتف',
-          description: 'قطع أصلية ومضمونة',
+          title: tSections('mobilesConsumer.services.phoneParts.title'),
+          description: tSections(
+            'mobilesConsumer.services.phoneParts.description',
+          ),
           icon: Plug,
           image:
             'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=800&h=600',
-          points: ['شاشات', 'بطاريات', 'سوكت شحن', 'كاميرات'],
+          points: [
+            tSections('mobilesConsumer.services.phoneParts.points.0'),
+            tSections('mobilesConsumer.services.phoneParts.points.1'),
+            tSections('mobilesConsumer.services.phoneParts.points.2'),
+            tSections('mobilesConsumer.services.phoneParts.points.3'),
+          ],
         },
       ],
     },
@@ -497,6 +828,7 @@ export function ServicesPageClient( {locale}: {locale: string} ) {
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
           scrollToSectionId="services-start"
+          allLabel={tFilters('all')}
         />
 
         <AnimatePresence mode="wait">

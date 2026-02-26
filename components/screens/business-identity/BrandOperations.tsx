@@ -10,46 +10,58 @@ import {
   Globe,
   BarChart,
 } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+
 export function BrandOperations() {
+  const t = useTranslations('businessIdentity.operations')
+
+  const communicationPoints = [
+    t('communication.points.0'),
+    t('communication.points.1'),
+    t('communication.points.2'),
+    t('communication.points.3'),
+    t('communication.points.4'),
+  ]
+
   const proveValuePoints = [
     {
       icon: <TrendingUp />,
-      text: 'سرعة تنفيذ محسوبة وليست عشوائية.',
+      text: t('proveValue.points.0'),
       color: '#0D9488',
     },
     {
       icon: <FileText />,
-      text: 'مستندات دقيقة بلا أخطاء ولا تأجيل.',
+      text: t('proveValue.points.1'),
       color: '#7C3AED',
     },
     {
       icon: <Truck />,
-      text: 'شحنات تُتابَع لحظة بلحظة، من المصدر حتى باب العميل.',
+      text: t('proveValue.points.2'),
       color: '#D97706',
     },
     {
       icon: <Globe />,
-      text: 'علاقات دولية قوية تُسهّل الطريق بدل أن تعقّده.',
+      text: t('proveValue.points.3'),
       color: '#DC2626',
     },
     {
       icon: <BarChart />,
-      text: 'تحليل أسعار وأسواق مستمر يضمن أفضل قرار في أفضل توقيت.',
+      text: t('proveValue.points.4'),
       color: '#2563EB',
     },
     {
       icon: <Star />,
-      text: 'حلول مرنة تناسب كل عميل، وكل سوق، وكل حالة.',
+      text: t('proveValue.points.5'),
       color: '#059669',
     },
   ]
   const credibilityPoints = [
-    'عقود واضحة لا تحتمل التأويل.',
-    'فواتير شفافة بلا مفاجآت.',
-    'تحديثات مستمرة في كل مرحلة.',
-    'تنفيذ قابل للقياس، لا يعتمد على الكلام.',
-    'التزام لا يتغير مهما تغيّرت الظروف.',
-    'توثيق كامل لكل خطوة، من أول اتصال حتى آخر توقيع.',
+    t('credibility.points.0'),
+    t('credibility.points.1'),
+    t('credibility.points.2'),
+    t('credibility.points.3'),
+    t('credibility.points.4'),
+    t('credibility.points.5'),
   ]
   return (
     <>
@@ -84,7 +96,7 @@ export function BrandOperations() {
                 }}
               >
                 <MessageCircle className="w-10 h-10" />
-                أسلوب التواصل
+                {t('communication.title')}
               </h2>
 
               {/* Added Side Image */}
@@ -107,17 +119,11 @@ export function BrandOperations() {
                   border: '1px solid rgba(148, 163, 184, 0.6)',
                 }}
               >
-                نحن نتواصل مع العميل بطريقة واحدة فقط:
+                {t('communication.tagline')}
               </p>
 
               <ul className="space-y-4">
-                {[
-                  'نشرح… ولا نبرر.',
-                  'نوضح… ولا نُربك.',
-                  'نخبر… ولا نتركه يتوقع.',
-                  'نقدّم معلومة… لا انطباعًا.',
-                  'نستخدم لغة تحترم عقل العميل… لا تستهلك وقته.',
-                ].map((item, i) => (
+                {communicationPoints.map((item, i) => (
                   <motion.li
                     key={i}
                     initial={{
@@ -153,7 +159,7 @@ export function BrandOperations() {
                   color: '#D97706',
                 }}
               >
-                التواصل عندنا ليس خدمة… بل جزء من الهوية.
+                {t('communication.footer')}
               </p>
             </motion.div>
 
@@ -183,10 +189,10 @@ export function BrandOperations() {
                   color: '#E8D5A3',
                 }}
               >
-                وعد العلامة التجارية
+                {t('brandPromise.title')}
               </h3>
               <p className="text-center text-lg mb-8 opacity-80">
-                نعد العميل بثلاثة أمور لا نتراجع عنها:
+                {t('brandPromise.intro')}
               </p>
 
               <div className="grid gap-6">
@@ -197,7 +203,7 @@ export function BrandOperations() {
                     borderLeft: '3px solid #0D9488',
                   }}
                 >
-                  <span className="text-xl font-bold">معلومة واضحة</span>
+                  <span className="text-xl font-bold">{t('brandPromise.items.0')}</span>
                 </div>
                 <div
                   className="p-4 rounded-lg text-center backdrop-blur-sm"
@@ -206,7 +212,7 @@ export function BrandOperations() {
                     borderLeft: '3px solid #D97706',
                   }}
                 >
-                  <span className="text-xl font-bold">تنفيذ دقيق</span>
+                  <span className="text-xl font-bold">{t('brandPromise.items.1')}</span>
                 </div>
                 <div
                   className="p-4 rounded-lg text-center backdrop-blur-sm"
@@ -215,14 +221,13 @@ export function BrandOperations() {
                     borderLeft: '3px solid #7C3AED',
                   }}
                 >
-                  <span className="text-xl font-bold">تجربة تعامل تُحترم</span>
+                  <span className="text-xl font-bold">{t('brandPromise.items.2')}</span>
                 </div>
               </div>
 
-              <p className="mt-8 text-center text-sm opacity-60">
-                هذا الوعد هو معيارنا… وهو ما نحاسب أنفسنا عليه قبل أن يحاسبنا
-                العميل.
-              </p>
+                <p className="mt-8 text-center text-sm opacity-60">
+                  {t('brandPromise.footer')}
+                </p>
             </motion.div>
           </div>
         </div>
@@ -254,7 +259,7 @@ export function BrandOperations() {
                   border: '1px solid rgba(15, 118, 110, 0.5)',
                 }}
               >
-                كيف نثبت قيمتنا؟
+                {t('proveValue.title')}
               </motion.h2>
 
               {/* Added Image */}
@@ -277,7 +282,7 @@ export function BrandOperations() {
                   border: '1px solid rgba(34, 197, 94, 0.35)',
                 }}
               >
-                نثبت قيمتنا بالفعل لا بالكلام، وبالنتيجة لا بالوعود:
+                {t('proveValue.intro')}
               </p>
 
               <div className="space-y-6">
@@ -320,7 +325,7 @@ export function BrandOperations() {
                 }}
               >
                 <p className="text-xl font-light italic text-brand-navy">
-                  نحن لا نقول "نحن الأفضل"… نحن نترك النتائج تقول ذلك.
+                  {t('proveValue.quote')}
                 </p>
               </div>
             </div>
@@ -347,7 +352,7 @@ export function BrandOperations() {
                   border: '1px solid rgba(15, 23, 42, 0.45)',
                 }}
               >
-                كيف نُظهر مصداقيتنا؟
+                {t('credibility.title')}
               </motion.h2>
 
               {/* Added Decorative Image */}
@@ -370,7 +375,7 @@ export function BrandOperations() {
                   border: '1px solid rgba(234, 179, 8, 0.4)',
                 }}
               >
-                المصداقية ليست خيارًا… هي جزء من نظام التشغيل:
+                {t('credibility.intro')}
               </p>
 
               <div className="space-y-4">

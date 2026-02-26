@@ -1,10 +1,9 @@
 "use client";
 
-import Button from "@/components/button";
 import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/utils/cn";
 import { useLocale, useTranslations } from "next-intl";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo  } from "react";
 import LocaleSwitcher from "../locale-switcher";
 import Logo from "../logo";
 import MobileNavbar from "./mobile-nav";
@@ -54,7 +53,7 @@ export default function Navbar() {
         "shadow-lg shadow-black/20",
         "transition-all duration-300 ease-in-out",
         "w-full top-0 rounded-none fixed",
-        'px-4 py-4'
+        'px-[5%] py-4'
       )}
       role="navigation"
       aria-label="Main navigation"

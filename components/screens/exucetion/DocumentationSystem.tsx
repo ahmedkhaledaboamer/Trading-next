@@ -5,7 +5,8 @@ import {
   ArchiveIcon,
   FileBarChartIcon,
 } from 'lucide-react'
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
+
 const featureBgColors = [
   'bg-emerald-600 border-emerald-400',
   'bg-sky-600 border-sky-400',
@@ -14,54 +15,46 @@ const featureBgColors = [
   'bg-lime-600 border-lime-400',
 ]
 
-const features = [
-  {
-    icon: FileTextIcon,
-    text: 'تسجيل الطلب إلكترونياً',
-  },
-  {
-    icon: SaveIcon,
-    text: 'حفظ المستندات بشكل آمن',
-  },
-  {
-    icon: ActivityIcon,
-    text: 'متابعة مراحل التنفيذ لحظياً',
-  },
-  {
-    icon: ArchiveIcon,
-    text: 'أرشفة الفواتير والشحنات',
-  },
-  {
-    icon: FileBarChartIcon,
-    text: 'تقارير حالة الطلب الدورية',
-  },
-]
+const featureIcons = [
+  FileTextIcon,
+  SaveIcon,
+  ActivityIcon,
+  ArchiveIcon,
+  FileBarChartIcon,
+] as const
+
 export async function DocumentationSystem() {
   const locale = await getLocale();
   const isRTL = locale === "ar";
+  const t = await getTranslations("execution.documentation");
+  const features = t.raw("features") as { text: string }[];
   return (
     <section className="bg-white text-gray-700 overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
       <div className="flex flex-col lg:flex-row">
         {/* Content Side */}
         <div className="lg:w-1/2 pt-[5%] pr-[2%] pb-[5%] pl-[5%] flex flex-col justify-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center lg:text-left text-slate-800 bg-slate-200 border-2 border-slate-500 rounded-xl px-6 py-4 w-fit mx-auto lg:mx-0">نظام التوثيق والمتابعة</h2>
+          <h2 className="text-2xl md:text-4xl font-bold mb-8 text-center lg:text-left text-slate-800 bg-slate-200 border-2 border-slate-500 rounded-xl px-6 py-4 w-fit mx-auto lg:mx-0">
+            {t("title")}
+          </h2>
           <p className="text-blue-900 mb-12 text-l md:text-lg text-center xl:text-start bg-blue-100 border-2 border-blue-400 rounded-lg px-6 py-4 w-fit">
-            كل خطوة في العملية يتم توثيقها داخل نظام تشغيل إلكتروني متكامل يضمن
-            الشفافية الكاملة.
+            {t("subtitle")}
           </p>
 
           <div className="space-y-6">
-            {features.map((feature, idx) => (
-              <div
-                key={idx}
-                className={`flex items-center gap-4 p-4 rounded-lg transition-colors border text-white ${featureBgColors[idx % featureBgColors.length]}`}
-              >
-                <div className="text-white">
-                  <feature.icon className="w-6 h-6" />
+            {features.map((feature, idx) => {
+              const Icon = featureIcons[idx]
+              return (
+                <div
+                  key={idx}
+                  className={`flex items-center gap-4 p-4 rounded-lg transition-colors border text-white ${featureBgColors[idx % featureBgColors.length]}`}
+                >
+                  <div className="text-white">
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <span className="text-2xl font-medium">{feature.text}</span>
                 </div>
-                <span className="text-2xl font-medium">{feature.text}</span>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
 

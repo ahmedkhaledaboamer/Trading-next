@@ -4,6 +4,8 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar/navbar";
 import { ScrollToTop } from "@/components/ScrollToTop";
 
+
+
 export default async function LocaleLayout({
   children,
   params,

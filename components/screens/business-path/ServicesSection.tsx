@@ -1,5 +1,5 @@
- 'use client'
- import { motion } from 'framer-motion'
+'use client'
+import { motion } from 'framer-motion'
 import {
   Globe,
   Truck,
@@ -13,73 +13,77 @@ import {
   Wifi,
 } from 'lucide-react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+
 export function ServicesSection() {
+  const t = useTranslations('businessPath.servicesSection')
+
   const services = [
     {
-      name: 'استيراد دولي',
+      name: t('services.import'),
       icon: <Globe />,
       color: 'bg-blue-500',
       image:
         'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=300&q=80',
     },
     {
-      name: 'توزيع محلي',
+      name: t('services.localDistribution'),
       icon: <Truck />,
       color: 'bg-green-500',
       image:
         'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=300&q=80',
     },
     {
-      name: 'توسع خارجي',
+      name: t('services.externalExpansion'),
       icon: <TrendingUp />,
       color: 'bg-purple-500',
       image:
         'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=300&q=80',
     },
     {
-      name: 'أجهزة إلكترونية',
+      name: t('services.electronics'),
       icon: <Monitor />,
       color: 'bg-indigo-500',
       image:
         'https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&q=80',
     },
     {
-      name: 'أجهزة منزلية',
+      name: t('services.homeAppliances'),
       icon: <Home />,
       color: 'bg-orange-500',
       image:
         'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&q=80',
     },
     {
-      name: 'هواتف ذكية',
+      name: t('services.smartphones'),
       icon: <Smartphone />,
       color: 'bg-teal-500',
       image:
         'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300&q=80',
     },
     {
-      name: 'ترفيه رقمي',
+      name: t('services.digitalEntertainment'),
       icon: <Gamepad2 />,
       color: 'bg-pink-500',
       image:
         'https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=300&q=80',
     },
     {
-      name: 'سمعيات ومرئيات',
+      name: t('services.audioVisual'),
       icon: <Headphones />,
       color: 'bg-red-500',
       image:
         'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&q=80',
     },
     {
-      name: 'قطع غيار',
+      name: t('services.spareParts'),
       icon: <Wrench />,
       color: 'bg-gray-600',
       image:
         'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=300&q=80',
     },
     {
-      name: 'شبكات واتصالات',
+      name: t('services.networks'),
       icon: <Wifi />,
       color: 'bg-cyan-500',
       image:
@@ -91,11 +95,11 @@ export function ServicesSection() {
       <div className=" p-[5%]">
         <div className="text-center mb-16">
           <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-[#0A1628] mb-4">
-            خدماتنا المتكاملة
+            {t('title')}
           </h2>
           <div className="w-24 h-1 bg-[#D4A853] mx-auto rounded-full mb-6" />
           <p className="text-lg md:text-xl lg:text-2xl xl:text-4xl text-gray-600  ">
-            كل خدمة مصممة لتمنحك سهولة، جودة، وثقة في كل خطوة
+            {t('subtitle')}
           </p>
         </div>
 
