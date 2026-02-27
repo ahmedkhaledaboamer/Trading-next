@@ -11,7 +11,7 @@ export default async function ExecutionHero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920&q=80')",
+            "url('/images/execution/001.webp')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80" />

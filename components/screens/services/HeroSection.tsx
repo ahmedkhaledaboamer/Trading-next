@@ -18,8 +18,8 @@ export function HeroSection() {
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920&h=1080"
+        <Image 
+          src="/images/services/1.webp"
           alt="خلفية تجارية"
           className="w-full h-full object-cover"
           width={1920}

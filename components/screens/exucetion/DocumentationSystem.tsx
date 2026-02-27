@@ -64,7 +64,7 @@ export async function DocumentationSystem() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=80')",
+                "url('/images/execution/007.webp')",
             }}
           />
           <div className="absolute inset-0 bg-[#0A1628]/60" />

@@ -59,13 +59,13 @@ export async function WorkflowProcess() {
   const t = await getTranslations("execution.workflow");
   const steps = t.raw("steps") as { title: string; desc: string }[];
   return (
-    <section className="relative py-24 overflow-hidden bg-black/70" dir={isRTL ? "rtl" : "ltr"}>
+    <section className="relative py-24 overflow-hidden bg-black" dir={isRTL ? "rtl" : "ltr"}>
       {/* Background Image with Fixed Attachment */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+            "url('/images/execution/004.webp')",
         }}
       />
 

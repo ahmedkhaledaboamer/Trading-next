@@ -27,7 +27,7 @@ export async function ContactChannels() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80')",
+                "url('/images/execution/003.webp')",
             }}
           />
           <div className="absolute inset-0 bg-blue-900/40 mix-blend-multiply" />

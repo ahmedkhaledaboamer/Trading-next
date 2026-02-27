@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { PostDeliveryProgress } from './PostDeliveryProgress'
 import { getLocale, getTranslations } from 'next-intl/server';
 
@@ -11,7 +12,7 @@ export async function PostDelivery() {
         className="absolute inset-0 bg-cover bg-center bg-fixed opacity-20"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+            "url('/images/execution/008.webp')",
         }}
       />
       <div className="mx-auto">
@@ -19,10 +20,12 @@ export async function PostDelivery() {
           {/* Image Side */}
           <div className="lg:w-1/2 w-full relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
-              <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+              <Image
+                src="/images/execution/008.webp"
                 alt="Customer Satisfaction"
-                className="w-full h-auto object-cover brightness-90"
+                     className="w-full h-[60vh] md:h-[75vh] lg:h-[80vh] xl:h-[75vh] 2xl:h-[70vh] object-cover"
+                width={1000}
+                height={800}
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#C9A84C]/20 to-transparent" />
             </div>
