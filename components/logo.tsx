@@ -11,7 +11,7 @@ export default function Logo({ className, href = "/", size = 100 }: LogoProps) {
   return (
     <Link href={href} className={className}>
       <Image
-        src="/images/Logo.png"
+        src="/images/KIB_Logo.png"
         alt="Logo"
         sizes={`(max-width: 768px) ${size / 2}px, ${size}px`}
         width={size}

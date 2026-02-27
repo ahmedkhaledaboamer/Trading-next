@@ -36,7 +36,7 @@ export async function EscalationPath() {
               <Image
                 src="/images/execution/005.webp"
                 alt="Professional Team"
-               className="w-full h-[60vh] md:h-[75vh] lg:h-[80vh] xl:h-[75vh] 2xl:h-[70vh] object-cover"
+                className="w-full h-[60vh] md:h-[75vh] lg:h-[80vh] xl:h-[75vh] 2xl:h-[70vh] object-cover"
                 
                 width={1000}
                 height={800}
@@ -62,7 +62,7 @@ export async function EscalationPath() {
               {steps.map((step, index) => {
                 const Icon = stepIcons[index]
                 const margin =
-                  index === 0 ? "" : index === 1 ? "md:ml-8" : index === 2 ? "md:ml-16" : "md:ml-24"
+                  index === 0 ? "" : index === 1 ? (!isRTL ? "md:mr-8" : "md:ml-8") : index === 2 ? (!isRTL ? "md:mr-16" : "md:ml-16") : (!isRTL ? "md:mr-24" : "md:ml-24")
                 const extraBorder =
                   index === steps.length - 1 ? " border-r-4 border-r-[#C9A84C]" : ""
                 return (

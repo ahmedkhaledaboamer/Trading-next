@@ -1,4 +1,4 @@
-import { ArrowLeftIcon } from 'lucide-react'
+import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react'
 import Link from 'next/link'
 import { getLocale, getTranslations } from 'next-intl/server';
 
@@ -34,7 +34,7 @@ export async function ClosingStatement() {
 
         <Link href="tel:+0000000000" className="group bg-[#C9A84C] text-white px-10 py-4 rounded-full font-bold text-base md:text-lg hover:bg-[#b08d35] transition-all flex items-center gap-3 mx-auto w-fit">
           <span>{t("cta")}</span>
-          <ArrowLeftIcon className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+          {isRTL ? <ArrowLeftIcon className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> : <ArrowRightIcon className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />}
         </Link>
       </div>
     </section>

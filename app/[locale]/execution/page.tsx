@@ -25,7 +25,7 @@ export async function generateMetadata({
 
 export default function ExecutionPage() {
   return (
-    < >
+    <>
       <ExecutionHero />
       <DepartmentOrg />
       <ContactChannels />
