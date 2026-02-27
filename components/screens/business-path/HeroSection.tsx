@@ -13,7 +13,7 @@ export function HeroSection({locale}: {locale: string}) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/image_2710.webp"
+          src="/images/0011.webp"
           alt="Global Trade Background"
           width={1920}
           height={1080}

@@ -13,7 +13,7 @@ import OperationalLeadershipSection from "@/components/screens/home/operational-
 import SuppliersNetworkSection from "@/components/screens/home/suppliers-network-section";
 import WorkMethodologySection from "@/components/screens/home/work-methodology-section";
 import PowerIndicatorsSection from "@/components/screens/home/power-indicators-section";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
   params,
@@ -30,15 +30,16 @@ export async function generateMetadata({
 }
 
 export default async function Page() {
+  const locale = await getLocale();
   return (
     <main>CommercialProtectionSection
       <Header />
       <BusinessEntitySection />
       <CommercialInfluenceSection />
-      <PowerIndicatorsSection />
+      <PowerIndicatorsSection locale={locale} />
       {/* <CommercialLeadershipPlatformSection /> */}
-      <CommercialProtectionSection />
-      <CommercialDomainsSection />
+      <CommercialProtectionSection locale={locale} />
+      <CommercialDomainsSection locale={locale} />
       <SuppliersNetworkSection />
       <DigitalTransformationSection />
       <EcommerceUnitSection />

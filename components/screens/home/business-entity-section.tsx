@@ -137,7 +137,7 @@ export default async function BusinessEntitySection() {
                   )}
                 >
                   <Image
-                    src="/images/40.webp"
+                    src="/images/0014.webp"
                     alt={t("imageAlt")}
                     width={900}
                     height={600}

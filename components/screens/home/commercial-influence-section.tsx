@@ -6,7 +6,7 @@ import Image from "next/image";
 type PillarData = { title: string; description: string; imageAlt: string };
 const pillarIds = ["operational", "market", "strategic"] as const;
 const pillarIcons: LucideIcon[] = [Cog, Globe2, Target];
-const pillarImages = ["/images/23.webp", "/images/24.webp", "/images/25.webp"];
+const pillarImages = ["/images/image_2710.webp", "/images/image_2659.webp", "/images/22.webp"];
 
 const pillarTitleColors = [
   "text-emerald-500",

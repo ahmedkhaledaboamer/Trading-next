@@ -26,14 +26,15 @@ const indicatorColors = [
   "bg-amber-500",
 ];
 
-export default function PowerIndicatorsSection() {
+export default function PowerIndicatorsSection({ locale }: { locale: string }) {
+  const isRTL = locale === "ar";
   const t = useTranslations("home.powerIndicators");
   const items = t.raw("items") as string[];
 
   return (
     <section
       className="py-20 md:py-28 bg-[#1A1A2E] relative overflow-hidden"
-      dir="rtl"
+      dir={isRTL ? "rtl" : "ltr"}
     >
       {/* Subtle background texture */}
       <div

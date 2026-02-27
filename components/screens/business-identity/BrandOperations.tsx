@@ -11,10 +11,11 @@ import {
   BarChart,
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
-export function BrandOperations() {
+export function BrandOperations({locale}: {locale: string}) {
+  const isRTL = locale === "ar";
   const t = useTranslations('businessIdentity.operations')
-
   const communicationPoints = [
     t('communication.points.0'),
     t('communication.points.1'),
@@ -68,7 +69,7 @@ export function BrandOperations() {
       
 
       {/* Communication Style */}
-      <section className="p-[5%] bg-brand-cream">
+      <section className="p-[5%] bg-brand-cream" dir={isRTL ? "rtl" : "ltr"}>
         <div className=" ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -85,7 +86,7 @@ export function BrandOperations() {
               }}
             >
               <h2
-                className="text-lg md:text-xl lg:text-3xl 2xl:text-6xl font-bold mb-6 flex items-center gap-4"
+                className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold mb-6 flex items-center gap-4"
                 style={{
                   background: '#0A1628',
                   color: '#C8A45C',
@@ -101,15 +102,17 @@ export function BrandOperations() {
 
               {/* Added Side Image */}
               <div className="mb-8 rounded-lg overflow-hidden shadow-md">
-                <img
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800"
+                <Image
+                  src="/images/image_2688.webp"
                   alt="Communication"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-150 object-cover"
+                  width={800}
+                  height={800}
                 />
               </div>
 
               <p
-                className="text-xl text-brand-dark/80 mb-8 inline-block"
+                className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-brand-dark/80 mb-8 inline-block"
                 style={{
                   background:
                     'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(15, 23, 42, 0.08))',
@@ -140,7 +143,7 @@ export function BrandOperations() {
                     transition={{
                       delay: i * 0.1,
                     }}
-                    className="flex items-center gap-3 text-lg font-medium text-brand-navy"
+                    className="flex items-center gap-3 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium text-brand-navy"
                   >
                     <span
                       className="w-2 h-2 rounded-full"
@@ -154,7 +157,7 @@ export function BrandOperations() {
               </ul>
 
               <p
-                className="mt-8 text-2xl font-bold"
+                className="mt-8 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold"
                 style={{
                   color: '#D97706',
                 }}
@@ -184,14 +187,14 @@ export function BrandOperations() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
 
               <h3
-                className="text-3xl font-bold mb-8 text-center"
+                className="text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold mb-8 text-center"
                 style={{
                   color: '#E8D5A3',
                 }}
               >
                 {t('brandPromise.title')}
               </h3>
-              <p className="text-center text-lg mb-8 opacity-80">
+              <p className="text-center text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mb-8 opacity-80">
                 {t('brandPromise.intro')}
               </p>
 
@@ -203,7 +206,7 @@ export function BrandOperations() {
                     borderLeft: '3px solid #0D9488',
                   }}
                 >
-                  <span className="text-xl font-bold">{t('brandPromise.items.0')}</span>
+                  <span className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold">{t('brandPromise.items.0')}</span>
                 </div>
                 <div
                   className="p-4 rounded-lg text-center backdrop-blur-sm"
@@ -212,7 +215,7 @@ export function BrandOperations() {
                     borderLeft: '3px solid #D97706',
                   }}
                 >
-                  <span className="text-xl font-bold">{t('brandPromise.items.1')}</span>
+                  <span className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold">{t('brandPromise.items.1')}</span>
                 </div>
                 <div
                   className="p-4 rounded-lg text-center backdrop-blur-sm"
@@ -221,11 +224,11 @@ export function BrandOperations() {
                     borderLeft: '3px solid #7C3AED',
                   }}
                 >
-                  <span className="text-xl font-bold">{t('brandPromise.items.2')}</span>
+                  <span className="text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold">{t('brandPromise.items.2')}</span>
                 </div>
               </div>
 
-                <p className="mt-8 text-center text-sm opacity-60">
+                <p className="mt-8 text-center text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl opacity-60">
                   {t('brandPromise.footer')}
                 </p>
             </motion.div>
@@ -234,7 +237,7 @@ export function BrandOperations() {
       </section>
 
       {/* Prove Value & Credibility - Converted to Light */}
-      <section className="p-[5%] bg-white text-brand-navy">
+      <section className="p-[5%] bg-white text-brand-navy" dir={isRTL ? "rtl" : "ltr"}>
         <div className=" ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Prove Value */}
@@ -249,7 +252,7 @@ export function BrandOperations() {
                 viewport={{
                   once: true,
                 }}
-                className="text-3xl md:text-4xl font-bold mb-8 inline-block"
+                className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-8 inline-block"
                 style={{
                   background:
                     'linear-gradient(135deg, #0F172A 0%, #334155 45%, #0D9488 100%)',
@@ -264,15 +267,17 @@ export function BrandOperations() {
 
               {/* Added Image */}
               <div className="mb-8 rounded-lg overflow-hidden shadow-lg border border-gray-100">
-                <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800"
+                <Image
+                  src="/images/image_2595.webp"
                   alt="Logistics Warehouse"
-                  className="w-full h-48 object-cover"
+                  className="w-full h-150 object-cover"
+                  width={800}
+                  height={800}
                 />
               </div>
 
               <p
-                className="text-lg mb-8 text-brand-dark/80 inline-block"
+                className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mb-8 text-brand-dark/80 inline-block"
                 style={{
                   background:
                     'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(22, 163, 74, 0.08))',
@@ -313,18 +318,20 @@ export function BrandOperations() {
                     >
                       {point.icon}
                     </div>
-                    <p className="text-lg text-brand-dark/90">{point.text}</p>
+                    <p className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-brand-dark/90">{point.text}</p>
                   </motion.div>
                 ))}
               </div>
 
               <div
                 className="mt-10 p-6 rounded-l-lg bg-brand-cream/50"
-                style={{
+                style={ !isRTL ? {
+                  borderLeft: '4px solid #C8A45C',
+                } : {
                   borderRight: '4px solid #C8A45C',
                 }}
               >
-                <p className="text-xl font-light italic text-brand-navy">
+                <p className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-light italic text-brand-navy">
                   {t('proveValue.quote')}
                 </p>
               </div>
@@ -342,7 +349,7 @@ export function BrandOperations() {
                 viewport={{
                   once: true,
                 }}
-                className="text-3xl md:text-4xl font-bold mb-8 text-brand-navy inline-block"
+                className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-8 text-brand-navy inline-block"
                 style={{
                   background:
                     'linear-gradient(90deg, #C8A45C 0%, #0A1628 70%, transparent 100%)',
@@ -356,16 +363,18 @@ export function BrandOperations() {
               </motion.h2>
 
               {/* Added Decorative Image */}
-              <div className="mb-8 rounded-lg overflow-hidden h-40">
-                <img
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600"
+              <div className="mb-8 rounded-lg overflow-hidden h-150">
+                <Image
+                  src="/images/image_2654.webp"
                   alt="Contracts"
-                  className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
+                  className="w-full h-150 object-cover opacity-80 hover:opacity-100 transition-opacity"
+                  width={800}
+                  height={800}
                 />
               </div>
 
               <p
-                className="text-lg mb-8 font-medium inline-block"
+                className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mb-8 font-medium inline-block"
                 style={{
                   background:
                     'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.9))',
@@ -406,7 +415,7 @@ export function BrandOperations() {
                     >
                       <Check className="w-4 h-4 text-white" />
                     </div>
-                    <span className="text-lg text-brand-navy">{point}</span>
+                    <span className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-brand-navy">{point}</span>
                   </motion.div>
                 ))}
               </div>

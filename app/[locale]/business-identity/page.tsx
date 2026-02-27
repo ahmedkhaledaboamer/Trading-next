@@ -31,8 +31,8 @@ export default async function BusinessIdentityPage() {
       <HeroSection />
       <BrandIntro locale={locale} />
       <BrandStatement locale={locale} />
-      <BrandOperations />
-      <BrandPartner />
+      <BrandOperations locale={locale}/>
+      <BrandPartner locale={locale}/>
       <BrandConclusion />
     </>
   );

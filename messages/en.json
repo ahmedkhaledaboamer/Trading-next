@@ -1,4 +1,10 @@
 {
+    "notFound": {
+        "title": "Page not found",
+        "description": "The page you are looking for doesn't exist or may have been moved. Try going back to the homepage.",
+        "cta": "Back to homepage",
+        "badge": "Not Found"
+    },
     "page": {
         "title": "Home Page"
     },
@@ -29,27 +35,27 @@
     },
     "pages": {
         "home": {
-            "title": "Home | KEP for Trade",
-            "description": "Discover KEP for Trade, a sovereign commercial hub managing supply and distribution across global markets."
+            "title": "Home | KIB for Trade",
+            "description": "Discover KIB for Trade, a sovereign commercial hub managing supply and distribution across global markets."
         },
         "execution": {
-            "title": "Execution | KEP for Trade",
+            "title": "Execution | KIB for Trade",
             "description": "We provide comprehensive legal execution services."
         },
         "services": {
-            "title": "Services | KEP for Trade",
+            "title": "Services | KIB for Trade",
             "description": "Explore our premium legal services."
         },
         "businessPath": {
-            "title": "Business Path | KEP for Trade",
+            "title": "Business Path | KIB for Trade",
             "description": "Your guide to building a successful business path."
         },
         "businessIdentity": {
-            "title": "Business Identity | KEP for Trade",
+            "title": "Business Identity | KIB for Trade",
             "description": "We help you build your business identity."
         },
         "about": {
-            "title": "About Us | KEP for Trade",
+            "title": "About Us | KIB for Trade",
             "description": "Learn about our team, vision and mission."
         }
     },
@@ -60,9 +66,9 @@
     "header": {
         "title": "Premium Legal Counsel",
         "subtitle": "Trusted Legal Expertise with a Gold‑Standard",
-        "companyName": "KEP for Trade L.L.C",
+        "companyName": "KIB for Trade L.L.C",
         "tagline": "The Hub of Commercial Power… and the Platform of Influence in Global Supply Chains",
-        "paragraph1": "In a world where trade moves faster and competition grows fiercer, one entity stands out with vision, insight, and the ability to execute. KEP for Trade is not just a company… it is a sovereign commercial hub managing supply and distribution operations across multiple markets, controlling trade flows from source to customer.",
+        "paragraph1": "In a world where trade moves faster and competition grows fiercer, one entity stands out with vision, insight, and the ability to execute. KIB for Trade is not just a company… it is a sovereign commercial hub managing supply and distribution operations across multiple markets, controlling trade flows from source to customer.",
         "paragraph2": "We build influence through global supply networks, solid relationships, and hands-on experience that gives our clients access to high-quality products, competitive prices, and precise operations.",
         "ctaBusinessPath": "Your Business Path",
         "cta": {
@@ -74,7 +80,7 @@
         "businessEntity": {
             "badge": "The Business Entity",
             "heading": "An integrated system that manages trade with high professionalism",
-            "description": "KEP for Trade operates under an advanced operational model that combines strategic vision with precise execution to ensure market leadership.",
+            "description": "KIB for Trade operates under an advanced operational model that combines strategic vision with precise execution to ensure market leadership.",
             "features": [
                 {"title": "Power of the Hub"},
                 {"title": "Clarity of Vision"},
@@ -86,7 +92,7 @@
         },
         "commercialInfluence": {
             "title": "Structure of Commercial Influence",
-            "subtitle": "The power structure within KEP for Trade rests on three main pillars that give us market depth and high control capability.",
+            "subtitle": "The power structure within KIB for Trade rests on three main pillars that give us market depth and high control capability.",
             "pillars": [
                 {"title": "Operational Influence", "description": "Full control of supply chains from source to customer, with a fast-response operational structure.", "imageAlt": "Team managing operational processes in an office environment"},
                 {"title": "Market Influence", "description": "Strong presence in multiple markets gives the company high negotiating power and impact on demand flows.", "imageAlt": "City skyline and markets representing market influence"},
@@ -132,7 +138,7 @@
         "digitalTransformation": {
             "title": "Digital Transformation Unit",
             "subtitle": "A specialized unit developing digital infrastructure to ensure speed, accuracy, and transparency in every operational process.",
-            "imageAlt": "Digital transformation unit at KEP for Trade",
+            "imageAlt": "Digital transformation unit at KIB for Trade",
             "tasksTitle": "Unit Tasks",
             "tasks": ["Digitizing supply and distribution operations", "Developing shipment tracking systems", "Building real-time operational dashboards", "Improving customer experience through digital solutions", "Using AI in market analysis"],
             "goalsTitle": "Unit Goals",
@@ -148,7 +154,7 @@
         },
         "franchiseUnit": {
             "title": "Franchise Unit",
-            "subtitle": "A specialized unit for granting commercial franchise for brands managed by KEP for Trade, according to clear operational standards.",
+            "subtitle": "A specialized unit for granting commercial franchise for brands managed by KIB for Trade, according to clear operational standards.",
             "benefitsTitle": "Franchise Benefits",
             "benefits": ["Rapid brand expansion", "Reducing operational risks for the company", "Increasing market share through partners", "Supporting partners with a ready operational system", "Achieving steady revenue streams"],
             "tasksTitle": "Unit Tasks",
@@ -193,14 +199,14 @@
     },
     "businessIdentity": {
       "hero": {
-        "companyName": "KEP for Trade",
+        "companyName": "KIB for Trade",
         "title": "Business Identity",
-        "description": "At KEP for Trade we do not see business identity as just a logo or colours—it is a framework that shapes how we think, make decisions, and deal with clients and partners. It reflects the quality standards we commit to, the way we express our values, and how we deliver a consistent experience that reflects our professionalism in every interaction and service.",
+        "description": "At KIB for Trade we do not see business identity as just a logo or colours—it is a framework that shapes how we think, make decisions, and deal with clients and partners. It reflects the quality standards we commit to, the way we express our values, and how we deliver a consistent experience that reflects our professionalism in every interaction and service.",
         "discoverMore": "Discover more"
       },
       "intro": {
         "sectionTitle": "Introduction",
-        "p1": "At KEP for Trade we chose to write who we are in a way that resembles no one else, because we simply do not work like anyone else.",
+        "p1": "At KIB for Trade we chose to write who we are in a way that resembles no one else, because we simply do not work like anyone else.",
         "p2": "We are not a company that repeats what others say, we do not use the same phrases on every website, and we are not looking for polished words as much as we are looking for truth told as it is.",
         "p3": "We define ourselves by the way we work:",
         "p4": "With clarity that does not hide behind words, with strength that shows in execution before it is read on the page, and with an operational approach that makes the client feel they are dealing with an entity that knows what it does, why it does it, and how it does it.",
@@ -218,7 +224,7 @@
         }
       },
       "statement": {
-        "heading": "KEP for Trade Statement",
+        "heading": "KIB for Trade Statement",
         "subheading": "This statement is not a formal text… it is a clear declaration of how we work",
         "bullets": [
           "We commit before we promise.",
@@ -228,7 +234,7 @@
         ],
         "paragraph": "We do not only sell products… we build trust, create relationships, and deliver an experience that proves itself over time and leaves an impact that makes the client return because they want to, not because they have to.",
         "dictionary": {
-          "title": "KEP Dictionary",
+          "title": "KIB Dictionary",
           "subtitle": "This dictionary is not words… it is a work philosophy",
           "terms": {
             "supply": {
@@ -266,7 +272,7 @@
           }
         },
         "values": {
-          "title": "KEP for Trade Values",
+          "title": "KIB for Trade Values",
           "subtitle": "Our values are not slogans… they are operating rules we do not cross",
           "items": {
             "clarity": {
@@ -359,7 +365,7 @@
         "footer": "For us, difference is not a style… it is an operating system."
       },
       "conclusion": {
-        "brandNamePrefix": "KEP",
+        "brandNamePrefix": "KIB",
         "brandNameHighlight": "for Trade",
         "tagline": "Not just a company… it is a way of dealing, a way of thinking, and a quality standard.",
         "leadIn": "This is an identity written with clarity, strength and confidence… to say to the client:",
@@ -387,7 +393,7 @@
     "services": {
         "hero": {
             "badge": "Your first partner in trade and technology",
-            "title": "KEP for Trade",
+            "title": "KIB for Trade",
             "titleSuffix": "L.L.C",
             "description": "We offer a wide range of commercial and technology services that meet the needs of companies and individuals, with a full commitment to quality, professionalism and global standards.",
             "cta": "Explore our services"
@@ -889,7 +895,7 @@
     "businessPath": {
         "hero": {
             "badge": "Your trusted business path",
-            "title1": "KEP",
+            "title1": "KIB",
             "title2": " for Trade",
             "title3": " L.L.C",
             "subtitle": "Your commercial partner that opens the doors of markets with confidence, quality and stability. In a world where trade is accelerating, we are your compass to success.",
@@ -935,7 +941,7 @@
             }
         },
         "whyKEP": {
-            "title": "Why KEP for Trade?",
+            "title": "Why KIB for Trade?",
             "overlayText": "A complete team at your service",
             "features": {
                 "care": "Genuine care",
@@ -1140,10 +1146,10 @@
     },
     "execution": {
         "hero": {
-            "title": "KEP for Trade",
+            "title": "KIB for Trade",
             "subtitle": "Communication execution mechanism — a clear communication system that ensures a professional experience",
             "p1": "We believe that the success of the business process starts with clarity of roles, speed of response, and accuracy of execution.",
-            "p2": "At KEP for Trade we build a clear operational communication system that ensures smooth work between all parties, from defining roles and communication paths to speed of response and accuracy of information transfer. Because the success of business operations depends not only on planning, but on organised execution based on clarity of responsibilities and team integration, achieving a professional experience and measurable results."
+            "p2": "At KIB for Trade we build a clear operational communication system that ensures smooth work between all parties, from defining roles and communication paths to speed of response and accuracy of information transfer. Because the success of business operations depends not only on planning, but on organised execution based on clarity of responsibilities and team integration, achieving a professional experience and measurable results."
         },
         "departmentOrg": {
             "title": "Commercial positions and their roles",
@@ -1474,49 +1480,8 @@
         }
         ]
     },
-        "ourGroup": {
-            "title": "Our Group",
-            "entities": [
-                {
-                    "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla for Legal Consultations",
-                    "href": "#"
-                },
-                {
-                    "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla for General Consultations",
-                    "href": "#"
-                },
-                {
-                    "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla for Artificial Intelligence and Research",
-                    "href": "#"
-                },
-                {
-                    "name": "Al Sarh Al Shamekh for Maritime Shipping Lines Agency",
-                    "href": "#"
-                },
-                {
-                    "name": "84 Star Capital for Real Estate Investment",
-                    "href": "#"
-                },
-                {
-                    "name": "KIB for Claims Settlement Services",
-                    "href": "#"
-                },
-                {
-                    "name": "KIB for Businessmen Services",
-                    "href": "#"
-                },
-                {
-                    "name": "KIB for Finance",
-                    "href": "#"
-                },
-                {
-                    "name": "KIB for Trade",
-                    "href": "#"
-                }
-            ]
-        },
-        "description": "Delivering legal excellence with gold standards throughout the United Arab Emirates with an unwavering commitment to the success of our clients.",
-        "copyright": "© 2024 Sheikh Abdul Aziz Bin Abdullah Al Mualla Legal Consultancy. All rights reserved.",
+        "description": "Delivering trading excellence with gold standards across the United Arab Emirates with unwavering commitment to our clients' success.",
+        "copyright": "© 2026 KIB for Trade. All rights reserved.",
         "socialMedia": {
             "linkedin": "LinkedIn",
             "twitter": "Twitter",

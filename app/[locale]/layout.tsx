@@ -22,7 +22,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <Navbar />
-      <section className="min-h-svh">{children}</section>
+      <section className="min-h-svh overflow-visible touch-pan-y">{children}</section>
       <Footer />
       <ScrollToTop />
     </NextIntlClientProvider>

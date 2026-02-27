@@ -9,6 +9,7 @@ import {
   Globe,
 } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 const DICTIONARY_KEYS = [
   'supply',
@@ -161,15 +162,17 @@ export function BrandStatement( {locale}: {locale: string} ) {
               className="relative h-full min-h-[400px]"
             >
               <div
-                className="absolute inset-0 rounded-lg transform rotate-3"
+                className="absolute inset-0 rounded-lg transform rotate-3 h-[70%]"
                 style={{
                   background: '#0A1628',
                 }}
               ></div>
-              <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80"
+              <Image
+                src="/images/0012.webp"
                 alt="Team Collaboration"
-                className="relative z-10 w-full h-full object-cover rounded-lg shadow-xl transform -rotate-3 hover:rotate-0 transition-transform duration-500"
+                className="relative z-10 w-full h-[70%] object-cover object-top rounded-lg shadow-xl transform -rotate-3 hover:rotate-0 transition-transform duration-500"
+                width={800}
+                height={500}
               />
             </motion.div>
           </div>
@@ -179,12 +182,14 @@ export function BrandStatement( {locale}: {locale: string} ) {
       {/* Dictionary Section - Converted to Light */}
       <section className="p-[5%] bg-white relative overflow-hidden" dir={isRTL ? "rtl" : "ltr"}>
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200"
+          <Image
+            src="/images/006.webp"
             alt="Books Background"
             className="w-full h-full object-cover opacity-5"
+            width={1200}
+            height={1200}
           />
-          <div className="absolute inset-0 bg-white/50" />
+          <div className="absolute inset-0 bg-white/20" />
         </div>
 
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent opacity-50 z-10"></div>

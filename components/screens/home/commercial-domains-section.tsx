@@ -8,13 +8,15 @@ import { useTranslations } from "next-intl";
 import "swiper/css";
 
 type DomainData = { id: string; title: string; description: string };
-const domainImages = ["/images/15.webp", "/images/16.webp", "/images/17.webp", "/images/18.webp", "/images/19.webp", "/images/20.webp", "/images/21.webp", "/images/22.webp"];
 
-function DomainCard({ domain, image }: { domain: DomainData; image: string }) {
+const domainImages = ["/images/15.webp", "/images/16.webp", "/images/19.webp", "/images/18.webp", "/images/20.webp", "/images/21.webp", "/images/image_2585.webp", "/images/25.webp"];
+
+function DomainCard({ domain, image, isRTL }: { domain: DomainData; image: string; isRTL: boolean }) {
   return (
-    <div className="group p-[2%] bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 flex flex-col md:flex-row h-full">
+    <div className="group p-[2%] bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 flex flex-col md:flex-row h-full" >
       {/* Image */}
-      <div className="relative rounded-2xl w-full md:w-1/2 min-w-[200px] h-[200px] xl:h-[200px] 2xl:h-[400px] flex-shrink-0 overflow-hidden">
+      {isRTL ? (<>
+        <div className="relative rounded-2xl w-full md:w-1/2 min-w-[200px] h-[200px] xl:h-[200px] 2xl:h-[400px] flex-shrink-0 overflow-hidden ">
         <Image
           src={image}
           alt={domain.title}
@@ -22,36 +24,58 @@ function DomainCard({ domain, image }: { domain: DomainData; image: string }) {
           className="object-cover shadow-lg bg-center rounded-2xl group-hover:scale-105 transition-transform duration-500"
         />
       </div>
-
       {/* Content */}
-      <div className="p-5 flex-grow flex flex-col justify-center text-right">
-        <h3 className="text-sm md:text-md xl:text-sm 2xl:text-3xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2">
+      <div className="p-5 flex-grow flex flex-col justify-center text-right" dir={isRTL ? "rtl" : "ltr"}>
+        <h3 className={`text-sm md:text-md xl:text-sm 2xl:text-3xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2 ${isRTL ? "text-right" : "text-left"}`}>
           {domain.title}
         </h3>
         <p className=" text-center md:text-start text-sm md:text-md xl:text-sm 2xl:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
           {domain.description}
         </p>
       </div>
-    </div>
+      </>
+      
+      ) : (
+      <>
+      <div className="p-5 flex-grow flex flex-col justify-center text-left" dir={isRTL ? "rtl" : "ltr"}>
+        <h3 className={`text-sm md:text-md xl:text-sm 2xl:text-3xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2 ${isRTL ? "text-right" : "text-left"}`}>
+          {domain.title}
+        </h3>
+        <p className=" text-center md:text-start text-sm md:text-md xl:text-sm 2xl:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
+          {domain.description}
+        </p>
+      </div>
+      <div className="relative rounded-2xl w-full md:w-1/2 min-w-[200px] h-[200px] xl:h-[200px] 2xl:h-[400px] flex-shrink-0 overflow-hidden ">
+          <Image
+            src={image}
+            alt={domain.title}
+            fill
+            className="object-cover shadow-lg bg-center rounded-2xl group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      </>
+      )}
+      </div>
+
   );
 }
 
-export default function CommercialDomainsSection() {
+export default function CommercialDomainsSection( { locale }: { locale: string } ) {
   const t = useTranslations("home.commercialDomains");
   const domains = t.raw("domains") as DomainData[];
-
+  const isRTL = locale === "ar";
   return (
-    <section className="w-full bg-gray-50  " dir="rtl">
+    <section className="w-full bg-gray-50" >
       <div className="p-[5%]">
         {/* Header */}
-        <header className="flex flex-col items-center md:items-start text-right gap-3 mb-10 md:mb-12">
+        <header className="flex flex-col items-center gap-3 mb-10 md:mb-12">
           <h2
-            className="inline-block font-bold text-cyan-900 leading-tight text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl bg-cyan-100 border border-cyan-300 rounded-2xl px-6 py-4"
+            className="text-center inline-block font-bold text-cyan-900 leading-tight text-2xl md:text-2xl xl:text-4xl 2xl:text-6xl bg-cyan-100 border border-cyan-300 rounded-2xl px-6 py-4"
           >
             {t("title")}
           </h2>
           <p
-            className="inline-block text-emerald-900 text-base md:text-2xl bg-emerald-50 border border-emerald-200 rounded-full px-5 py-2 mt-1"
+            className="text-center inline-block text-emerald-900 text-base md:text-2xl bg-emerald-50 border border-emerald-200 rounded-full px-5 py-2 mt-1"
           >
             {t("subtitle")}
           </p>
@@ -84,7 +108,7 @@ export default function CommercialDomainsSection() {
           >
             {domains.map((domain, i) => (
               <SwiperSlide key={`row1-${domain.id}`} className="p-2">
-                <DomainCard domain={domain} image={domainImages[i]} />
+                <DomainCard domain={domain} image={domainImages[i]} isRTL={isRTL}/>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -114,7 +138,7 @@ export default function CommercialDomainsSection() {
           >
             {[...domains].reverse().map((domain, i) => (
               <SwiperSlide key={`row2-${domain.id}`} className="p-2">
-                <DomainCard domain={domain} image={domainImages[domains.length - 1 - i]} />
+                <DomainCard domain={domain} image={domainImages[domains.length - 1 - i]} isRTL={isRTL} />
               </SwiperSlide>
             ))}
           </Swiper>

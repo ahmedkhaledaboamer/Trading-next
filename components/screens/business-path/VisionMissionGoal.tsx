@@ -15,7 +15,7 @@ export function VisionMissionGoal({ locale }: { locale: string }) {
       text: t('cards.vision.text'),
       gradient: 'from-blue-600 to-blue-800',
       image:
-        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80',
+        '/images/image_2700.webp',
       overlay: 'bg-blue-900/60',
     },
     {
@@ -24,7 +24,7 @@ export function VisionMissionGoal({ locale }: { locale: string }) {
       text: t('cards.mission.text'),
       gradient: 'from-teal-600 to-teal-800',
       image:
-        'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80',
+        '/images/image_2586.webp',
       overlay: 'bg-teal-900/60',
     },
     {
@@ -33,7 +33,7 @@ export function VisionMissionGoal({ locale }: { locale: string }) {
       text: t('cards.goal.text'),
       gradient: 'from-amber-500 to-amber-700',
       image:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
+        '/images/image_2665.webp',
       overlay: 'bg-amber-900/60',
     },
   ]

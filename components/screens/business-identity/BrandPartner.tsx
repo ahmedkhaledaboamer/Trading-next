@@ -1,9 +1,10 @@
- 'use client'
- import { motion } from 'framer-motion'
-import { Handshake, Users, HelpCircle, CheckSquare } from 'lucide-react'
+'use client'
+import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
-export function BrandPartner() {
+export function BrandPartner({locale}: {locale: string}) {
+  const isRTL = locale === "ar";
   const t = useTranslations('businessIdentity.partner')
   const differences = [
     {
@@ -31,46 +32,22 @@ export function BrandPartner() {
       color: '#2563EB',
     },
   ]
-  const targetAudience = [
-    {
-      text: 'يريد معلومة واضحة.',
-      color: '#0D9488',
-    },
-    {
-      text: 'يقدّر الاحتراف.',
-      color: '#7C3AED',
-    },
-    {
-      text: 'يبحث عن شركة تحترم وقته.',
-      color: '#D97706',
-    },
-    {
-      text: 'يريد تنفيذًا بلا أعذار.',
-      color: '#DC2626',
-    },
-    {
-      text: 'يرى أن الثقة أهم من السعر.',
-      color: '#2563EB',
-    },
-    {
-      text: 'يعرف قيمة التعامل مع كيان يفهم السوق.',
-      color: '#059669',
-    },
-  ]
   return (
     <>
       {/* What Makes Us Different */}
-      <section className="py-24 bg-brand-cream relative">
+      <section className="px-[5%] py-24 bg-brand-cream relative" dir={isRTL ? "rtl" : "ltr"}>
         {/* Background Overlay */}
-        <div className="absolute inset-0 z-0 opacity-5">
-          <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200"
+        <div className="absolute inset-0 z-0 opacity-20">
+          <Image
+            src="/images/image_2656.webp"
             alt="Office Background"
             className="w-full h-full object-cover"
+            width={800}
+            height={800}
           />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{
               opacity: 0,
@@ -86,7 +63,7 @@ export function BrandPartner() {
             className="text-center mb-16"
           >
             <h2
-              className="text-lg md:text-xl lg:text-3xl 2xl:text-6xl font-bold mb-4"
+              className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold mb-4"
               style={{
                 background: 'linear-gradient(135deg, #0A1628, #0D9488)',
                 color: 'white',
@@ -99,7 +76,7 @@ export function BrandPartner() {
               {t('title')}
             </h2>
             <p
-              className="text-xl text-brand-dark/70 w-fit mx-auto"
+              className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl text-brand-dark/70 w-fit mx-auto"
               style={{
                 background:
                   'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(13, 148, 136, 0.12))',
@@ -143,7 +120,7 @@ export function BrandPartner() {
                       background: diff.color,
                     }}
                   />
-                  <p className="text-lg text-brand-navy font-medium">
+                  <p className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-brand-navy font-medium">
                     {diff.text}
                   </p>
                 </div>
@@ -164,7 +141,7 @@ export function BrandPartner() {
             className="text-center mt-12"
           >
             <span
-              className="inline-block py-2 px-6 rounded-full text-lg font-bold"
+              className="inline-block py-2 px-6 rounded-full text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-bold"
               style={{
                 background: '#0A1628',
                 color: '#C8A45C',

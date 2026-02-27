@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import { Quote, HeartHandshake } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import NextImage from 'next/image'
 
 export function ClientMessage() {
   const t = useTranslations('businessPath.clientMessage')
@@ -9,10 +10,12 @@ export function ClientMessage() {
     <section className="py-24 bg-[#0A1628] text-white relative overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80"
+        <NextImage
+          src="/images/image_2590.webp"
           alt="Business Partnership"
           className="w-full h-full object-cover opacity-40"
+          width={1920}
+          height={1080}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#0A1628]/90 to-[#0A1628]/70" />
       </div>
@@ -51,11 +54,11 @@ export function ClientMessage() {
               <Quote className="absolute -top-8 -right-4 w-12 h-12 text-[#D4A853]/20 transform -scale-x-100" />
 
               <h3 className="text-xl md:text-2xl lg:text-3xl 2xl:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
-                "
+                &ldquo;
                 {t('quoteLine1')}
                 <br />
                 <span className="text-[#D4A853]">{t('quoteHighlight')}</span>
-                "
+                &rdquo;
               </h3>
 
               <p className="text-sm md:text-xl lg:text-2xl xl:text-4xl text-gray-200 leading-relaxed mb-8 drop-shadow-md">

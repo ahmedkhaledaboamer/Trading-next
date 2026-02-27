@@ -1,4 +1,10 @@
 {
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée. Retournez à la page d'accueil pour continuer.",
+    "cta": "Retour à l'accueil",
+    "badge": "Introuvable"
+  },
   "page": {
     "title": "Page d'accueil"
   },
@@ -29,27 +35,27 @@
   },
   "pages": {
     "home": {
-      "title": "Accueil | KEP pour le Commerce",
-      "description": "Découvrez KEP pour le Commerce, un pôle commercial souverain qui gère l'approvisionnement et la distribution sur les marchés mondiaux."
+      "title": "Accueil | KIB pour le Commerce",
+      "description": "Découvrez KIB pour le Commerce, un pôle commercial souverain qui gère l'approvisionnement et la distribution sur les marchés mondiaux."
     },
     "execution": {
-      "title": "Exécution | KEP pour le Commerce",
+      "title": "Exécution | KIB pour le Commerce",
       "description": "Nous fournissons des services d'exécution juridique complets."
     },
     "services": {
-      "title": "Services | KEP pour le Commerce",
+      "title": "Services | KIB pour le Commerce",
       "description": "Découvrez nos services juridiques premium."
     },
     "businessPath": {
-      "title": "Votre Parcours Commercial | KEP pour le Commerce",
+      "title": "Votre Parcours Commercial | KIB pour le Commerce",
       "description": "Votre guide pour construire un parcours commercial réussi."
     },
     "businessIdentity": {
-      "title": "Identité Commerciale | KEP pour le Commerce",
+      "title": "Identité Commerciale | KIB pour le Commerce",
       "description": "Nous vous aidons à construire votre identité commerciale."
     },
     "about": {
-      "title": "À Propos de Nous | KEP pour le Commerce",
+      "title": "À Propos de Nous | KIB pour le Commerce",
       "description": "Découvrez notre équipe, notre vision et notre mission."
     }
   },
@@ -60,9 +66,9 @@
   "header": {
     "title": "Conseil Juridique Premium",
     "subtitle": "Expertise Juridique de Confiance avec des Normes d'Or",
-    "companyName": "KEP pour le Commerce S.à r.l.",
+    "companyName": "KIB pour le Commerce S.à r.l.",
     "tagline": "Le centre de la puissance commerciale… et la plateforme d'influence dans les chaînes d'approvisionnement mondiales",
-    "paragraph1": "Dans un monde où le commerce s'accélère et la concurrence s'intensifie, un acteur se distingue par sa vision, son insight et sa capacité d'exécution. KEP pour le Commerce n'est pas qu'une société… c'est un pôle commercial souverain qui gère des opérations d'approvisionnement et de distribution à travers plusieurs marchés, en maîtrisant les flux du commerce de la source au client.",
+    "paragraph1": "Dans un monde où le commerce s'accélère et la concurrence s'intensifie, un acteur se distingue par sa vision, son insight et sa capacité d'exécution. KIB pour le Commerce n'est pas qu'une société… c'est un pôle commercial souverain qui gère des opérations d'approvisionnement et de distribution à travers plusieurs marchés, en maîtrisant les flux du commerce de la source au client.",
     "paragraph2": "Nous construisons notre influence grâce à des réseaux d'approvisionnement mondiaux, des relations solides et une expérience opérationnelle qui donne à nos clients l'accès à des produits de qualité, des prix compétitifs et des mécanismes précis.",
     "ctaBusinessPath": "Votre Parcours Commercial",
     "cta": {
@@ -74,7 +80,7 @@
     "businessEntity": {
       "badge": "L'Entité Commerciale",
       "heading": "Un système intégré qui gère le commerce avec un professionnalisme élevé",
-      "description": "KEP pour le Commerce opère selon un modèle opérationnel avancé qui allie vision stratégique et exécution précise pour assurer le leadership sur le marché.",
+      "description": "KIB pour le Commerce opère selon un modèle opérationnel avancé qui allie vision stratégique et exécution précise pour assurer le leadership sur le marché.",
       "features": [
         {"title": "Puissance du hub"},
         {"title": "Clarté de la vision"},
@@ -86,7 +92,7 @@
     },
     "commercialInfluence": {
       "title": "Structure de l'influence commerciale",
-      "subtitle": "La structure de pouvoir au sein de KEP pour le Commerce repose sur trois piliers principaux qui nous donnent profondeur de marché et forte capacité de contrôle.",
+      "subtitle": "La structure de pouvoir au sein de KIB pour le Commerce repose sur trois piliers principaux qui nous donnent profondeur de marché et forte capacité de contrôle.",
       "pillars": [
         {"title": "Influence opérationnelle", "description": "Contrôle total des chaînes d'approvisionnement de la source au client, avec une structure opérationnelle à réponse rapide.", "imageAlt": "Équipe gérant les processus opérationnels en environnement de bureau"},
         {"title": "Influence de marché", "description": "Une présence forte sur plusieurs marchés donne à l'entreprise un fort pouvoir de négociation et un impact sur les flux de demande.", "imageAlt": "Skyline urbain et marchés représentant l'influence de marché"},
@@ -132,7 +138,7 @@
     "digitalTransformation": {
       "title": "Unité de transformation numérique",
       "subtitle": "Unité spécialisée dans le développement de l'infrastructure numérique pour assurer rapidité, précision et transparence dans chaque processus opérationnel.",
-      "imageAlt": "Unité de transformation numérique chez KEP pour le Commerce",
+      "imageAlt": "Unité de transformation numérique chez KIB pour le Commerce",
       "tasksTitle": "Tâches de l'unité",
       "tasks": ["Numérisation des opérations d'approvisionnement et de distribution", "Développement de systèmes de suivi des expéditions", "Construction de tableaux de bord opérationnels en temps réel", "Amélioration de l'expérience client via des solutions numériques", "Utilisation de l'IA dans l'analyse de marché"],
       "goalsTitle": "Objectifs de l'unité",
@@ -148,7 +154,7 @@
     },
     "franchiseUnit": {
       "title": "Unité franchise",
-      "subtitle": "Unité spécialisée dans l'octroi de franchises commerciales pour les marques gérées par KEP pour le Commerce, selon des normes opérationnelles claires.",
+      "subtitle": "Unité spécialisée dans l'octroi de franchises commerciales pour les marques gérées par KIB pour le Commerce, selon des normes opérationnelles claires.",
       "benefitsTitle": "Avantages de la franchise",
       "benefits": ["Expansion rapide de la marque", "Réduction des risques opérationnels", "Augmentation de part de marché via les partenaires", "Soutien aux partenaires avec un système opérationnel prêt", "Génération de flux de revenus réguliers"],
       "tasksTitle": "Tâches de l'unité",
@@ -193,14 +199,14 @@
   },
   "businessIdentity": {
     "hero": {
-      "companyName": "KEP pour le Commerce",
+      "companyName": "KIB pour le Commerce",
       "title": "Identité Commerciale",
-      "description": "Chez KEP pour le Commerce, nous ne considérons pas l'identité commerciale comme un simple logo ou des couleurs—c'est un cadre qui façonne notre façon de penser, de décider et d'interagir avec les clients et les partenaires. Elle reflète les normes de qualité auxquelles nous nous engageons, la manière dont nous exprimons nos valeurs et comment nous offrons une expérience cohérente qui reflète notre professionnalisme à chaque interaction et service.",
+      "description": "Chez KIB pour le Commerce, nous ne considérons pas l'identité commerciale comme un simple logo ou des couleurs—c'est un cadre qui façonne notre façon de penser, de décider et d'interagir avec les clients et les partenaires. Elle reflète les normes de qualité auxquelles nous nous engageons, la manière dont nous exprimons nos valeurs et comment nous offrons une expérience cohérente qui reflète notre professionnalisme à chaque interaction et service.",
       "discoverMore": "Découvrir plus"
     },
     "intro": {
       "sectionTitle": "Introduction",
-      "p1": "Chez KEP pour le Commerce, nous avons choisi d'écrire qui nous sommes d'une manière qui ne ressemble à personne d'autre, parce que nous ne travaillons tout simplement comme personne d'autre.",
+      "p1": "Chez KIB pour le Commerce, nous avons choisi d'écrire qui nous sommes d'une manière qui ne ressemble à personne d'autre, parce que nous ne travaillons tout simplement comme personne d'autre.",
       "p2": "Nous ne sommes pas une entreprise qui répète ce que les autres disent, nous n'utilisons pas les phrases de tous les sites, et nous ne cherchons pas des mots raffinés autant qu'une vérité dite telle quelle.",
       "p3": "Nous nous définissons par notre façon de travailler :",
       "p4": "Avec une clarté qui ne se cache pas derrière les mots, une force visible dans l'exécution avant d'être lue sur le papier, et une approche opérationnelle qui fait que le client sent qu'il a affaire à une entité qui sait ce qu'elle fait, pourquoi et comment.",
@@ -218,7 +224,7 @@
       }
     },
     "statement": {
-      "heading": "Déclaration de KEP pour le Commerce",
+      "heading": "Déclaration de KIB pour le Commerce",
       "subheading": "Cette déclaration n’est pas une formule officielle… mais une affirmation claire de notre façon de travailler",
       "bullets": [
         "Nous nous engageons avant de promettre.",
@@ -228,7 +234,7 @@
       ],
       "paragraph": "Nous ne vendons pas seulement des produits… nous construisons la confiance, créons une relation et offrons une expérience qui fait ses preuves avec le temps et laisse une empreinte qui donne envie au client de revenir par choix, et non par obligation.",
       "dictionary": {
-        "title": "Dictionnaire de KEP",
+        "title": "Dictionnaire de KIB",
         "subtitle": "Ce dictionnaire n’est pas une liste de mots… c’est une philosophie de travail",
         "terms": {
           "supply": {
@@ -266,7 +272,7 @@
         }
       },
       "values": {
-        "title": "Valeurs de KEP pour le Commerce",
+        "title": "Valeurs de KIB pour le Commerce",
         "subtitle": "Nos valeurs ne sont pas des slogans… ce sont des règles de fonctionnement que nous ne franchissons pas",
         "items": {
           "clarity": {
@@ -359,7 +365,7 @@
       "footer": "Pour nous, la différence n’est pas un style… c’est un système de fonctionnement."
     },
     "conclusion": {
-      "brandNamePrefix": "KEP",
+      "brandNamePrefix": "KIB",
       "brandNameHighlight": "pour le Commerce",
       "tagline": "Ce n’est pas simplement une société… c’est une façon de traiter, une façon de penser et une norme de qualité.",
       "leadIn": "Voici une identité écrite avec clarté, force et confiance… pour dire au client :",
@@ -387,7 +393,7 @@
   "services": {
     "hero": {
       "badge": "Votre premier partenaire en commerce et technologie",
-      "title": "KEP pour le Commerce",
+      "title": "KIB pour le Commerce",
       "titleSuffix": "S.à r.l.",
       "description": "Nous offrons une large gamme de services commerciaux et technologiques qui répondent aux besoins des entreprises et des particuliers, avec un engagement total en faveur de la qualité, du professionnalisme et des normes internationales.",
       "cta": "Découvrir nos services"
@@ -889,7 +895,7 @@
   "businessPath": {
     "hero": {
       "badge": "Votre parcours commercial de confiance",
-      "title1": "KEP",
+      "title1": "KIB",
       "title2": " pour le Commerce",
       "title3": " S.à r.l.",
       "subtitle": "Votre partenaire commercial qui vous ouvre les portes des marchés avec confiance, qualité et stabilité. Dans un monde où le commerce s'accélère, nous sommes votre boussole vers le succès.",
@@ -935,7 +941,7 @@
       }
     },
     "whyKEP": {
-      "title": "Pourquoi KEP pour le Commerce ?",
+      "title": "Pourquoi KIB pour le Commerce ?",
       "overlayText": "Une équipe complète à votre service",
       "features": {
         "care": "Une attention authentique",
@@ -1140,10 +1146,10 @@
   },
   "execution": {
     "hero": {
-      "title": "KEP pour le Commerce",
+      "title": "KIB pour le Commerce",
       "subtitle": "Mécanisme d'exécution des communications — un système de communication clair pour une expérience professionnelle",
       "p1": "Nous croyons que le succès du processus commercial commence par la clarté des rôles, la rapidité de réponse et la précision d'exécution.",
-      "p2": "Chez KEP pour le Commerce nous construisons un système de communication opérationnel clair qui assure un travail fluide entre toutes les parties, de la définition des rôles et des canaux de communication à la rapidité de réponse et à la précision du transfert d'information. Car le succès des opérations commerciales ne dépend pas seulement de la planification, mais d'une exécution organisée fondée sur la clarté des responsabilités et l'intégration des équipes, pour une expérience professionnelle et des résultats mesurables."
+      "p2": "Chez KIB pour le Commerce nous construisons un système de communication opérationnel clair qui assure un travail fluide entre toutes les parties, de la définition des rôles et des canaux de communication à la rapidité de réponse et à la précision du transfert d'information. Car le succès des opérations commerciales ne dépend pas seulement de la planification, mais d'une exécution organisée fondée sur la clarté des responsabilités et l'intégration des équipes, pour une expérience professionnelle et des résultats mesurables."
     },
     "departmentOrg": {
       "title": "Les postes commerciaux et leurs rôles",
@@ -1474,49 +1480,8 @@
         }
       ]
     },
-    "ourGroup": {
-      "title": "Notre groupe",
-      "entities": [
-        {
-          "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla pour consultations juridiques",
-          "href": "#"
-        },
-        {
-          "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla pour consultations générales",
-          "href": "#"
-        },
-        {
-          "name": "Sheikh Abdul Aziz Bin Abdullah Al Mualla pour l'intelligence artificielle et la recherche",
-          "href": "#"
-        },
-        {
-          "name": "Al Sarh Al Shamekh pour agence de lignes maritimes",
-          "href": "#"
-        },
-        {
-          "name": "84 Star Capital pour investissement immobilier",
-          "href": "#"
-        },
-        {
-          "name": "KIB pour services de règlement de réclamations",
-          "href": "#"
-        },
-        {
-          "name": "KIB pour services aux hommes d'affaires",
-          "href": "#"
-        },
-        {
-          "name": "KIB pour financement",
-          "href": "#"
-        },
-        {
-          "name": "KIB pour commerce",
-          "href": "#"
-        }
-      ]
-    },
-    "description": "Offrir l'excellence juridique avec des normes d'or dans tous les Émirats arabes unis avec un engagement inébranlable envers le succès de nos clients.",
-    "copyright": "© 2024 Sheikh Abdul Aziz Bin Abdullah Al Mualla Legal Consultancy. Tous droits réservés.",
+    "description": "Offrant l'excellence commerciale avec des standards d'or à travers les Émirats Arabes Unis avec un engagement inébranlable envers le succès de nos clients.",
+    "copyright": "© 2026 KIB pour le Commerce. Tous droits réservés.",
     "socialMedia": {
       "linkedin": "LinkedIn",
       "twitter": "Twitter",

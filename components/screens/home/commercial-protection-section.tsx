@@ -27,12 +27,12 @@ const iconColors = [
   "text-amber-500",
 ];
 
-export default function CommercialProtectionSection() {
+export default function CommercialProtectionSection( { locale }: { locale: string } ) {
   const t = useTranslations("home.commercialProtection");
   const items = t.raw("items") as string[];
-
+  const isRTL = locale === "ar";
   return (
-    <section className="p-[5%] bg-white" dir="rtl">
+    <section className="p-[5%] bg-white" dir={isRTL ? "rtl" : "ltr"}>
       <div className="  flex flex-col gap-10 md:gap-14">
         {/* Header */}
         <header className="text-center flex flex-col items-center gap-4">
@@ -54,7 +54,7 @@ export default function CommercialProtectionSection() {
             <div className="absolute top-8 -right-8 w-full h-full border-4 border-[#C9A84C] z-0 rounded-3xl" />
             <div className="relative z-10 w-full h-full overflow-hidden rounded-3xl">
               <Image
-                src="/images/26.webp"
+                src="/images/image_2602.webp"
                 alt={t("imageAlt")}
                 fill
                 className="object-cover grayscale-0 hover:grayscale-100 transition-all duration-700"

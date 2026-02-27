@@ -126,7 +126,7 @@ export function WhyKEP({ locale }: { locale: string }) {
               {/* Added Visual Image */}
               <div className="rounded-2xl overflow-hidden shadow-lg mt-8 relative h-120 w-full">
                 <Image
-                  src="/images/image_2710.webp"
+                  src="/images/0018.webp"
                   alt="Team Collaboration"
                   width={600}
                   height={600}
@@ -163,7 +163,7 @@ export function WhyKEP({ locale }: { locale: string }) {
                   className="flex items-center p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group"
                 >
                   <div
-                    className={`w-16 h-16 rounded-full ${feature.bg} ${feature.color} flex items-center justify-center ml-4 shrink-0 group-hover:scale-110 transition-transform duration-300`}
+                    className={`w-16 h-16 rounded-full ${feature.bg} ${feature.color} flex items-center justify-center ${!isRTL ? "mr-4" : "ml-4"} shrink-0 group-hover:scale-110 transition-transform duration-300`}
                   >
                     <div className="w-10 h-10 flex items-center justify-center">{feature.icon}</div>
                   </div>

@@ -59,9 +59,9 @@ export function BrandIntro({ locale }: { locale: string }) {
                   }}
                 />
                 <Image
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                  src="/images/00166.webp"
                   alt="Business Meeting"
-                  className="rounded-lg shadow-2xl w-full object-cover h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] grayscale-0 hover:grayscale transition-all duration-700"
+                  className="rounded-lg shadow-2xl w-full object-cover object-center h-[500px] md:h-[600px] lg:h-[700px] xl:h-[900px] grayscale-0 hover:grayscale transition-all duration-700"
                   width={800}
                   height={500}
                 />
@@ -155,7 +155,7 @@ export function BrandIntro({ locale }: { locale: string }) {
               className="lg:col-span-1 h-full min-h-[400px] relative rounded-2xl overflow-hidden shadow-2xl"
             >
               <Image
-                src="/images/1.webp"
+                src="/images/002.webp"
                 alt="Professional Portrait"
                 className="absolute inset-0 w-full h-full object-cover"
                 width={800}

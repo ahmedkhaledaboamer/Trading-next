@@ -25,7 +25,7 @@ const roomIcons: Record<string, LucideIcon> = {
 };
 
 const roomImages: Record<string, string> = {
-  market: "/images/32.webp",
+  market: "/images/image_2683.webp",
   supply: "/images/33.webp",
   quality: "/images/34.webp",
   operations: "/images/35.webp",

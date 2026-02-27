@@ -18,7 +18,7 @@ export default async function SuppliersNetworkSection() {
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/37.webp"
+          src="/images/image_2675.webp"
           alt={t("imageAlt")}
           fill
           className="object-cover"

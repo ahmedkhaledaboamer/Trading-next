@@ -41,7 +41,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.risk.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80',
+        '/images/Business Units/51.webp',
     },
     {
       id: 2,
@@ -63,7 +63,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.internationalExpansion.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=80',
+        '/images/Business Units/59.webp',
     },
     {
       id: 3,
@@ -85,7 +85,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.digitalTransformation.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80',
+        '/images/Business Units/62.webp',
     },
     {
       id: 4,
@@ -107,7 +107,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.franchise.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&q=80',
+        '/images/Business Units/80.webp',
     },
     {
       id: 5,
@@ -129,7 +129,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.ecommerce.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&q=80',
+        '/images/Business Units/79.webp',
     },
     {
       id: 6,
@@ -151,7 +151,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.compliance.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80',
+        '/images/Business Units/005.webp',
     },
     {
       id: 7,
@@ -173,7 +173,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.supplierDevelopment.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&q=80',
+        '/images/Business Units/68.webp',
     },
     {
       id: 8,
@@ -195,7 +195,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.financialAnalysis.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80',
+        '/images/Business Units/0013.webp',
     },
     {
       id: 9,
@@ -217,7 +217,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.customerService.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=400&q=80',
+        '/images/38.webp',
     },
     {
       id: 10,
@@ -239,7 +239,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.contractManagement.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80',
+        '/images/Business Units/image_2684.webp',
     },
     {
       id: 11,
@@ -261,7 +261,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.quality.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=80',
+        '/images/Business Units/image_2692.webp',
     },
     {
       id: 12,
@@ -283,7 +283,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
         t('units.internationalRelations.value.2'),
       ],
       image:
-        'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80',
+        '/images/image_2675.webp',
     } 
   ]
   return (
@@ -326,7 +326,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
               className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-t-4 ${unit.border} group flex flex-col`}
             >
               {/* Image Header */}
-              <div className="h-36 md:h-100 lg:h-62 2xl:h-100 w-full relative overflow-hidden">
+              <div className="h-36 md:h-100 lg:h-62 xl:h-100 2xl:h-130 w-full relative overflow-hidden">
                 <Image
                   src={unit.image}
                   alt={unit.name}
@@ -348,7 +348,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
                   <div
                     className={`w-16 h-16 rounded-xl ${unit.bg} ${unit.color} flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300`}
                   >
-                    <div className="w-8 h-8">{unit.icon}</div>
+                    <div className="w-8 h-8 flex items-center justify-center">{unit.icon}</div>
                   </div>
                   <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 leading-tight pt-10">
                     {unit.name}
@@ -371,7 +371,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
                           className="flex items-start text-base md:text-lg xl:text-2xl text-gray-600"
                         >
                           <span
-                            className={`w-2 h-2 rounded-full mt-2 ml-2 shrink-0 bg-gray-400 `}
+                            className={`w-2 h-2 rounded-full mt-2 ${isRTL ? "ml-2" : "mr-2"} shrink-0 bg-gray-400 `}
                           />
                           {task}
                         </li>

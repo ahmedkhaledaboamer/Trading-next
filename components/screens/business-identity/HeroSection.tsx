@@ -7,14 +7,14 @@ import { useTranslations } from 'next-intl'
 export function HeroSection() {
   const t = useTranslations('businessIdentity.hero')
   return (
-    <section className="relative p-[5%] h-screen w-full overflow-hidden flex items-center justify-center">
+    <section className="relative p-[5%] min-h-screen w-full overflow-x-hidden flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60" />
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+          src="/images/0015.webp"
           alt="Modern Skyscraper"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[50%_35%]"
           width={1920}
           height={1080}
         />

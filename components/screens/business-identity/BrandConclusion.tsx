@@ -1,37 +1,10 @@
 'use client'
-import React from 'react'
 import { motion } from 'framer-motion'
-import { Shield, Clock, Award, Heart } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 export function BrandConclusion() {
   const t = useTranslations('businessIdentity.conclusion')
-  const pillars = [
-    {
-      icon: <Shield />,
-      title: t('pillars.clarity.title'),
-      desc: t('pillars.clarity.desc'),
-      color: '#0D9488',
-    },
-    {
-      icon: <Clock />,
-      title: t('pillars.commitment.title'),
-      desc: t('pillars.commitment.desc'),
-      color: '#D97706',
-    },
-    {
-      icon: <Award />,
-      title: t('pillars.quality.title'),
-      desc: t('pillars.quality.desc'),
-      color: '#7C3AED',
-    },
-    {
-      icon: <Heart />,
-      title: t('pillars.respect.title'),
-      desc: t('pillars.respect.desc'),
-      color: '#DC2626',
-    },
-  ]
   return (
     <>
   
@@ -39,10 +12,12 @@ export function BrandConclusion() {
       {/* Final Conclusion - Converted to Light */}
       <section className="relative h-[80vh] flex items-center justify-center text-center overflow-hidden bg-brand-off-white">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1920&q=80"
+          <Image  
+            src="/images/005.webp"
             alt="City Skyline"
-            className="w-full h-full object-cover opacity-10"
+            className="w-full h-full object-cover opacity-20"
+            width={1920}
+            height={1080}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/60" />
         </div>
@@ -79,7 +54,7 @@ export function BrandConclusion() {
           }}
         />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4">
+        <div className="relative z-10 max-w-6xl mx-auto px-4">
           <motion.div
             initial={{
               opacity: 0,
@@ -97,7 +72,7 @@ export function BrandConclusion() {
             }}
           >
             <h2
-              className="text-xl md:text-2xl lg:text-3xl 2xl:text-6xl font-bold text-brand-navy mb-8 leading-tight inline-block"
+              className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-brand-navy mb-8 leading-tight"
               style={{
                 background:
                   'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(248, 250, 252, 0.85))',
@@ -120,7 +95,7 @@ export function BrandConclusion() {
             </h2>
 
             <p
-              className="text-2xl md:text-3xl text-brand-dark/80 font-light mb-12 leading-relaxed inline-block"
+              className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl text-brand-dark/80 font-light mb-12 leading-relaxed inline-block"
               style={{
                 background:
                   'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(15, 23, 42, 0.08))',
@@ -141,7 +116,7 @@ export function BrandConclusion() {
             ></div>
 
             <p
-              className="text-xl text-brand-dark/70  mb-8 inline-block"
+              className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-brand-dark/70 mb-8 inline-block"
               style={{
                 background:
                   'linear-gradient(120deg, rgba(248, 250, 252, 0.96), rgba(200, 164, 92, 0.12))',
@@ -155,7 +130,7 @@ export function BrandConclusion() {
             </p>
 
             <h3
-              className="text-3xl md:text-4xl font-bold"
+              className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold"
               style={{
                 color: '#C8A45C',
               }}
