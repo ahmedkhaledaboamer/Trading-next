@@ -66,9 +66,11 @@ export default async function Header() {
               {t("ctaBusinessPath")}
             </Button>
           </Link>
-          <Button variant="secondary" size="lg" className="font-extrabold">
-            {t("cta.exploreServices")}
-          </Button>
+          <Link href="/services">
+            <Button variant="secondary" size="lg" className="font-extrabold">
+              {t("cta.exploreServices")}
+            </Button>
+          </Link>
         </div>
       </div>
     </header>

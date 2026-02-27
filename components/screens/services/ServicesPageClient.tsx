@@ -871,7 +871,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
         </AnimatePresence>
       </div>
 
-      <CTASection />
+      <CTASection locale={locale} />
     </div>
   )
 }

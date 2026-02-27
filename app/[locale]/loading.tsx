@@ -97,7 +97,7 @@ export default function Loading() {
           }}
         >
           <Image
-            src="/images/Logo.png"
+            src="/KIB_Logo.png"
             alt="KIB logo"
             width={64}
             height={64}

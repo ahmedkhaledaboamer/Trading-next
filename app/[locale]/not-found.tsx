@@ -2,12 +2,7 @@ import Logo from "@/components/logo";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-export default async function LocaleNotFound({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function LocaleNotFound() {
   const t = await getTranslations("notFound");
 
   return (
@@ -41,7 +36,7 @@ export default async function LocaleNotFound({
 
               <div className="mt-4">
                 <Link
-                  href={`/${locale}`}
+                  href="/"
                   className="inline-flex items-center justify-center rounded-full bg-[#C9A84C] px-6 py-2.5 text-sm md:text-base font-semibold text-[#1A1A2E] shadow-lg shadow-black/30 transition-transform hover:-translate-y-0.5 hover:bg-[#D4B762] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#050816]"
                 >
                   {t("cta")}

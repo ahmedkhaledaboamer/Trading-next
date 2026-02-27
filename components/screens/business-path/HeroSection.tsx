@@ -83,11 +83,11 @@ export function HeroSection({locale}: {locale: string}) {
                 {isRTL ? "" : <ArrowRight className="w-5 h-5" />}
               </button>
             </Link>
-            <a href="#contact">
+            <Link href="/execution">
               <button type="button" className="cursor-pointer text-sm md:text-lg lg:text-xl 2xl:text-3xl px-8 py-4 bg-white/10 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-colors backdrop-blur-sm">
                 {t('ctaContact')}
               </button>
-            </a>
+            </Link>
           </div>
         </motion.div>
 
