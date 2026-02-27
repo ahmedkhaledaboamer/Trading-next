@@ -12,7 +12,7 @@ export function CTASection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <NextImage
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          src="/images/services/0012.webp"
           alt="Team meeting"
           className="w-full h-full object-cover"
           width={1000}

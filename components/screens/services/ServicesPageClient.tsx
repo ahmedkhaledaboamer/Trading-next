@@ -74,7 +74,8 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           description: tSections('tradeLogistics.services.import.description'),
           icon: Ship,
           image:
-            'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/48.webp",
+          
           points: [
             tSections('tradeLogistics.services.import.points.0'),
             tSections('tradeLogistics.services.import.points.1'),
@@ -87,7 +88,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           description: tSections('tradeLogistics.services.export.description'),
           icon: Globe,
           image:
-            'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/58.webp",
           points: [
             tSections('tradeLogistics.services.export.points.0'),
             tSections('tradeLogistics.services.export.points.1'),
@@ -102,7 +103,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Anchor,
           image:
-            'https://images.unsplash.com/photo-1494412574643-35d324698420?auto=format&fit=crop&q=80&w=800&h=600',
+           "/images/services/50.webp",
           points: [
             tSections('tradeLogistics.services.seaShipping.points.0'),
             tSections('tradeLogistics.services.seaShipping.points.1'),
@@ -117,7 +118,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Plane,
           image:
-            'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800&h=600',
+           "/images/services/59.webp",
           points: [
             tSections('tradeLogistics.services.airShipping.points.0'),
             tSections('tradeLogistics.services.airShipping.points.1'),
@@ -132,7 +133,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: FileCheck,
           image:
-            'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800&h=600',
+           "/images/services/54.webp",
           points: [
             tSections('tradeLogistics.services.customs.points.0'),
             tSections('tradeLogistics.services.customs.points.1'),
@@ -147,7 +148,9 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Package,
           image:
-            'https://images.unsplash.com/photo-1581093588401-22f5c6d2c7d0?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/55.webp",
+        
+        
           points: [
             tSections('tradeLogistics.services.storage.points.0'),
             tSections('tradeLogistics.services.storage.points.1'),
@@ -162,7 +165,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Truck,
           image:
-            'https://images.unsplash.com/photo-1501706362039-c6e08b7c40d2?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/47.webp",
           points: [
             tSections('tradeLogistics.services.landTransport.points.0'),
             tSections('tradeLogistics.services.landTransport.points.1'),
@@ -177,7 +180,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Shield,
           image:
-            'https://images.unsplash.com/photo-1565372919396-5a0f6c89bca1?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/52.webp",
           points: [
             tSections('tradeLogistics.services.commercialInsurance.points.0'),
             tSections('tradeLogistics.services.commercialInsurance.points.1'),
@@ -202,7 +205,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: CreditCard,
           image:
-            'https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/62.webp",
           points: [
             tSections('ePayments.services.posDevices.points.0'),
             tSections('ePayments.services.posDevices.points.1'),
@@ -217,7 +220,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Wallet,
           image:
-            'https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/64.webp",
           points: [
             tSections('ePayments.services.smartCards.points.0'),
             tSections('ePayments.services.smartCards.points.1'),
@@ -232,7 +235,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Smartphone,
           image:
-            'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/65.webp",
           points: [
             tSections('ePayments.services.mobilePayments.points.0'),
             tSections('ePayments.services.mobilePayments.points.1'),
@@ -247,7 +250,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Database,
           image:
-            'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/63.webp",
           points: [
             tSections('ePayments.services.paymentGateways.points.0'),
             tSections('ePayments.services.paymentGateways.points.1'),
@@ -272,7 +275,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Monitor,
           image:
-            'https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/78.webp",
           points: [
             tSections('computingTech.services.desktopComputers.points.0'),
             tSections('computingTech.services.desktopComputers.points.1'),
@@ -287,7 +290,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Laptop,
           image:
-            'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/82.webp",
           points: [
             tSections('computingTech.services.laptops.points.0'),
             tSections('computingTech.services.laptops.points.1'),
@@ -302,7 +305,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Printer,
           image:
-            'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/72.webp",
           points: [
             tSections('computingTech.services.printersScanners.points.0'),
             tSections('computingTech.services.printersScanners.points.1'),
@@ -317,7 +320,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: MonitorSmartphone,
           image:
-            'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/74.webp",
           points: [
             tSections('computingTech.services.monitorsAccessories.points.0'),
             tSections('computingTech.services.monitorsAccessories.points.1'),
@@ -332,7 +335,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Server,
           image:
-            'https://images.unsplash.com/photo-1558494949-ef526b0042a0?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/77.webp",
           points: [
             tSections('computingTech.services.serversDataCenters.points.0'),
             tSections('computingTech.services.serversDataCenters.points.1'),
@@ -347,7 +350,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: HardDrive,
           image:
-            'https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/73.webp",
           points: [
             tSections('computingTech.services.storageUnits.points.0'),
             tSections('computingTech.services.storageUnits.points.1'),
@@ -362,7 +365,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Mouse,
           image:
-            'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/75.webp",
           points: [
             tSections('computingTech.services.peripherals.points.0'),
             tSections('computingTech.services.peripherals.points.1'),
@@ -377,7 +380,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Settings,
           image:
-            'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/79.webp",
           points: [
             tSections('computingTech.services.osSetup.points.0'),
             tSections('computingTech.services.osSetup.points.1'),
@@ -402,7 +405,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Code,
           image:
-            'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/522.webp",
           points: [
             tSections('softwareDev.services.corporateSystems.points.0'),
             tSections('softwareDev.services.corporateSystems.points.1'),
@@ -417,7 +420,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: AppWindow,
           image:
-            'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/566.webp",
           points: [
             tSections('softwareDev.services.appDevelopment.points.0'),
             tSections('softwareDev.services.appDevelopment.points.1'),
@@ -432,7 +435,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Cloud,
           image:
-            'https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/600.webp",
           points: [
             tSections('softwareDev.services.cloudComputing.points.0'),
             tSections('softwareDev.services.cloudComputing.points.1'),
@@ -447,7 +450,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Shield,
           image:
-            'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/555.webp",
           points: [
             tSections('softwareDev.services.softwareSupport.points.0'),
             tSections('softwareDev.services.softwareSupport.points.1'),
@@ -472,7 +475,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Radio,
           image:
-            'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/588.webp",
           points: [
             tSections('networks.services.communicationDevices.points.0'),
             tSections('networks.services.communicationDevices.points.1'),
@@ -487,7 +490,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Cable,
           image:
-            'https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?auto=format&fit=crop&q=80&w=800&h=600',
+           "/images/services/590.webp",
           points: [
             tSections('networks.services.cablingFiber.points.0'),
             tSections('networks.services.cablingFiber.points.1'),
@@ -502,7 +505,8 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Cpu,
           image:
-            'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/591.webp",
+            
           points: [
             tSections('networks.services.computerParts.points.0'),
             tSections('networks.services.computerParts.points.1'),
@@ -517,7 +521,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: CircuitBoard,
           image:
-            'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/578.webp",
           points: [
             tSections('networks.services.electronicParts.points.0'),
             tSections('networks.services.electronicParts.points.1'),
@@ -542,7 +546,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Speaker,
           image:
-            'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/111.webp",
           points: [
             tSections('mediaEntertainment.services.avDevices.points.0'),
             tSections('mediaEntertainment.services.avDevices.points.1'),
@@ -557,7 +561,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Camera,
           image:
-            'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/112.webp",
           points: [
             tSections('mediaEntertainment.services.surveillance.points.0'),
             tSections('mediaEntertainment.services.surveillance.points.1'),
@@ -572,7 +576,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: CameraIcon,
           image:
-            'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/113.webp",
           points: [
             tSections('mediaEntertainment.services.photoEquipment.points.0'),
             tSections('mediaEntertainment.services.photoEquipment.points.1'),
@@ -587,7 +591,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Film,
           image:
-            'https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=800&h=600',
+           "/images/services/114.webp",
           points: [
             tSections('mediaEntertainment.services.cinemaEquipment.points.0'),
             tSections('mediaEntertainment.services.cinemaEquipment.points.1'),
@@ -602,7 +606,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Gamepad2,
           image:
-            'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/115.webp",
           points: [
             tSections('mediaEntertainment.services.gameConsoles.points.0'),
             tSections('mediaEntertainment.services.gameConsoles.points.1'),
@@ -617,7 +621,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Joystick,
           image:
-            'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/116.webp",
           points: [
             tSections('mediaEntertainment.services.gamingAccessories.points.0'),
             tSections('mediaEntertainment.services.gamingAccessories.points.1'),
@@ -634,7 +638,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Speaker,
           image:
-            'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/117.webp",
           points: [
             tSections(
               'mediaEntertainment.services.homeTheaterSystems.points.0',
@@ -659,7 +663,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Monitor,
           image:
-            'https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/118.webp",
           points: [
             tSections(
               'mediaEntertainment.services.proDisplayScreens.points.0',
@@ -692,7 +696,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Phone,
           image:
-            'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/121.webp",
           points: [
             tSections('mobilesConsumer.services.mobilePhones.points.0'),
             tSections('mobilesConsumer.services.mobilePhones.points.1'),
@@ -707,7 +711,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Headphones,
           image:
-            'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/122.webp",
           points: [
             tSections('mobilesConsumer.services.phoneAccessories.points.0'),
             tSections('mobilesConsumer.services.phoneAccessories.points.1'),
@@ -722,7 +726,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Refrigerator,
           image:
-            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800&h=600',
+            "/images/services/123.webp",
           points: [
             tSections('mobilesConsumer.services.homeAppliances.points.0'),
             tSections('mobilesConsumer.services.homeAppliances.points.1'),
@@ -737,7 +741,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: CookingPot,
           image:
-            'https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&q=80&w=800&h=600',
+           "/images/services/1244.webp",
           points: [
             tSections('mobilesConsumer.services.cookersOvens.points.0'),
             tSections('mobilesConsumer.services.cookersOvens.points.1'),
@@ -752,7 +756,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Watch,
           image:
-            'https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/1255.webp",
           points: [
             tSections('mobilesConsumer.services.watchesParts.points.0'),
             tSections('mobilesConsumer.services.watchesParts.points.1'),
@@ -767,7 +771,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Watch,
           image:
-            'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/1266.webp",
           points: [
             tSections('mobilesConsumer.services.wearables.points.0'),
             tSections('mobilesConsumer.services.wearables.points.1'),
@@ -782,7 +786,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Wifi,
           image:
-            'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/127.webp",
           points: [
             tSections('mobilesConsumer.services.smartHome.points.0'),
             tSections('mobilesConsumer.services.smartHome.points.1'),
@@ -797,7 +801,7 @@ export function ServicesPageClient({ locale }: { locale: string }) {
           ),
           icon: Plug,
           image:
-            'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=800&h=600',
+          "/images/services/128.webp",
           points: [
             tSections('mobilesConsumer.services.phoneParts.points.0'),
             tSections('mobilesConsumer.services.phoneParts.points.1'),

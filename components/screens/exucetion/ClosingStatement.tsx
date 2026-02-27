@@ -13,7 +13,7 @@ export async function ClosingStatement() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1920&q=80')",
+            "url('/images/execution/009.webp')",
         }}
       />
       <div className="absolute inset-0 bg-black/80" />

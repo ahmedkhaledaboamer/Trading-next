@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import {
   UserIcon,
   BriefcaseIcon,
@@ -32,10 +33,13 @@ export async function EscalationPath() {
           {/* Image Side */}
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80"
+              <Image
+                src="/images/execution/005.webp"
                 alt="Professional Team"
-                className="w-full h-auto object-cover"
+               className="w-full h-[60vh] md:h-[75vh] lg:h-[80vh] xl:h-[75vh] 2xl:h-[70vh] object-cover"
+                
+                width={1000}
+                height={800}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
@@ -58,13 +62,13 @@ export async function EscalationPath() {
               {steps.map((step, index) => {
                 const Icon = stepIcons[index]
                 const margin =
-                  index === 0 ? "" : index === 1 ? "ml-8" : index === 2 ? "ml-16" : "ml-24"
+                  index === 0 ? "" : index === 1 ? "md:ml-8" : index === 2 ? "md:ml-16" : "md:ml-24"
                 const extraBorder =
                   index === steps.length - 1 ? " border-r-4 border-r-[#C9A84C]" : ""
                 return (
                   <div
                     key={index}
-                    className={`relative flex items-center gap-6 p-6 rounded-xl shadow-sm border-2 z-10 hover:shadow-md transition-shadow ${margin} ${stepBgColors[index % stepBgColors.length]}${extraBorder}`}
+                    className={`relative flex items-center gap-6 p-6 rounded-xl shadow-sm border-2 z-10 hover:shadow-md transition-shadow ml-0 ${margin} ${stepBgColors[index % stepBgColors.length]}${extraBorder}`}
                   >
                     <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center shrink-0 border-2 border-blue-100">
                       <Icon className="w-8 h-8 text-blue-600" />
