@@ -1,0 +1,1492 @@
+{
+  "notFound": {
+      "title": "Seite nicht gefunden",
+      "description": "Die von Ihnen gesuchte Seite existiert nicht oder wurde möglicherweise verschoben. Versuchen Sie, zur Startseite zurückzukehren.",
+      "cta": "Zur Startseite zurück",
+      "badge": "Nicht gefunden"
+  },
+  "page": {
+      "title": "Startseite"
+  },
+  "navbar": {
+      "cta": "Service buchen",
+      "routes": [
+          {
+              "label": "Startseite",
+              "href": "/"
+          },
+          {
+              "label": "Dienste",
+              "href": "/services"
+          },
+          {
+              "label": "Geschäftspfad",
+              "href": "/business-path"
+          },
+          {
+              "label": "Geschäftsidentität",
+              "href": "/business-identity"
+          },
+          {
+              "label": "Ausführung",
+              "href": "/execution"
+          }
+      ]
+  },
+  "pages": {
+      "home": {
+          "title": "Startseite | KIB for Trade",
+          "description": "Entdecken Sie KIB for Trade, ein souveränes Handelszentrum, das Beschaffung und Distribution auf globalen Märkten steuert."
+      },
+      "execution": {
+          "title": "Ausführung | KIB for Trade",
+          "description": "Wir bieten umfassende Dienstleistungen zur rechtlichen Ausführung."
+      },
+      "services": {
+          "title": "Dienste | KIB for Trade",
+          "description": "Entdecken Sie unsere Premium-Rechtsdienstleistungen."
+      },
+      "businessPath": {
+          "title": "Geschäftspfad | KIB for Trade",
+          "description": "Ihr Leitfaden zum Aufbau eines erfolgreichen Geschäftspfads."
+      },
+      "businessIdentity": {
+          "title": "Geschäftsidentität | KIB for Trade",
+          "description": "Wir helfen Ihnen, Ihre Geschäftsidentität aufzubauen."
+      },
+      "about": {
+          "title": "Über uns | KIB for Trade",
+          "description": "Erfahren Sie mehr über unser Team, unsere Vision und Mission."
+      }
+  },
+  "content": {
+      "title": "Meine Komponente",
+      "description": "Beschreibung meiner Komponente"
+  },
+  "header": {
+      "title": "Premium-Rechtsberatung",
+      "subtitle": "Vertrauenswürdige Rechtskompetenz mit Goldstandard",
+      "companyName": "KIB for Trade L.L.C",
+      "tagline": "Das Zentrum der Handelsmacht… und die Plattform der Einflussnahme in globalen Lieferketten",
+      "paragraph1": "In einer Welt, in der der Handel schneller wird und der Wettbewerb härter, sticht eine Einheit mit Vision, Einsicht und Ausführungskraft heraus. KIB for Trade ist nicht nur ein Unternehmen… es ist ein souveränes Handelszentrum, das Beschaffungs- und Distributionsoperationen auf mehreren Märkten steuert und Handelsströme von der Quelle bis zum Kunden kontrolliert.",
+      "paragraph2": "Wir bauen Einfluss durch globale Liefernetzwerke, solide Beziehungen und praktische Erfahrung auf, die unseren Kunden Zugang zu hochwertigen Produkten, wettbewerbsfähigen Preisen und präzisen Abläufen ermöglicht.",
+      "ctaBusinessPath": "Ihr Geschäftspfad",
+      "cta": {
+          "bookConsultation": "Beratung buchen",
+          "exploreServices": "Unsere Dienste entdecken"
+      }
+  },
+  "home": {
+      "businessEntity": {
+          "badge": "Die Geschäftseinheit",
+          "heading": "Ein integriertes System, das Handel mit hoher Professionalität steuert",
+          "description": "KIB for Trade arbeitet nach einem fortschrittlichen Betriebsmodell, das strategische Vision mit präziser Ausführung kombiniert, um Marktführerschaft zu sichern.",
+          "features": [
+              {"title": "Macht des Zentrums"},
+              {"title": "Klarheit der Vision"},
+              {"title": "Präzision in der Ausführung"},
+              {"title": "Souveränität der Handelsentscheidung"}
+          ],
+          "quote": "Wir steuern Import-, Export-, Distributions- und Beschaffungsoperationen über ein Betriebssystem, das Geschwindigkeit, Stabilität und Qualität in jedem Schritt garantiert.",
+          "imageAlt": "Ein integriertes System, das Handel steuert"
+      },
+      "commercialInfluence": {
+          "title": "Struktur des Handelseinflusses",
+          "subtitle": "Die Machtstruktur innerhalb von KIB for Trade ruht auf drei Hauptpfeilern, die uns Markttiefe und hohe Kontrollfähigkeit verleihen.",
+          "pillars": [
+              {"title": "Operativer Einfluss", "description": "Vollständige Kontrolle der Lieferketten von der Quelle bis zum Kunden mit einer schnellen, reaktionsstarken Betriebsstruktur.", "imageAlt": "Team, das operative Prozesse in einer Büro-Umgebung steuert"},
+              {"title": "Markteinfluss", "description": "Starke Präsenz auf mehreren Märkten verleiht dem Unternehmen hohe Verhandlungsmacht und Einfluss auf Nachfrageströme.", "imageAlt": "Stadt-Skyline und Märkte, die Markteinfluss darstellen"},
+              {"title": "Strategischer Einfluss", "description": "Entscheidungen basierend auf tiefgehender Datenanalyse und der Einführung von Geschäftsmodellen, die nachhaltige Vorteile schaffen.", "imageAlt": "Geschäftsmeeting zur Planung von Handelsstrategien"}
+          ]
+      },
+      "powerIndicators": {
+          "title": "Machtindikatoren",
+          "subtitle": "Leistungsstandards, die Stabilität und Souveränität in der kommerziellen Ausführung über alle operativen Einheiten hinweg widerspiegeln.",
+          "items": ["Tiefes Verständnis der Nachfragenatur", "Genaue Marktanalyse", "Hohe Ausführungsfähigkeit", "Strenge Qualitätsverpflichtung", "Zuverlässige Liefernetzwerke", "Geschwindigkeit bei der Lieferung", "Operative Flexibilität", "Schutz des Handelskapitals"]
+      },
+      "commercialProtection": {
+          "title": "Handelsschutzsystem",
+          "subtitle": "Ein integriertes System, das das Handelskapital in jeder Stufe der Wertschöpfungskette schützt.",
+          "imageAlt": "Handelsschutzsystem",
+          "highlight": "Umfassender Schutz ",
+          "highlightSuffix": "für jede Handelsstufe",
+          "items": ["Schutz der Lieferung vor Störungen", "Schutz der Qualität vor Verschlechterung", "Schutz vertraglicher Verpflichtungen", "Schutz der Lieferfristen", "Schutz des Bestands vor Risiken"]
+      },
+      "commercialDomains": {
+          "title": "Handelseinfluss-Domänen",
+          "subtitle": "Jede Domäne hier steht für eine Stärke-Einheit innerhalb der Unternehmenseinheit und ist darauf ausgelegt, Marktbedürfnisse zu bedienen und neue Einflusskanäle zu öffnen.",
+          "domains": [
+              {"id": "import", "title": "Internationales Importsystem", "description": "Direkte Verbindung zu globalen Märkten gewährleistet hochwertige Produkte und stabilen Zugang durch vertrauenswürdige internationale Verfahren."},
+              {"id": "export", "title": "Export- und Expansionssystem", "description": "Handelskanäle, die Türen zum regionalen und internationalen Marketing für unsere Partner in sorgfältig ausgewählten Märkten öffnen."},
+              {"id": "home-appliances", "title": "Zentrum für Haushaltsgeräte und Elektrik", "description": "Integrierte Lösungen für Haushaltsgeräte und Innovationen – von großen Geräten bis hin zu feinen Zubehörteilen."},
+              {"id": "electronics", "title": "Zentrum für Elektronik und Technologie", "description": "Fortschrittliche Elektronik, Bildschirme und Technologielösungen, die verschiedene Handelssektoren bedienen."},
+              {"id": "mobiles", "title": "Zentrum für Smartphones", "description": "Neueste globale Smartphone-Modelle mit flexiblem Distributionssystem über mehrere Kanäle."},
+              {"id": "gaming", "title": "Zentrum für Gaming und Digitale Unterhaltung", "description": "Gaming-Produkte, Konsolen und Zubehör für den wachsenden digitalen Unterhaltungssektor."},
+              {"id": "photo-video", "title": "Zentrum für Fotografie", "description": "Professionelle Fotografie-Ausrüstung, Objektive und Zubehör zur Unterstützung hochwertiger Content-Produktion."},
+              {"id": "networks", "title": "Zentrum für Netzwerke und Kommunikation", "description": "Integrierte Netzwerklösungen, Kommunikationsgeräte und Infrastruktur, die die Geschäftskontinuität effizient unterstützen."}
+          ]
+      },
+      "suppliersNetwork": {
+          "title": "Globales Lieferantennetzwerk",
+          "subtitle": "Ein Liefernetzwerk über mehrere Kontinente, das dem Unternehmen Stärke bei Zugang, Auswahl und Risikomanagement verleiht.",
+          "imageAlt": "Globales Lieferantennetzwerk an Seehäfen",
+          "benefitsTitle": "Vorteile des Netzwerks",
+          "benefits": ["Vielfältige Lieferquellen", "Schutz vor Marktstörungen", "Sofortige Alternativen", "Höhere Verhandlungsmacht bei Preisen und Mengen"],
+          "regionsTitle": "Wichtige Lieferregionen",
+          "regions": ["Ostasien", "Europa", "Naher Osten", "Nordamerika"]
+      },
+      "digitalTransformation": {
+          "title": "Digitalisierungs-Einheit",
+          "subtitle": "Eine spezialisierte Einheit, die digitale Infrastruktur entwickelt, um Geschwindigkeit, Genauigkeit und Transparenz in jedem operativen Prozess zu gewährleisten.",
+          "imageAlt": "Digitalisierungs-Einheit bei KIB for Trade",
+          "tasksTitle": "Aufgaben der Einheit",
+          "tasks": ["Digitalisierung von Beschaffungs- und Distributionsprozessen", "Entwicklung von Sendungsverfolgungssystemen", "Aufbau von Echtzeit-Betriebs-Dashboards", "Verbesserung der Kundenerfahrung durch digitale Lösungen", "Einsatz von KI bei der Marktanalyse"],
+          "goalsTitle": "Ziele der Einheit",
+          "goals": ["Steigerung der operativen Effizienz", "Reduzierung menschlicher Fehler", "Beschleunigung der Entscheidungsfindung", "Erhöhung der operativen Transparenz"]
+      },
+      "ecommerceUnit": {
+          "title": "E-Commerce-Einheit",
+          "subtitle": "Eine spezialisierte Einheit für die Steuerung und Entwicklung digitaler Verkaufsprozesse über integrierte E-Commerce-Plattformen.",
+          "objectivesTitle": "Ziele der Einheit",
+          "objectives": ["Erreichung einer größeren Kundenbasis", "Beschleunigung der Verkaufsprozesse", "Verbesserung der Kauferfahrung", "Unterstützung von Partnern bei der vollständigen digitalen Transformation"],
+          "tasksTitle": "Aufgaben der Einheit",
+          "tasks": ["Steuerung von E-Commerce-Shops", "Entwicklung elektronischer Zahlungslösungen", "Digitales Bestandsmanagement", "Durchführung digitaler Marketingkampagnen"]
+      },
+      "franchiseUnit": {
+          "title": "Franchise-Einheit",
+          "subtitle": "Eine spezialisierte Einheit zur Vergabe kommerzieller Franchise-Rechte für Marken, die von KIB for Trade geführt werden, nach klaren operativen Standards.",
+          "benefitsTitle": "Franchise-Vorteile",
+          "benefits": ["Schnelle Markenexpansion", "Reduzierung operativer Risiken für das Unternehmen", "Erhöhung des Marktanteils durch Partner", "Unterstützung der Partner mit einem fertigen Betriebssystem", "Erzielung stabiler Einnahmeströme"],
+          "tasksTitle": "Aufgaben der Einheit",
+          "tasks": ["Erstellung kommerzieller Franchise-Modelle", "Auswahl geeigneter Franchise-Partner", "Bereitstellung von Schulungen und operativer Unterstützung", "Überwachung der Ausführungsqualität an Franchise-Standorten", "Sicherstellung der Markenkonformität mit ihren kommerziellen Standards"],
+          "benefitsNote": "Die Franchise-Einheit arbeitet daran, Marken in skalierbare Modelle mit Vertrauen und Nachhaltigkeit zu verwandeln. Durch den Aufbau klarer Betriebssysteme und die Auswahl der richtigen Partner.",
+          "tasksNote": "In der Franchise-Einheit ermöglichen wir Marken eine kontrollierte Expansion durch die Gestaltung anwendbarer Franchise-Modelle und die Festlegung präziser operativer Standards.",
+          "imageAlt": "Geschäftsmeeting für die Franchise-Einheit"
+      },
+      "internationalExpansion": {
+          "title": "Internationale Expansions-Einheit",
+          "subtitle": "Eine strategische Einheit, die neue Märkte erschließt und den kommerziellen Einfluss unserer Partner weltweit erweitert.",
+          "imageAltTasks": "Aufgaben der internationalen Expansions-Einheit",
+          "imageAltResults": "Ergebnisse der internationalen Expansions-Einheit",
+          "tasksTitle": "Aufgaben der Einheit",
+          "tasks": ["Untersuchung regionaler und internationaler Märkte", "Aufbau neuer Partnerschaften in mehreren Ländern", "Erschließung neuer Lieferwege", "Bewertung von Wachstumschancen in Schwellenmärkten"],
+          "resultsTitle": "Ergebnisse der Einheit",
+          "results": ["Erhöhte internationale Präsenz", "Diversifizierung der Lieferquellen", "Stärkere Verhandlungsmacht", "Schaffung neuer Geschäftsmöglichkeiten für Partner"]
+      },
+      "majorProjectsUnit": {
+          "title": "Großprojekt-Einheit",
+          "subtitle": "Eine Einheit, die sich der Steuerung großangelegter Projekte von der Planung bis zur Ausführung durch integrierte Beschaffungs- und Betriebslösungen widmet.",
+          "imageAlt": "Spezialisierte Einheit für die Steuerung von Großprojekten",
+          "features": [
+              {"id": "large-quantities", "title": "Großmengen-Beschaffung"},
+              {"id": "advanced-tech", "title": "Fortschrittliche technische Ausrüstung"},
+              {"id": "integrated-solutions", "title": "Integrierte Betriebslösungen"},
+              {"id": "long-term-supply", "title": "Langfristige Liefersteuerung"},
+              {"id": "continuous-support", "title": "Technischer Support"},
+              {"id": "continuous-support-2", "title": "Kontinuierlicher Betrieb"}
+          ]
+      },
+      "operationalLeadership": {
+          "title": "Betriebsführungs-System",
+          "subtitle": "Eine integrierte Führungsstruktur, die die vollständige Kontrolle über Handelsströme durch vier Haupt-Kontrollräume gewährleistet.",
+          "rooms": [
+              {"id": "market", "number": "01", "title": "Marktüberwachungsraum", "points": ["Echtzeit-Analyse von Preisbewegungen", "Verfolgung von Nachfragetrends", "Bewertung kommerzieller Risiken"], "imageAlt": "Bildschirm mit Preisbewegungen auf Finanzmärkten"},
+              {"id": "supply", "number": "02", "title": "Beschaffungskontrollraum", "points": ["Steuerung internationaler Lieferwege", "Echtzeit-Sendungsverfolgung", "Sicherstellung der Lieferstabilität"], "imageAlt": "Versandkorridore und Logistikhäfen"},
+              {"id": "quality", "number": "03", "title": "Qualitäts- und Compliance-Raum", "points": ["Produktinspektion vor dem Versand", "Überprüfung von Qualitätszertifikaten", "Sicherstellung der Einhaltung internationaler Spezifikationen"], "imageAlt": "Elektronische Komponenten bei der Qualitätsprüfung"},
+              {"id": "operations", "number": "04", "title": "Logistik-Operationsraum", "points": ["Steuerung internen und externen Transports", "Koordination der Lieferoperationen", "Verbesserung der Logistikfluss-Effizienz"], "imageAlt": "Kräne und Ladehöfe in einem Handels hafen"}
+          ]
+      }
+  },
+  "businessIdentity": {
+    "hero": {
+      "companyName": "KIB for Trade",
+      "title": "Geschäftsidentität",
+      "description": "Bei KIB for Trade sehen wir Geschäftsidentität nicht nur als Logo oder Farben – sie ist ein Rahmenwerk, das bestimmt, wie wir denken, Entscheidungen treffen und mit Kunden und Partnern umgehen. Sie spiegelt die Qualitätsstandards wider, zu denen wir uns verpflichten, die Art und Weise, wie wir unsere Werte ausdrücken, und wie wir eine konsistente Erfahrung liefern, die unseren Professionalismus in jeder Interaktion und Dienstleistung widerspiegelt.",
+      "discoverMore": "Mehr entdecken"
+    },
+    "intro": {
+      "sectionTitle": "Einführung",
+      "p1": "Bei KIB for Trade haben wir uns entschieden, wer wir sind, auf eine Weise zu beschreiben, die niemandem gleicht – weil wir einfach nicht arbeiten wie irgendjemand sonst.",
+      "p2": "Wir sind kein Unternehmen, das wiederholt, was andere sagen, wir verwenden nicht dieselben Phrasen auf jeder Website und suchen nicht nach polierten Worten, sondern nach der Wahrheit, so wie sie ist.",
+      "p3": "Wir definieren uns durch die Art, wie wir arbeiten:",
+      "p4": "Mit Klarheit, die sich nicht hinter Worten versteckt, mit Stärke, die sich in der Ausführung zeigt, bevor sie auf der Seite gelesen wird, und mit einem operativen Ansatz, der den Kunden spüren lässt, dass er mit einer Einheit zu tun hat, die genau weiß, was sie tut, warum sie es tut und wie sie es tut.",
+      "p5": "Wir sind eine Handelseinheit, die auf realen Operationen, genauen Informationen, Marktkenntnis und tiefem Verständnis internationaler Handelsdynamiken basiert.",
+      "p6": "Diese Seite ist keine Einführung… sie ist eine Identität, geschrieben mit Ehrlichkeit und in einem Stil, der unsere Werte, unsere Arbeitsweise und unseren einzigartigen kommerziellen Charakter widerspiegelt.",
+      "personalityTitle": "Markenpersönlichkeit",
+      "personalitySubtitle": "Unsere Persönlichkeit ist keine geschriebene Stimme… sie ist eine Art des Umgangs",
+      "traits": {
+        "direct": { "title": "Direkt", "desc": "Wir verwenden keine Worte, die größer sind als die Wahrheit." },
+        "calm": { "title": "Ruhig", "desc": "Wir übertreiben nicht und versprechen nichts, was wir nicht halten können." },
+        "practical": { "title": "Praktisch", "desc": "Wir konzentrieren uns auf die Ausführung, bevor wir reden." },
+        "aware": { "title": "Bewusst", "desc": "Wir verstehen den Markt und lesen die Details." },
+        "professional": { "title": "Professionell", "desc": "Wir behandeln den Kunden, wie er es verdient – nicht wie üblich." },
+        "committed": { "title": "Verpflichtet", "desc": "Wir halten unser Wort und bauen langfristiges Vertrauen auf." }
+      }
+    },
+    "statement": {
+      "heading": "KIB for Trade Erklärung",
+      "subheading": "Diese Erklärung ist kein formeller Text… sie ist eine klare Deklaration, wie wir arbeiten",
+      "bullets": [
+        "Wir verpflichten uns, bevor wir versprechen.",
+        "Wir zeigen, bevor wir sprechen.",
+        "Wir führen aus, bevor wir werben.",
+        "Und wir behandeln den Kunden als Partner bei der Entscheidung, bevor er ein bloßer Kunde ist."
+      ],
+      "paragraph": "Wir verkaufen nicht nur Produkte… wir bauen Vertrauen auf, schaffen Beziehungen und liefern eine Erfahrung, die sich im Laufe der Zeit beweist und einen Eindruck hinterlässt, der den Kunden zurückkommen lässt, weil er es will – nicht weil er muss.",
+      "dictionary": {
+        "title": "KIB Wörterbuch",
+        "subtitle": "Dieses Wörterbuch sind keine Worte… es ist eine Arbeits-Philosophie",
+        "terms": {
+          "supply": {
+            "term": "Lieferung",
+            "def": "Pünktliche Ankunft, nicht nur Ankunft."
+          },
+          "client": {
+            "term": "Kunde",
+            "def": "Ein Entscheidungspartner, kein Nummer in einem System."
+          },
+          "quality": {
+            "term": "Qualität",
+            "def": "Ein Ergebnis, das gemessen wird, kein Wort, das gesagt wird."
+          },
+          "commitment": {
+            "term": "Verpflichtung",
+            "def": "Ein fester Termin, keine Möglichkeit."
+          },
+          "marketing": {
+            "term": "Marketing",
+            "def": "Ein bleibender Eindruck, keine vorbeiziehende Werbung."
+          },
+          "credibility": {
+            "term": "Glaubwürdigkeit",
+            "def": "Eine Arbeitsweise, kein Slogan."
+          },
+          "service": {
+            "term": "Service",
+            "def": "Eine komplette Erfahrung, kein einzelner Schritt."
+          },
+          "success": {
+            "term": "Erfolg",
+            "def": "Ein gemeinsames Ergebnis, kein individueller Erfolg."
+          }
+        }
+      },
+      "values": {
+        "title": "Werte von KIB for Trade",
+        "subtitle": "Unsere Werte sind keine Slogans… sie sind Betriebsregeln, die wir nicht überschreiten",
+        "items": {
+          "clarity": {
+            "title": "Klarheit",
+            "desc": "Wir sagen die Wahrheit, wie sie ist – ohne Schmuck oder Umwege."
+          },
+          "commitment": {
+            "title": "Verpflichtung",
+            "desc": "Für uns ist eine Frist ein Vertrag… und die Ausführung eine Verantwortung."
+          },
+          "respect": {
+            "title": "Respekt",
+            "desc": "Respekt vor der Zeit, dem Geld und dem Vertrauen des Kunden."
+          },
+          "accuracy": {
+            "title": "Genauigkeit",
+            "desc": "Jeder Schritt wird berechnet und jede Information geprüft."
+          },
+          "continuity": {
+            "title": "Kontinuität",
+            "desc": "Eine langfristige Beziehung, keine kurze Transaktion."
+          },
+          "professionalism": {
+            "title": "Professionalität",
+            "desc": "Eine konsistente Arbeitsweise, die sich unter keinen Umständen ändert."
+          }
+        }
+      }
+    },
+    "operations": {
+      "communication": {
+        "title": "Kommunikationsstil",
+        "tagline": "Wir kommunizieren mit dem Kunden nur auf eine Weise:",
+        "points": [
+          "Wir erklären… wir rechtfertigen nicht.",
+          "Wir klären… wir verwirren nicht.",
+          "Wir informieren… wir lassen niemanden raten.",
+          "Wir geben Informationen… keine Eindrücke.",
+          "Wir verwenden eine Sprache, die den Verstand des Kunden respektiert… und seine Zeit nicht verschwendet."
+        ],
+        "footer": "Für uns ist Kommunikation kein Service… sie ist Teil unserer Identität."
+      },
+      "brandPromise": {
+        "title": "Markenversprechen",
+        "intro": "Wir versprechen dem Kunden drei Dinge, von denen wir niemals abrücken:",
+        "items": [
+          "Klare Informationen",
+          "Präzise Ausführung",
+          "Eine respektvolle Erfahrung"
+        ],
+        "footer": "Dieses Versprechen ist unser Standard… so halten wir uns selbst verantwortlich, bevor der Kunde es tut."
+      },
+      "proveValue": {
+        "title": "Wie beweisen wir unseren Wert?",
+        "intro": "Wir beweisen unseren Wert durch Taten, nicht durch Worte, und durch Ergebnisse, nicht durch Versprechen:",
+        "points": [
+          "Berechnete Ausführungsgeschwindigkeit, nicht zufällig.",
+          "Dokumente, die genau sind – ohne Fehler und ohne Verzögerungen.",
+          "Sendungen, die von Moment zu Moment verfolgt werden, von der Quelle bis zur Haustür des Kunden.",
+          "Starke internationale Beziehungen, die den Weg erleichtern statt komplizieren.",
+          "Kontinuierliche Preis- und Marktanalyse, die die beste Entscheidung zur besten Zeit sicherstellt.",
+          "Flexible Lösungen, die zu jedem Kunden, jedem Markt und jedem Fall passen."
+        ],
+        "quote": "Wir sagen nicht „wir sind die Besten“… wir lassen die Ergebnisse sprechen."
+      },
+      "credibility": {
+        "title": "Wie zeigen wir unsere Glaubwürdigkeit?",
+        "intro": "Glaubwürdigkeit ist keine Option… sie ist Teil unseres Betriebssystems:",
+        "points": [
+          "Verträge, die klar sind und keinen Interpretationsspielraum lassen.",
+          "Rechnungen, die transparent sind – ohne Überraschungen.",
+          "Kontinuierliche Updates in jeder Phase.",
+          "Ausführung, die messbar ist, nicht auf Gerede basiert.",
+          "Verpflichtung, die sich nicht ändert, auch wenn sich die Umstände ändern.",
+          "Vollständige Dokumentation jedes Schritts – von der ersten Anfrage bis zur endgültigen Unterschrift."
+        ]
+      }
+    },
+    "partner": {
+      "title": "Was macht uns anders?",
+      "subtitle": "Wir sind nicht anders in Worten… sondern in der Art zu arbeiten",
+      "differences": [
+        "Wir machen unsere Schritte klar und sichtbar.",
+        "Wir teilen jede Information, die mit der Anfrage des Kunden zusammenhängt.",
+        "Wir arbeiten mit einem Betriebssystem, das nicht auf Glück basiert.",
+        "Wir verfolgen Sendungen von Moment zu Moment.",
+        "Wir liefern Dokumente ohne einen einzigen Fehler.",
+        "Wir behandeln den Kunden als Partner bei der Entscheidung."
+      ],
+      "footer": "Für uns ist Unterschied kein Stil… er ist ein Betriebssystem."
+    },
+    "conclusion": {
+      "brandNamePrefix": "KIB",
+      "brandNameHighlight": "for Trade",
+      "tagline": "Nicht nur ein Unternehmen… es ist eine Art des Umgangs, eine Art zu denken und ein Qualitätsstandard.",
+      "leadIn": "Dies ist eine Identität, geschrieben mit Klarheit, Stärke und Selbstvertrauen… um dem Kunden zu sagen:",
+      "final": "Sie sind am richtigen Ort.",
+      "pillars": {
+        "clarity": {
+          "title": "Klarheit",
+          "desc": "Weil Information ein Recht ist."
+        },
+        "commitment": {
+          "title": "Verpflichtung",
+          "desc": "Weil Zeit Wert hat."
+        },
+        "quality": {
+          "title": "Qualität",
+          "desc": "Weil sie die Basis von Vertrauen ist."
+        },
+        "respect": {
+          "title": "Respekt",
+          "desc": "Weil sie das Wesen der Interaktion ist."
+        }
+      }
+    }
+  },
+  "services": {
+      "hero": {
+          "badge": "Ihr erster Partner für Handel und Technologie",
+          "title": "KIB for Trade",
+          "titleSuffix": "L.L.C",
+          "description": "Wir bieten eine breite Palette kommerzieller und technologischer Dienstleistungen, die den Bedürfnissen von Unternehmen und Privatpersonen gerecht werden – mit voller Verpflichtung zu Qualität, Professionalität und globalen Standards.",
+          "cta": "Unsere Dienste entdecken"
+      },
+      "filters": {
+          "all": "Alle"
+      },
+      "sections": {
+          "tradeLogistics": {
+              "title": "Handels- und Logistikdienstleistungen",
+              "subtitle": "Integrierte Import- und Exportlösungen, die Sie mit globalen Märkten verbinden",
+              "services": {
+                  "import": {
+                      "title": "Internationale Importe",
+                      "description": "End-to-End-Import-Management",
+                      "points": {
+                          "0": "Lieferantenauswahl",
+                          "1": "Wareninspektion",
+                          "2": "Seefracht und Luftfracht",
+                          "3": "Frachtversicherung"
+                      }
+                  },
+                  "export": {
+                      "title": "Internationale Exporte",
+                      "description": "Export in globale Märkte",
+                      "points": {
+                          "0": "Versandvorbereitung",
+                          "1": "Dokumentenbeglaubigung",
+                          "2": "Internationaler Versand",
+                          "3": "Lieferverfolgung"
+                      }
+                  },
+                  "seaShipping": {
+                      "title": "Seefracht",
+                      "description": "Zuverlässige Seetransportlösungen",
+                      "points": {
+                          "0": "Vollcontainer (FCL)",
+                          "1": "Teilladungen (LCL)",
+                          "2": "Sendungsverfolgung",
+                          "3": "Seeverischerung"
+                      }
+                  },
+                  "airShipping": {
+                      "title": "Luftfracht",
+                      "description": "Globale Geschwindigkeit beim Transport",
+                      "points": {
+                          "0": "Expressversand",
+                          "1": "Sensible Fracht",
+                          "2": "Temporäre Lagerung",
+                          "3": "Lagerauslieferung"
+                      }
+                  },
+                  "customs": {
+                      "title": "Zollabfertigung",
+                      "description": "Schnelle und sichere Grenzüberquerung",
+                      "points": {
+                          "0": "Dokumentenvorbereitung",
+                          "1": "Zoll- und Gebührenzahlung",
+                          "2": "Inspektion und Freigabe",
+                          "3": "Endauslieferung"
+                      }
+                  },
+                  "storage": {
+                      "title": "Logistiklagerung",
+                      "description": "Sichere und organisierte Lager",
+                      "points": {
+                          "0": "Langzeitlagerung",
+                          "1": "Kurzzeitlagerung",
+                          "2": "Bestandsmanagement",
+                          "3": "Waren-Schutz"
+                      }
+                  },
+                  "landTransport": {
+                      "title": "Straßentransport",
+                      "description": "Lokales Transportnetzwerk",
+                      "points": {
+                          "0": "Kühltransporter",
+                          "1": "Express-Transport",
+                          "2": "GPS-Tracking",
+                          "3": "Tägliche Lieferungen"
+                      }
+                  },
+                  "commercialInsurance": {
+                      "title": "Kommerzielle Versicherung",
+                      "description": "Schutz Ihrer Sendungen und Ihres Geschäfts",
+                      "points": {
+                          "0": "Frachtversicherung",
+                          "1": "Transportversicherung",
+                          "2": "Risikoanalyse",
+                          "3": "Schnelle Schadensregulierung"
+                      }
+                  }
+              }
+          },
+          "ePayments": {
+              "title": "Elektronische Zahlungslösungen",
+              "subtitle": "Moderne Finanztechnologien zur Vereinfachung Ihrer Geschäftstransaktionen",
+              "services": {
+                  "posDevices": {
+                      "title": "Elektronische POS-Geräte",
+                      "description": "Zahlungsterminals der neuesten Generation",
+                      "points": {
+                          "0": "Bereitstellung von POS-Geräten",
+                          "1": "Installation und Einrichtung",
+                          "2": "Regelmäßige Wartung",
+                          "3": "Technischer Support"
+                      }
+                  },
+                  "smartCards": {
+                      "title": "Intelligente Zahlungskarten",
+                      "description": "Sicherheit nach globalem Standard",
+                      "points": {
+                          "0": "EMV-Karten",
+                          "1": "NFC-Karten",
+                          "2": "Personalisierung und Druck",
+                          "3": "Karten-Lebenszyklus-Management"
+                      }
+                  },
+                  "mobilePayments": {
+                      "title": "Mobile Zahlungslösungen",
+                      "description": "Schnellere und einfachere Transaktionen",
+                      "points": {
+                          "0": "Apple Pay",
+                          "1": "Google Pay",
+                          "2": "QR-Zahlungen",
+                          "3": "App-Integrationen"
+                      }
+                  },
+                  "paymentGateways": {
+                      "title": "Online-Zahlungsgateways",
+                      "description": "Vollständige Integration in Ihre Shops",
+                      "points": {
+                          "0": "Shop-Integration",
+                          "1": "Datenschutz",
+                          "2": "Finanzberichte",
+                          "3": "Technischer Support"
+                      }
+                  }
+              }
+          },
+          "computingTech": {
+              "title": "Computer- und Technologieausstattung",
+              "subtitle": "Fortschrittliche Technologie-Setups für Büros und Unternehmen",
+              "services": {
+                  "desktopComputers": {
+                      "title": "Desktop-Computer",
+                      "description": "Hohe Leistung für Unternehmen",
+                      "points": {
+                          "0": "Bereitstellung von Geräten",
+                          "1": "Konfiguration und Einrichtung",
+                          "2": "Wartung",
+                          "3": "Technischer Support"
+                      }
+                  },
+                  "laptops": {
+                      "title": "Laptops",
+                      "description": "Top-Marken weltweit",
+                      "points": {
+                          "0": "Geräteverkauf",
+                          "1": "Firmenlieferung",
+                          "2": "Systemeinrichtung",
+                          "3": "Wartung"
+                      }
+                  },
+                  "printersScanners": {
+                      "title": "Drucker und Scanner",
+                      "description": "Fortschrittliche Drucklösungen",
+                      "points": {
+                          "0": "Laserdrucker",
+                          "1": "Tintenstrahldrucker",
+                          "2": "Scanner",
+                          "3": "Toner und Verbrauchsmaterial"
+                      }
+                  },
+                  "monitorsAccessories": {
+                      "title": "Monitore und Zubehör",
+                      "description": "Hohe Auflösung für jeden Einsatzbereich",
+                      "points": {
+                          "0": "Büromonitore",
+                          "1": "Anzeigebildschirme",
+                          "2": "Tastaturen",
+                          "3": "Zubehör"
+                      }
+                  },
+                  "serversDataCenters": {
+                      "title": "Server und Rechenzentren",
+                      "description": "Digitale Infrastruktur für Ihr Unternehmen",
+                      "points": {
+                          "0": "Rack-Server",
+                          "1": "Speichereinheiten",
+                          "2": "Backup-Lösungen",
+                          "3": "Rechenzentrums-Einrichtung"
+                      }
+                  },
+                  "storageUnits": {
+                      "title": "Speichereinheiten",
+                      "description": "Sichere Datenspeicherkapazität",
+                      "points": {
+                          "0": "SSD",
+                          "1": "HDD",
+                          "2": "NAS",
+                          "3": "RAID"
+                      }
+                  },
+                  "peripherals": {
+                      "title": "Peripheriegeräte",
+                      "description": "Professionelles Zubehör",
+                      "points": {
+                          "0": "Mäuse",
+                          "1": "Tastaturen",
+                          "2": "Headsets",
+                          "3": "Webcams"
+                      }
+                  },
+                  "osSetup": {
+                      "title": "Betriebssysteme und Einrichtung",
+                      "description": "Aufbau einer kompletten Arbeitsumgebung",
+                      "points": {
+                          "0": "Windows-Installation",
+                          "1": "Linux-Installation",
+                          "2": "Treiber",
+                          "3": "Gerätekonfiguration"
+                      }
+                  }
+              }
+          },
+          "softwareDev": {
+              "title": "Software und Entwicklung",
+              "subtitle": "Intelligente Softwarelösungen zur Unterstützung Ihres Unternehmenswachstums",
+              "services": {
+                  "corporateSystems": {
+                      "title": "Unternehmenssoftware und -systeme",
+                      "description": "Professionelle Business-Software",
+                      "points": {
+                          "0": "ERP-Systeme",
+                          "1": "CRM-Systeme",
+                          "2": "Buchhaltungssysteme",
+                          "3": "HR-Systeme"
+                      }
+                  },
+                  "appDevelopment": {
+                      "title": "App- und Systementwicklung",
+                      "description": "Maßgeschneiderte Lösungen",
+                      "points": {
+                          "0": "Mobile Apps",
+                          "1": "Web-Plattformen",
+                          "2": "Individuelle Software",
+                          "3": "Systemintegration"
+                      }
+                  },
+                  "cloudComputing": {
+                      "title": "Cloud Computing",
+                      "description": "Ihre Systeme in der Cloud betreiben",
+                      "points": {
+                          "0": "Cloud-Hosting",
+                          "1": "Backups",
+                          "2": "Ressourcen-Skalierung",
+                          "3": "Cloud-Sicherheit"
+                      }
+                  },
+                  "softwareSupport": {
+                      "title": "Technischer Software-Support",
+                      "description": "Laufende Wartung und Updates",
+                      "points": {
+                          "0": "Updates",
+                          "1": "Fehlerbehebung",
+                          "2": "Leistungsoptimierung",
+                          "3": "Kontinuierliche Überwachung"
+                      }
+                  }
+              }
+          },
+          "networks": {
+              "title": "Netzwerke und Kommunikation",
+              "subtitle": "Robuste Infrastruktur für stabile, immer verfügbare Konnektivität",
+              "services": {
+                  "communicationDevices": {
+                      "title": "Kommunikations- und Netzwerkgeräte",
+                      "description": "Leistung nach globalem Standard",
+                      "points": {
+                          "0": "Router",
+                          "1": "Switches",
+                          "2": "Modems",
+                          "3": "Kommunikationsgeräte"
+                      }
+                  },
+                  "cablingFiber": {
+                      "title": "Netzwerk- und Glasfaserverkabelung",
+                      "description": "Hochgeschwindigkeits-Konnektivität",
+                      "points": {
+                          "0": "Kabelverlegung",
+                          "1": "Glasfaser",
+                          "2": "Netzwerkanschlüsse",
+                          "3": "Prüfung und Zertifizierung"
+                      }
+                  },
+                  "computerParts": {
+                      "title": "Computer-Ersatzteile",
+                      "description": "Originale, garantierte Komponenten",
+                      "points": {
+                          "0": "Mainboards",
+                          "1": "RAM",
+                          "2": "SSD-Laufwerke",
+                          "3": "Netzteile"
+                      }
+                  },
+                  "electronicParts": {
+                      "title": "Elektronik-Ersatzteile",
+                      "description": "Zertifizierte Qualitätskomponenten",
+                      "points": {
+                          "0": "Elektronik-Platinen",
+                          "1": "Bildschirme",
+                          "2": "Sensoren",
+                          "3": "Steuereinheiten"
+                      }
+                  }
+              }
+          },
+          "mediaEntertainment": {
+              "title": "Medien und Unterhaltung",
+              "subtitle": "Integrierte Audio-, Video- und Unterhaltungslösungen",
+              "services": {
+                  "avDevices": {
+                      "title": "Audio-Video-Geräte",
+                      "description": "Lösungen für Ton und Bild",
+                      "points": {
+                          "0": "Lautsprecher",
+                          "1": "Bildschirme",
+                          "2": "Soundsysteme",
+                          "3": "Projektoren"
+                      }
+                  },
+                  "surveillance": {
+                      "title": "Überwachungs- und Aufzeichnungssysteme",
+                      "description": "24/7-Schutz",
+                      "points": {
+                          "0": "CCTV-Kameras",
+                          "1": "DVR / NVR",
+                          "2": "Intelligente Überwachungssysteme",
+                          "3": "Installation und Wartung"
+                      }
+                  },
+                  "photoEquipment": {
+                      "title": "Fotografie-Ausrüstung",
+                      "description": "Für Profis und Enthusiasten",
+                      "points": {
+                          "0": "Kameras",
+                          "1": "Objektive",
+                          "2": "Blitze",
+                          "3": "Taschen und Stative"
+                      }
+                  },
+                  "cinemaEquipment": {
+                      "title": "Kinoproduktions-Ausrüstung",
+                      "description": "Fortschrittliche Produktionslösungen",
+                      "points": {
+                          "0": "Kinokameras",
+                          "1": "Kinobeleuchtung",
+                          "2": "Mikrofone",
+                          "3": "Studio-Ausrüstung"
+                      }
+                  },
+                  "gameConsoles": {
+                      "title": "Videospielkonsolen",
+                      "description": "Neueste Unterhaltungsplattformen",
+                      "points": {
+                          "0": "PlayStation",
+                          "1": "Xbox",
+                          "2": "Nintendo",
+                          "3": "VR-Geräte"
+                      }
+                  },
+                  "gamingAccessories": {
+                      "title": "Gaming-Zubehör",
+                      "description": "Ein komplettes Gaming-Erlebnis",
+                      "points": {
+                          "0": "Controller",
+                          "1": "Headsets",
+                          "2": "Ladegeräte",
+                          "3": "Digitale Karten"
+                      }
+                  },
+                  "homeTheaterSystems": {
+                      "title": "Heimkino-Systeme",
+                      "description": "Kino-Erlebnis zu Hause",
+                      "points": {
+                          "0": "Großbildschirme",
+                          "1": "Surround-Systeme",
+                          "2": "Professionelle Installation",
+                          "3": "Klangkalibrierung"
+                      }
+                  },
+                  "proDisplayScreens": {
+                      "title": "Professionelle Display-Bildschirme",
+                      "description": "Display-Lösungen für Unternehmen",
+                      "points": {
+                          "0": "LED-Bildschirme",
+                          "1": "Meeting-Raum-Displays",
+                          "2": "Werbebildschirme",
+                          "3": "Wartung"
+                      }
+                  }
+              }
+          },
+          "mobilesConsumer": {
+              "title": "Mobiltelefone und Consumer-Geräte",
+              "subtitle": "Neueste Smart- und Haushaltsgeräte",
+              "services": {
+                  "mobilePhones": {
+                      "title": "Mobiltelefone",
+                      "description": "Neueste Modelle",
+                      "points": {
+                          "0": "Telefonverkauf",
+                          "1": "Firmenlieferung",
+                          "2": "Systemeinrichtung",
+                          "3": "Reparaturen"
+                      }
+                  },
+                  "phoneAccessories": {
+                      "title": "Telefon-Zubehör",
+                      "description": "Schutz und Leistung",
+                      "points": {
+                          "0": "Hüllen und Cases",
+                          "1": "Kopfhörer",
+                          "2": "Ladegeräte",
+                          "3": "Kabel"
+                      }
+                  },
+                  "homeAppliances": {
+                      "title": "Haushalts-Elektrogeräte",
+                      "description": "Hohe Qualität für Ihr Zuhause",
+                      "points": {
+                          "0": "Kühlschränke",
+                          "1": "Waschmaschinen",
+                          "2": "Trockner",
+                          "3": "Kleingeräte"
+                      }
+                  },
+                  "cookersOvens": {
+                      "title": "Herde und Öfen",
+                      "description": "Fortschrittliche Küchenkonfigurationen",
+                      "points": {
+                          "0": "Backöfen",
+                          "1": "Herde",
+                          "2": "Dunstabzugshauben",
+                          "3": "Installation und Wartung"
+                      }
+                  },
+                  "watchesParts": {
+                      "title": "Uhren und Ersatzteile",
+                      "description": "Präzision und Eleganz",
+                      "points": {
+                          "0": "Herrenuhren",
+                          "1": "Damenuhren",
+                          "2": "Batterien",
+                          "3": "Fein-Service"
+                      }
+                  },
+                  "wearables": {
+                      "title": "Wearable-Geräte",
+                      "description": "Moderne Health-Tech",
+                      "points": {
+                          "0": "Smartwatches",
+                          "1": "Fitnessbänder",
+                          "2": "Schlaf-Tracking",
+                          "3": "Aktivitäts-Tracking"
+                      }
+                  },
+                  "smartHome": {
+                      "title": "Smart-Home-Geräte",
+                      "description": "Komfort und volle Kontrolle",
+                      "points": {
+                          "0": "Intelligente Lampen",
+                          "1": "Intelligente Steckdosen",
+                          "2": "Sprachsteuerung",
+                          "3": "Apps und Automatisierungen"
+                      }
+                  },
+                  "phoneParts": {
+                      "title": "Telefon-Ersatzteile",
+                      "description": "Originale, garantierte Teile",
+                      "points": {
+                          "0": "Bildschirme",
+                          "1": "Akkus",
+                          "2": "Ladeanschlüsse",
+                          "3": "Kameras"
+                      }
+                  }
+              }
+          }
+      },
+      "cta": {
+          "title": "Benötigen Sie einen individuellen Service?",
+          "description": "Unser Expertenteam hilft Ihnen gerne, die optimale Lösung für Ihr Unternehmen zu finden. Kontaktieren Sie uns noch heute für eine kostenlose Beratung und maßgeschneiderte Lösungen.",
+          "primaryCta": "Jetzt kontaktieren",
+          "secondaryCta": "Anfrage senden"
+      }
+  },
+  "businessPath": {
+      "hero": {
+          "badge": "Ihr vertrauenswürdiger Geschäftspfad",
+          "title1": "KIB",
+          "title2": " for Trade",
+          "title3": " L.L.C",
+          "subtitle": "Ihr Handelspartner, der die Türen zu Märkten mit Vertrauen, Qualität und Stabilität öffnet. In einer Welt, in der der Handel sich beschleunigt, sind wir Ihr Kompass zum Erfolg.",
+          "ctaServices": "Unsere Dienste entdecken",
+          "ctaContact": "Kontaktieren Sie uns"
+      },
+      "visionMissionGoal": {
+          "cards": {
+              "vision": {
+                  "title": "Vision",
+                  "text": "Die erste Wahl für Kunden zu sein, die konsistente Qualität, zuverlässige Lieferketten und eine Beziehung suchen, bei der sie immer im Mittelpunkt stehen."
+              },
+              "mission": {
+                  "title": "Mission",
+                  "text": "Integrierte Handelslösungen auf Basis von Transparenz, Präzision und Verpflichtung zu liefern – mit Fokus auf die Bedürfnisse des Kunden und einer Premium-Erfahrung, die sein Vertrauen bei jedem Schritt stärkt."
+              },
+              "goal": {
+                  "title": "Ziel",
+                  "text": "Unsere Kunden zu befähigen, die besten Produkte und Märkte durch durchdachte Lieferwege, professionelle Ausführung und Service zu erreichen, der sie als echte Partner des Erfolgs behandelt."
+              }
+          }
+      },
+      "clientMessage": {
+          "title": "Ein Wort an unseren Kunden",
+          "quoteLine1": "Sie sind nicht nur eine Nummer auf einer Liste…",
+          "quoteHighlight": "Sie sind ein wertvolles Asset und ein Partner, auf den wir stolz sind",
+          "paragraph": "und ein Eckpfeiler unserer Handelsreise. Wir hören Ihnen zu, verstehen Ihre Bedürfnisse und bauen einen Geschäftspfad, der zu Ihrer Ambition passt – denn Ihr Erfolg ist Teil unserer Identität und Ihr Vertrauen unser wahres Kapital."
+      },
+      "servicesSection": {
+          "title": "Unsere integrierten Dienstleistungen",
+          "subtitle": "Jeder Dienst ist darauf ausgelegt, Ihnen Leichtigkeit, Qualität und Vertrauen bei jedem Schritt zu bieten",
+          "services": {
+              "import": "Internationale Importe",
+              "localDistribution": "Lokale Distribution",
+              "externalExpansion": "Externe Expansion",
+              "electronics": "Elektronik",
+              "homeAppliances": "Haushaltsgeräte",
+              "smartphones": "Smartphones",
+              "digitalEntertainment": "Digitale Unterhaltung",
+              "audioVisual": "Audio & Video",
+              "spareParts": "Ersatzteile",
+              "networks": "Netzwerke & Kommunikation"
+          }
+      },
+      "whyKEP": {
+          "title": "Warum KIB for Trade?",
+          "overlayText": "Ein komplettes Team zu Ihren Diensten",
+          "features": {
+              "care": "Echte Fürsorge",
+              "consistentQuality": "Unveränderliche Qualität",
+              "commitment": "Unerschütterliche Verpflichtung",
+              "easyExecution": "Ausführung ohne Komplikationen",
+              "fairPrices": "Faire Preise",
+              "continuousFollowup": "Kontinuierliche Nachverfolgung",
+              "clarity": "Klarheit in jeder Phase",
+              "premiumExperience": "Eine verfeinerte Kundenerfahrung"
+          }
+      },
+      "businessUnits": {
+          "badge": "Integriertes System",
+          "title": "Unsere spezialisierten Einheiten",
+          "subtitle": "Strategische, integrierte Einheiten, die zusammenarbeiten, um den Erfolg unserer Kunden in jedem Schritt ihrer Handelsreise zu sichern",
+          "tasksTitle": "Aufgaben der Einheit:",
+          "valueTitle": "Wert für den Kunden:",
+          "units": {
+              "risk": {
+                  "name": "Handelsrisiko-Einheit",
+                  "desc": "Eine spezialisierte Einheit, die die Geschäfte unserer Kunden vor Störungen schützt, die die Lieferstabilität gefährden könnten.",
+                  "tasks": {
+                      "0": "Risikoanalyse in Zielmärkten",
+                      "1": "Bewertung der Lieferantenstabilität",
+                      "2": "Überwachung von Preisvolatilität",
+                      "3": "Steuerung von Transport- und Versandrisiken"
+                  },
+                  "value": {
+                      "0": "Gesicherte Lieferkontinuität",
+                      "1": "Schutz des Handelskapitals",
+                      "2": "Reduzierung operativer Verluste"
+                  }
+              },
+              "internationalExpansion": {
+                  "name": "Internationale Expansions-Einheit",
+                  "desc": "Eine strategische Einheit, die neue Märkte für unsere Kunden öffnet und ihren Handelseinfluss erweitert.",
+                  "tasks": {
+                      "0": "Untersuchung internationaler Märkte",
+                      "1": "Aufbau neuer Partnerschaften",
+                      "2": "Erschließung neuer Lieferwege",
+                      "3": "Unterstützung von Expansionsplänen der Kunden"
+                  },
+                  "value": {
+                      "0": "Zugang zu neuen Märkten",
+                      "1": "Diversifizierung der Lieferquellen",
+                      "2": "Stärkere Wettbewerbsposition"
+                  }
+              },
+              "digitalTransformation": {
+                  "name": "Digitalisierungs-Einheit",
+                  "desc": "Entwicklung digitaler Infrastruktur für Geschwindigkeit, Genauigkeit und Transparenz in jedem Handelsprozess.",
+                  "tasks": {
+                      "0": "Digitalisierung von Beschaffungsprozessen",
+                      "1": "Entwicklung von Sendungsverfolgungssystemen",
+                      "2": "Aufbau von Echtzeit-Dashboards",
+                      "3": "KI-Einsatz zur Entscheidungsunterstützung"
+                  },
+                  "value": {
+                      "0": "Höhere Geschwindigkeit und Transparenz",
+                      "1": "Reduzierung menschlicher Fehler",
+                      "2": "Professionellere Kundenerfahrung"
+                  }
+              },
+              "franchise": {
+                  "name": "Franchise-Einheit",
+                  "desc": "Markenexpansion durch Vergabe von Franchise-Rechten an regionale und lokale Partner.",
+                  "tasks": {
+                      "0": "Erstellung von Franchise-Modellen",
+                      "1": "Auswahl von Franchise-Partnern",
+                      "2": "Bereitstellung von Schulungen und Support",
+                      "3": "Überwachung der Qualität der Niederlassungen"
+                  },
+                  "value": {
+                      "0": "Schnellere Expansion mit geringerem Risiko",
+                      "1": "Vollständige operative Unterstützung",
+                      "2": "Eine marktbereite Marke"
+                  }
+              },
+              "ecommerce": {
+                  "name": "E-Commerce-Einheit",
+                  "desc": "Steuerung und Entwicklung digitaler Verkaufsprozesse über E-Commerce-Plattformen.",
+                  "tasks": {
+                      "0": "Steuerung von Online-Shops",
+                      "1": "Entwicklung von Zahlungslösungen",
+                      "2": "Digitales Bestandsmanagement",
+                      "3": "Durchführung digitaler Marketingkampagnen"
+                  },
+                  "value": {
+                      "0": "Schnellerer Kundenreichweite",
+                      "1": "Steigerung der Verkaufszahlen",
+                      "2": "Reibungslose Kauferfahrung"
+                  }
+              },
+              "compliance": {
+                  "name": "Handels-Compliance-Einheit",
+                  "desc": "Sicherstellung, dass alle Unternehmensprozesse lokalen, internationalen und rechtlichen Standards entsprechen.",
+                  "tasks": {
+                      "0": "Überprüfung kommerzieller Verträge",
+                      "1": "Sicherstellung der Produkteinheitlichkeit",
+                      "2": "Verfolgung von Gesetzen und Vorschriften",
+                      "3": "Verwaltung von Dokumenten und Zertifikaten"
+                  },
+                  "value": {
+                      "0": "Rechtssichere Transaktionen",
+                      "1": "Zertifizierte Produkte",
+                      "2": "Schutz vor Verstößen"
+                  }
+              },
+              "supplierDevelopment": {
+                  "name": "Lieferantenentwicklungs-Einheit",
+                  "desc": "Verbesserung der Lieferantenqualität und -leistung für stabile und zuverlässige Lieferung.",
+                  "tasks": {
+                      "0": "Bewertung der Lieferantenleistung",
+                      "1": "Erstellung von Qualitätsverbesserungsplänen",
+                      "2": "Aufbau langfristiger Beziehungen",
+                      "3": "Schulung und Qualifizierung von Lieferanten"
+                  },
+                  "value": {
+                      "0": "Höhere Qualität und bessere Preise",
+                      "1": "Stabilere Lieferketten",
+                      "2": "Strategische Partnerschaften"
+                  }
+              },
+              "financialAnalysis": {
+                  "name": "Finanzanalyse-Einheit",
+                  "desc": "Analyse finanzieller Daten zur Unterstützung kommerzieller Entscheidungen und Optimierung der Rendite.",
+                  "tasks": {
+                      "0": "Analyse der Beschaffungskosten",
+                      "1": "Bewertung der Marktfähigkeit",
+                      "2": "Untersuchung von Rentabilität und Risiko",
+                      "3": "Erstellung detaillierter Finanzberichte"
+                  },
+                  "value": {
+                      "0": "Entscheidungen auf soliden Zahlen",
+                      "1": "Reduzierung finanzieller Risiken",
+                      "2": "Klare Kostenübersicht"
+                  }
+              },
+              "customerService": {
+                  "name": "Kundenservice-Einheit",
+                  "desc": "Eine dedizierte Einheit für Kunden, die enge Betreuung und Premium-Service-Erfahrung wünschen.",
+                  "tasks": {
+                      "0": "Persönliche Betreuung jedes Kunden",
+                      "1": "Bereitstellung eines dedizierten Account Managers",
+                      "2": "Gewährleistung schneller Reaktionszeiten",
+                      "3": "Sofortige Lösungen bei Problemen"
+                  },
+                  "value": {
+                      "0": "Mehr Aufmerksamkeit und Fürsorge",
+                      "1": "Schnellere Bearbeitung von Anfragen",
+                      "2": "Premium-Service-Erfahrung"
+                  }
+              },
+              "contractManagement": {
+                  "name": "Vertragsmanagement-Einheit",
+                  "desc": "Erstellung, Prüfung und Steuerung von Verträgen zum Schutz der Rechte von Kunden und Unternehmen.",
+                  "tasks": {
+                      "0": "Erstellung kommerzieller Verträge",
+                      "1": "Prüfung rechtlicher Klauseln",
+                      "2": "Nachverfolgung von Verpflichtungen",
+                      "3": "Verwaltung von Verlängerungen"
+                  },
+                  "value": {
+                      "0": "Vollständige Klarheit in Vereinbarungen",
+                      "1": "Rechtlicher Schutz",
+                      "2": "Strenge Einhaltung jeder Klausel"
+                  }
+              },
+              "quality": {
+                  "name": "Total-Quality-Einheit",
+                  "desc": "Überwachung der Qualität in jeder Stufe von Beschaffung und Lieferung zur Sicherstellung von Exzellenz.",
+                  "tasks": {
+                      "0": "Produktinspektion vor dem Versand",
+                      "1": "Qualitätsprüfung bei Ankunft",
+                      "2": "Überwachung der Lieferantenleistung",
+                      "3": "Behebung operativer Probleme"
+                  },
+                  "value": {
+                      "0": "Konsistente Qualität",
+                      "1": "Zuverlässige Produkte",
+                      "2": "Weniger Fehler und Probleme"
+                  }
+              },
+              "internationalRelations": {
+                  "name": "Internationale Beziehungs-Einheit",
+                  "desc": "Aufbau strategischer Beziehungen zu Handelsunternehmen weltweit, um neue Horizonte zu öffnen.",
+                  "tasks": {
+                      "0": "Kommunikation mit globalen Unternehmen",
+                      "1": "Aufbau von Handelsallianzen",
+                      "2": "Teilnahme an internationalen Messen",
+                      "3": "Unterstützung der internationalen Expansion der Kunden"
+                  },
+                  "value": {
+                      "0": "Größere Handelsmöglichkeiten",
+                      "1": "Zugang zu neuen Märkten",
+                      "2": "Kontinuierliche internationale Unterstützung"
+                  }
+              }
+          }
+      }
+  },
+  "execution": {
+      "hero": {
+          "title": "KIB for Trade",
+          "subtitle": "Kommunikations-Ausführungsmechanismus – ein klares Kommunikationssystem für eine professionelle Erfahrung",
+          "p1": "Wir sind der Überzeugung, dass der Erfolg des Geschäftsprozesses mit Klarheit der Rollen, Geschwindigkeit der Reaktion und Genauigkeit der Ausführung beginnt.",
+          "p2": "Bei KIB for Trade bauen wir ein klares operatives Kommunikationssystem auf, das reibungslose Zusammenarbeit zwischen allen Beteiligten gewährleistet – von der Definition der Rollen und Kommunikationswege bis hin zur Reaktionsgeschwindigkeit und Genauigkeit der Informationsübertragung. Denn der Erfolg von Geschäftsoperationen hängt nicht nur von der Planung ab, sondern von einer organisierten Ausführung auf Basis klarer Verantwortlichkeiten und Team-Integration – für eine professionelle Erfahrung und messbare Ergebnisse."
+      },
+      "departmentOrg": {
+          "title": "Kommerzielle Positionen und ihre Rollen",
+          "departments": [
+              {
+                  "title": "Geschäftsführung",
+                  "roles": [
+                      {
+                          "title": "Supply Chain Manager",
+                          "desc": "Überwacht Lieferquellen, Lieferantenauswahl und Warenbewegungen."
+                      },
+                      {
+                          "title": "Import & Export Manager",
+                          "desc": "Leitet Import- und Exportoperationen und steuert internationale Versandprozesse."
+                      },
+                      {
+                          "title": "Strategischer Planungsmanager",
+                          "desc": "Erstellt operative Pläne und definiert Prioritäten für Wachstum und Expansion."
+                      },
+                      {
+                          "title": "Business Development Manager",
+                          "desc": "Baut strategische Partnerschaften auf und erschließt neue Marktchancen."
+                      }
+                  ]
+              },
+              {
+                  "title": "Import & Export",
+                  "roles": [
+                      {
+                          "title": "Import-Koordinator",
+                          "desc": "Verfolgt Sendungen, bereitet Dokumente vor und stellt Verfahrenskonformität sicher."
+                      },
+                      {
+                          "title": "Export-Koordinator",
+                          "desc": "Bereitet Export-Sendungen vor und organisiert alle erforderlichen Dokumente."
+                      },
+                      {
+                          "title": "Zollabfertigungsbeauftragter",
+                          "desc": "Führt Zollverfahren durch und verfolgt die Frachtfreigabe."
+                      },
+                      {
+                          "title": "Dokumentationsbeauftragter",
+                          "desc": "Erstellt Rechnungen, Frachtbriefe und prüft Sendungsdaten."
+                      }
+                  ]
+              },
+              {
+                  "title": "Logistik & Operations",
+                  "roles": [
+                      {
+                          "title": "Logistik-Manager",
+                          "desc": "Steuert Transport, Container-Tracking und verbessert die operative Effizienz."
+                      },
+                      {
+                          "title": "Lagerleiter",
+                          "desc": "Empfängt Waren, prüft Qualität und organisiert die Lagerung."
+                      },
+                      {
+                          "title": "Seefracht-Koordinator",
+                          "desc": "Bucht Container und verfolgt Abfahrten und Schiffsfahrpläne."
+                      },
+                      {
+                          "title": "Luftfracht-Koordinator",
+                          "desc": "Organisiert Express-Sendungen und überwacht pünktliche Lieferung."
+                      }
+                  ]
+              },
+              {
+                  "title": "Kunden & Vertrieb",
+                  "roles": [
+                      {
+                          "title": "Kommerzieller Account-Berater",
+                          "desc": "Kommuniziert mit Kunden und versteht ihre kommerziellen Bedürfnisse."
+                      },
+                      {
+                          "title": "Key Account Manager",
+                          "desc": "Betreut Großkunden und stärkt langfristige Beziehungen."
+                      },
+                      {
+                          "title": "Vertriebsleiter",
+                          "desc": "Leitet das Vertriebsteam und erreicht die gesetzten Wachstumsziele."
+                      },
+                      {
+                          "title": "Kundenservice-Koordinator",
+                          "desc": "Verfolgt Kundenanfragen und sorgt für vollständige Zufriedenheit."
+                      }
+                  ]
+              },
+              {
+                  "title": "Qualität & Compliance",
+                  "roles": [
+                      {
+                          "title": "Qualitätsauditor",
+                          "desc": "Überprüft Prozesse und stellt die Einhaltung von Standards sicher."
+                      },
+                      {
+                          "title": "Commercial Compliance Manager",
+                          "desc": "Überprüft Vorschriften und minimiert rechtliche und regulatorische Risiken."
+                      },
+                      {
+                          "title": "Risikomanagement-Beauftragter",
+                          "desc": "Analysiert operative Risiken und erstellt Gegenmaßnahmen."
+                      },
+                      {
+                          "title": "Interner Auditor",
+                          "desc": "Bewertet die Leistung und stellt die Einhaltung interner Richtlinien sicher."
+                      }
+                  ]
+              },
+              {
+                  "title": "Analyse & Support",
+                  "roles": [
+                      {
+                          "title": "Preis- & Marktanalyst",
+                          "desc": "Analysiert globale Preise und unterstützt kommerzielle Entscheidungen."
+                      },
+                      {
+                          "title": "Vertragsmanager",
+                          "desc": "Erstellt Verträge und prüft kommerzielle Konditionen."
+                      },
+                      {
+                          "title": "Operations Data Analyst",
+                          "desc": "Analysiert Leistungsindikatoren und erstellt periodische Berichte."
+                      },
+                      {
+                          "title": "Administrativer Support-Beauftragter",
+                          "desc": "Koordiniert interne Abläufe und unterstützt die Ausführungsteams."
+                      }
+                  ]
+              }
+          ]
+      },
+      "workflow": {
+          "title": "Kommunikations-Ausführungsmechanismus",
+          "subtitle": "Von der ersten Anfrage bis zur endgültigen Lieferung",
+          "steps": [
+              {
+                  "title": "Anfrage entgegennehmen",
+                  "desc": "Die Anfrage wird vom Kommunikationskoordinator entgegengenommen und genau erfasst."
+              },
+              {
+                  "title": "Anfrage weiterleiten",
+                  "desc": "Sie wird direkt an den Account-Berater oder das Import-/Export-Team übergeben."
+              },
+              {
+                  "title": "Kommunikation mit dem Kunden",
+                  "desc": "Bedürfnisse werden ermittelt, Details geklärt und passende Lösungen vorgestellt."
+              },
+              {
+                  "title": "Ausführung starten",
+                  "desc": "Das Operations-Team beginnt mit der Ausführung gemäß einem klaren Plan."
+              },
+              {
+                  "title": "Kontinuierliche Nachverfolgung",
+                  "desc": "Sendungen werden verfolgt, der Kunde wird informiert und Fristen eingehalten."
+              },
+              {
+                  "title": "Qualitätsprüfung",
+                  "desc": "Der Qualitätsauditor überprüft, dass jeder Schritt korrekt abgeschlossen wurde."
+              },
+              {
+                  "title": "Bewertung & Verbesserung",
+                  "desc": "Die Leistung wird analysiert und Erkenntnisse für zukünftige Prozesse gewonnen."
+              },
+              {
+                  "title": "Prozess abschließen",
+                  "desc": "Der gesamte Prozess wird dokumentiert und der Kunde über die Fertigstellung informiert."
+              }
+          ]
+      },
+      "responseTime": {
+          "title": "Unsere Reaktionsverpflichtungen",
+          "subtitle": "Wir schätzen Ihre Zeit und verpflichten uns zu höchsten Standards von Geschwindigkeit und Effizienz",
+          "stats": [
+              {
+                  "title": "Erste Antwort",
+                  "time": "2 Stunden",
+                  "desc": "Innerhalb von"
+              },
+              {
+                  "title": "Angebotsabgabe",
+                  "time": "24 Stunden",
+                  "desc": "Innerhalb von"
+              },
+              {
+                  "title": "Ausführungsstart",
+                  "time": "48 Stunden",
+                  "desc": "Innerhalb von"
+              },
+              {
+                  "title": "Problembehebung",
+                  "time": "6 Stunden",
+                  "desc": "Innerhalb von"
+              }
+          ]
+      },
+      "escalation": {
+          "imageTitle": "Eskalationspfad",
+          "imageSubtitle": "Ein klarer Weg zur schnellen Problemlösung",
+          "steps": [
+              {
+                  "title": "1. Service-Koordinator",
+                  "desc": "Erster Ansprechpartner für jede Rückmeldung oder Anmerkung."
+              },
+              {
+                  "title": "2. Account Manager",
+                  "desc": "Verfolgt nach und löst operative Herausforderungen."
+              },
+              {
+                  "title": "3. Operations Manager",
+                  "desc": "Trifft fortgeschrittene Management- und technische Entscheidungen."
+              },
+              {
+                  "title": "4. Geschäftsführung",
+                  "desc": "Die letzte Garantie für Servicequalität."
+              }
+          ]
+      },
+      "documentation": {
+          "title": "Dokumentations- und Tracking-System",
+          "subtitle": "Jeder Schritt wird in einem integrierten digitalen Betriebssystem dokumentiert, das vollständige Transparenz gewährleistet.",
+          "features": [
+              {
+                  "text": "Elektronische Erfassung der Anfrage"
+              },
+              {
+                  "text": "Sichere Speicherung von Dokumenten"
+              },
+              {
+                  "text": "Echtzeit-Tracking der Ausführungsstufen"
+              },
+              {
+                  "text": "Archivierung von Rechnungen und Sendungen"
+              },
+              {
+                  "text": "Periodische Statusberichte"
+              }
+          ]
+      },
+      "postDelivery": {
+          "title": "Nachlieferungs-Evaluierung",
+          "p1": "Nach Abschluss des Prozesses kontaktieren wir den Kunden für eine umfassende Evaluierung, die kontinuierliche Verbesserung sicherstellt.",
+          "p2": "Wir messen die Leistung präzise in Schlüsselbereichen wie Abschlussgeschwindigkeit, Ausführungsqualität, Dokumentengenauigkeit und Kommunikationsniveau – mit Fokus auf Feedback, das uns hilft, uns weiter zu verbessern.",
+          "metrics": [
+              {
+                  "label": "Ausführungsqualität",
+                  "score": "10/10",
+                  "width": "100%"
+              },
+              {
+                  "label": "Abschlussgeschwindigkeit",
+                  "score": "9.5/10",
+                  "width": "95%"
+              },
+              {
+                  "label": "Dokumentengenauigkeit",
+                  "score": "10/10",
+                  "width": "100%"
+              },
+              {
+                  "label": "Kommunikationsniveau",
+                  "score": "9.8/10",
+                  "width": "98%"
+              },
+              {
+                  "label": "Verbesserungshinweise",
+                  "score": "9/10",
+                  "width": "90%"
+              }
+          ]
+      },
+      "closing": {
+          "title": "Jede Position im System hat eine klare Rolle, die Ihnen dient",
+          "paragraph": "Wir arbeiten als ein Team, damit Ihre Anfrage mit Geschwindigkeit, Präzision und höchstem Professionalismus vorankommt. Wir schätzen Ihre Zeit, respektieren Ihre Bedürfnisse und stellen Ihren Erfolg an die Spitze unserer Prioritäten.",
+          "cta": "Jetzt kontaktieren"
+      },
+      "contactChannels": {
+          "imageTitle": "Offizielle Kommunikationskanäle",
+          "channels": [
+              {
+                  "title": "Dedizierte kommerzielle Kontaktnummer",
+                  "desc": "Eine Direktleitung für Kunden und Geschäftspartner."
+              },
+              {
+                  "title": "Offizielle E-Mail für Anfragen",
+                  "desc": "Zum Versand von Dokumenten und Angeboten."
+              },
+              {
+                  "title": "Business WhatsApp für schnelle Nachverfolgung",
+                  "desc": "Sofortige Updates zum Sendungsstatus und dringende Anfragen."
+              },
+              {
+                  "title": "Dedizierter Account Manager für Key-Kunden",
+                  "desc": "Ein einziger Ansprechpartner für eine reibungslose und individuelle Erfahrung."
+              }
+          ]
+      }
+  },
+  "footer": {
+      "contact": {
+          "title": "Kontaktieren Sie uns",
+          "phone": "+971 521068882",
+          "email": "info@shazmlc.com",
+          "location": "Vereinigte Arabische Emirate"
+      },
+      "quickLinks": {
+      "title": "Schnelllinks",
+      "links": [
+      {
+          "label": "Startseite",
+          "href": "/"
+      },
+      {
+          "label": "Unsere Dienste",
+          "href": "/services"
+      },
+      {
+          "label": "Ihr Geschäftspfad",
+          "href": "/business-path"
+      },
+      {
+          "label": "Geschäftsidentität",
+          "href": "/business-identity"
+      },
+      {
+          "label": "Ausführung",
+          "href": "/execution"
+      }
+      ]
+  },
+      "description": "Handelsexzellenz mit Goldstandard in den Vereinigten Arabischen Emiraten – mit unerschütterlichem Engagement für den Erfolg unserer Kunden.",
+      "copyright": "© 2026 KIB for Trade. Alle Rechte vorbehalten.",
+      "socialMedia": {
+          "linkedin": "LinkedIn",
+          "twitter": "Twitter",
+          "instagram": "Instagram",
+          "facebook": "Facebook"
+      }
+  }
+}
