@@ -84,6 +84,7 @@ export function BrandOperations({locale}: {locale: string}) {
               viewport={{
                 once: true,
               }}
+              className="flex flex-col items-center justify-center"
             >
               <h2
                 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold mb-6 flex items-center gap-4"
@@ -101,7 +102,7 @@ export function BrandOperations({locale}: {locale: string}) {
               </h2>
 
               {/* Added Side Image */}
-              <div className="mb-8 rounded-lg overflow-hidden shadow-md">
+              <div className="mb-8 rounded-lg overflow-hidden shadow-md w-full">
                 <Image
                   src="/images/image_2688.webp"
                   alt="Communication"
@@ -178,13 +179,13 @@ export function BrandOperations({locale}: {locale: string}) {
               viewport={{
                 once: true,
               }}
-              className="p-10 rounded-2xl shadow-2xl text-white relative overflow-hidden"
+              className="p-10 rounded-2xl shadow-2xl text-white relative overflow-hidden "
               style={{
                 background:
                   'linear-gradient(135deg, #0A1628 0%, #1a3a5c 50%, #0D9488 100%)',
               }}
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+              <div className=" absolute top-0 right-0 w-32 h-32 bg-brand-gold/20 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
 
               <h3
                 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold mb-8 text-center"

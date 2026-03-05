@@ -69,7 +69,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
   return (
     <>
       {/* Statement Section */}
-      <section className="p-[5%] bg-brand-cream relative" dir={isRTL ? "rtl" : "ltr"}>
+      <section className="px-[5%] pt-[5%] bg-brand-cream relative" dir={isRTL ? "rtl" : "ltr"}>
         <div className="  sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -87,6 +87,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
               transition={{
                 duration: 0.8,
               }}
+              className="flex flex-col items-center justify-center"
             >
             <h2
               className="text-lg md:text-xl lg:text-3xl 2xl:text-6xl font-bold mb-6"
@@ -256,7 +257,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="bg-white p-6 rounded hover:shadow-lg transition-all duration-300 shadow-sm border border-gray-100"
+                className="flex flex-col items-center justify-center bg-white p-6 rounded hover:shadow-lg transition-all duration-300 shadow-sm border border-gray-100"
                 style={{
                   borderTop: `3px solid ${item.color}`,
                 }}
@@ -342,7 +343,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="flex flex-col items-center justify-center bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 style={{
                   borderTop: `4px solid ${val.color}`,
                 }}

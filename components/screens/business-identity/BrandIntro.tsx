@@ -85,6 +85,7 @@ export function BrandIntro({ locale }: { locale: string }) {
                 duration: 0.8,
                 delay: 0.2,
               }}
+              className="flex flex-col items-center justify-center"
             >
               <h2
                 className="text-4xl md:text-5xl font-bold mb-8 relative inline-block"

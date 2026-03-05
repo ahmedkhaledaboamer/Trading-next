@@ -140,7 +140,7 @@ export function WhyKEP({ locale }: { locale: string }) {
             </motion.div>
           </div>
 
-          <div className="md:w-2/3">
+          <div className="w-full">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (
                 <motion.div

@@ -63,7 +63,7 @@ export function BrandPartner({locale}: {locale: string}) {
             className="text-center mb-16"
           >
             <h2
-              className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold mb-4"
+              className=" text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold mb-4"
               style={{
                 background: 'linear-gradient(135deg, #0A1628, #0D9488)',
                 color: 'white',

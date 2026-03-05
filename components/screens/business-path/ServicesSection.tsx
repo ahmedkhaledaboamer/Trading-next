@@ -146,7 +146,7 @@ export function ServicesSection() {
               </div>
 
               <div className="px-4 pb-6 pt-0">
-                <h3 className="font-bold text-gray-800 text-md md:text-xl lg:text-xl 3xl:text-3xl group-hover:text-[#0A1628] transition-colors">
+                <h3 className="font-bold text-gray-800 text-md md:text-xl lg:text-2xl 3xl:text-4xl group-hover:text-[#0A1628] transition-colors">
                   {service.name}
                 </h3>
               </div>

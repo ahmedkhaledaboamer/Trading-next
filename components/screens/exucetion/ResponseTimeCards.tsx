@@ -38,10 +38,10 @@ export function ResponseTimeCards() {
   return (
     <section className="p-[5%] bg-white relative">
       <div className="mx-auto text-center mb-16">
-        <h2 className="text-2xl md:text-5xl font-bold text-teal-800 mb-4 bg-teal-100 border-2 border-teal-500 rounded-xl px-8 py-4 w-fit mx-auto">
+        <h2 className="text-2xl md:text-5xl lg:text-5xl font-bold text-teal-800 mb-4 bg-teal-100 border-2 border-teal-500 rounded-xl px-8 py-4 w-fit mx-auto">
           {t("title")}
         </h2>
-        <p className="text-slate-700 text-base md:text-lg bg-slate-200 border-2 border-slate-400 rounded-lg px-6 py-3 w-fit mx-auto">
+        <p className="text-slate-700 text-base md:text-lg lg:text-2xl bg-slate-200 border-2 border-slate-400 rounded-lg px-6 py-3 w-fit mx-auto">
           {t("subtitle")}
         </p>
       </div>

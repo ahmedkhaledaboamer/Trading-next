@@ -33,13 +33,13 @@ export async function PostDelivery() {
 
           {/* Content Side */}
           <div className="lg:w-1/2 w-full">
-            <h2 className="text-2xl md:text-4xl font-bold text-lime-100 mb-6 text-center lg:text-right bg-lime-900/60 border-2 border-lime-400 rounded-xl px-6 py-4 w-fit mx-auto lg:mx-0">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-lime-100 mb-6 text-center lg:text-right bg-lime-900/60 border-2 border-lime-400 rounded-xl px-6 py-4 w-fit mx-auto lg:mx-0">
               {t("title")}
             </h2>
-            <p className="text-amber-200 mb-4 text-base md:text-lg text-center lg:text-right bg-amber-950/50 border-2 border-amber-500/70 rounded-lg px-6 py-3 w-fit mx-auto lg:mx-0">
+            <p className="text-amber-200 mb-4 text-base md:text-lg lg:text-2xl text-center lg:text-right bg-amber-950/50 border-2 border-amber-500/70 rounded-lg px-6 py-3 w-fit mx-auto lg:mx-0">
               {t("p1")}
             </p>
-            <p className="text-sky-100 mb-10 text-base md:text-lg leading-relaxed text-center lg:text-right bg-sky-900/40 border-2 border-sky-400/70 rounded-lg px-6 py-4 w-fit mx-auto lg:mx-0">
+            <p className="text-sky-100 mb-10 text-base md:text-lg lg:text-2xl leading-relaxed text-center lg:text-right bg-sky-900/40 border-2 border-sky-400/70 rounded-lg px-6 py-4 w-fit mx-auto lg:mx-0">
               {t("p2")}
             </p>
 

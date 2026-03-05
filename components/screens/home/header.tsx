@@ -62,12 +62,12 @@ export default async function Header() {
           }}
         >
           <Link href="/business-path">
-            <Button variant="primary" size="lg" className="font-extrabold">
+            <Button variant="primary" size="md" className="font-extrabold">
               {t("ctaBusinessPath")}
             </Button>
           </Link>
           <Link href="/services">
-            <Button variant="secondary" size="lg" className="font-extrabold">
+            <Button variant="secondary" size="md" className="font-extrabold">
               {t("cta.exploreServices")}
             </Button>
           </Link>

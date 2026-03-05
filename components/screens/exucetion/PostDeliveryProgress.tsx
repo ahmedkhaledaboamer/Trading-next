@@ -70,9 +70,9 @@ export function PostDeliveryProgress() {
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-3">
                 <visual.icon className="w-5 h-5 text-white/80" />
-                <span className="font-bold text-base md:text-lg">{metric.label}</span>
+                <span className="font-bold text-base md:text-lg lg:text-2xl">{metric.label}</span>
               </div>
-              <span className="text-base md:text-lg text-gray-200 font-mono">{metric.score}</span>
+              <span className="text-base md:text-lg lg:text-2xl text-gray-200 font-mono">{metric.score}</span>
             </div>
 
             <div className="h-2 bg-gray-800 rounded-full overflow-hidden">

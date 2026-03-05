@@ -43,10 +43,10 @@ export async function EscalationPath() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="text-2xl md:text-4xl font-bold text-rose-100 mb-2 bg-rose-900/60 border-2 border-rose-300 rounded-lg px-4 py-2 w-fit ">
+                <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-rose-100 mb-2 bg-rose-900/60 border-2 border-rose-300 rounded-lg px-4 py-2 w-fit ">
                   {t("imageTitle")}
                 </h3>
-                <p className="text-amber-100 text-base md:text-lg bg-amber-900/50 border border-amber-400/80 rounded-lg px-4 py-2 w-fit ">
+                <p className="text-amber-100 text-base md:text-lg lg:text-xl bg-amber-900/50 border border-amber-400/80 rounded-lg px-4 py-2 w-fit ">
                   {t("imageSubtitle")}
                 </p>
               </div>
@@ -74,10 +74,10 @@ export async function EscalationPath() {
                       <Icon className="w-8 h-8 text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="text-xl md:text-2xl font-bold text-gray-900">
+                      <h4 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900">
                         {step.title}
                       </h4>
-                      <p className="text-gray-700 text-base md:text-lg">
+                      <p className="text-gray-700 text-base md:text-lg lg:text-xl">
                         {step.desc}
                       </p>
                     </div>
