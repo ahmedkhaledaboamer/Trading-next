@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar/navbar";
-import { ScrollToTop } from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/ScrollToTop";
 
 
 

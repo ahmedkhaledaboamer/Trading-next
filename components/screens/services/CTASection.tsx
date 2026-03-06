@@ -56,7 +56,7 @@ export function CTASection({ locale }: { locale: string }) {
               <span>{t("primaryCta")}</span>
               {isRTL ? <ArrowLeft size={22} /> : <ArrowRight size={22} />}
             </Link>
-            <Link href="mailto:info@kib.com" className="w-full sm:w-auto px-10 py-5 bg-teal/20 backdrop-blur-md border-2 border-white/30 text-white rounded-xl font-bold text-base md:text-lg lg:text-xl xl:text-3xl cursor-pointer hover:bg-white/10 transition-all flex items-center justify-center gap-3 hover:border-white/50">
+            <Link href="mailto:info@shazmlc.com" className="w-full sm:w-auto px-10 py-5 bg-teal/20 backdrop-blur-md border-2 border-white/30 text-white rounded-xl font-bold text-base md:text-lg lg:text-xl xl:text-3xl cursor-pointer hover:bg-white/10 transition-all flex items-center justify-center gap-3 hover:border-white/50">
               <Mail size={22} />
               <span>{t("secondaryCta")}</span>
             </Link>

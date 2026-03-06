@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 export function HeroSection() {
   const t = useTranslations('services.hero')
   return (
-    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden text-white">
+    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden text-white pt-25">
       {/* Font Import */}
       <style>
         {`

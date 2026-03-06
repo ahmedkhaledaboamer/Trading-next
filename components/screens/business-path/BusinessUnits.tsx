@@ -326,7 +326,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
               className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-t-4 ${unit.border} group flex flex-col`}
             >
               {/* Image Header */}
-              <div className="h-36 md:h-100 lg:h-62 xl:h-100 2xl:h-130 w-full relative overflow-hidden">
+              <div className="h-36 md:h-100 lg:h-62 xl:h-80 2xl:h-100 w-full relative overflow-hidden">
                 <Image
                   src={unit.image}
                   alt={unit.name}
@@ -350,18 +350,18 @@ export function BusinessUnits({ locale }: { locale: string }) {
                   >
                     <div className="w-8 h-8 flex items-center justify-center">{unit.icon}</div>
                   </div>
-                  <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 leading-tight pt-10">
+                  <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 leading-tight pt-10">
                     {unit.name}
                   </h3>
                 </div>
 
-                <p className="text-base md:text-lg lg:text-xl xl:text-3xl text-gray-600 mb-6 min-h-[48px] leading-relaxed">
+                <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 mb-6 min-h-[48px] leading-relaxed">
                   {unit.desc}
                 </p>
 
                 <div className="space-y-4 mt-auto">
                   <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className={`font-bold text-base md:text-lg xl:text-3xl mb-3 ${unit.color}`}>
+                    <h4 className={`font-bold text-base md:text-lg xl:text-2xl mb-3 ${unit.color}`}>
                       {t('tasksTitle')}
                     </h4>
                     <ul className="space-y-2">
@@ -380,7 +380,7 @@ export function BusinessUnits({ locale }: { locale: string }) {
                   </div>
 
                   <div className="border-t border-gray-100 pt-4">
-                    <h4 className="font-bold text-base md:text-lg xl:text-3xl text-gray-900 mb-2">
+                    <h4 className="font-bold text-base md:text-lg xl:text-2xl text-gray-900 mb-2">
                       {t('valueTitle')}
                     </h4>
                     <div className="flex flex-wrap gap-2">

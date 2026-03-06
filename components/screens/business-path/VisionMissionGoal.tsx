@@ -40,11 +40,11 @@ export function VisionMissionGoal({ locale }: { locale: string }) {
   
   return (
     <section
-      className="pt-5 pb-[2%] px-[5%] bg-gray-50 relative"
+      className="pt-5 pb-[2%] px-[5%] bg-gray-50 relative mt-[5%]"
       dir={isRTL ? 'rtl' : 'ltr'}
     >
       <div className=" mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-32 relative z-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 -mt-32 relative z-20">
           {cards.map((card, index) => (
             <motion.div
               key={index}
@@ -66,7 +66,7 @@ export function VisionMissionGoal({ locale }: { locale: string }) {
               className="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
             >
               {/* Image Header */}
-              <div className="relative h-52 md:h-100 lg:h-60 2xl:h-120 overflow-hidden">
+              <div className="relative h-52 md:h-100 lg:h-60 2xl:h-100 overflow-hidden">
                 <Image
                   src={card.image}
                   alt={card.title}

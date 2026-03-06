@@ -14,6 +14,8 @@ interface FilterBarProps {
   scrollToSectionId?: string
   /** Localized label for the "all" filter button. */
   allLabel: string
+  /** When true, force the bar to be fixed under the header instead of using CSS sticky. */
+  forceFixed?: boolean
 }
 export function FilterBar({
   categories,
@@ -21,6 +23,7 @@ export function FilterBar({
   onFilterChange,
   scrollToSectionId,
   allLabel,
+  forceFixed,
 }: FilterBarProps) {
   const allCategories = [
     {
@@ -48,8 +51,20 @@ export function FilterBar({
     }
   }
 
+  const positionClasses = forceFixed
+    ? 'fixed left-0 right-0'
+    : 'sticky'
+
+  const topOffset =
+    'clamp(5rem, 5rem + (8rem - 5rem) * ((100vw - 320px) / (3440px - 320px)), 8rem)'
+
   return (
-    <div  className="sticky top-22 md:top-24 lg:top-24 z-40 bg-white/80 backdrop-blur-xl border-b border-gray-200/60 shadow-sm  ">
+    <div
+      className={`${positionClasses} z-40 bg-white/80 backdrop-blur-xl border-b border-gray-200/60 shadow-sm`}
+      style={{
+        top: topOffset,
+      }}
+    >
       <div className=" flex justify-center items-center px-1 py-2 lg:px-4 lg:py8">
         <div
           className="flex gap-3 overflow-x-auto scrollbar-hide p-4"
@@ -75,7 +90,7 @@ export function FilterBar({
                 whileTap={{
                   scale: 0.95,
                 }}
-                className="relative flex-shrink-0 px-2 py-2 lg:px-3 2xl:px-6 lg:py-4 rounded-full text-sm md:text-sm lg:text-sm 2xl:text-3xl font-bold transition-all duration-300 border-2 cursor-pointer"
+                className="relative flex-shrink-0 px-2 py-2 lg:px-3 2xl:px-6 lg:py-4 rounded-full text-sm md:text-sm lg:text-sm 2xl:text-2xl font-bold transition-all duration-300 border-2 cursor-pointer"
                 style={{
                   backgroundColor: isActive ? cat.accentColor : 'transparent',
                   color: isActive ? '#fff' : cat.accentColor,

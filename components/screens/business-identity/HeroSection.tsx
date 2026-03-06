@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 export function HeroSection() {
   const t = useTranslations('businessIdentity.hero')
   return (
-    <section className="relative p-[5%] min-h-screen w-full overflow-x-hidden flex items-center justify-center">
+    <section className="relative p-[5%] min-h-screen w-full overflow-x-hidden flex items-center justify-center pt-[6%]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60" />
@@ -96,7 +96,7 @@ export function HeroSection() {
             delay: 0.2,
             ease: 'easeOut',
           }}
-          className="text-xl md:text-2xl lg:text-4xl 2xl:text-8xl font-bold text-white mb-8 leading-tight flex flex-col items-center gap-4"
+          className="text-xl md:text-2xl lg:text-4xl 2xl:text-6xl font-bold text-white mb-8 leading-tight flex flex-col items-center gap-4"
         >
           <span
             className="px-8 py-2 rounded-xl"
@@ -138,7 +138,7 @@ export function HeroSection() {
             duration: 1,
             delay: 1,
           }}
-          className="text-sm md:text-xl lg:text-2xl 2xl:text-4xl text-white  font-bold leading-relaxed border border-primary/60 bg-primary/30 p-2 rounded-lg "
+          className="text-sm md:text-xl lg:text-2xl 2xl:text-3xl text-white  font-bold leading-relaxed border border-primary/60 bg-primary/30 p-2 rounded-lg "
         >
           {t('description')}
         </motion.p>
