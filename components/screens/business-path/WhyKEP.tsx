@@ -99,7 +99,7 @@ export function WhyKEP({ locale }: { locale: string }) {
         </svg>
       </div>
 
-      <div className="px-[5%] mx-auto px-4 relative z-10">
+      <div className="px-[5%] mx-auto relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3">
             <motion.div
@@ -118,7 +118,7 @@ export function WhyKEP({ locale }: { locale: string }) {
                 once: true,
               }}
             >
-              <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-7xl font-bold text-[#0A1628] mb-6">
+              <h2 className="text-xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold text-[#0A1628] mb-6">
                 {t('title')}
               </h2>
               <div className="w-20 h-1.5 bg-[#D4A853] rounded-full mb-8" />

@@ -51,12 +51,36 @@ import {
   ServiceSection,
 } from '@/components/screens/services/ServiceSection'
 import { ServiceCard } from '@/components/screens/services/ServiceCard'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
 
 export function ServicesPageClient({ locale }: { locale: string }) {
   const isRTL = locale === "ar";
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
+  const servicesStartRef = useRef<HTMLDivElement | null>(null)
+  const [isFilterFixed, setIsFilterFixed] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = servicesStartRef.current
+      if (!container) return
+
+      const rect = container.getBoundingClientRect()
+      const navbarHeight = window.innerWidth < 768 ? 80 : 96
+
+      setIsFilterFixed(rect.top <= navbarHeight)
+    }
+
+    handleScroll()
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('resize', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
+    }
+  }, [])
 
   const tSections = useTranslations('services.sections')
   const tFilters = useTranslations('services.filters')
@@ -826,14 +850,23 @@ export function ServicesPageClient({ locale }: { locale: string }) {
     <div className="min-h-screen bg-white" dir={isRTL ? "rtl" : "ltr"}>
       <HeroSection />
 
-      <div id="services-start" className='bg-gray-50/50"'>
+      <div
+        id="services-start"
+        ref={servicesStartRef}
+        className="bg-gray-50/50"
+      >
         <FilterBar
           categories={filterCategories}
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
           scrollToSectionId="services-start"
           allLabel={tFilters('all')}
+          forceFixed={isFilterFixed}
         />
+
+        {isFilterFixed && (
+          <div className="h-24 md:h-24 lg:h-24" />
+        )}
 
         <AnimatePresence mode="wait">
           <motion.div

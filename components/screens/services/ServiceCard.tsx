@@ -56,7 +56,7 @@ export function ServiceCard({
       }}
     >
       {/* Card Image Area */}
-      <div className="relative h-72 md:h-100 lg:h-100 2xl:h-120 overflow-hidden">
+      <div className="relative h-72 md:h-100 lg:h-80 2xl:h-100 overflow-hidden">
         <NextImage
           src={image}
           alt={title}
@@ -87,13 +87,13 @@ export function ServiceCard({
         </div>
 
         {/* Title */}
-        <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-gray-900 mb-3 leading-tight">
+        <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 mb-3 leading-tight">
           {title}
         </h3>
 
         {/* Description Pill */}
         <div
-          className="inline-block px-3 py-1.5 rounded-xl text-base md:text-lg lg:text-xl xl:text-3xl font-medium mb-5 self-start"
+          className="inline-block px-3 py-1.5 rounded-xl text-base md:text-lg lg:text-xl xl:text-2xl font-medium mb-5 self-start"
           style={{
             backgroundColor: `${accentColor}15`,
             color: accentColor,
@@ -105,9 +105,9 @@ export function ServiceCard({
         {/* Bullet Points */}
         <ul className="space-y-2 mt-auto">
           {points.map((point, index) => (
-            <li key={index} className="flex items-start text-gray-600 text-base md:text-lg lg:text-xl xl:text-3xl">
+            <li key={index} className="flex items-start text-gray-600 text-base md:text-lg lg:text-xl xl:text-2xl">
               <span
-                className={`mt-5 w-3 h-3 rounded-full shrink-0 ${direction === "ltr" ? "mr-2" : "ml-2"}`}
+                className={`mt-2 md:mt-5 lg:mt-3.5 w-3 h-3 rounded-full shrink-0 ${direction === "ltr" ? "mr-2" : "ml-2"}`}
                 style={{
                   backgroundColor: accentColor,
                 }}

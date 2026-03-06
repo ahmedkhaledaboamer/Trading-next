@@ -42,7 +42,7 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-5xl"
+                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-4xl"
                 >
                   {t("benefitsTitle")}
                 </h3>
@@ -61,7 +61,7 @@ export default async function FranchiseUnitSection() {
                 {benefits.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-4xl"
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-3xl"
                   >
                     <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{item}</span>
@@ -69,7 +69,7 @@ export default async function FranchiseUnitSection() {
                 ))}
               </ul>
 
-              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30 rounded-2xl p-4">
+              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-2xl bg-primary/30 rounded-2xl p-4">
                 {t("benefitsNote")}
               </p>
             </article>
@@ -83,7 +83,7 @@ export default async function FranchiseUnitSection() {
             >
               <div className="flex items-center justify-between gap-3 mb-1 border-b border-primary/40 pb-3">
                 <h3
-                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-5xl"
+                  className="font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 text-xl md:text-xl xl:text-xl 2xl:text-4xl"
                 >
                   {t("tasksTitle")}
                 </h3>
@@ -102,14 +102,14 @@ export default async function FranchiseUnitSection() {
                 {tasks.map((task) => (
                   <li
                     key={task}
-                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-4xl"
+                    className="flex items-start gap-2 text-secondary/85 text-base md:text-xl xl:text-lg 2xl:text-3xl"
                   >
                     <span className="mt-3 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                     <span>{task}</span>
                   </li>
                 ))}
               </ul>
-              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-3xl bg-primary/30 rounded-2xl p-4">
+              <p className="text-secondary/85 text-base md:text-xl xl:text-sm 2xl:text-2xl bg-primary/30 rounded-2xl p-4">
                 {t("tasksNote")}
               </p>
             </article>

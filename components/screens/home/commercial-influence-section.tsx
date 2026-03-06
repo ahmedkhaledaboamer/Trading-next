@@ -72,7 +72,7 @@ export default async function CommercialInfluenceSection() {
                   )}
                 >
                   {/* Image */}
-                  <div className="relative h-52 md:h-64 lg:h-64 xl:h-80 2xl:h-200">
+                  <div className="relative h-52 md:h-64 lg:h-64 xl:h-80 2xl:h-120">
                     <Image
                       src={pillarImages[index]}
                       alt={pillar.imageAlt}
@@ -107,7 +107,7 @@ export default async function CommercialInfluenceSection() {
                         {pillar.title}
                       </h3>
                       <p
-                        className="text-secondary/80 leading-relaxed text-center text-base md:text-xl lg:text-lg xl:text-md 2xl:text-4xl"
+                        className="text-secondary/80 leading-relaxed text-center text-base md:text-xl lg:text-lg xl:text-md 2xl:text-2xl"
                       >
                         {pillar.description}
                       </p>

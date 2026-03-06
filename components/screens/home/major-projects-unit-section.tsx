@@ -106,7 +106,7 @@ export default async function MajorProjectsUnitSection() {
                     )}
                   >
                     <span
-                      className="text-white font-semibold text-base md:text-xl xl:text-md 2xl:text-4xl group-hover:text-[#1A1A2E]"
+                      className="text-white font-semibold text-base md:text-xl xl:text-md 2xl:text-3xl group-hover:text-[#1A1A2E]"
                     >
                       {feature.title}
                     </span>

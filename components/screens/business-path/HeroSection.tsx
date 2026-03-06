@@ -9,7 +9,7 @@ export function HeroSection({locale}: {locale: string}) {
   const isRTL = locale === 'ar'
   const t = useTranslations('businessPath.hero')
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1628] text-white">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1628] text-white pt-[3%]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image

@@ -90,10 +90,6 @@ export default function Loading() {
           style={{
             width: 130,
             height: 130,
-            background:
-              "linear-gradient(135deg, rgba(15,23,42,0.96) 0%, rgba(30,41,59,0.96) 100%)",
-            boxShadow:
-              "0 0 28px rgba(253,153,8,0.55), inset 0 1px 0 rgba(255,255,255,0.12)",
           }}
         >
           <Image

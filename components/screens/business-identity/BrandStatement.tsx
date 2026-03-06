@@ -90,7 +90,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
               className="flex flex-col items-center justify-center"
             >
             <h2
-              className="text-lg md:text-xl lg:text-3xl 2xl:text-6xl font-bold mb-6"
+              className="text-lg md:text-xl lg:text-3xl 2xl:text-5xl font-bold mb-6"
               style={{
                 background:
                   'linear-gradient(135deg, #0A1628 0%, #1a3a5c 100%)',
@@ -104,7 +104,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 {t('heading')}
               </h2>
               <p
-                className="font-semibold text-sm md:text-xl lg:text-xl 2xl:text-4xl mb-8 w-fit"
+                className="font-semibold text-sm md:text-xl lg:text-xl 2xl:text-3xl mb-8 w-fit"
                 style={{
                   background:
                     'linear-gradient(120deg, rgba(248, 250, 252, 0.95), rgba(251, 191, 36, 0.22))',
@@ -270,7 +270,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                 >
                   {item.term}
                 </h3>
-                <p className="text-brand-dark/80 text-lg md:text-xl lg:text-2xl xl:text-3xl">{item.def}</p>
+                <p className="text-brand-dark/80 text-lg lg:text-xl xl:text-2xl text-center">{item.def}</p>
               </motion.div>
             ))}
           </div>
@@ -343,7 +343,7 @@ export function BrandStatement( {locale}: {locale: string} ) {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="flex flex-col items-center justify-center bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="flex flex-col items-center justify-between bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 style={{
                   borderTop: `4px solid ${val.color}`,
                 }}
@@ -355,12 +355,12 @@ export function BrandStatement( {locale}: {locale: string} ) {
                     color: 'white',
                   }}
                 >
-                  <div className="w-8 h-8">{val.icon}</div>
+                  <div className="w-8 h-8 flex items-center justify-center">{val.icon}</div>
                 </div>
                 <h3 className="text-lg md:text-xl lg:text-2xl 2xl:text-5xl font-bold text-brand-navy mb-3">
                   {val.title}
                 </h3>
-                <p className="text-sm md:text-lg lg:text-2xl 2xl:text-3xl text-brand-dark/70 leading-relaxed">{val.desc}</p>
+                <p className="text-lg lg:text-xl 2xl:text-2xl text-brand-dark/70 leading-relaxed text-center">{val.desc}</p>
               </motion.div>
             ))}
           </div>

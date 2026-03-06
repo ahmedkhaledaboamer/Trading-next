@@ -32,7 +32,7 @@ export async function ClosingStatement() {
           {t("paragraph")}
         </p>
 
-        <Link href="tel:+0000000000" className="group bg-[#C9A84C] text-white px-10 py-4 rounded-full font-bold text-base md:text-lg hover:bg-[#b08d35] transition-all flex items-center gap-3 mx-auto w-fit">
+        <Link href="tel:+971521068882" className="group bg-[#C9A84C] text-white px-10 py-4 rounded-full font-bold text-base md:text-lg hover:bg-[#b08d35] transition-all flex items-center gap-3 mx-auto w-fit">
           <span>{t("cta")}</span>
           {isRTL ? <ArrowLeftIcon className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> : <ArrowRightIcon className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />}
         </Link>

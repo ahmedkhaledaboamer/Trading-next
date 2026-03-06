@@ -26,10 +26,10 @@ function DomainCard({ domain, image, isRTL }: { domain: DomainData; image: strin
       </div>
       {/* Content */}
       <div className="p-5 flex-grow flex flex-col justify-center text-right" dir={isRTL ? "rtl" : "ltr"}>
-        <h3 className={`text-sm md:text-md xl:text-sm 2xl:text-3xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2 ${isRTL ? "text-right" : "text-left"}`}>
+        <h3 className={`text-sm md:text-md xl:text-sm 2xl:text-2xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2 ${isRTL ? "text-right" : "text-left"}`}>
           {domain.title}
         </h3>
-        <p className=" text-center md:text-start text-sm md:text-md xl:text-sm 2xl:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
+        <p className=" text-center md:text-start text-sm md:text-md xl:text-sm 2xl:text-xl 3xl:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
           {domain.description}
         </p>
       </div>
@@ -38,10 +38,10 @@ function DomainCard({ domain, image, isRTL }: { domain: DomainData; image: strin
       ) : (
       <>
       <div className="p-5 flex-grow flex flex-col justify-center text-left" dir={isRTL ? "rtl" : "ltr"}>
-        <h3 className={`text-sm md:text-md xl:text-sm 2xl:text-3xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2 ${isRTL ? "text-right" : "text-left"}`}>
+        <h3 className={`text-sm md:text-md xl:text-sm 2xl:text-2xl font-bold text-orange-700 border border-orange-300 bg-orange-50 rounded-2xl px-6 py-4 mb-2 ${isRTL ? "text-right" : "text-left"}`}>
           {domain.title}
         </h3>
-        <p className=" text-center md:text-start text-sm md:text-md xl:text-sm 2xl:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
+        <p className=" text-center md:text-start text-sm md:text-md xl:text-sm 2xl:text-xl 3xl:text-2xl text-secondary/80 leading-relaxed line-clamp-3 md:line-clamp-4 border-cyan-700 border rounded-2xl px-6 py-4">
           {domain.description}
         </p>
       </div>
