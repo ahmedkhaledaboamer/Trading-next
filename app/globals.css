@@ -94,3 +94,12 @@ body {
 .flag-swiper .swiper-slide-active {
   transform: scale(1.05);
 }
+
+#business-identity h2 {
+  padding: 12px 28px 28px 28px !important;
+}
+@media (max-width: 768px) {
+  #business-identity h2 {
+    padding: 12px 28px 12px 28px !important;
+  }
+}
