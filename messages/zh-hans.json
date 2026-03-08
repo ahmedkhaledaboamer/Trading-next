@@ -1455,6 +1455,9 @@
           "email": "info@shazmlc.com",
           "location": "阿拉伯联合酋长国"
       },
+      "about": "关于我们",
+      "cta": "联系我们",
+      "followUs": "关注我们",
       "quickLinks": {
       "title": "快速链接",
       "links": [

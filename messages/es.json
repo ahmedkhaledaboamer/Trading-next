@@ -1455,6 +1455,9 @@
           "email": "info@shazmlc.com",
           "location": "Emiratos Árabes Unidos"
       },
+      "about": "Sobre nosotros",
+      "cta": "Contáctanos",
+      "followUs": "Síguenos",
       "quickLinks": {
       "title": "Enlaces Rápidos",
       "links": [

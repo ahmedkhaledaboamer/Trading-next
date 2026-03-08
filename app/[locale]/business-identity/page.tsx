@@ -27,13 +27,13 @@ export default async function BusinessIdentityPage() {
   const locale = await getLocale();
 
   return (
-    <>
+    <main id="business-identity">
       <HeroSection />
       <BrandIntro locale={locale} />
       <BrandStatement locale={locale} />
       <BrandOperations locale={locale}/>
       <BrandPartner locale={locale}/>
       <BrandConclusion />
-    </>
+    </main>
   );
 }
