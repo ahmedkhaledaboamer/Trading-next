@@ -6,6 +6,9 @@ import { BrandStatement } from "@/components/screens/business-identity/BrandStat
 import { HeroSection } from "@/components/screens/business-identity/HeroSection";
 import { getLocale, getTranslations } from "next-intl/server";
 
+// ISR: revalidate every 6 hours
+export const revalidate = 21600;
+
 export async function generateMetadata({
   params,
 }: {

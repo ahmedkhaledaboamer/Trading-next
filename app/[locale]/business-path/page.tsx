@@ -6,6 +6,9 @@ import { VisionMissionGoal } from "@/components/screens/business-path/VisionMiss
 import { WhyKEP } from "@/components/screens/business-path/WhyKEP";
 import { getLocale, getTranslations } from "next-intl/server";
 
+// ISR: revalidate every 6 hours
+export const revalidate = 21600;
+
 export async function generateMetadata({
   params,
 }: {

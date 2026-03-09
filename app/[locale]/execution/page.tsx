@@ -9,6 +9,9 @@ import { ClosingStatement } from "@/components/screens/exucetion/ClosingStatemen
 import { getTranslations } from "next-intl/server";
 import { ContactChannels } from "@/components/screens/exucetion/ContactChannels";
 
+// ISR: revalidate every 6 hours
+export const revalidate = 21600;
+
 export async function generateMetadata({
   params,
 }: {

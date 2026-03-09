@@ -1,7 +1,6 @@
 import BusinessEntitySection from "@/components/screens/home/business-entity-section";
 import CommercialDomainsSection from "@/components/screens/home/commercial-domains-section";
 import CommercialInfluenceSection from "@/components/screens/home/commercial-influence-section";
-import CommercialLeadershipPlatformSection from "@/components/screens/home/commercial-leadership-platform-section";
 import CommercialProtectionSection from "@/components/screens/home/commercial-protection-section";
 import DigitalTransformationSection from "@/components/screens/home/digital-transformation-section";
 import EcommerceUnitSection from "@/components/screens/home/ecommerce-unit-section";
@@ -11,9 +10,11 @@ import InternationalExpansionSection from "@/components/screens/home/internation
 import MajorProjectsUnitSection from "@/components/screens/home/major-projects-unit-section";
 import OperationalLeadershipSection from "@/components/screens/home/operational-leadership-section";
 import SuppliersNetworkSection from "@/components/screens/home/suppliers-network-section";
-import WorkMethodologySection from "@/components/screens/home/work-methodology-section";
 import PowerIndicatorsSection from "@/components/screens/home/power-indicators-section";
 import { getLocale, getTranslations } from "next-intl/server";
+
+// ISR: revalidate every 6 hours
+export const revalidate = 21600;
 
 export async function generateMetadata({
   params,
