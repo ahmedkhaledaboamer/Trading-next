@@ -3,14 +3,8 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar/navbar";
 import ScrollToTop from "@/components/ScrollToTop";
-import { routing } from "@/i18n/routing";
 
-// ISR: revalidate every 6 hours
-export const revalidate = 21600;
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
 
 export default async function LocaleLayout({
   children,

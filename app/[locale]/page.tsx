@@ -13,9 +13,6 @@ import SuppliersNetworkSection from "@/components/screens/home/suppliers-network
 import PowerIndicatorsSection from "@/components/screens/home/power-indicators-section";
 import { getLocale, getTranslations } from "next-intl/server";
 
-// ISR: revalidate every 6 hours
-export const revalidate = 21600;
-
 export async function generateMetadata({
   params,
 }: {

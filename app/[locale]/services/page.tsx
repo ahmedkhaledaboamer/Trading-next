@@ -1,9 +1,6 @@
 import { ServicesPageClient } from "@/components/screens/services/ServicesPageClient";
 import { getLocale, getTranslations } from "next-intl/server";
 
-// ISR: revalidate every 6 hours
-export const revalidate = 21600;
-
 export async function generateMetadata({
   params,
 }: {
